@@ -55,6 +55,7 @@ public class UserRepository {
         public User mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new User(
                     rs.getString("UserID"),
+                    rs.getString("Alias"),
                     rs.getString("Name"),
                     rs.getString("Password"),
                     rs.getString("Email"),
@@ -165,7 +166,7 @@ public class UserRepository {
         return jdbcTemplate.query(sql, userRowMapper);
     }
 
-    // Tjekker om bruger eksisterer
+    // Tjekker om bruger eksisterer - HER ER DEN!
     public boolean existsByEmail(String email) {
         String sql = "SELECT COUNT(*) FROM users WHERE Email = ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email);
