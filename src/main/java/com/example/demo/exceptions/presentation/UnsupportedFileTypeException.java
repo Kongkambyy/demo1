@@ -1,7 +1,14 @@
 package com.example.demo.exceptions.presentation;
 
 public class UnsupportedFileTypeException extends RuntimeException {
-    public UnsupportedFileTypeException(String message) {
-        super(message);
+    private final String fileType;
+
+    public UnsupportedFileTypeException(String fileType) {
+        super("Unsupported file type: " + fileType);
+        this.fileType = fileType;
+    }
+
+    public String getFileType() {
+        return fileType;
     }
 }
