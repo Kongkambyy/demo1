@@ -1,7 +1,14 @@
 package com.example.demo.exceptions.listing;
 
 public class ListingAlreadySoldException extends RuntimeException {
-    public ListingAlreadySoldException(String message) {
-        super(message);
+    private final String listingAdId;
+
+    public ListingAlreadySoldException(String listingAdId) {
+        super("Listing with ID " + listingAdId + " has already been sold");
+        this.listingAdId = listingAdId;
+    }
+
+    public String getListingId() {
+        return listingAdId;
     }
 }
