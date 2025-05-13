@@ -4,12 +4,13 @@ public class User {
 
     private String UserID;
     private String Name;
+    private String Alias;
     private String Password;
     private String Email;
     private String Number;
     private String address;
 
-    public User(String UserID, String Name, String Password, String Email, String Number, String address) {
+    public User(String UserID, String Name, String Alias, String Password, String Email, String Number, String address) {
         this.UserID = UserID;
         this.Name = Name;
         this.Password = Password;
@@ -32,6 +33,14 @@ public class User {
 
     public void setName(String name) {
         Name = name;
+    }
+
+    public void setAlias(String alias) {
+        Alias = alias;
+    }
+
+    public String getAlias() {
+        return Alias;
     }
 
     public String getPassword() {
