@@ -102,6 +102,56 @@ public class AdminUserUseCase {
         LoggerUtility.logEvent("Admin " + adminUserId + " deleted listing: " + adId);
     }
 
+    public void approveListing(String adminUserId, String adId) {
+        verifyAdminPermissions(adminUserId);
+
+        Optional<Listing> listingOpt = listingRepository.findById(adId);
+        if (listingOpt.isEmpty()) {
+            LoggerUtility.logError("Admin " + adminUserId + " attempted to approve non-existent listing: " + adId);
+            throw new ListingNotFoundException(adId);
+        }
+
+        Listing listing = listingOpt.get();
+
+        if (!"PENDING".equals(listing.getStatus())) {
+            LoggerUtility.logWarning("Admin " + adminUserId + " attempted to approve non-pending listing: " + adId);
+            throw new IllegalStateException("Can only approve PENDING listings");
+        }
+
+        listingRepository.updateStatus(adId, "ACTIVE");
+        LoggerUtility.logEvent("Admin " + adminUserId + " approved listing: " + adId);
+    }
+
+    public void rejectListing(String adminUserId, String adId) {
+        verifyAdminPermissions(adminUserId);
+
+        Optional<Listing> listingOpt = listingRepository.findById(adId);
+        if (listingOpt.isEmpty()) {
+            LoggerUtility.logError("Admin " + adminUserId + " attempted to reject non-existent listing: " + adId);
+            throw new ListingNotFoundException(adId);
+        }
+
+        Listing listing = listingOpt.get();
+
+        if (!"PENDING".equals(listing.getStatus())) {
+            LoggerUtility.logWarning("Admin " + adminUserId + " attempted to reject non-pending listing: " + adId);
+            throw new IllegalStateException("Can only reject PENDING listings");
+        }
+
+        listingRepository.updateStatus(adId, "REJECTED");
+        LoggerUtility.logEvent("Admin " + adminUserId + " rejected listing: " + adId);
+    }
+
+    public List<Listing> getPendingListings(String adminUserId) {
+        verifyAdminPermissions(adminUserId);
+
+        LoggerUtility.logEvent("Admin " + adminUserId + " retrieved pending listings");
+        List<Listing> allListings = listingRepository.searchListings(null, null, null, null, null);
+        return allListings.stream()
+                .filter(listing -> "PENDING".equals(listing.getStatus()))
+                .collect(java.util.stream.Collectors.toList());
+    }
+
     public List<User> getAllUsers(String adminUserId) {
         verifyAdminPermissions(adminUserId);
 
@@ -145,6 +195,6 @@ public class AdminUserUseCase {
     }
 
     private boolean isAdmin(User user) {
-        return user.getEmail() != null && user.getEmail().endsWith("@test.com");
+        return user.getEmail() != null && user.getEmail().endsWith("@admin.com");
     }
 }
