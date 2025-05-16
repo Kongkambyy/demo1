@@ -2,7 +2,6 @@ package com.example.demo.domain.entities;
 
 public class Listing {
 
-    private String adID;
     private String userID;
     private String title;
     private String description;
@@ -21,14 +20,6 @@ public class Listing {
         this.condition = condition;
         this.status = status;
         this.brand = brand;
-    }
-
-    public String getAdID() {
-        return adID;
-    }
-
-    public void setAdID(String adID) {
-        this.adID = adID;
     }
 
     public String getUserID() {

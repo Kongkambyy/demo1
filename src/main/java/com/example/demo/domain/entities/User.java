@@ -10,8 +10,7 @@ public class User {
     private String Number;
     private String address;
 
-    public User(String UserID, String Name, String Alias, String Password, String Email, String Number, String address) {
-        this.UserID = UserID;
+    public User(String Name, String Alias, String Password, String Email, String Number, String address) {
         this.Name = Name;
         this.Password = Password;
         this.Email = Email;

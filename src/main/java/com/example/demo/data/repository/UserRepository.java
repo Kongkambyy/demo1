@@ -58,7 +58,6 @@ public class UserRepository {
         @Override
         public User mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new User(
-                    rs.getString("UserID"),
                     rs.getString("Alias"),
                     rs.getString("Name"),
                     rs.getString("Password"),
@@ -126,7 +125,6 @@ public class UserRepository {
 
             // Return user with hashed password to maintain consistency
             User savedUser = new User(
-                    user.getUserID(),
                     user.getAlias(),
                     user.getName(),
                     hashedPassword,
@@ -199,7 +197,6 @@ public class UserRepository {
 
         // Return user with hashed password
         User updatedUser = new User(
-                user.getUserID(),
                 user.getAlias(),
                 user.getName(),
                 passwordToUse,

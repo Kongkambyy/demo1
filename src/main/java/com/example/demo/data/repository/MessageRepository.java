@@ -50,7 +50,6 @@ public class MessageRepository {
         @Override
         public Message mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new Message(
-                    rs.getString("MessageID"),
                     rs.getString("SenderID"),
                     rs.getString("ReceiverID"),
                     rs.getString("Message"),
