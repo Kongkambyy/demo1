@@ -2,19 +2,18 @@ package com.example.demo.domain.usecases.user;
 
 import com.example.demo.data.repository.UserRepository;
 import com.example.demo.domain.entities.User;
+import com.example.demo.domain.usecases.util.HashingUseCase;
 import com.example.demo.exceptions.user.DuplicateUserException;
 import org.springframework.stereotype.Service;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
 
 @Service
 public class CreateUserUseCase {
 
+    private final HashingUseCase hashingUseCase;
     private final UserRepository userRepository;
 
-    public CreateUserUseCase(UserRepository userRepository) {
+    public CreateUserUseCase(HashingUseCase hashingUseCase, UserRepository userRepository) {
+        this.hashingUseCase = hashingUseCase;
         this.userRepository = userRepository;
     }
 
@@ -23,26 +22,17 @@ public class CreateUserUseCase {
             throw new DuplicateUserException("A user with this account name already exists");
         }
 
+        String hashedPassword = hashingUseCase.hashPassword(password);
+
         User user = new User(
                 UserID,
                 Alias,
                 username,
-                password = oneWayHashSHA256(password),
+                hashedPassword,
                 Email,
                 Number,
                 address
         );
         return userRepository.save(user);
-
-    }
-
-    private String oneWayHashSHA256(String input) {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hashBytes = digest.digest(input.getBytes());
-            return Base64.getEncoder().encodeToString(hashBytes);
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException("SHA-256 algorithm not found", e);
-        }
     }
 }

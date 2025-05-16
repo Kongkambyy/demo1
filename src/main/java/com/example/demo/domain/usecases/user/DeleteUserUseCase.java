@@ -3,7 +3,9 @@ package com.example.demo.domain.usecases.user;
 import com.example.demo.data.repository.UserRepository;
 import com.example.demo.domain.entities.User;
 import com.example.demo.exceptions.user.UserNotFoundException;
+import org.springframework.stereotype.Service;
 
+@Service
 public class DeleteUserUseCase {
 
     private final UserRepository userRepository;

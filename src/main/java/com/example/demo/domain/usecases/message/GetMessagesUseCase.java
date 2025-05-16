@@ -2,9 +2,11 @@ package com.example.demo.domain.usecases.message;
 
 import com.example.demo.data.repository.MessageRepository;
 import com.example.demo.domain.entities.Message;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class GetMessagesUseCase {
 
     private final MessageRepository messageRepository;
