@@ -53,10 +53,10 @@ public class ListingRepository {
 
     // RowMapper til at konvertere database rækker til Listing objekter
     private final RowMapper<Listing> listingRowMapper = new RowMapper<Listing>() {
+
         @Override
         public Listing mapRow(ResultSet rs, int rowNum) throws SQLException {
             Listing listing = new Listing(
-                    rs.getString("AdID"),
                     rs.getString("UserID"),
                     rs.getString("Title"),
                     rs.getString("Description"),

@@ -12,8 +12,7 @@ public class Listing {
     private String status;
     private String brand;
 
-    public Listing(String adID, String userID, String title, String description, int price, String createdDate, String condition, String status) {
-        this.adID = adID;
+    public Listing (String userID, String title, String description, int price, String createdDate, String condition, String status) {
         this.userID = userID;
         this.title = title;
         this.description = description;
