@@ -1,0 +1,48 @@
+CREATE DATABASE gilbert;
+USE gilbert;
+
+CREATE TABLE users (
+    UserID VARCHAR(50),
+    Name VARCHAR(100) NOT NULL,
+    Alias VARCHAR(100) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Number VARCHAR(50),
+    Address VARCHAR(255),
+    PRIMARY KEY (UserID)
+);
+
+CREATE TABLE categories (
+    CategoryID INT AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Description VARCHAR(512),
+    PRIMARY KEY(CategoryID)
+);
+
+CREATE TABLE listings (
+    AdID VARCHAR(50),
+    UserID VARCHAR(50),
+    Title VARCHAR(255) NOT NULL,
+    Description VARCHAR(512),
+    Price INT NOT NULL,
+    CreatedDate VARCHAR(50),
+    'condition' VARCHAR(50),
+    Status VARCHAR(50),
+    Brand VARCHAR(100),
+    CategoryID INT,
+    PRIMARY KEY (AdID),
+    FOREIGN KEY (UserID) REFERENCES users(UserID),
+    FOREIGN KEY (CategoryID) REFERENCES categories(CategoryID)
+);
+
+CREATE TABLE messages (
+    MessageID VARCHAR(50),
+    SenderID VARCHAR(50),
+    ReceiverID VARCHAR(50),
+    Message VARCHAR(512) NOT NULL,
+    Date VARCHAR(50),
+    IsRead BOOLEAN DEFAULT FALSE,
+    PRIMARY KEY (MessageID),
+    FOREIGN KEY (SenderID) REFERENCES users(UserID),
+    FOREIGN KEY (ReceiverID) REFERENCES users(UserID)
+);
