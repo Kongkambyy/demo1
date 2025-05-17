@@ -53,20 +53,22 @@ public class UserRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    // RowMapper til at konvertere database rækker til User objekter
     private final RowMapper<User> userRowMapper = new RowMapper<User>() {
         @Override
         public User mapRow(ResultSet rs, int rowNum) throws SQLException {
-            return new User(
-                    rs.getString("Alias"),
+            User user = new User(
                     rs.getString("Name"),
+                    rs.getString("Alias"),
                     rs.getString("Password"),
                     rs.getString("Email"),
                     rs.getString("Number"),
                     rs.getString("Address")
             );
+            user.setUserID(rs.getString("UserID"));
+            return user;
         }
     };
+
 
     public UserRepository(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
@@ -90,12 +92,9 @@ public class UserRepository {
     }
 
     private boolean isPasswordHashed(String password) {
-        // A simple heuristic: SHA-256 + Base64 produces a specific length and format
-        // This is not foolproof but works for our controlled environment
         return password != null && password.length() >= 40 && !password.contains(" ");
     }
 
-    // Opretter ny bruger i databasen
     public User save(User user) {
         // Generer UserID hvis det ikke er sat
         if (user.getUserID() == null || user.getUserID().isEmpty()) {
@@ -110,28 +109,29 @@ public class UserRepository {
             hashedPassword = user.getPassword();
         }
 
-        String sql = "INSERT INTO users (UserID, Name, Password, Email, Number, Address) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO users (UserID, Name, Alias, Password, Email, Number, Address) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try {
             jdbcTemplate.update(sql,
                     user.getUserID(),
                     user.getName(),
-                    hashedPassword,  // Store hashed password
+                    user.getAlias(),
+                    hashedPassword,
                     user.getEmail(),
                     user.getNumber(),
                     user.getAddress()
             );
             LoggerUtility.logEvent("Bruger oprettet: " + user.getEmail());
 
-            // Return user with hashed password to maintain consistency
             User savedUser = new User(
-                    user.getAlias(),
                     user.getName(),
+                    user.getAlias(),
                     hashedPassword,
                     user.getEmail(),
                     user.getNumber(),
                     user.getAddress()
             );
+            savedUser.setUserID(user.getUserID());
             return savedUser;
         } catch (DuplicateKeyException e) {
             LoggerUtility.logError("Duplikat bruger forsøgt oprettet: " + user.getEmail());
@@ -142,7 +142,6 @@ public class UserRepository {
         }
     }
 
-    // Finder bruger baseret på ID
     public Optional<User> findById(String userId) {
         String sql = "SELECT * FROM users WHERE UserID = ?";
 
@@ -167,7 +166,6 @@ public class UserRepository {
         }
     }
 
-    // Opdaterer eksisterende bruger
     public User update(User user) {
         // Hash password if needed
         String passwordToUse;
@@ -177,10 +175,11 @@ public class UserRepository {
             passwordToUse = user.getPassword();
         }
 
-        String sql = "UPDATE users SET Name = ?, Password = ?, Email = ?, Number = ?, Address = ? WHERE UserID = ?";
+        String sql = "UPDATE users SET Name = ?, Alias = ?, Password = ?, Email = ?, Number = ?, Address = ? WHERE UserID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql,
                 user.getName(),
+                user.getAlias(),
                 passwordToUse,  // Use hashed password
                 user.getEmail(),
                 user.getNumber(),

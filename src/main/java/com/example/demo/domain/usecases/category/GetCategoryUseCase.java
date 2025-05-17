@@ -22,7 +22,7 @@ public class GetCategoryUseCase {
 
         if (category.isEmpty()) {
             LoggerUtility.logWarning("Category not found with ID: " + categoryId);
-            throw new RuntimeException("Kategori ikke fundet: " + categoryId);
+            throw new RuntimeException("Category not found: " + categoryId);
         }
 
         return category.get();
@@ -34,7 +34,7 @@ public class GetCategoryUseCase {
 
         if (category.isEmpty()) {
             LoggerUtility.logWarning("Category not found with name: " + name);
-            throw new RuntimeException("Kategori ikke fundet: " + name);
+            throw new RuntimeException("Category not found: " + name);
         }
 
         return category.get();

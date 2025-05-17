@@ -6,12 +6,14 @@ public class Message {
     private String receiverID;
     private String message;
     private String date;
+    private boolean isRead;
 
     public Message(String senderID, String receiverID, String message, String date) {
         this.senderID = senderID;
         this.receiverID = receiverID;
         this.message = message;
         this.date = date;
+        this.isRead = false;
     }
 
     public String getMessageID() {
@@ -52,5 +54,13 @@ public class Message {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public boolean isRead() {
+        return isRead;
+    }
+
+    public void setRead(boolean read) {
+        isRead = read;
     }
 }

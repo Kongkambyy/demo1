@@ -35,6 +35,29 @@ CREATE TABLE listings (
     FOREIGN KEY (CategoryID) REFERENCES categories(CategoryID)
 );
 
+CREATE TABLE favorites (
+    FavoriteID VARCHAR(50),
+    UserID VARCHAR(50),
+    ListingAdID VARCHAR(50),
+    CreatedDate VARCHAR(50),
+    PRIMARY KEY (FavoriteID),
+    FOREIGN KEY (UserID) REFERENCES users(UserID),
+    FOREIGN KEY (ListingAdID) REFERENCES listings(AdID),
+    UNIQUE (UserID, ListingAdID)
+);
+
+CREATE TABLE reviews (
+    ReviewID VARCHAR(50),
+    ReviewerID VARCHAR(50),
+    ReviewedUserID VARCHAR(50),
+    Rating INT NOT NULL,
+    Comment VARCHAR(512),
+    CreatedDate VARCHAR(50),
+    PRIMARY KEY (ReviewID),
+    FOREIGN KEY (ReviewerID) REFERENCES users(UserID),
+    FOREIGN KEY (ReviewedUserID) REFERENCES users(UserID)
+);
+
 CREATE TABLE messages (
     MessageID VARCHAR(50),
     SenderID VARCHAR(50),

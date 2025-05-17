@@ -14,20 +14,21 @@ public class CreateUserUseCase {
         this.userRepository = userRepository;
     }
 
-    public User Execute(String username, String Alias, String password, String Email, String address, String Number, String UserID) {
-        if (userRepository.existsByEmail(Email)) {
-            throw new DuplicateUserException("A user with this account name already exists");
+    public User Execute(String name, String alias, String password, String email, String number, String address) {
+        if (userRepository.existsByEmail(email)) {
+            throw new DuplicateUserException("A user with this email already exists");
         }
 
         User user = new User(
-                UserID,
-                Alias,
-                username,
-                password, // Plain password - will be hashed in repository
-                Email,
-                Number,
+                name,
+                alias,
+                password,
+                email,
+                number,
                 address
         );
+
+
         return userRepository.save(user);
     }
 }

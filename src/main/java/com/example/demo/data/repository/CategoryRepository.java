@@ -48,8 +48,8 @@ public class CategoryRepository {
         public Category mapRow(ResultSet rs, int rowNum) throws SQLException {
             return new Category(
                     rs.getInt("CategoryID"),
-                    rs.getString("Description"),
-                    rs.getString("Name")
+                    rs.getString("Name"),
+                    rs.getString("Description")
             );
         }
     };
@@ -64,7 +64,7 @@ public class CategoryRepository {
         String sql = "INSERT INTO categories (CategoryID, Name, Description) VALUES (?, ?, ?)";
 
         jdbcTemplate.update(sql,
-                category.getCategoryId(),
+                category.getCategoryID(),
                 category.getName(),
                 category.getDescription()
         );
@@ -104,19 +104,18 @@ public class CategoryRepository {
         return jdbcTemplate.query(sql, categoryRowMapper);
     }
 
-    // Opdaterer kategori
     public Category update(Category category) {
         String sql = "UPDATE categories SET Name = ?, Description = ? WHERE CategoryID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql,
                 category.getName(),
                 category.getDescription(),
-                category.getCategoryId()
+                category.getCategoryID()
         );
 
         if (rowsAffected == 0) {
-            LoggerUtility.logError("Opdatering fejlede - kategori ikke fundet: " + category.getCategoryId());
-            throw new RuntimeException("Kategori ikke fundet: " + category.getCategoryId());
+            LoggerUtility.logError("Opdatering fejlede - kategori ikke fundet: " + category.getCategoryID());
+            throw new RuntimeException("Kategori ikke fundet: " + category.getCategoryID());
         }
 
         LoggerUtility.logEvent("Kategori opdateret: " + category.getName());

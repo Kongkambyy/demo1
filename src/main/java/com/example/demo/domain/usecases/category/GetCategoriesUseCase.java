@@ -26,9 +26,9 @@ public class GetCategoriesUseCase {
 
         return allCategories.stream()
                 .sorted((c1, c2) -> {
-                    int c1Count = categoryRepository.countListingsInCategory(c1.getCategoryId());
-                    int c2Count = categoryRepository.countListingsInCategory(c2.getCategoryId());
-                    return Integer.compare(c2Count, c1Count); // Descending order
+                    int c1Count = categoryRepository.countListingsInCategory(c1.getCategoryID());
+                    int c2Count = categoryRepository.countListingsInCategory(c2.getCategoryID());
+                    return Integer.compare(c2Count, c1Count);
                 })
                 .limit(limit)
                 .collect(java.util.stream.Collectors.toList());

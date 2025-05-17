@@ -2,6 +2,7 @@ package com.example.demo.domain.entities;
 
 public class Listing {
 
+    private String adID;
     private String userID;
     private String title;
     private String description;
@@ -10,8 +11,9 @@ public class Listing {
     private String condition;
     private String status;
     private String brand;
+    private int categoryID;
 
-    public Listing (String userID, String title, String description, int price, String createdDate, String condition, String status) {
+    public Listing(String userID, String title, String description, int price, String createdDate, String condition, String status) {
         this.userID = userID;
         this.title = title;
         this.description = description;
@@ -19,7 +21,14 @@ public class Listing {
         this.createdDate = createdDate;
         this.condition = condition;
         this.status = status;
-        this.brand = brand;
+    }
+
+    public String getAdID() {
+        return adID;
+    }
+
+    public void setAdID(String adID) {
+        this.adID = adID;
     }
 
     public String getUserID() {
@@ -84,5 +93,13 @@ public class Listing {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public int getCategoryID() {
+        return categoryID;
+    }
+
+    public void setCategoryID(int categoryID) {
+        this.categoryID = categoryID;
     }
 }
