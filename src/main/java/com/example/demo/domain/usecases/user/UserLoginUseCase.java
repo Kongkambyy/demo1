@@ -37,7 +37,6 @@ public class UserLoginUseCase {
 
         User user = userOptional.get();
 
-        // Use repository's verification method
         if (!userRepository.verifyPassword(password, user.getPassword())) {
             LoggerUtility.logWarning("Login attempt with incorrect password for email: " + email);
             throw new InvalidCredentialsException("Invalid email or password");
