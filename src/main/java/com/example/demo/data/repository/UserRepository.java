@@ -196,8 +196,8 @@ public class UserRepository {
 
         // Return user with hashed password
         User updatedUser = new User(
-                user.getAlias(),
                 user.getName(),
+                user.getAlias(),
                 passwordToUse,
                 user.getEmail(),
                 user.getNumber(),

@@ -37,8 +37,8 @@ public class AdminUserUseCase {
         User targetUser = targetUserOpt.get();
 
         User updatedUser = new User(
-                alias != null ? alias : targetUser.getAlias(),
                 name != null ? name : targetUser.getName(),
+                alias != null ? alias : targetUser.getAlias(),
                 password != null ? password : targetUser.getPassword(),
                 email != null ? email : targetUser.getEmail(),
                 number != null ? number : targetUser.getNumber(),

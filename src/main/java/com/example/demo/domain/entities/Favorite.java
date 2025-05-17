@@ -12,7 +12,6 @@ public class Favorite {
         this.createdDate = createdDate;
     }
 
-    // Getters and setters
     public String getFavoriteID() {
         return favoriteID;
     }

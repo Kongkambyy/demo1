@@ -16,7 +16,6 @@ public class Review {
         this.createdDate = createdDate;
     }
 
-    // Getters and setters
     public String getReviewID() {
         return reviewID;
     }
