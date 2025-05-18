@@ -45,6 +45,7 @@ class UserRepositoryTest {
         assertEquals(saved.getEmail(), found.get().getEmail());
     }
 
+    // Tester om der bliver kastet en DublicateUserException, hvis man prøver at oprette en bruger med samme main
     @Test
     void testDuplicateEmailThrowsException() {
         User user1 = createTestUser();
@@ -56,7 +57,7 @@ class UserRepositoryTest {
         assertThrows(DuplicateUserException.class, () -> userRepository.save(user2));
     }
 
-
+    // Tester om man kan opdatere brugers Alias Og deres Adresse
     @Test
     void testUpdate() {
         User user = createTestUser();
@@ -70,6 +71,7 @@ class UserRepositoryTest {
         assertEquals("Ny Adresse 123", updated.getAddress());
     }
 
+    // Laver en bruger, gemmer den, sletter den og tjekker om brugeren er blevet slettet
     @Test
     void testDelete() {
         User user = createTestUser();
@@ -80,13 +82,14 @@ class UserRepositoryTest {
         assertTrue(found.isEmpty());
     }
 
+    // Opretter Testbruger, Gemmer Testbrugeren,
     @Test
     void testExistsByEmail() {
         User user = createTestUser();
         userRepository.save(user);
 
         assertTrue(userRepository.existsByEmail(user.getEmail()));
-        assertFalse(userRepository.existsByEmail("ukendt@example.com"));
+        assertFalse(userRepository.existsByEmail("test@example.com"));
     }
 
 }
