@@ -106,4 +106,9 @@ public class FavoriteRepository {
         jdbcTemplate.update(sql, listingAdId);
         LoggerUtility.logEvent("All favorites removed for listing: " + listingAdId);
     }
+
+    public List<String> findUsersByListingId(String listingId) {
+        String sql = "SELECT UserID FROM favorites WHERE ListingAdID = ?";
+        return jdbcTemplate.queryForList(sql, String.class, listingId);
+    }
 }

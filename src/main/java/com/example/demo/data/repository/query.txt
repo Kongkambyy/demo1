@@ -89,7 +89,21 @@ CREATE TABLE offers (
     FOREIGN KEY (SellerID) REFERENCES users(UserID)
 );
 
-
+CREATE TABLE offers (
+    OfferID VARCHAR(50),
+    ListingID VARCHAR(50),
+    BuyerID VARCHAR(50),
+    SellerID VARCHAR(50),
+    OriginalPrice INT NOT NULL,
+    OfferAmount INT NOT NULL,
+    Status VARCHAR(50) NOT NULL, -- PENDING, ACCEPTED, REJECTED, EXPIRED
+    CreatedDate VARCHAR(50),
+    ExpiryDate VARCHAR(50),
+    PRIMARY KEY (OfferID),
+    FOREIGN KEY (ListingID) REFERENCES listings(AdID),
+    FOREIGN KEY (BuyerID) REFERENCES users(UserID),
+    FOREIGN KEY (SellerID) REFERENCES users(UserID)
+);
 
 CREATE TABLE messages (
     MessageID VARCHAR(50),
@@ -102,3 +116,20 @@ CREATE TABLE messages (
     FOREIGN KEY (SenderID) REFERENCES users(UserID),
     FOREIGN KEY (ReceiverID) REFERENCES users(UserID)
 );
+
+CREATE TABLE notifications (
+    NotificationID VARCHAR(50),
+    UserID VARCHAR(50),
+    SourceID VARCHAR(100),  -- ID of the related object (listing, offer, etc.)
+    SourceType VARCHAR(50), -- Type of source (LISTING, OFFER, MESSAGE, etc.)
+    Type VARCHAR(50),       -- FAVORITE_PRICE_CHANGE, FAVORITE_OFFER, FAVORITE_SOLD, ITEM_SOLD, etc.
+    Message VARCHAR(255),
+    IsRead BOOLEAN DEFAULT FALSE,
+    CreatedDate VARCHAR(50),
+    PRIMARY KEY (NotificationID),
+    FOREIGN KEY (UserID) REFERENCES users(UserID)
+);
+
+-- Add index for efficient querying of user notifications
+CREATE INDEX idx_notifications_userid ON notifications(UserID);
+CREATE INDEX idx_notifications_isread ON notifications(IsRead);

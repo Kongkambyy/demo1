@@ -36,8 +36,8 @@ public class UpdateUserUseCase {
         }
 
         User updatedUser = new User(
-                name != null && !alias.trim().isEmpty() ? name.trim() : existingUser.getName(),
-                alias != null && !name.trim().isEmpty() ? alias.trim() : existingUser.getAlias(),
+                name != null && !name.trim().isEmpty() ? name.trim() : existingUser.getName(),
+                alias != null && !alias.trim().isEmpty() ? alias.trim() : existingUser.getAlias(),
                 password != null && !password.trim().isEmpty() ? password : existingUser.getPassword(),
                 email != null && !email.trim().isEmpty() ? email.trim() : existingUser.getEmail(),
                 number != null && !number.trim().isEmpty() ? number.trim() : existingUser.getNumber(),
