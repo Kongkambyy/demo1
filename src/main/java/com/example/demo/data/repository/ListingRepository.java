@@ -51,12 +51,10 @@ public class ListingRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    // RowMapper til at konvertere database rækker til Listing objekter
     private final RowMapper<Listing> listingRowMapper = new RowMapper<Listing>() {
         @Override
         public Listing mapRow(ResultSet rs, int rowNum) throws SQLException {
             Listing listing = new Listing(
-                    rs.getString("AdID"),
                     rs.getString("UserID"),
                     rs.getString("Title"),
                     rs.getString("Description"),
@@ -65,7 +63,9 @@ public class ListingRepository {
                     rs.getString("Condition"),
                     rs.getString("Status")
             );
+            listing.setAdID(rs.getString("AdID"));
             listing.setBrand(rs.getString("Brand"));
+            listing.setCategoryID(rs.getInt("CategoryID"));
             return listing;
         }
     };
@@ -75,14 +75,13 @@ public class ListingRepository {
         LoggerUtility.logEvent("ListingRepository initialiseret");
     }
 
-    // Opretter ny annonce
     public Listing save(Listing listing) {
         if (listing.getAdID() == null || listing.getAdID().isEmpty()) {
             listing.setAdID(UUID.randomUUID().toString());
         }
 
-        String sql = "INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, Condition, Status, Brand) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, Condition, Status, Brand, CategoryID) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         jdbcTemplate.update(sql,
                 listing.getAdID(),
@@ -93,7 +92,8 @@ public class ListingRepository {
                 listing.getCreatedDate(),
                 listing.getCondition(),
                 listing.getStatus(),
-                listing.getBrand()
+                listing.getBrand(),
+                listing.getCategoryID()
         );
 
         LoggerUtility.logEvent("Ny annonce oprettet: " + listing.getAdID());
@@ -128,7 +128,7 @@ public class ListingRepository {
     // Opdaterer annonce
     public Listing update(Listing listing) {
         String sql = "UPDATE listings SET Title = ?, Description = ?, Price = ?, " +
-                "Condition = ?, Status = ?, Brand = ? WHERE AdID = ?";
+                "Condition = ?, Status = ?, Brand = ?, CategoryID = ? WHERE AdID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql,
                 listing.getTitle(),
@@ -137,8 +137,10 @@ public class ListingRepository {
                 listing.getCondition(),
                 listing.getStatus(),
                 listing.getBrand(),
+                listing.getCategoryID(),
                 listing.getAdID()
         );
+
 
         if (rowsAffected == 0) {
             LoggerUtility.logError("Opdatering fejlede - annonce ikke fundet: " + listing.getAdID());

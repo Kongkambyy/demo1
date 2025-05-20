@@ -6,7 +6,6 @@ import com.example.demo.data.util.LoggerUtility;
 import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.UUID;
 
 @Service
 public class CreateListingUseCase {
@@ -36,11 +35,9 @@ public class CreateListingUseCase {
             throw new IllegalArgumentException("Condition cannot be empty");
         }
 
-        String adId = UUID.randomUUID().toString();
         String createdDate = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 
         Listing listing = new Listing(
-                adId,
                 userId,
                 title.trim(),
                 description.trim(),

@@ -1,0 +1,135 @@
+CREATE DATABASE gilbert;
+USE gilbert;
+
+CREATE TABLE users (
+    UserID VARCHAR(50),
+    Name VARCHAR(100) NOT NULL,
+    Alias VARCHAR(100) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Number VARCHAR(50),
+    Address VARCHAR(255),
+    PRIMARY KEY (UserID)
+);
+
+CREATE TABLE categories (
+    CategoryID INT AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Description VARCHAR(512),
+    PRIMARY KEY(CategoryID)
+);
+
+CREATE TABLE listings (
+    AdID VARCHAR(50),
+    UserID VARCHAR(50),
+    Title VARCHAR(255) NOT NULL,
+    Description VARCHAR(512),
+    Price INT NOT NULL,
+    CreatedDate VARCHAR(50),
+    ItemCondition VARCHAR(50),
+    Status VARCHAR(50),
+    Brand VARCHAR(100),
+    CategoryID INT,
+    PRIMARY KEY (AdID),
+    FOREIGN KEY (UserID) REFERENCES users(UserID),
+    FOREIGN KEY (CategoryID) REFERENCES categories(CategoryID)
+);
+
+CREATE TABLE favorites (
+    FavoriteID VARCHAR(50),
+    UserID VARCHAR(50),
+    ListingAdID VARCHAR(50),
+    CreatedDate VARCHAR(50),
+    PRIMARY KEY (FavoriteID),
+    FOREIGN KEY (UserID) REFERENCES users(UserID),
+    FOREIGN KEY (ListingAdID) REFERENCES listings(AdID),
+    UNIQUE (UserID, ListingAdID)
+);
+
+CREATE TABLE reviews (
+    ReviewID VARCHAR(50),
+    ReviewerID VARCHAR(50),
+    ReviewedUserID VARCHAR(50),
+    Rating INT NOT NULL,
+    Comment VARCHAR(512),
+    CreatedDate VARCHAR(50),
+    PRIMARY KEY (ReviewID),
+    FOREIGN KEY (ReviewerID) REFERENCES users(UserID),
+    FOREIGN KEY (ReviewedUserID) REFERENCES users(UserID)
+);
+
+CREATE TABLE transactions (
+    TransactionID VARCHAR(50),
+    ListingID VARCHAR(50),
+    BuyerID VARCHAR(50),
+    SellerID VARCHAR(50),
+    Amount INT NOT NULL,
+    Status VARCHAR(50) NOT NULL, -- PENDING, COMPLETED, CANCELLED, REFUNDED
+    CreatedDate VARCHAR(50),
+    CompletedDate VARCHAR(50) NULL,
+    PRIMARY KEY (TransactionID),
+    FOREIGN KEY (ListingID) REFERENCES listings(AdID),
+    FOREIGN KEY (BuyerID) REFERENCES users(UserID),
+    FOREIGN KEY (SellerID) REFERENCES users(UserID)
+);
+
+CREATE TABLE offers (
+    OfferID VARCHAR(50),
+    ListingID VARCHAR(50),
+    BuyerID VARCHAR(50),
+    SellerID VARCHAR(50),
+    OriginalPrice INT NOT NULL,
+    OfferAmount INT NOT NULL,
+    Status VARCHAR(50) NOT NULL, -- PENDING, ACCEPTED, REJECTED, EXPIRED
+    CreatedDate VARCHAR(50),
+    ExpiryDate VARCHAR(50),
+    PRIMARY KEY (OfferID),
+    FOREIGN KEY (ListingID) REFERENCES listings(AdID),
+    FOREIGN KEY (BuyerID) REFERENCES users(UserID),
+    FOREIGN KEY (SellerID) REFERENCES users(UserID)
+);
+
+CREATE TABLE offers (
+    OfferID VARCHAR(50),
+    ListingID VARCHAR(50),
+    BuyerID VARCHAR(50),
+    SellerID VARCHAR(50),
+    OriginalPrice INT NOT NULL,
+    OfferAmount INT NOT NULL,
+    Status VARCHAR(50) NOT NULL, -- PENDING, ACCEPTED, REJECTED, EXPIRED
+    CreatedDate VARCHAR(50),
+    ExpiryDate VARCHAR(50),
+    PRIMARY KEY (OfferID),
+    FOREIGN KEY (ListingID) REFERENCES listings(AdID),
+    FOREIGN KEY (BuyerID) REFERENCES users(UserID),
+    FOREIGN KEY (SellerID) REFERENCES users(UserID)
+);
+
+CREATE TABLE messages (
+    MessageID VARCHAR(50),
+    SenderID VARCHAR(50),
+    ReceiverID VARCHAR(50),
+    Message VARCHAR(512) NOT NULL,
+    Date VARCHAR(50),
+    IsRead BOOLEAN DEFAULT FALSE,
+    PRIMARY KEY (MessageID),
+    FOREIGN KEY (SenderID) REFERENCES users(UserID),
+    FOREIGN KEY (ReceiverID) REFERENCES users(UserID)
+);
+
+CREATE TABLE notifications (
+    NotificationID VARCHAR(50),
+    UserID VARCHAR(50),
+    SourceID VARCHAR(100),  -- ID of the related object (listing, offer, etc.)
+    SourceType VARCHAR(50), -- Type of source (LISTING, OFFER, MESSAGE, etc.)
+    Type VARCHAR(50),       -- FAVORITE_PRICE_CHANGE, FAVORITE_OFFER, FAVORITE_SOLD, ITEM_SOLD, etc.
+    Message VARCHAR(255),
+    IsRead BOOLEAN DEFAULT FALSE,
+    CreatedDate VARCHAR(50),
+    PRIMARY KEY (NotificationID),
+    FOREIGN KEY (UserID) REFERENCES users(UserID)
+);
+
+-- Add index for efficient querying of user notifications
+CREATE INDEX idx_notifications_userid ON notifications(UserID);
+CREATE INDEX idx_notifications_isread ON notifications(IsRead);

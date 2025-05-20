@@ -5,10 +5,6 @@ import com.example.demo.domain.entities.User;
 import com.example.demo.exceptions.user.DuplicateUserException;
 import org.springframework.stereotype.Service;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
-
 @Service
 public class CreateUserUseCase {
 
@@ -18,31 +14,21 @@ public class CreateUserUseCase {
         this.userRepository = userRepository;
     }
 
-    public User Execute(String username, String Alias, String password, String Email, String address, String Number, String UserID) {
-        if (userRepository.existsByEmail(Email)) {
-            throw new DuplicateUserException("A user with this account name already exists");
+    public User Execute(String name, String alias, String password, String email, String number, String address) {
+        if (userRepository.existsByEmail(email)) {
+            throw new DuplicateUserException("A user with this email already exists");
         }
 
         User user = new User(
-                UserID,
-                Alias,
-                username,
-                password = oneWayHashSHA256(password),
-                Email,
-                Number,
+                name,
+                alias,
+                password,
+                email,
+                number,
                 address
         );
+
+
         return userRepository.save(user);
-
-    }
-
-    private String oneWayHashSHA256(String input) {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hashBytes = digest.digest(input.getBytes());
-            return Base64.getEncoder().encodeToString(hashBytes);
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException("SHA-256 algorithm not found", e);
-        }
     }
 }

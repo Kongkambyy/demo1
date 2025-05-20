@@ -36,10 +36,9 @@ public class UpdateUserUseCase {
         }
 
         User updatedUser = new User(
-                existingUser.getUserID(),
-                alias != null && !alias.trim().isEmpty() ? alias.trim() : existingUser.getAlias(),
                 name != null && !name.trim().isEmpty() ? name.trim() : existingUser.getName(),
-                password != null && !password.trim().isEmpty() ? hashPassword(password) : existingUser.getPassword(),
+                alias != null && !alias.trim().isEmpty() ? alias.trim() : existingUser.getAlias(),
+                password != null && !password.trim().isEmpty() ? password : existingUser.getPassword(),
                 email != null && !email.trim().isEmpty() ? email.trim() : existingUser.getEmail(),
                 number != null && !number.trim().isEmpty() ? number.trim() : existingUser.getNumber(),
                 address != null && !address.trim().isEmpty() ? address.trim() : existingUser.getAddress()
@@ -61,9 +60,5 @@ public class UpdateUserUseCase {
                 updates.getAddress(),
                 updates.getPassword()
         );
-    }
-
-    private String hashPassword(String plainPassword) {
-        return plainPassword;
     }
 }

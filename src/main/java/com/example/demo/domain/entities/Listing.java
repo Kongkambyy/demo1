@@ -11,9 +11,9 @@ public class Listing {
     private String condition;
     private String status;
     private String brand;
+    private int categoryID;
 
-    public Listing(String adID, String userID, String title, String description, int price, String createdDate, String condition, String status) {
-        this.adID = adID;
+    public Listing(String userID, String title, String description, int price, String createdDate, String condition, String status) {
         this.userID = userID;
         this.title = title;
         this.description = description;
@@ -21,7 +21,6 @@ public class Listing {
         this.createdDate = createdDate;
         this.condition = condition;
         this.status = status;
-        this.brand = brand;
     }
 
     public String getAdID() {
@@ -94,5 +93,13 @@ public class Listing {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public int getCategoryID() {
+        return categoryID;
+    }
+
+    public void setCategoryID(int categoryID) {
+        this.categoryID = categoryID;
     }
 }

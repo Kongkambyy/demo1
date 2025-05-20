@@ -18,7 +18,6 @@ public class UserLoginUseCase {
     }
 
     public User execute(String email, String password) {
-
         if (email == null || email.trim().isEmpty()) {
             LoggerUtility.logWarning("Login attempt with empty email");
             throw new InvalidCredentialsException("Email cannot be empty");
@@ -38,16 +37,12 @@ public class UserLoginUseCase {
 
         User user = userOptional.get();
 
-        if (!verifyPassword(password, user.getPassword())) {
+        if (!userRepository.verifyPassword(password, user.getPassword())) {
             LoggerUtility.logWarning("Login attempt with incorrect password for email: " + email);
             throw new InvalidCredentialsException("Invalid email or password");
         }
 
         LoggerUtility.logEvent("Successful login for email: " + email);
         return user;
-    }
-
-    private boolean verifyPassword(String plainPassword, String storedPassword) {
-        return plainPassword.equals(storedPassword);
     }
 }

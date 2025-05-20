@@ -45,17 +45,18 @@ public class MessageRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    // RowMapper til at konvertere database rækker til Message objekter
     private final RowMapper<Message> messageRowMapper = new RowMapper<Message>() {
         @Override
         public Message mapRow(ResultSet rs, int rowNum) throws SQLException {
-            return new Message(
-                    rs.getString("MessageID"),
+            Message message = new Message(
                     rs.getString("SenderID"),
                     rs.getString("ReceiverID"),
                     rs.getString("Message"),
                     rs.getString("Date")
             );
+            message.setMessageID(rs.getString("MessageID"));
+            message.setRead(rs.getBoolean("IsRead"));
+            return message;
         }
     };
 
@@ -64,21 +65,21 @@ public class MessageRepository {
         LoggerUtility.logEvent("MessageRepository initialiseret");
     }
 
-    // Sender ny besked
     public Message save(Message message) {
         if (message.getMessageID() == null || message.getMessageID().isEmpty()) {
             message.setMessageID(UUID.randomUUID().toString());
         }
 
-        String sql = "INSERT INTO messages (MessageID, SenderID, ReceiverID, Message, Date) " +
-                "VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO messages (MessageID, SenderID, ReceiverID, Message, Date, IsRead) " +
+                "VALUES (?, ?, ?, ?, ?, ?)";
 
         jdbcTemplate.update(sql,
                 message.getMessageID(),
                 message.getSenderID(),
                 message.getReceiverID(),
                 message.getMessage(),
-                message.getDate()
+                message.getDate(),
+                message.isRead()
         );
 
         LoggerUtility.logEvent("Besked sendt fra " + message.getSenderID() + " til " + message.getReceiverID());

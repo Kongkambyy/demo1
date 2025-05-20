@@ -16,6 +16,9 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
 
 /**
  * UserRepository - JDBC implementering for bruger datahåndtering
@@ -30,6 +33,7 @@ import java.util.UUID;
  * - Slette brugere fra systemet
  * - Validere brugereksistens
  * - Håndtere login-validering med email og password
+ * - Håndtere password hashing
  *
  * Klassen bruger Spring's JdbcTemplate for at udføre SQL forespørgsler og
  * implementerer RowMapper interfacet for at mappe database rækker til User objekter.
@@ -40,7 +44,7 @@ import java.util.UUID;
  * - Logger alle vigtige operationer og fejl via LoggerUtility
  *
  * Sikkerhed:
- * - Passwords gemmes aldrig i klartekst (forventes at være hashed før lagring)
+ * - Passwords gemmes aldrig i klartekst, de hashes med SHA-256 før lagring
  * - Bruger parameteriserede SQL queries for at undgå SQL injection
  */
 
@@ -49,47 +53,86 @@ public class UserRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    // RowMapper til at konvertere database rækker til User objekter
     private final RowMapper<User> userRowMapper = new RowMapper<User>() {
         @Override
         public User mapRow(ResultSet rs, int rowNum) throws SQLException {
-            return new User(
-                    rs.getString("UserID"),
-                    rs.getString("Alias"),
+            User user = new User(
                     rs.getString("Name"),
+                    rs.getString("Alias"),
                     rs.getString("Password"),
                     rs.getString("Email"),
                     rs.getString("Number"),
                     rs.getString("Address")
             );
+            user.setUserID(rs.getString("UserID"));
+            return user;
         }
     };
+
 
     public UserRepository(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
         LoggerUtility.logEvent("UserRepository initialiseret");
     }
 
-    // Opretter ny bruger i databasen
+    private String hashPassword(String password) {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hashBytes = digest.digest(password.getBytes());
+            return Base64.getEncoder().encodeToString(hashBytes);
+        } catch (NoSuchAlgorithmException e) {
+            LoggerUtility.logError("SHA-256 algorithm not found: " + e.getMessage());
+            throw new RuntimeException("SHA-256 algorithm not found", e);
+        }
+    }
+
+    public boolean verifyPassword(String plainPassword, String storedPassword) {
+        String hashedPassword = hashPassword(plainPassword);
+        return hashedPassword.equals(storedPassword);
+    }
+
+    private boolean isPasswordHashed(String password) {
+        return password != null && password.length() >= 40 && !password.contains(" ");
+    }
+
     public User save(User user) {
         // Generer UserID hvis det ikke er sat
         if (user.getUserID() == null || user.getUserID().isEmpty()) {
             user.setUserID(UUID.randomUUID().toString());
         }
 
-        String sql = "INSERT INTO users (UserID, Name, Password, Email, Number, Address) VALUES (?, ?, ?, ?, ?, ?)";
+        // Hash password if it's not already hashed
+        String hashedPassword;
+        if (!isPasswordHashed(user.getPassword())) {
+            hashedPassword = hashPassword(user.getPassword());
+        } else {
+            hashedPassword = user.getPassword();
+        }
+
+        String sql = "INSERT INTO users (UserID, Name, Alias, Password, Email, Number, Address) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try {
             jdbcTemplate.update(sql,
                     user.getUserID(),
                     user.getName(),
-                    user.getPassword(),
+                    user.getAlias(),
+                    hashedPassword,
                     user.getEmail(),
                     user.getNumber(),
                     user.getAddress()
             );
             LoggerUtility.logEvent("Bruger oprettet: " + user.getEmail());
-            return user;
+
+            User savedUser = new User(
+                    user.getName(),
+                    user.getAlias(),
+                    hashedPassword,
+                    user.getEmail(),
+                    user.getNumber(),
+                    user.getAddress()
+            );
+            savedUser.setUserID(user.getUserID());
+            return savedUser;
         } catch (DuplicateKeyException e) {
             LoggerUtility.logError("Duplikat bruger forsøgt oprettet: " + user.getEmail());
             throw new DuplicateUserException(user.getEmail());
@@ -99,7 +142,6 @@ public class UserRepository {
         }
     }
 
-    // Finder bruger baseret på ID
     public Optional<User> findById(String userId) {
         String sql = "SELECT * FROM users WHERE UserID = ?";
 
@@ -124,13 +166,21 @@ public class UserRepository {
         }
     }
 
-    // Opdaterer eksisterende bruger
     public User update(User user) {
-        String sql = "UPDATE users SET Name = ?, Password = ?, Email = ?, Number = ?, Address = ? WHERE UserID = ?";
+        // Hash password if needed
+        String passwordToUse;
+        if (!isPasswordHashed(user.getPassword())) {
+            passwordToUse = hashPassword(user.getPassword());
+        } else {
+            passwordToUse = user.getPassword();
+        }
+
+        String sql = "UPDATE users SET Name = ?, Alias = ?, Password = ?, Email = ?, Number = ?, Address = ? WHERE UserID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql,
                 user.getName(),
-                user.getPassword(),
+                user.getAlias(),
+                passwordToUse,  // Use hashed password
                 user.getEmail(),
                 user.getNumber(),
                 user.getAddress(),
@@ -143,7 +193,17 @@ public class UserRepository {
         }
 
         LoggerUtility.logEvent("Bruger opdateret: " + user.getUserID());
-        return user;
+
+        // Return user with hashed password
+        User updatedUser = new User(
+                user.getName(),
+                user.getAlias(),
+                passwordToUse,
+                user.getEmail(),
+                user.getNumber(),
+                user.getAddress()
+        );
+        return updatedUser;
     }
 
     // Sletter bruger
@@ -166,10 +226,18 @@ public class UserRepository {
         return jdbcTemplate.query(sql, userRowMapper);
     }
 
-    // Tjekker om bruger eksisterer - HER ER DEN!
+    // Tjekker om bruger eksisterer
     public boolean existsByEmail(String email) {
         String sql = "SELECT COUNT(*) FROM users WHERE Email = ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email);
         return count != null && count > 0;
+    }
+
+    public boolean verifyUserCredentials(String email, String plainPassword) {
+        Optional<User> userOpt = findByEmail(email);
+        if (userOpt.isEmpty()) {
+            return false;
+        }
+        return verifyPassword(plainPassword, userOpt.get().getPassword());
     }
 }
