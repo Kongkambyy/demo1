@@ -18,7 +18,7 @@ public class UpdateListingUseCase {
     }
 
     public Listing execute(String userId, String adId, String title, String description,
-                           Integer price, String condition, String brand) {
+                           Integer price, String ItemCondition, String brand) {
 
         Optional<Listing> existingListingOpt = listingRepository.findById(adId);
 
@@ -46,8 +46,8 @@ public class UpdateListingUseCase {
             existingListing.setPrice(price);
         }
 
-        if (condition != null && !condition.trim().isEmpty()) {
-            existingListing.setCondition(condition.trim());
+        if (ItemCondition != null && !ItemCondition.trim().isEmpty()) {
+            existingListing.setItemCondition(ItemCondition.trim());
         }
 
         if (brand != null) {

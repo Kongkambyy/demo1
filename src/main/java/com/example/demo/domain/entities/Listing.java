@@ -8,18 +8,18 @@ public class Listing {
     private String description;
     private int price;
     private String createdDate;
-    private String condition;
+    private String itemCondition;
     private String status;
     private String brand;
     private int categoryID;
 
-    public Listing(String userID, String title, String description, int price, String createdDate, String condition, String status) {
+    public Listing(String userID, String title, String description, int price, String createdDate, String itemCondition, String status) {
         this.userID = userID;
         this.title = title;
         this.description = description;
         this.price = price;
         this.createdDate = createdDate;
-        this.condition = condition;
+        this.itemCondition = itemCondition;
         this.status = status;
     }
 
@@ -71,12 +71,12 @@ public class Listing {
         this.createdDate = createdDate;
     }
 
-    public String getCondition() {
-        return condition;
+    public String getItemCondition() {
+        return itemCondition;
     }
 
-    public void setCondition(String condition) {
-        this.condition = condition;
+    public void setItemCondition(String condition) {
+        this.itemCondition = condition;
     }
 
     public String getStatus() {

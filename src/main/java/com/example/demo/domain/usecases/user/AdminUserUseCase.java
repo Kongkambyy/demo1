@@ -79,7 +79,7 @@ public class AdminUserUseCase {
         if (title != null) listing.setTitle(title);
         if (description != null) listing.setDescription(description);
         if (price != null) listing.setPrice(price);
-        if (condition != null) listing.setCondition(condition);
+        if (condition != null) listing.setItemCondition(condition);
         if (status != null) listing.setStatus(status);
         if (brand != null) listing.setBrand(brand);
 

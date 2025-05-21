@@ -60,7 +60,7 @@ public class ListingRepository {
                     rs.getString("Description"),
                     rs.getInt("Price"),
                     rs.getString("CreatedDate"),
-                    rs.getString("Condition"),
+                    rs.getString("ItemCondition"),
                     rs.getString("Status")
             );
             listing.setAdID(rs.getString("AdID"));
@@ -80,7 +80,7 @@ public class ListingRepository {
             listing.setAdID(UUID.randomUUID().toString());
         }
 
-        String sql = "INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, Condition, Status, Brand, CategoryID) " +
+        String sql = "INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, ItemCondition, Status, Brand, CategoryID) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         jdbcTemplate.update(sql,
@@ -90,7 +90,7 @@ public class ListingRepository {
                 listing.getDescription(),
                 listing.getPrice(),
                 listing.getCreatedDate(),
-                listing.getCondition(),
+                listing.getItemCondition(),
                 listing.getStatus(),
                 listing.getBrand(),
                 listing.getCategoryID()
@@ -134,7 +134,7 @@ public class ListingRepository {
                 listing.getTitle(),
                 listing.getDescription(),
                 listing.getPrice(),
-                listing.getCondition(),
+                listing.getItemCondition(),
                 listing.getStatus(),
                 listing.getBrand(),
                 listing.getCategoryID(),

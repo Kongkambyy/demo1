@@ -89,22 +89,6 @@ CREATE TABLE offers (
     FOREIGN KEY (SellerID) REFERENCES users(UserID)
 );
 
-CREATE TABLE offers (
-    OfferID VARCHAR(50),
-    ListingID VARCHAR(50),
-    BuyerID VARCHAR(50),
-    SellerID VARCHAR(50),
-    OriginalPrice INT NOT NULL,
-    OfferAmount INT NOT NULL,
-    Status VARCHAR(50) NOT NULL, -- PENDING, ACCEPTED, REJECTED, EXPIRED
-    CreatedDate VARCHAR(50),
-    ExpiryDate VARCHAR(50),
-    PRIMARY KEY (OfferID),
-    FOREIGN KEY (ListingID) REFERENCES listings(AdID),
-    FOREIGN KEY (BuyerID) REFERENCES users(UserID),
-    FOREIGN KEY (SellerID) REFERENCES users(UserID)
-);
-
 CREATE TABLE messages (
     MessageID VARCHAR(50),
     SenderID VARCHAR(50),
