@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilbert – Profil</title>
+  <link rel="stylesheet" th:href="@{/css/styles.profile.css}" />
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favoritter">
+      <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifikationer">
+      <img src="/images/Notification.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/profile}" aria-label="user">
+      <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/cart}" aria-label="cart">
+      <img src="/images/cart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="overlay"></div>
+
+<!-- Mobile menu -->
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Luk menu">×</button>
+  <ul>
+    <li><a href="/profile">Profil</a></li>
+    <li><a href="/orders">Ordrer</a></li>
+    <li><a href="/favorites">Favoritter</a></li>
+    <li><a href="/cart">Kurv</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/sell">Sælg</a></li>
+    <li><a href="#">Designere</a></li>
+    <li><a href="#">Herre</a></li>
+    <li><a href="#">Dame</a></li>
+    <li><a href="#">Skønhed</a></li>
+    <li><a href="#">Bolig</a></li>
+    <li><a href="/settings">Indstillinger</a></li>
+    <li><a href="/logout">Log ud</a></li>
+  </ul>
+</aside>
+
+<!-- Menu toggle script -->
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <ul>
+    <li class="dropdown">
+      <a href="#">DESIGNERS</a>
+      <ul class="submenu">
+        <li><a href="#">Luxury</a></li>
+        <li><a href="#">Streetwear</a></li>
+        <li><a href="#">Minimalist</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">MEN</a>
+      <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">WOMEN</a>
+      <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">BEAUTY</a>
+      <ul class="submenu">
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Fragrance</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">HOME</a>
+      <ul class="submenu">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Textiles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- Profile header -->
+<section class="profile-header">
+  <div class="avatar"></div>
+  <div class="info">
+    <h2 th:text="${user != null ? user.name : 'Morten'}">
+      <span th:text="${user != null ? '@' + user.alias : '@Morten2'}"></span>
+    </h2>
+    <p>📍 Denmark</p>
+    <p th:text="${soldItemsCount != null ? soldItemsCount : '18'} + ' Items Sold'">18 Items Sold</p>
+    <p th:text="${activeListingsCount != null ? activeListingsCount : '2'} + ' Items for Sale'">2 Items for Sale</p>
+  </div>
+  <div class="stats">
+    <a th:href="@{/followers}"><strong th:text="${followersCount != null ? followersCount : '284'}">284</strong><br>Followers</a>
+    <a th:href="@{/following}"><strong th:text="${followingCount != null ? followingCount : '79'}">79</strong><br>Following</a>
+  </div>
+</section>
+
+<!-- Profile navigation -->
+<nav class="profile-nav">
+  <a th:href="@{/items}" th:classappend="${section != null && section == 'items' ? 'active' : ''}">ITEMS</a>
+  <a th:href="@{/sales}" th:classappend="${section != null && section == 'sales' ? 'active' : ''}">SALES</a>
+  <a th:href="@{/orders}" th:classappend="${section != null && section == 'orders' ? 'active' : ''}">ORDERS</a>
+  <a th:href="@{/info}" th:classappend="${section != null && section == 'info' ? 'active' : ''}">INFO</a>
+  <a th:href="@{/help}" th:classappend="${section != null && section == 'help' ? 'active' : ''}">HELP</a>
+</nav>
+
+<!-- Content section - will be filled by specific views -->
+<main th:if="${listings != null}">
+  <!-- Just a placeholder for potential content -->
+  <div class="listings-container">
+    <!-- This section would be populated with actual listings when implemented -->
+  </div>
+</main>
+
+<!-- Mobile footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Søg">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/favorites" class="footer-btn" aria-label="Favoritter">
+    <img src="/images/heart.svg" class="icon" alt="">
+  </a>
+  <a href="/sell" class="footer-btn" aria-label="Me/Sell">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+  <a href="/notifications" class="footer-btn" aria-label="Notifikationer">
+    <img src="/images/Notification.svg" class="icon" alt="">
+  </a>
+</footer>
+</body>
+</html>

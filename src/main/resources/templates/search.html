@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilbert – Search</title>
+  <link rel="stylesheet" th:href="@{/css/styles.search.css}" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favoritter">
+      <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifikationer">
+      <img src="/images/Notification.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/profile}" aria-label="user">
+      <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/cart}" aria-label="cart">
+      <img src="/images/cart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="overlay"></div>
+
+<!-- Mobile menu -->
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Luk menu">×</button>
+  <ul>
+    <li><a href="/profile">Profil</a></li>
+    <li><a href="/orders">Ordrer</a></li>
+    <li><a href="/favorites">Favoritter</a></li>
+    <li><a href="/cart">Kurv</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/sell">Sælg</a></li>
+    <li><a href="#">Designere</a></li>
+    <li><a href="#">Herre</a></li>
+    <li><a href="#">Dame</a></li>
+    <li><a href="#">Skønhed</a></li>
+    <li><a href="#">Bolig</a></li>
+    <li><a href="/settings">Indstillinger</a></li>
+    <li><a href="/logout">Log ud</a></li>
+  </ul>
+</aside>
+
+<!-- Mobile menu script -->
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <ul>
+    <li class="dropdown">
+      <a href="#">DESIGNERS</a>
+      <ul class="submenu">
+        <li><a href="#">Luxury</a></li>
+        <li><a href="#">Streetwear</a></li>
+        <li><a href="#">Minimalist</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">MEN</a>
+      <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">WOMEN</a>
+      <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">BEAUTY</a>
+      <ul class="submenu">
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Fragrance</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">HOME</a>
+      <ul class="submenu">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Textiles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb">
+  <a th:href="@{/}">Home</a>
+  <span class="separator">›</span>
+  <span th:if="${breadcrumb != null}" th:text="${breadcrumb}">Men's Fashion Clothing</span>
+  <span th:unless="${breadcrumb != null}">Search Results</span>
+</nav>
+
+<!-- Search Bar -->
+<div class="search-container">
+  <form th:action="@{/search}" method="get" class="search-form">
+    <input type="text" name="keyword" th:value="${keyword}" placeholder="Search for products..." class="search-input">
+    <!-- Hidden filters preserved -->
+    <input type="hidden" name="category" th:value="${category}" th:if="${category != null}">
+    <input type="hidden" name="designer" th:value="${designer}" th:if="${designer != null}">
+    <input type="hidden" name="condition" th:value="${condition}" th:if="${condition != null}">
+    <input type="hidden" name="size" th:value="${size}" th:if="${size != null}">
+    <input type="hidden" name="color" th:value="${color}" th:if="${color != null}">
+    <input type="hidden" name="material" th:value="${material}" th:if="${material != null}">
+    <input type="hidden" name="ship" th:value="${ship}" th:if="${ship != null}">
+    <input type="hidden" name="price" th:value="${price}" th:if="${price != null}">
+    <input type="hidden" name="sort" th:value="${sort}" th:if="${sort != null}">
+    <input type="hidden" name="filter" th:value="${filter}" th:if="${filter != null}">
+    <button type="submit" class="search-button">Search</button>
+  </form>
+</div>
+
+<!-- Results Header -->
+<div class="results-header">
+  <h1 th:text="${category != null ? category : 'Search Results'}">Men</h1>
+  <span class="count" th:text="${count != null ? '- ' + count + ' Results' : ''}">- 10 000 Results</span>
+</div>
+
+<!-- Filter Bar -->
+<nav class="filter-bar">
+  <!-- Your existing filter dropdowns remain here unchanged -->
+  <!-- ... -->
+</nav>
+
+<!-- Product Grid -->
+<section class="product-grid">
+  <div th:if="${listings != null && !listings.isEmpty()}" th:each="listing : ${listings}" class="product-card" th:onclick="'window.location.href=\'' + @{/listing/{id}(id=${listing.adID})} + '\''">
+    <div class="product-image">
+      <img src="/images/product-placeholder.svg" alt="Product image">
+    </div>
+    <div class="title" th:text="${listing.brand != null ? listing.brand + ' – ' + listing.title : listing.title}">Product Title</div>
+    <div class="price" th:text="${listing.price + ' DKK'}">Price DKK</div>
+    <div class="meta" th:text="${'Direct Shipping · ' + (listing.condition != null ? listing.condition : 'Standard')}">Shipping Info</div>
+  </div>
+
+  <div th:if="${listings != null && listings.isEmpty()}" class="no-results">
+    <h3>No listings found</h3>
+    <p>Try adjusting your search filters or browse our categories</p>
+  </div>
+</section>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home"><img src="/images/home.svg" class="icon" alt=""></a>
+  <a href="/search" class="footer-btn" aria-label="Søg"><img src="/images/search.svg" class="icon" alt=""></a>
+  <a href="/favorites" class="footer-btn" aria-label="Favoritter"><img src="/images/heart.svg" class="icon" alt=""></a>
+  <a href="/sell" class="footer-btn" aria-label="Me/Sell"><img src="/images/user.svg" class="icon" alt=""></a>
+  <a href="/notifications" class="footer-btn" aria-label="Notifikationer"><img src="/images/Notification.svg" class="icon" alt=""></a>
+</footer>
+
+</body>
+</html>
