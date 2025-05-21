@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilbert – Register</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <style>
+    .register-container {
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      color: #F8f0e5;
+    }
+
+    .register-container h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #432a26;
+      background: #F8f0e5;
+      border-radius: 4px;
+      font-family: 'Times New Roman', serif;
+    }
+
+    .btn-register {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: #432a26;
+      color: #F8f0e5;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: 'Times New Roman', serif;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .btn-register:hover {
+      background: #5b433f;
+    }
+
+    .login-link {
+      text-align: center;
+    }
+
+    .login-link a {
+      color: #F8f0e5;
+      text-decoration: underline;
+    }
+
+    .error-message {
+      background: rgba(255, 0, 0, 0.1);
+      border: 1px solid rgba(255, 0, 0, 0.3);
+      color: #F8f0e5;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+
+    .row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .col {
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .register-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="overlay"></div>
+
+<!-- Mobile menu -->
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Close menu">×</button>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/register">Register</a></li>
+  </ul>
+</aside>
+
+<!-- Menu toggle script -->
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<!-- Registration container -->
+<div class="register-container">
+  <h1>Create Account</h1>
+
+  <!-- Error message if registration fails -->
+  <div th:if="${error}" class="error-message" th:text="${error}">
+    Email already in use
+  </div>
+
+  <form th:action="@{/register}" method="post">
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="alias">Username</label>
+          <input type="text" id="alias" name="alias" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="6">
+    </div>
+
+    <div class="form-group">
+      <label for="number">Phone Number (Optional)</label>
+      <input type="tel" id="number" name="number">
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address (Optional)</label>
+      <input type="text" id="address" name="address">
+    </div>
+
+    <button type="submit" class="btn-register">Register</button>
+
+    <div class="login-link">
+      <p>Already have an account? <a th:href="@{/login}">Log in</a></p>
+    </div>
+  </form>
+</div>
+
+<!-- Mobile footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Search">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/login" class="footer-btn" aria-label="Login">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+</footer>
+</body>
+</html>

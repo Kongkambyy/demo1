@@ -1,13 +1,227 @@
 ﻿<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="us">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gilbert – Profil</title>
-  <link rel="stylesheet" th:href="@{/css/styles.profile.css}" />
+  <title>Gilbert – Profile</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <style>
+    /* Add profile-specific styles */
+    .profile-header {
+      display: flex;
+      align-items: center;
+      padding: 4rem 5rem;
+      border-bottom: 1px solid #F8f0e5;
+    }
+
+    .profile-header .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ccc;
+      margin-right: 2rem;
+    }
+
+    .profile-header .info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-header .info span {
+      opacity: 60%;
+    }
+
+    .profile-header .info p {
+      font-size: 1rem;
+      margin: 0.2rem 0;
+    }
+
+    .profile-header .stats {
+      margin-left: auto;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .profile-header .stats > a {
+      text-align: center;
+      border: 1px solid #F8f0e5;
+      color: #F8f0e5;
+      padding: 1rem 2rem;
+      text-decoration: none;
+    }
+
+    .profile-nav {
+      display: flex;
+      justify-content: space-around;
+      background: #004224;
+      padding: 1rem;
+    }
+
+    .profile-nav a {
+      color: #F8f0e5;
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    .profile-nav a.active,
+    .profile-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .listings-container, .sales-container, .orders-container, .info-container, .help-container {
+      padding: 2rem 5rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .listings-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .listing-card {
+      background: #F8f0e5;
+      color: #432a26;
+      border: 1px solid #432a26;
+      padding: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .listing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .listing-image {
+      width: 100%;
+      height: 200px;
+      background: #e0e0e0;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .listing-details h3 {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      font-weight: bold;
+    }
+
+    .listing-price {
+      font-size: 0.9rem;
+      margin: 0.25rem 0;
+      font-weight: bold;
+    }
+
+    .listing-meta {
+      font-size: 0.8rem;
+      color: #432a26;
+      opacity: 0.7;
+    }
+
+    /* User info card & help card styling */
+    .user-info-card, .help-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .user-info-card h3, .help-card h3 {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 0.5rem;
+    }
+
+    .info-row {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .info-row .label {
+      width: 30%;
+      font-weight: bold;
+    }
+
+    .info-row .value {
+      width: 70%;
+    }
+
+    .btn-primary, .btn-secondary {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #432a26;
+      color: #F8f0e5;
+      border: none;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #F8f0e5;
+      border: 1px solid #F8f0e5;
+      margin-right: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+
+      .profile-header .avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      .profile-header .stats {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .listings-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .listings-container, .sales-container, .orders-container, .info-container, .help-container {
+        padding: 1rem;
+      }
+
+      .info-row {
+        flex-direction: column;
+      }
+
+      .info-row .label, .info-row .value {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-<!-- Header -->
 <header class="header">
   <a th:href="@{/index}" class="logo">GILBERT</a>
   <div class="icons">
@@ -29,30 +243,27 @@
   </div>
 </header>
 
-<!-- Mobile menu overlay -->
 <div class="overlay"></div>
 
-<!-- Mobile menu -->
 <aside class="mobile-menu">
-  <button class="close-btn" aria-label="Luk menu">×</button>
+  <button class="close-btn" aria-label="Close menu">×</button>
   <ul>
-    <li><a href="/profile">Profil</a></li>
-    <li><a href="/orders">Ordrer</a></li>
-    <li><a href="/favorites">Favoritter</a></li>
-    <li><a href="/cart">Kurv</a></li>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/cart">Cart</a></li>
     <li><a href="/shop">Shop</a></li>
-    <li><a href="/sell">Sælg</a></li>
-    <li><a href="#">Designere</a></li>
-    <li><a href="#">Herre</a></li>
-    <li><a href="#">Dame</a></li>
-    <li><a href="#">Skønhed</a></li>
-    <li><a href="#">Bolig</a></li>
-    <li><a href="/settings">Indstillinger</a></li>
-    <li><a href="/logout">Log ud</a></li>
+    <li><a href="/sell">Sell</a></li>
+    <li><a href="#">Designers</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Woman</a></li>
+    <li><a href="#">Beauty</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Log Out</a></li>
   </ul>
 </aside>
 
-<!-- Menu toggle script -->
 <script>
   const menuBtn = document.querySelector('.menu-btn');
   const overlay = document.querySelector('.overlay');
@@ -69,7 +280,6 @@
   overlay.addEventListener('click', toggleMenu);
 </script>
 
-<!-- Navigation -->
 <nav class="navbar">
   <ul>
     <li class="dropdown">
@@ -119,16 +329,19 @@
 <section class="profile-header">
   <div class="avatar"></div>
   <div class="info">
-    <h2 th:text="${user != null ? user.name : 'Morten'}">
-      <span th:text="${user != null ? '@' + user.alias : '@Morten2'}"></span>
-    </h2>
-    <p>📍 Denmark</p>
-    <p th:text="${soldItemsCount != null ? soldItemsCount : '18'} + ' Items Sold'">18 Items Sold</p>
-    <p th:text="${activeListingsCount != null ? activeListingsCount : '2'} + ' Items for Sale'">2 Items for Sale</p>
+    <h2 th:if="${user != null}" th:text="${user.name}">User Name</h2>
+    <span th:if="${user != null}" th:text="'@' + ${user.alias}">@UserAlias</span>
+    <p th:if="${user != null && user.address != null}" th:text="'📍 ' + ${user.address}">📍 Location</p>
+    <p th:text="${soldItemsCount != null ? soldItemsCount : '0'} + ' Items Sold'">0 Items Sold</p>
+    <p th:text="${activeListingsCount != null ? activeListingsCount : '0'} + ' Items for Sale'">0 Items for Sale</p>
   </div>
   <div class="stats">
-    <a th:href="@{/followers}"><strong th:text="${followersCount != null ? followersCount : '284'}">284</strong><br>Followers</a>
-    <a th:href="@{/following}"><strong th:text="${followingCount != null ? followingCount : '79'}">79</strong><br>Following</a>
+    <a th:href="@{/followers}">
+      <strong th:text="${followersCount != null ? followersCount : '0'}">0</strong><br>Followers
+    </a>
+    <a th:href="@{/following}">
+      <strong th:text="${followingCount != null ? followingCount : '0'}">0</strong><br>Following
+    </a>
   </div>
 </section>
 
@@ -141,13 +354,91 @@
   <a th:href="@{/help}" th:classappend="${section != null && section == 'help' ? 'active' : ''}">HELP</a>
 </nav>
 
-<!-- Content section - will be filled by specific views -->
-<main th:if="${listings != null}">
-  <!-- Just a placeholder for potential content -->
-  <div class="listings-container">
-    <!-- This section would be populated with actual listings when implemented -->
+<!-- Content section - Items -->
+<div th:if="${section == null || section == 'items'}" class="listings-container">
+  <div th:if="${listings == null || listings.isEmpty()}" class="empty-state">
+    <p>You don't have any active listings.</p>
+    <button class="btn-sell" th:onclick="|location.href='@{/sell}'|">CREATE LISTING</button>
   </div>
-</main>
+
+  <div th:if="${listings != null && !listings.isEmpty()}" class="listings-grid">
+    <div th:each="listing : ${listings}" class="listing-card">
+      <div class="listing-image">
+        <!-- No image yet -->
+      </div>
+      <div class="listing-details">
+        <h3 th:text="${listing.title}">Listing Title</h3>
+        <p class="listing-price" th:text="${listing.price + ' DKK'}">0 DKK</p>
+        <p class="listing-meta" th:text="${listing.status + ' • ' + listing.createdDate}">Status • Date</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sales section -->
+<div th:if="${section == 'sales'}" class="sales-container">
+  <div th:if="${listings == null || listings.isEmpty()}" class="empty-state">
+    <p>You haven't sold any items yet.</p>
+  </div>
+
+  <div th:if="${listings != null && !listings.isEmpty()}" class="listings-grid">
+    <div th:each="listing : ${listings}" class="listing-card">
+      <div class="listing-image">
+        <!-- No image yet -->
+      </div>
+      <div class="listing-details">
+        <h3 th:text="${listing.title}">Listing Title</h3>
+        <p class="listing-price" th:text="${listing.price + ' DKK'}">0 DKK</p>
+        <p class="listing-meta" th:text="${'Sold on ' + listing.createdDate}">Sold on Date</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Orders section -->
+<div th:if="${section == 'orders'}" class="orders-container">
+  <div class="empty-state">
+    <p>Your purchase history will appear here.</p>
+  </div>
+</div>
+
+<!-- Info section -->
+<div th:if="${section == 'info'}" class="info-container">
+  <div class="user-info-card" th:if="${user != null}">
+    <h3>User Information</h3>
+    <div class="info-row">
+      <span class="label">Name:</span>
+      <span class="value" th:text="${user.name}">User Name</span>
+    </div>
+    <div class="info-row">
+      <span class="label">Username:</span>
+      <span class="value" th:text="${user.alias}">User Alias</span>
+    </div>
+    <div class="info-row">
+      <span class="label">Email:</span>
+      <span class="value" th:text="${user.email}">user@example.com</span>
+    </div>
+    <div class="info-row" th:if="${user.number != null}">
+      <span class="label">Phone:</span>
+      <span class="value" th:text="${user.number}">Phone Number</span>
+    </div>
+    <div class="info-row" th:if="${user.address != null}">
+      <span class="label">Address:</span>
+      <span class="value" th:text="${user.address}">User Address</span>
+    </div>
+    <a th:href="@{/settings}" class="btn-secondary">Edit Profile</a>
+  </div>
+</div>
+
+<!-- Help section -->
+<div th:if="${section == 'help'}" class="help-container">
+  <div class="help-card">
+    <h3>Need Help?</h3>
+    <p>If you have any questions about using the Gilbert marketplace, please check our FAQ or contact customer support.</p>
+    <a href="#" class="btn-secondary">View FAQ</a>
+    <a href="#" class="btn-primary">Contact Support</a>
+  </div>
+</div>
 
 <!-- Mobile footer -->
 <footer class="mobile-footer">

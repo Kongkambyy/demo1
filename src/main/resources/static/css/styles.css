@@ -71,16 +71,32 @@ body {
     display: block;
 }
 
-.mobile-menu {
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 50vw;
-    max-width: 300px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.25);
+    display: none;
+    z-index: 100;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw; 
+    max-width: 400px;
     height: 100vh;
     background: #432a26;
     color: #F8f0e5;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 110;
     padding: 2rem 1rem;
@@ -95,10 +111,10 @@ body {
     background: none;
     border: none;
     color: #F8f0e5;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
     cursor: pointer;
 }
 
@@ -108,14 +124,20 @@ body {
 }
 
 .mobile-menu li + li {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .mobile-menu a {
     color: #F8f0e5;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.4rem;
     display: block;
+    padding: 0.5rem 1rem;
+}
+
+.mobile-menu a:hover {
+    background-color: rgba(248, 240, 229, 0.1);
+    border-radius: 4px;
 }
 
 

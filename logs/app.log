@@ -1297,3 +1297,1437 @@ SEVERE: [2025-05-21 13:20:38] ERROR: Unhandled exception: No static resource fav
 maj 21, 2025 1:20:41 PM com.example.demo.data.util.LoggerUtility logError
 SEVERE: [2025-05-21 13:20:41] ERROR: Unhandled exception: No static resource favicon.ico.
 [2025-05-21 13:20:41] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:00:09] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: ListingRepository initialiseret
+[2025-05-21 15:00:09] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: FavoriteRepository initialized
+[2025-05-21 15:00:09] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: MessageRepository initialiseret
+[2025-05-21 15:00:09] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: NotificationRepository initialized
+[2025-05-21 15:00:09] EVENT: NotificationRepository initialized
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: OfferRepository initialized
+[2025-05-21 15:00:09] EVENT: OfferRepository initialized
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: ReviewRepository initialized
+[2025-05-21 15:00:09] EVENT: ReviewRepository initialized
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: TransactionRepository initialized
+[2025-05-21 15:00:09] EVENT: TransactionRepository initialized
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: UserRepository initialiseret
+[2025-05-21 15:00:09] EVENT: UserRepository initialiseret
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:00:09] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:00:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:09] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:00:09] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:00:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:00:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:00:12 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:12] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:00:12] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:00:13] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 15:00:13] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 3:00:13 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:00:13] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:00:13 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:13] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:00:13] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:00:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:15] ERROR: Unhandled exception: No static resource login.
+[2025-05-21 15:00:15] ERROR: Unhandled exception: No static resource login.
+maj 21, 2025 3:00:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:15] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:00:15] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:00:17 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:17] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:00:17] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:00:18 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:00:18] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:00:18 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:18] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:00:18] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:00:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:19] ERROR: Unhandled exception: No static resource login.
+[2025-05-21 15:00:19] ERROR: Unhandled exception: No static resource login.
+maj 21, 2025 3:00:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:19] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:00:19] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:00:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:00:21] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:00:21] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:14:28] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: ListingRepository initialiseret
+[2025-05-21 15:14:28] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: FavoriteRepository initialized
+[2025-05-21 15:14:28] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: MessageRepository initialiseret
+[2025-05-21 15:14:28] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: NotificationRepository initialized
+[2025-05-21 15:14:28] EVENT: NotificationRepository initialized
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: OfferRepository initialized
+[2025-05-21 15:14:28] EVENT: OfferRepository initialized
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: ReviewRepository initialized
+[2025-05-21 15:14:28] EVENT: ReviewRepository initialized
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: TransactionRepository initialized
+[2025-05-21 15:14:28] EVENT: TransactionRepository initialized
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: UserRepository initialiseret
+[2025-05-21 15:14:28] EVENT: UserRepository initialiseret
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:14:28] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:14:28 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:28] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:14:28] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:14:30 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:30] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:14:30] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:14:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:31] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:31] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:31] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 15:14:31] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 3:14:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:14:31] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:14:32 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:32] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:32] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:14:33] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:14:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:33] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:33] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:37] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:14:37] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:14:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:37] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:37] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:14:40] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:14:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:40] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:40] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:41] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:41] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:42 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:42] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:42] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:14:44 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:14:44] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 15:14:44] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 3:14:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:44] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:14:44] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:14:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:14:44] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:14:44] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:24:36] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: ListingRepository initialiseret
+[2025-05-21 15:24:36] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: FavoriteRepository initialized
+[2025-05-21 15:24:36] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: MessageRepository initialiseret
+[2025-05-21 15:24:36] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: NotificationRepository initialized
+[2025-05-21 15:24:36] EVENT: NotificationRepository initialized
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: OfferRepository initialized
+[2025-05-21 15:24:36] EVENT: OfferRepository initialized
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: ReviewRepository initialized
+[2025-05-21 15:24:36] EVENT: ReviewRepository initialized
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: TransactionRepository initialized
+[2025-05-21 15:24:36] EVENT: TransactionRepository initialized
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: UserRepository initialiseret
+[2025-05-21 15:24:36] EVENT: UserRepository initialiseret
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:24:36] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:24:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:36] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:24:36] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:24:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:24:38] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 15:24:38] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 3:24:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:24:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:24:38] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:24:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:24:39] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:24:39] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:25:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:25:47] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:25:47] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:25:48 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:25:48] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:25:48] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:29:17 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-21 15:29:17] WARNING: Login attempt with incorrect password for email: test@example.com
+[2025-05-21 15:29:17] WARNING: Login attempt with incorrect password for email: test@example.com
+maj 21, 2025 3:29:17 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-21 15:29:17] WARNING: Login failed for email: test@example.com
+[2025-05-21 15:29:17] WARNING: Login failed for email: test@example.com
+maj 21, 2025 3:29:17 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:29:17] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:29:17] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:29:18 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:29:18] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:29:18] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:29:36] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: ListingRepository initialiseret
+[2025-05-21 15:29:36] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: FavoriteRepository initialized
+[2025-05-21 15:29:36] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: MessageRepository initialiseret
+[2025-05-21 15:29:36] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: NotificationRepository initialized
+[2025-05-21 15:29:36] EVENT: NotificationRepository initialized
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: OfferRepository initialized
+[2025-05-21 15:29:36] EVENT: OfferRepository initialized
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: ReviewRepository initialized
+[2025-05-21 15:29:36] EVENT: ReviewRepository initialized
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: TransactionRepository initialized
+[2025-05-21 15:29:36] EVENT: TransactionRepository initialized
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: UserRepository initialiseret
+[2025-05-21 15:29:36] EVENT: UserRepository initialiseret
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:29:36] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:29:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:29:36] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:29:36] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:29:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:29:37] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:29:37] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:29:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:29:37] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:29:37] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:29:50 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-21 15:29:50] WARNING: Login attempt with incorrect password for email: test@example.com
+[2025-05-21 15:29:50] WARNING: Login attempt with incorrect password for email: test@example.com
+maj 21, 2025 3:29:50 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-21 15:29:50] WARNING: Login failed for email: test@example.com
+[2025-05-21 15:29:50] WARNING: Login failed for email: test@example.com
+maj 21, 2025 3:29:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:29:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:29:50] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:29:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:29:50] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:29:50] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:32:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:32:49] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:32:49] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:32:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:32:49] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:32:49] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:32:53 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:32:53] EVENT: Bruger oprettet: kracer48@gmail.com
+[2025-05-21 15:32:53] EVENT: Bruger oprettet: kracer48@gmail.com
+maj 21, 2025 3:32:53 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:32:53] EVENT: New user registered: kracer48@gmail.com
+[2025-05-21 15:32:53] EVENT: New user registered: kracer48@gmail.com
+maj 21, 2025 3:32:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:32:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:32:53] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:32:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:32:54] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:32:54] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:32:57 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-21 15:32:57] WARNING: Login attempt with incorrect password for email: kracer48@gmail.com
+[2025-05-21 15:32:57] WARNING: Login attempt with incorrect password for email: kracer48@gmail.com
+maj 21, 2025 3:32:57 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-21 15:32:57] WARNING: Login failed for email: kracer48@gmail.com
+[2025-05-21 15:32:57] WARNING: Login failed for email: kracer48@gmail.com
+maj 21, 2025 3:32:57 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:32:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:32:57] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:32:58 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:32:58] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:32:58] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:34:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:34:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:34:33] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:34:34 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:34:34] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:34:34] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:34:56 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:34:56] EVENT: Bruger oprettet: TestUser@TestUser
+[2025-05-21 15:34:56] EVENT: Bruger oprettet: TestUser@TestUser
+maj 21, 2025 3:34:56 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:34:56] EVENT: New user registered: TestUser@TestUser
+[2025-05-21 15:34:56] EVENT: New user registered: TestUser@TestUser
+maj 21, 2025 3:34:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:34:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:34:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:34:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:34:56] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:34:56] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:35:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:35:05] EVENT: Successful login for email: TestUser@TestUser
+[2025-05-21 15:35:05] EVENT: Successful login for email: TestUser@TestUser
+maj 21, 2025 3:35:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:35:05] EVENT: User logged in: TestUser@TestUser
+[2025-05-21 15:35:05] EVENT: User logged in: TestUser@TestUser
+maj 21, 2025 3:35:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:35:05] EVENT: User 584c170f-6c55-4124-8285-414728bd42ee accessed their profile page
+[2025-05-21 15:35:05] EVENT: User 584c170f-6c55-4124-8285-414728bd42ee accessed their profile page
+maj 21, 2025 3:35:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:35:05] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:35:05] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:38:48] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: ListingRepository initialiseret
+[2025-05-21 15:38:48] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: FavoriteRepository initialized
+[2025-05-21 15:38:48] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: MessageRepository initialiseret
+[2025-05-21 15:38:48] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: NotificationRepository initialized
+[2025-05-21 15:38:48] EVENT: NotificationRepository initialized
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: OfferRepository initialized
+[2025-05-21 15:38:48] EVENT: OfferRepository initialized
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: ReviewRepository initialized
+[2025-05-21 15:38:48] EVENT: ReviewRepository initialized
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: TransactionRepository initialized
+[2025-05-21 15:38:48] EVENT: TransactionRepository initialized
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: UserRepository initialiseret
+[2025-05-21 15:38:48] EVENT: UserRepository initialiseret
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:38:48] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:38:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:48] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:38:48] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:38:54 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:54] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:38:54] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:38:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:38:54] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:38:54] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:38:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:38:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:38:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:38:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:38:56] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:38:56] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:38:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:38:58] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:38:58] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:38:58 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:38:58] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:38:58] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:38:59 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:38:59] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:38:59] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:39:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:39:00] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:39:00] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:39:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:39:01] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:39:01] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:39:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:39:02] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 15:39:02] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 3:39:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:39:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:39:02] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:39:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:39:03] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:39:03] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:39:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:39:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:39:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:39:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:39:04] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:39:04] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:39:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:39:05] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:39:05] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:39:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:39:05] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:39:05] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:41:38] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: ListingRepository initialiseret
+[2025-05-21 15:41:38] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: FavoriteRepository initialized
+[2025-05-21 15:41:38] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: MessageRepository initialiseret
+[2025-05-21 15:41:38] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: NotificationRepository initialized
+[2025-05-21 15:41:38] EVENT: NotificationRepository initialized
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: OfferRepository initialized
+[2025-05-21 15:41:38] EVENT: OfferRepository initialized
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: ReviewRepository initialized
+[2025-05-21 15:41:38] EVENT: ReviewRepository initialized
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: TransactionRepository initialized
+[2025-05-21 15:41:38] EVENT: TransactionRepository initialized
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: UserRepository initialiseret
+[2025-05-21 15:41:38] EVENT: UserRepository initialiseret
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:41:38] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:41:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:38] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:41:38] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:41:42 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:42] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:41:42] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:41:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:43] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:41:43] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:41:44 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:44] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:41:44] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:41:45 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:45] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:41:45] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:41:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:41:50] EVENT: User logged out: TestUser@TestUser
+[2025-05-21 15:41:50] EVENT: User logged out: TestUser@TestUser
+maj 21, 2025 3:41:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:41:50] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:41:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:50] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:41:50] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:41:51 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:51] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:41:51] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:41:51 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:51] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:41:51] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:41:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:41:54] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:41:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:54] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:41:54] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:41:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:41:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:41:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:41:55] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:41:55] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:42:07 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:42:07] EVENT: Successful login for email: TestUser@TestUser
+[2025-05-21 15:42:07] EVENT: Successful login for email: TestUser@TestUser
+maj 21, 2025 3:42:07 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:42:07] EVENT: User logged in: TestUser@TestUser
+[2025-05-21 15:42:07] EVENT: User logged in: TestUser@TestUser
+maj 21, 2025 3:42:07 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:42:07] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:42:07] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:42:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:42:08] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:42:08] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:45:11] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: ListingRepository initialiseret
+[2025-05-21 15:45:11] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: FavoriteRepository initialized
+[2025-05-21 15:45:11] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: MessageRepository initialiseret
+[2025-05-21 15:45:11] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: NotificationRepository initialized
+[2025-05-21 15:45:11] EVENT: NotificationRepository initialized
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: OfferRepository initialized
+[2025-05-21 15:45:11] EVENT: OfferRepository initialized
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: ReviewRepository initialized
+[2025-05-21 15:45:11] EVENT: ReviewRepository initialized
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: TransactionRepository initialized
+[2025-05-21 15:45:11] EVENT: TransactionRepository initialized
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: UserRepository initialiseret
+[2025-05-21 15:45:11] EVENT: UserRepository initialiseret
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:45:11] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:45:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:11] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:45:11] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:45:20 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:20] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:45:20] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:45:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:21] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:45:21] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:45:22 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:22] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:45:22] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:45:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:23] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:45:23] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:45:24 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:24] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:45:24] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:45:26 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:45:26] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 15:45:26] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 3:45:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:45:26] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:45:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:26] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:45:26] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:45:27 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:27] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:45:27] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:45:27 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:45:27] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:45:27] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:48:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:48:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:48:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:49:16] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: ListingRepository initialiseret
+[2025-05-21 15:49:16] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: FavoriteRepository initialized
+[2025-05-21 15:49:16] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: MessageRepository initialiseret
+[2025-05-21 15:49:16] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: NotificationRepository initialized
+[2025-05-21 15:49:16] EVENT: NotificationRepository initialized
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: OfferRepository initialized
+[2025-05-21 15:49:16] EVENT: OfferRepository initialized
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: ReviewRepository initialized
+[2025-05-21 15:49:16] EVENT: ReviewRepository initialized
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: TransactionRepository initialized
+[2025-05-21 15:49:16] EVENT: TransactionRepository initialized
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: UserRepository initialiseret
+[2025-05-21 15:49:16] EVENT: UserRepository initialiseret
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:49:16] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:49:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:16] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:49:16] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:49:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:49:19] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:49:20 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:20] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:20] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:21] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:49:21] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:49:22 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:22] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:22] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:23] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:23] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:25 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:25] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:25] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:26] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:26] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:26] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:26] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:30 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:30] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 15:49:30] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 3:49:30 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:30] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:49:30] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:49:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:31] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:31] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:35 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:49:35] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:49:35] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:49:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:36] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:36] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:36] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:36] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:41] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:41] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:42 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:42] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:42] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:43] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:43] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:49:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:49:44] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:49:44] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:50:55] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: ListingRepository initialiseret
+[2025-05-21 15:50:55] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: FavoriteRepository initialized
+[2025-05-21 15:50:55] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: MessageRepository initialiseret
+[2025-05-21 15:50:55] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: NotificationRepository initialized
+[2025-05-21 15:50:55] EVENT: NotificationRepository initialized
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: OfferRepository initialized
+[2025-05-21 15:50:55] EVENT: OfferRepository initialized
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: ReviewRepository initialized
+[2025-05-21 15:50:55] EVENT: ReviewRepository initialized
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: TransactionRepository initialized
+[2025-05-21 15:50:55] EVENT: TransactionRepository initialized
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: UserRepository initialiseret
+[2025-05-21 15:50:55] EVENT: UserRepository initialiseret
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:50:55] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:50:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:50:55] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:50:55] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:51:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:51:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:51:00] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:51:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:51:01] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:51:01] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:51:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:02] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:51:02] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:51:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:51:02] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:51:02] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:51:51] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: ListingRepository initialiseret
+[2025-05-21 15:51:51] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: FavoriteRepository initialized
+[2025-05-21 15:51:51] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: MessageRepository initialiseret
+[2025-05-21 15:51:51] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: NotificationRepository initialized
+[2025-05-21 15:51:51] EVENT: NotificationRepository initialized
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: OfferRepository initialized
+[2025-05-21 15:51:51] EVENT: OfferRepository initialized
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: ReviewRepository initialized
+[2025-05-21 15:51:51] EVENT: ReviewRepository initialized
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: TransactionRepository initialized
+[2025-05-21 15:51:51] EVENT: TransactionRepository initialized
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: UserRepository initialiseret
+[2025-05-21 15:51:51] EVENT: UserRepository initialiseret
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:51:51] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:51:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:51] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:51:51] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:51:52 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:51:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:51:52] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:51:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:51:53] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:51:53] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:51:54 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:51:54] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:51:54] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:51:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:51:55] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:51:55] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:53:17] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: ListingRepository initialiseret
+[2025-05-21 15:53:17] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: FavoriteRepository initialized
+[2025-05-21 15:53:17] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: MessageRepository initialiseret
+[2025-05-21 15:53:17] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: NotificationRepository initialized
+[2025-05-21 15:53:17] EVENT: NotificationRepository initialized
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: OfferRepository initialized
+[2025-05-21 15:53:17] EVENT: OfferRepository initialized
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: ReviewRepository initialized
+[2025-05-21 15:53:17] EVENT: ReviewRepository initialized
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: TransactionRepository initialized
+[2025-05-21 15:53:17] EVENT: TransactionRepository initialized
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: UserRepository initialiseret
+[2025-05-21 15:53:17] EVENT: UserRepository initialiseret
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:53:17] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:53:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:17] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:53:17] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:53:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:53:19] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:53:19] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:53:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:53:19] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:53:19] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:53:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:53:26] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:53:26] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:53:27 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:53:27] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:53:27] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:04] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:04] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:05] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:05] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:06] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:06] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:07 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:07] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:07] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:08] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:08] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:10] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:10] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:13 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:13] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:13] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:14 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:14] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:14] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:15] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:15] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:16 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:16] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:16] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:54:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:54:19] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:54:19] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:55:49] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: ListingRepository initialiseret
+[2025-05-21 15:55:49] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: FavoriteRepository initialized
+[2025-05-21 15:55:49] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: MessageRepository initialiseret
+[2025-05-21 15:55:49] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: NotificationRepository initialized
+[2025-05-21 15:55:49] EVENT: NotificationRepository initialized
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: OfferRepository initialized
+[2025-05-21 15:55:49] EVENT: OfferRepository initialized
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: ReviewRepository initialized
+[2025-05-21 15:55:49] EVENT: ReviewRepository initialized
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: TransactionRepository initialized
+[2025-05-21 15:55:49] EVENT: TransactionRepository initialized
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: UserRepository initialiseret
+[2025-05-21 15:55:49] EVENT: UserRepository initialiseret
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:55:49] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:55:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:55:49] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:55:49] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:55:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:55:53] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:55:53] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:55:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:55:54] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:55:54] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:57:42] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: ListingRepository initialiseret
+[2025-05-21 15:57:42] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: FavoriteRepository initialized
+[2025-05-21 15:57:42] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: MessageRepository initialiseret
+[2025-05-21 15:57:42] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: NotificationRepository initialized
+[2025-05-21 15:57:42] EVENT: NotificationRepository initialized
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: OfferRepository initialized
+[2025-05-21 15:57:42] EVENT: OfferRepository initialized
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: ReviewRepository initialized
+[2025-05-21 15:57:42] EVENT: ReviewRepository initialized
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: TransactionRepository initialized
+[2025-05-21 15:57:42] EVENT: TransactionRepository initialized
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: UserRepository initialiseret
+[2025-05-21 15:57:42] EVENT: UserRepository initialiseret
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:57:42] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:57:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:57:42] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:57:42] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:57:46 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:57:46] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:57:46] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:57:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:57:50] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:57:50] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: CategoryRepository initialiseret
+[2025-05-21 15:59:39] EVENT: CategoryRepository initialiseret
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: ListingRepository initialiseret
+[2025-05-21 15:59:39] EVENT: ListingRepository initialiseret
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: FavoriteRepository initialized
+[2025-05-21 15:59:39] EVENT: FavoriteRepository initialized
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: MessageRepository initialiseret
+[2025-05-21 15:59:39] EVENT: MessageRepository initialiseret
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: NotificationRepository initialized
+[2025-05-21 15:59:39] EVENT: NotificationRepository initialized
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: OfferRepository initialized
+[2025-05-21 15:59:39] EVENT: OfferRepository initialized
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: ReviewRepository initialized
+[2025-05-21 15:59:39] EVENT: ReviewRepository initialized
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: TransactionRepository initialized
+[2025-05-21 15:59:39] EVENT: TransactionRepository initialized
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: UserRepository initialiseret
+[2025-05-21 15:59:39] EVENT: UserRepository initialiseret
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 15:59:39] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 3:59:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:39] EVENT: GetCategoryUseCase initialized
+[2025-05-21 15:59:39] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 3:59:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:43] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:43] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:44] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:44] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:52 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:52] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:52] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:53] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:53] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:54] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:54] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:56] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:56] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:57 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 15:59:57] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 3:59:57 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:57] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:57] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 3:59:59 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 15:59:59] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 15:59:59] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 3:59:59 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 15:59:59] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 15:59:59] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:00:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:00:00] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:00:00] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: CategoryRepository initialiseret
+[2025-05-21 16:03:25] EVENT: CategoryRepository initialiseret
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: ListingRepository initialiseret
+[2025-05-21 16:03:25] EVENT: ListingRepository initialiseret
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: FavoriteRepository initialized
+[2025-05-21 16:03:25] EVENT: FavoriteRepository initialized
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: MessageRepository initialiseret
+[2025-05-21 16:03:25] EVENT: MessageRepository initialiseret
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: NotificationRepository initialized
+[2025-05-21 16:03:25] EVENT: NotificationRepository initialized
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: OfferRepository initialized
+[2025-05-21 16:03:25] EVENT: OfferRepository initialized
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: ReviewRepository initialized
+[2025-05-21 16:03:25] EVENT: ReviewRepository initialized
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: TransactionRepository initialized
+[2025-05-21 16:03:25] EVENT: TransactionRepository initialized
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: UserRepository initialiseret
+[2025-05-21 16:03:25] EVENT: UserRepository initialiseret
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 16:03:25] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 4:03:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:25] EVENT: GetCategoryUseCase initialized
+[2025-05-21 16:03:25] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 4:03:29 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:29] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:29] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:30 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:30] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:30] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:03:31] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 16:03:31] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 4:03:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:31] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:31] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:31] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:36] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:36] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:36] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:37] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:37] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:37] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:37] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:38] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:38] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:38] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:39] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:39] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:39] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:40] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:40] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:40] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:41] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:41] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:41] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:41] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:43] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:43] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:43] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:43] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:43] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:43] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:44] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:44] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:03:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:49] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:03:49] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:03:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:03:49] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:03:49] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: CategoryRepository initialiseret
+[2025-05-21 16:06:00] EVENT: CategoryRepository initialiseret
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: ListingRepository initialiseret
+[2025-05-21 16:06:00] EVENT: ListingRepository initialiseret
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: FavoriteRepository initialized
+[2025-05-21 16:06:00] EVENT: FavoriteRepository initialized
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: MessageRepository initialiseret
+[2025-05-21 16:06:00] EVENT: MessageRepository initialiseret
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: NotificationRepository initialized
+[2025-05-21 16:06:00] EVENT: NotificationRepository initialized
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: OfferRepository initialized
+[2025-05-21 16:06:00] EVENT: OfferRepository initialized
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: ReviewRepository initialized
+[2025-05-21 16:06:00] EVENT: ReviewRepository initialized
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: TransactionRepository initialized
+[2025-05-21 16:06:00] EVENT: TransactionRepository initialized
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: UserRepository initialiseret
+[2025-05-21 16:06:00] EVENT: UserRepository initialiseret
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 16:06:00] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 4:06:00 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 16:06:00] EVENT: GetCategoryUseCase initialized
+[2025-05-21 16:06:00] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 4:06:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:06:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:06:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:06:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:06:02] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:06:02] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:06:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:06:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:06:03] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:06:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:06:03] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:06:03] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:06:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:06:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 16:06:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 4:06:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:06:06] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:06:06] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 4:06:07 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 16:06:07] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 16:06:07] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: CategoryRepository initialiseret
+[2025-05-21 18:47:42] EVENT: CategoryRepository initialiseret
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: ListingRepository initialiseret
+[2025-05-21 18:47:42] EVENT: ListingRepository initialiseret
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: FavoriteRepository initialized
+[2025-05-21 18:47:42] EVENT: FavoriteRepository initialized
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: MessageRepository initialiseret
+[2025-05-21 18:47:42] EVENT: MessageRepository initialiseret
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: NotificationRepository initialized
+[2025-05-21 18:47:42] EVENT: NotificationRepository initialized
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: OfferRepository initialized
+[2025-05-21 18:47:42] EVENT: OfferRepository initialized
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: ReviewRepository initialized
+[2025-05-21 18:47:42] EVENT: ReviewRepository initialized
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: TransactionRepository initialized
+[2025-05-21 18:47:42] EVENT: TransactionRepository initialized
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: UserRepository initialiseret
+[2025-05-21 18:47:42] EVENT: UserRepository initialiseret
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 18:47:42] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 6:47:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:42] EVENT: GetCategoryUseCase initialized
+[2025-05-21 18:47:42] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 6:47:46 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:46] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:47:46] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:47:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:47] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:47:47] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:47:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:49] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:47:49] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:47:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:50] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:47:50] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:47:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:47:51] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 18:47:51] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 6:47:51 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:51] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:47:51] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:47:51 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:51] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:47:51] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:47:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:54] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:47:54] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:47:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:47:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:47:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:47:56] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:47:56] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:05] EVENT: Successful login for email: TestUser@TestUser
+[2025-05-21 18:48:05] EVENT: Successful login for email: TestUser@TestUser
+maj 21, 2025 6:48:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:05] EVENT: User logged in: TestUser@TestUser
+[2025-05-21 18:48:05] EVENT: User logged in: TestUser@TestUser
+maj 21, 2025 6:48:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:05] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 18:48:05] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 6:48:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:05] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:05] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:08] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:08] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:08] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:09] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:09] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:09] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:10] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:10] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:11 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:11] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:11] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:11 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:11] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:11] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: CategoryRepository initialiseret
+[2025-05-21 18:48:45] EVENT: CategoryRepository initialiseret
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: ListingRepository initialiseret
+[2025-05-21 18:48:45] EVENT: ListingRepository initialiseret
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: FavoriteRepository initialized
+[2025-05-21 18:48:45] EVENT: FavoriteRepository initialized
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: MessageRepository initialiseret
+[2025-05-21 18:48:45] EVENT: MessageRepository initialiseret
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: NotificationRepository initialized
+[2025-05-21 18:48:45] EVENT: NotificationRepository initialized
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: OfferRepository initialized
+[2025-05-21 18:48:45] EVENT: OfferRepository initialized
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: ReviewRepository initialized
+[2025-05-21 18:48:45] EVENT: ReviewRepository initialized
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: TransactionRepository initialized
+[2025-05-21 18:48:45] EVENT: TransactionRepository initialized
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: UserRepository initialiseret
+[2025-05-21 18:48:45] EVENT: UserRepository initialiseret
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 18:48:45] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 6:48:45 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:45] EVENT: GetCategoryUseCase initialized
+[2025-05-21 18:48:45] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 6:48:46 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:46] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:46] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:47] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:47] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:48 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:48] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:48] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:48 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:48] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:48] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:48:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:48:55] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-21 18:48:55] EVENT: Search performed with params - keyword: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 21, 2025 6:48:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:48:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:48:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:48:56] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:48:56] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:49:01] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+[2025-05-21 18:49:01] EVENT: Profile page accessed by user: 584c170f-6c55-4124-8285-414728bd42ee
+maj 21, 2025 6:49:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:01] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:01] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:04] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:05] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:05] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:06] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:06] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:06] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:06] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:08 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:49:08] EVENT: User logged out: TestUser@TestUser
+[2025-05-21 18:49:08] EVENT: User logged out: TestUser@TestUser
+maj 21, 2025 6:49:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:08] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:09] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:09] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:10] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:10] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:14 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:14] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:14 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:14] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:14] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:49:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:49:34] EVENT: Bruger oprettet: Lasse@Lasse
+[2025-05-21 18:49:34] EVENT: Bruger oprettet: Lasse@Lasse
+maj 21, 2025 6:49:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:49:34] EVENT: New user registered: Lasse@Lasse
+[2025-05-21 18:49:34] EVENT: New user registered: Lasse@Lasse
+maj 21, 2025 6:49:34 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:34] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:49:34] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:49:34 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:49:34] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:49:34] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 6:50:08 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:50:08] EVENT: Successful login for email: Lasse@Lasse
+[2025-05-21 18:50:08] EVENT: Successful login for email: Lasse@Lasse
+maj 21, 2025 6:50:08 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:50:08] EVENT: User logged in: Lasse@Lasse
+[2025-05-21 18:50:08] EVENT: User logged in: Lasse@Lasse
+maj 21, 2025 6:50:08 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 18:50:08] EVENT: Profile page accessed by user: d1483efd-5a48-4938-b49a-1c7f3b82f6f2
+[2025-05-21 18:50:08] EVENT: Profile page accessed by user: d1483efd-5a48-4938-b49a-1c7f3b82f6f2
+maj 21, 2025 6:50:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:50:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 18:50:08] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 6:50:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 18:50:08] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 18:50:08] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:19:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:19:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 19:19:02] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 7:19:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:19:03] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:19:03] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:19:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:19:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 19:19:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 7:19:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:19:04] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:19:04] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:19:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:19:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 19:19:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 7:19:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:19:05] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:19:05] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:19:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:19:06] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:19:06] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: CategoryRepository initialiseret
+[2025-05-21 19:22:36] EVENT: CategoryRepository initialiseret
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: ListingRepository initialiseret
+[2025-05-21 19:22:36] EVENT: ListingRepository initialiseret
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: FavoriteRepository initialized
+[2025-05-21 19:22:36] EVENT: FavoriteRepository initialized
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: MessageRepository initialiseret
+[2025-05-21 19:22:36] EVENT: MessageRepository initialiseret
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: NotificationRepository initialized
+[2025-05-21 19:22:36] EVENT: NotificationRepository initialized
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: OfferRepository initialized
+[2025-05-21 19:22:36] EVENT: OfferRepository initialized
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: ReviewRepository initialized
+[2025-05-21 19:22:36] EVENT: ReviewRepository initialized
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: TransactionRepository initialized
+[2025-05-21 19:22:36] EVENT: TransactionRepository initialized
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: UserRepository initialiseret
+[2025-05-21 19:22:36] EVENT: UserRepository initialiseret
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: GetCategoriesUseCase initialized
+[2025-05-21 19:22:36] EVENT: GetCategoriesUseCase initialized
+maj 21, 2025 7:22:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:36] EVENT: GetCategoryUseCase initialized
+[2025-05-21 19:22:36] EVENT: GetCategoryUseCase initialized
+maj 21, 2025 7:22:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 19:22:38] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 7:22:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:39] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:22:39] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:22:44 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-21 19:22:44] EVENT: Profile page accessed by user: d1483efd-5a48-4938-b49a-1c7f3b82f6f2
+[2025-05-21 19:22:44] EVENT: Profile page accessed by user: d1483efd-5a48-4938-b49a-1c7f3b82f6f2
+maj 21, 2025 7:22:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:44] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 19:22:44] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 7:22:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:44] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:22:44] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:22:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:49] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:22:49] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:22:51 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:51] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:22:51] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:22:52 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:52] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:22:52] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:22:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-21 19:22:53] ERROR: Unhandled exception: No static resource home.svg.
+maj 21, 2025 7:22:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:53] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:22:53] ERROR: Unhandled exception: No static resource favicon.ico.
+maj 21, 2025 7:22:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-21 19:22:54] ERROR: Unhandled exception: No static resource favicon.ico.
+[2025-05-21 19:22:54] ERROR: Unhandled exception: No static resource favicon.ico.

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilbert – Login</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <style>
+    .login-container {
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      color: #F8f0e5;
+    }
+
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #432a26;
+      background: #F8f0e5;
+      border-radius: 4px;
+      font-family: 'Times New Roman', serif;
+    }
+
+    .btn-login {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: #432a26;
+      color: #F8f0e5;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: 'Times New Roman', serif;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .btn-login:hover {
+      background: #5b433f;
+    }
+
+    .register-link {
+      text-align: center;
+    }
+
+    .register-link a {
+      color: #F8f0e5;
+      text-decoration: underline;
+    }
+
+    .error-message {
+      background: rgba(255, 0, 0, 0.1);
+      border: 1px solid rgba(255, 0, 0, 0.3);
+      color: #F8f0e5;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+
+    .success-message {
+      background: rgba(0, 255, 0, 0.1);
+      border: 1px solid rgba(0, 255, 0, 0.3);
+      color: #F8f0e5;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="overlay"></div>
+
+<!-- Mobile menu -->
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Close menu">×</button>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/register">Register</a></li>
+  </ul>
+</aside>
+
+<!-- Menu toggle script -->
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<!-- Login container -->
+<div class="login-container">
+  <h1>Login</h1>
+
+  <!-- Error message if login fails -->
+  <div th:if="${error}" class="error-message" th:text="${error}">
+    Invalid email or password
+  </div>
+
+  <!-- Success message (e.g., after registration) -->
+  <div th:if="${success}" class="success-message" th:text="${success}">
+    Registration successful! Please log in.
+  </div>
+
+  <form th:action="@{/login}" method="post">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <button type="submit" class="btn-login">Login</button>
+
+    <div class="register-link">
+      <p>Don't have an account? <a th:href="@{/register}">Register</a></p>
+    </div>
+  </form>
+</div>
+
+<!-- Mobile footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Search">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/register" class="footer-btn" aria-label="Register">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+</footer>
+</body>
+</html>
