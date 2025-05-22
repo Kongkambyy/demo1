@@ -331,7 +331,7 @@
   <div class="info">
     <h2 th:if="${user != null}" th:text="${user.name}">User Name</h2>
     <span th:if="${user != null}" th:text="'@' + ${user.alias}">@UserAlias</span>
-    <p th:if="${user != null && user.address != null}" th:text="'📍 ' + ${user.address}">📍 Location</p>
+    <p th:if="${user != null && user.address != null}" th:text="${user.address}">📍 Location</p>
     <p th:text="${soldItemsCount != null ? soldItemsCount : '0'} + ' Items Sold'">0 Items Sold</p>
     <p th:text="${activeListingsCount != null ? activeListingsCount : '0'} + ' Items for Sale'">0 Items for Sale</p>
   </div>

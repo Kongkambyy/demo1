@@ -11,69 +11,58 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
+import java.util.ArrayList;
 
-/**
- * CategoryRepository - JDBC implementering for kategori datahåndtering
- *
- * Denne klasse håndterer al database kommunikation for kategorier i markedspladsen.
- * Kategorier bruges til at organisere og gruppere salgsannoncer.
- *
- * Hovedfunktioner:
- * - Oprette nye kategorier med navn og beskrivelse
- * - Hente kategorier baseret på ID eller navn
- * - Opdatere eksisterende kategorier
- * - Slette kategorier (med validering for tilknyttede annoncer)
- * - Hente alle kategorier til visning i navigation
- * - Håndtere hierarkiske kategorier (hvis implementeret)
- *
- * Kategori struktur:
- * - Hver kategori har et unikt ID
- * - Kategorier har et display navn og valgfri beskrivelse
- * - Kategorier kan have underkategorier (parent-child forhold)
- * - Kategorier bruges til filtrering og søgning af annoncer
- *
- * Validering:
- * - Kategorier kan ikke slettes hvis der er aktive annoncer tilknyttet
- * - Kategori navne skal være unikke
- * - Underkategorier valideres for cykliske referencer
- */
 @Repository
 public class CategoryRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    // RowMapper til at konvertere database rækker til Category objekter
+    // RowMapper to convert database rows to Category objects
     private final RowMapper<Category> categoryRowMapper = new RowMapper<Category>() {
         @Override
         public Category mapRow(ResultSet rs, int rowNum) throws SQLException {
-            return new Category(
+            Category category = new Category(
                     rs.getInt("CategoryID"),
                     rs.getString("Name"),
                     rs.getString("Description")
             );
+
+            // Set parent ID if it exists
+            try {
+                int parentID = rs.getInt("ParentID");
+                if (!rs.wasNull()) {
+                    category.setParentID(parentID);
+                }
+            } catch (SQLException e) {
+                // Ignore if the ParentID column doesn't exist
+                LoggerUtility.logWarning("Error reading ParentID: " + e.getMessage());
+            }
+
+            return category;
         }
     };
 
     public CategoryRepository(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
-        LoggerUtility.logEvent("CategoryRepository initialiseret");
+        LoggerUtility.logEvent("CategoryRepository initialized");
     }
 
-    // Opretter ny kategori
+    // Create a new category
     public Category save(Category category) {
-        String sql = "INSERT INTO categories (CategoryID, Name, Description) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO categories (Name, Description, ParentID) VALUES (?, ?, ?)";
 
         jdbcTemplate.update(sql,
-                category.getCategoryID(),
                 category.getName(),
-                category.getDescription()
+                category.getDescription(),
+                category.getParentID()
         );
 
-        LoggerUtility.logEvent("Kategori oprettet: " + category.getName());
+        LoggerUtility.logEvent("Category created: " + category.getName());
         return category;
     }
 
-    // Finder kategori baseret på ID
+    // Find category by ID
     public Optional<Category> findById(int categoryId) {
         String sql = "SELECT * FROM categories WHERE CategoryID = ?";
 
@@ -81,12 +70,12 @@ public class CategoryRepository {
             Category category = jdbcTemplate.queryForObject(sql, categoryRowMapper, categoryId);
             return Optional.of(category);
         } catch (EmptyResultDataAccessException e) {
-            LoggerUtility.logWarning("Kategori ikke fundet: " + categoryId);
+            LoggerUtility.logWarning("Category not found: " + categoryId);
             return Optional.empty();
         }
     }
 
-    // Finder kategori baseret på navn
+    // Find category by name
     public Optional<Category> findByName(String name) {
         String sql = "SELECT * FROM categories WHERE Name = ?";
 
@@ -98,56 +87,114 @@ public class CategoryRepository {
         }
     }
 
-    // Henter alle kategorier
+    // Get all categories
     public List<Category> findAll() {
         String sql = "SELECT * FROM categories ORDER BY Name";
         return jdbcTemplate.query(sql, categoryRowMapper);
     }
 
+    // Get main categories (those without a parent)
+    public List<Category> findMainCategories() {
+        String sql = "SELECT * FROM categories WHERE ParentID IS NULL ORDER BY Name";
+        return jdbcTemplate.query(sql, categoryRowMapper);
+    }
+
+    // Get subcategories for a parent category
+    public List<Category> findSubcategories(int parentId) {
+        String sql = "SELECT * FROM categories WHERE ParentID = ? ORDER BY Name";
+        return jdbcTemplate.query(sql, categoryRowMapper, parentId);
+    }
+
+    // Get all descendant category IDs (including the category itself)
+    public List<Integer> findAllDescendantCategoryIds(int categoryId) {
+        List<Integer> descendantIds = new ArrayList<>();
+        descendantIds.add(categoryId);
+
+        String sql = "SELECT CategoryID FROM categories WHERE ParentID = ?";
+        List<Integer> childIds = jdbcTemplate.queryForList(sql, Integer.class, categoryId);
+
+        for (Integer childId : childIds) {
+            descendantIds.addAll(findAllDescendantCategoryIds(childId));
+        }
+
+        return descendantIds;
+    }
+
+    // Update a category
     public Category update(Category category) {
-        String sql = "UPDATE categories SET Name = ?, Description = ? WHERE CategoryID = ?";
+        String sql = "UPDATE categories SET Name = ?, Description = ?, ParentID = ? WHERE CategoryID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql,
                 category.getName(),
                 category.getDescription(),
+                category.getParentID(),
                 category.getCategoryID()
         );
 
         if (rowsAffected == 0) {
-            LoggerUtility.logError("Opdatering fejlede - kategori ikke fundet: " + category.getCategoryID());
-            throw new RuntimeException("Kategori ikke fundet: " + category.getCategoryID());
+            LoggerUtility.logError("Update failed - category not found: " + category.getCategoryID());
+            throw new RuntimeException("Category not found: " + category.getCategoryID());
         }
 
-        LoggerUtility.logEvent("Kategori opdateret: " + category.getName());
+        LoggerUtility.logEvent("Category updated: " + category.getName());
         return category;
     }
 
-    // Sletter kategori
+    // Delete a category
     public void delete(int categoryId) {
-        // Tjek om der er annoncer tilknyttet kategorien
+        // Check if there are listings linked to the category
         String checkSql = "SELECT COUNT(*) FROM listings WHERE CategoryID = ?";
         Integer count = jdbcTemplate.queryForObject(checkSql, Integer.class, categoryId);
 
         if (count != null && count > 0) {
-            LoggerUtility.logError("Kan ikke slette kategori med tilknyttede annoncer: " + categoryId);
-            throw new RuntimeException("Kan ikke slette kategori med tilknyttede annoncer");
+            LoggerUtility.logError("Cannot delete category with linked listings: " + categoryId);
+            throw new RuntimeException("Cannot delete category with linked listings");
+        }
+
+        // Check if there are subcategories
+        String checkSubSql = "SELECT COUNT(*) FROM categories WHERE ParentID = ?";
+        Integer subCount = jdbcTemplate.queryForObject(checkSubSql, Integer.class, categoryId);
+
+        if (subCount != null && subCount > 0) {
+            LoggerUtility.logError("Cannot delete category with subcategories: " + categoryId);
+            throw new RuntimeException("Cannot delete category with subcategories");
         }
 
         String sql = "DELETE FROM categories WHERE CategoryID = ?";
         int rowsAffected = jdbcTemplate.update(sql, categoryId);
 
         if (rowsAffected == 0) {
-            LoggerUtility.logError("Sletning fejlede - kategori ikke fundet: " + categoryId);
-            throw new RuntimeException("Kategori ikke fundet: " + categoryId);
+            LoggerUtility.logError("Delete failed - category not found: " + categoryId);
+            throw new RuntimeException("Category not found: " + categoryId);
         }
 
-        LoggerUtility.logEvent("Kategori slettet: " + categoryId);
+        LoggerUtility.logEvent("Category deleted: " + categoryId);
     }
 
-    // Tæller annoncer i en kategori
+    // Count listings in a category
     public int countListingsInCategory(int categoryId) {
         String sql = "SELECT COUNT(*) FROM listings WHERE CategoryID = ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, categoryId);
         return count != null ? count : 0;
+    }
+
+    // Count listings in a category and all its subcategories
+    public int countListingsInCategoryHierarchy(int categoryId) {
+        List<Integer> categoryIds = findAllDescendantCategoryIds(categoryId);
+
+        StringBuilder sql = new StringBuilder("SELECT COUNT(*) FROM listings WHERE CategoryID IN (");
+        for (int i = 0; i < categoryIds.size(); i++) {
+            sql.append(i > 0 ? ", ?" : "?");
+        }
+        sql.append(")");
+
+        return jdbcTemplate.queryForObject(sql.toString(), Integer.class, categoryIds.toArray());
+    }
+
+    // Check if a category exists
+    public boolean categoryExists(int categoryId) {
+        String sql = "SELECT COUNT(*) FROM categories WHERE CategoryID = ?";
+        Integer count = jdbcTemplate.queryForObject(sql, Integer.class, categoryId);
+        return count != null && count > 0;
     }
 }

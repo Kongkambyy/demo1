@@ -15,36 +15,12 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.ArrayList;
 
 /**
- * ListingRepository - JDBC implementering for annoncer/salgsopslag datahåndtering
+ * ListingRepository - JDBC implementation for listing data handling
  *
- * Denne klasse håndterer al database kommunikation for salgsannoncer i markedspladsen.
- * Den fungerer som data access layer for alle salgsobjekter i systemet.
- *
- * Hovedfunktioner:
- * - Oprette nye salgsannoncer med alle relaterede detaljer
- * - Hente annoncer baseret på forskellige søgekriterier
- * - Opdatere eksisterende annonce
- * - Slette annoncer når de ikke længere er relevante
- * - Søge og filtrere annoncer efter forskellige parametre
- * - Håndtere annonce (aktiv, solgt, reserveret)
- *
- * Søgefunktionalitet:
- * - Søgning efter pris interval
- * - Filtrering på kategori
- * - Søgning på brand
- * - Filtrering på tilstand (ny, brugt, slidt)
- * - Sortering efter dato eller pris
- *
- * Fejlhåndtering:
- * - ListingNotFoundException: Når en annonce ikke findes
- * - ListingNotActiveException: Når man forsøger at interagere med inaktiv annonce
- * - ListingAlreadySoldException: Når man forsøger at købe/ændre solgt annonce
- *
- * Sikkerhedsovervejelser:
- * - Kun ejeren kan redigere/slette egne annoncer
- * - Statusændringer valideres for at undgå ugyldige tilstande
+ * This class handles all database communication for listings in the marketplace.
  */
 @Repository
 public class ListingRepository {
@@ -72,9 +48,10 @@ public class ListingRepository {
 
     public ListingRepository(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
-        LoggerUtility.logEvent("ListingRepository initialiseret");
+        LoggerUtility.logEvent("ListingRepository initialized");
     }
 
+    // Create a new listing
     public Listing save(Listing listing) {
         if (listing.getAdID() == null || listing.getAdID().isEmpty()) {
             listing.setAdID(UUID.randomUUID().toString());
@@ -96,11 +73,11 @@ public class ListingRepository {
                 listing.getCategoryID()
         );
 
-        LoggerUtility.logEvent("Ny annonce oprettet: " + listing.getAdID());
+        LoggerUtility.logEvent("New listing created: " + listing.getAdID());
         return listing;
     }
 
-    // Finder annonce baseret på ID
+    // Find listing by ID
     public Optional<Listing> findById(String adId) {
         String sql = "SELECT * FROM listings WHERE AdID = ?";
 
@@ -108,27 +85,27 @@ public class ListingRepository {
             Listing listing = jdbcTemplate.queryForObject(sql, listingRowMapper, adId);
             return Optional.of(listing);
         } catch (EmptyResultDataAccessException e) {
-            LoggerUtility.logWarning("Annonce ikke fundet: " + adId);
+            LoggerUtility.logWarning("Listing not found: " + adId);
             return Optional.empty();
         }
     }
 
-    // Finder alle annoncer for en bruger
+    // Find all listings for a user
     public List<Listing> findByUserId(String userId) {
         String sql = "SELECT * FROM listings WHERE UserID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, listingRowMapper, userId);
     }
 
-    // Finder aktive annoncer
+    // Find active listings
     public List<Listing> findActiveListings() {
         String sql = "SELECT * FROM listings WHERE Status = 'ACTIVE' ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, listingRowMapper);
     }
 
-    // Opdaterer annonce
+    // Update a listing
     public Listing update(Listing listing) {
         String sql = "UPDATE listings SET Title = ?, Description = ?, Price = ?, " +
-                "Condition = ?, Status = ?, Brand = ?, CategoryID = ? WHERE AdID = ?";
+                "ItemCondition = ?, Status = ?, Brand = ?, CategoryID = ? WHERE AdID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql,
                 listing.getTitle(),
@@ -141,98 +118,164 @@ public class ListingRepository {
                 listing.getAdID()
         );
 
-
         if (rowsAffected == 0) {
-            LoggerUtility.logError("Opdatering fejlede - annonce ikke fundet: " + listing.getAdID());
-            throw new ListingNotFoundException("Annonce ikke fundet: " + listing.getAdID());
+            LoggerUtility.logError("Update failed - listing not found: " + listing.getAdID());
+            throw new ListingNotFoundException("Listing not found: " + listing.getAdID());
         }
 
-        LoggerUtility.logEvent("Annonce opdateret: " + listing.getAdID());
+        LoggerUtility.logEvent("Listing updated: " + listing.getAdID());
         return listing;
     }
 
-    // Opdaterer status på annonce
+    // Update listing status
     public void updateStatus(String adId, String status) {
-        // Validér nuværende status først
+        // Validate current status first
         Optional<Listing> currentListing = findById(adId);
         if (currentListing.isEmpty()) {
-            throw new ListingNotFoundException("Annonce ikke fundet: " + adId);
+            throw new ListingNotFoundException("Listing not found: " + adId);
         }
 
         Listing listing = currentListing.get();
 
-        // Tjek for ugyldige statusovergange
+        // Check for invalid status transitions
         if ("SOLD".equals(listing.getStatus())) {
-            throw new ListingAlreadySoldException("Annonce er allerede solgt: " + adId);
+            throw new ListingAlreadySoldException("Listing is already sold: " + adId);
         }
 
-        if (!"ACTIVE".equals(listing.getStatus())) {
-            throw new ListingNotActiveException("Annonce er ikke aktiv: " + adId);
+        if (!"ACTIVE".equals(listing.getStatus()) && !"PENDING".equals(status)) {
+            throw new ListingNotActiveException("Listing is not active: " + adId);
         }
 
         String sql = "UPDATE listings SET Status = ? WHERE AdID = ?";
         jdbcTemplate.update(sql, status, adId);
 
-        LoggerUtility.logEvent("Annonce status opdateret: " + adId + " - Ny status: " + status);
+        LoggerUtility.logEvent("Listing status updated: " + adId + " - New status: " + status);
     }
 
-    // Sletter annonce
+    // Delete a listing
     public void delete(String adId) {
         String sql = "DELETE FROM listings WHERE AdID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql, adId);
 
         if (rowsAffected == 0) {
-            LoggerUtility.logError("Sletning fejlede - annonce ikke fundet: " + adId);
-            throw new ListingNotFoundException("Annonce ikke fundet: " + adId);
+            LoggerUtility.logError("Delete failed - listing not found: " + adId);
+            throw new ListingNotFoundException("Listing not found: " + adId);
         }
 
-        LoggerUtility.logEvent("Annonce slettet: " + adId);
+        LoggerUtility.logEvent("Listing deleted: " + adId);
     }
 
-    // Søger annoncer med filtre
+    // Search listings with filters
     public List<Listing> searchListings(String keyword, Integer minPrice, Integer maxPrice,
-                                        String condition, String brand) {
+                                        String condition, String brand, Integer categoryId) {
         StringBuilder sql = new StringBuilder("SELECT * FROM listings WHERE Status = 'ACTIVE'");
+        List<Object> params = new ArrayList<>();
 
         if (keyword != null && !keyword.isEmpty()) {
             sql.append(" AND (Title LIKE ? OR Description LIKE ?)");
-        }
-        if (minPrice != null) {
-            sql.append(" AND Price >= ?");
-        }
-        if (maxPrice != null) {
-            sql.append(" AND Price <= ?");
-        }
-        if (condition != null && !condition.isEmpty()) {
-            sql.append(" AND Condition = ?");
-        }
-        if (brand != null && !brand.isEmpty()) {
-            sql.append(" AND Brand = ?");
-        }
-
-        sql.append(" ORDER BY CreatedDate DESC");
-
-        // Bygger parameter array dynamisk
-        List<Object> params = new java.util.ArrayList<>();
-        if (keyword != null && !keyword.isEmpty()) {
             String searchPattern = "%" + keyword + "%";
             params.add(searchPattern);
             params.add(searchPattern);
         }
+
         if (minPrice != null) {
+            sql.append(" AND Price >= ?");
             params.add(minPrice);
         }
+
         if (maxPrice != null) {
+            sql.append(" AND Price <= ?");
             params.add(maxPrice);
         }
+
         if (condition != null && !condition.isEmpty()) {
+            sql.append(" AND ItemCondition = ?");
             params.add(condition);
         }
+
         if (brand != null && !brand.isEmpty()) {
+            sql.append(" AND Brand = ?");
             params.add(brand);
         }
 
+        if (categoryId != null) {
+            sql.append(" AND CategoryID = ?");
+            params.add(categoryId);
+        }
+
+        sql.append(" ORDER BY CreatedDate DESC");
+
         return jdbcTemplate.query(sql.toString(), listingRowMapper, params.toArray());
+    }
+
+    // Search listings with category hierarchy
+    public List<Listing> searchListingsInCategoryHierarchy(String keyword, Integer minPrice, Integer maxPrice,
+                                                           String condition, String brand, List<Integer> categoryIds) {
+        if (categoryIds == null || categoryIds.isEmpty()) {
+            return searchListings(keyword, minPrice, maxPrice, condition, brand, null);
+        }
+
+        StringBuilder sql = new StringBuilder("SELECT * FROM listings WHERE Status = 'ACTIVE'");
+        List<Object> params = new ArrayList<>();
+
+        // Add standard conditions
+        if (keyword != null && !keyword.isEmpty()) {
+            sql.append(" AND (Title LIKE ? OR Description LIKE ?)");
+            String searchPattern = "%" + keyword + "%";
+            params.add(searchPattern);
+            params.add(searchPattern);
+        }
+
+        if (minPrice != null) {
+            sql.append(" AND Price >= ?");
+            params.add(minPrice);
+        }
+
+        if (maxPrice != null) {
+            sql.append(" AND Price <= ?");
+            params.add(maxPrice);
+        }
+
+        if (condition != null && !condition.isEmpty()) {
+            sql.append(" AND ItemCondition = ?");
+            params.add(condition);
+        }
+
+        if (brand != null && !brand.isEmpty()) {
+            sql.append(" AND Brand = ?");
+            params.add(brand);
+        }
+
+        // Add category hierarchy condition
+        sql.append(" AND CategoryID IN (");
+        for (int i = 0; i < categoryIds.size(); i++) {
+            sql.append(i > 0 ? ", ?" : "?");
+            params.add(categoryIds.get(i));
+        }
+        sql.append(")");
+
+        sql.append(" ORDER BY CreatedDate DESC");
+
+        return jdbcTemplate.query(sql.toString(), listingRowMapper, params.toArray());
+    }
+
+    // Count search results
+    public int countSearchResults(String keyword, Integer minPrice, Integer maxPrice,
+                                  String condition, String brand, Integer categoryId) {
+        StringBuilder sql = new StringBuilder("SELECT COUNT(*) FROM listings WHERE Status = 'ACTIVE'");
+        List<Object> params = new ArrayList<>();
+
+        // Add conditions (same as in searchListings)
+        if (keyword != null && !keyword.isEmpty()) {
+            sql.append(" AND (Title LIKE ? OR Description LIKE ?)");
+            String searchPattern = "%" + keyword + "%";
+            params.add(searchPattern);
+            params.add(searchPattern);
+        }
+
+        // Add other conditions...
+
+        return jdbcTemplate.queryForObject(sql.toString(), Integer.class, params.toArray());
     }
 }

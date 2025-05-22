@@ -2,13 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gilbert – Search</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
   <link rel="stylesheet" th:href="@{/css/styles.search.css}" />
 </head>
 <body>
 
-<!-- Header -->
 <header class="header">
   <a th:href="@{/index}" class="logo">GILBERT</a>
   <div class="icons">
@@ -30,30 +29,25 @@
   </div>
 </header>
 
-<!-- Mobile menu overlay -->
 <div class="overlay"></div>
 
-<!-- Mobile menu -->
 <aside class="mobile-menu">
-  <button class="close-btn" aria-label="Luk menu">×</button>
+  <button class="close-btn" aria-label="Close Menu">×</button>
   <ul>
-    <li><a href="/profile">Profil</a></li>
-    <li><a href="/orders">Ordrer</a></li>
-    <li><a href="/favorites">Favoritter</a></li>
-    <li><a href="/cart">Kurv</a></li>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/cart">Cart</a></li>
     <li><a href="/shop">Shop</a></li>
-    <li><a href="/sell">Sælg</a></li>
-    <li><a href="#">Designere</a></li>
-    <li><a href="#">Herre</a></li>
-    <li><a href="#">Dame</a></li>
-    <li><a href="#">Skønhed</a></li>
-    <li><a href="#">Bolig</a></li>
-    <li><a href="/settings">Indstillinger</a></li>
-    <li><a href="/logout">Log ud</a></li>
+    <li><a href="/sell">Sell</a></li>
+    <li th:each="mainCat : ${mainCategories}">
+      <a th:href="@{/search(categoryId=${mainCat.categoryID})}" th:text="${mainCat.name}">Category</a>
+    </li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Log Out</a></li>
   </ul>
 </aside>
 
-<!-- Mobile menu script -->
 <script>
   const menuBtn = document.querySelector('.menu-btn');
   const overlay = document.querySelector('.overlay');
@@ -70,7 +64,6 @@
   overlay.addEventListener('click', toggleMenu);
 </script>
 
-<!-- Navigation -->
 <nav class="navbar">
   <ul>
     <li class="dropdown">
@@ -81,104 +74,153 @@
         <li><a href="#">Minimalist</a></li>
       </ul>
     </li>
-    <li class="dropdown">
-      <a href="#">MEN</a>
+    <li class="dropdown" th:each="mainCat : ${mainCategories}">
+      <a th:href="@{/search(categoryId=${mainCat.categoryID})}" th:text="${mainCat.name}">CATEGORY</a>
       <ul class="submenu">
-        <li><a href="#">Shirts</a></li>
-        <li><a href="#">Jackets</a></li>
-        <li><a href="#">Shoes</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#">WOMEN</a>
-      <ul class="submenu">
-        <li><a href="#">Dresses</a></li>
-        <li><a href="#">Bags</a></li>
-        <li><a href="#">Heels</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#">BEAUTY</a>
-      <ul class="submenu">
-        <li><a href="#">Skincare</a></li>
-        <li><a href="#">Makeup</a></li>
-        <li><a href="#">Fragrance</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#">HOME</a>
-      <ul class="submenu">
-        <li><a href="#">Furniture</a></li>
-        <li><a href="#">Decor</a></li>
-        <li><a href="#">Textiles</a></li>
+        <li th:each="subCat : ${subcategories}" th:if="${subcategories != null}">
+          <a th:href="@{/search(categoryId=${subCat.categoryID})}" th:text="${subCat.name}">Subcategory</a>
+        </li>
       </ul>
     </li>
   </ul>
 </nav>
 
-<!-- Breadcrumb Navigation -->
 <nav class="breadcrumb">
-  <a th:href="@{/}">Home</a>
+  <a href="/">Home</a>
   <span class="separator">›</span>
-  <span th:if="${breadcrumb != null}" th:text="${breadcrumb}">Men's Fashion Clothing</span>
-  <span th:unless="${breadcrumb != null}">Search Results</span>
+  <a th:text="${breadcrumb != null ? breadcrumb : 'Search Results'}">Search Results</a>
 </nav>
 
-<!-- Search Bar -->
-<div class="search-container">
-  <form th:action="@{/search}" method="get" class="search-form">
-    <input type="text" name="keyword" th:value="${keyword}" placeholder="Search for products..." class="search-input">
-    <!-- Hidden filters preserved -->
-    <input type="hidden" name="category" th:value="${category}" th:if="${category != null}">
-    <input type="hidden" name="designer" th:value="${designer}" th:if="${designer != null}">
-    <input type="hidden" name="condition" th:value="${condition}" th:if="${condition != null}">
-    <input type="hidden" name="size" th:value="${size}" th:if="${size != null}">
-    <input type="hidden" name="color" th:value="${color}" th:if="${color != null}">
-    <input type="hidden" name="material" th:value="${material}" th:if="${material != null}">
-    <input type="hidden" name="ship" th:value="${ship}" th:if="${ship != null}">
-    <input type="hidden" name="price" th:value="${price}" th:if="${price != null}">
-    <input type="hidden" name="sort" th:value="${sort}" th:if="${sort != null}">
-    <input type="hidden" name="filter" th:value="${filter}" th:if="${filter != null}">
-    <button type="submit" class="search-button">Search</button>
-  </form>
-</div>
-
-<!-- Results Header -->
 <div class="results-header">
-  <h1 th:text="${category != null ? category : 'Search Results'}">Men</h1>
-  <span class="count" th:text="${count != null ? '- ' + count + ' Results' : ''}">- 10 000 Results</span>
+  <h1 th:text="${category != null ? category : 'Search Results'}">Search Results</h1>
+  <span class="count" th:text="${count != null ? '- ' + count + ' Results' : '- 0 Results'}">- 0 Results</span>
 </div>
 
-<!-- Filter Bar -->
 <nav class="filter-bar">
-  <!-- Your existing filter dropdowns remain here unchanged -->
-  <!-- ... -->
+  <details class="filter">
+    <summary>Sort By</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},sort='newest')}">Seneste</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},sort='price_asc')}">Pris stigende</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},sort='price_desc')}">Pris faldende</a></li>
+    </ul>
+  </details>
+
+  <details class="filter" th:if="${subcategories != null && !subcategories.isEmpty()}">
+    <summary>Category</summary>
+    <ul>
+      <li th:each="subCat : ${subcategories}">
+        <a th:href="@{/search(categoryId=${subCat.categoryID})}" th:text="${subCat.name}">Subcategory</a>
+      </li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>Designers</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer='gucci',condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">Gucci</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer='prada',condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">Prada</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer='balenciaga',condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">Balenciaga</a></li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>Condition</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition='NEW',size=${size},color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">Ny</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition='GOOD',size=${size},color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">Brugt</a></li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>Sizes</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size='s',color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">S</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size='m',color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">M</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size='l',color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">L</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size='xl',color=${color},material=${material},ship=${ship},price=${price},sort=${sort})}">XL</a></li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>Colour</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color='black',material=${material},ship=${ship},price=${price},sort=${sort})}">Black</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color='white',material=${material},ship=${ship},price=${price},sort=${sort})}">White</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color='blue',material=${material},ship=${ship},price=${price},sort=${sort})}">Blue</a></li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>Materials</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material='cotton',ship=${ship},price=${price},sort=${sort})}">Cotton</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material='leather',ship=${ship},price=${price},sort=${sort})}">Leather</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material='denim',ship=${ship},price=${price},sort=${sort})}">Denim</a></li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>Shipped From</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship='denmark',price=${price},sort=${sort})}">Denmark</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship='germany',price=${price},sort=${sort})}">Germany</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship='italy',price=${price},sort=${sort})}">Italy</a></li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>Price</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price='0-50',sort=${sort})}">0–50</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price='50-200',sort=${sort})}">50–200</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price='200+',sort=${sort})}">200+</a></li>
+    </ul>
+  </details>
+
+  <details class="filter">
+    <summary>All filters</summary>
+    <ul>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},filter='new_arrivals',sort=${sort})}">New arrivals</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},filter='on_sale',sort=${sort})}">On sale</a></li>
+      <li><a th:href="@{/search(categoryId=${selectedCategory != null ? selectedCategory.categoryID : ''},keyword=${keyword},designer=${designer},condition=${condition},size=${size},color=${color},material=${material},ship=${ship},price=${price},filter='exclusive',sort=${sort})}">Exclusive</a></li>
+    </ul>
+  </details>
 </nav>
 
-<!-- Product Grid -->
 <section class="product-grid">
-  <div th:if="${listings != null && !listings.isEmpty()}" th:each="listing : ${listings}" class="product-card" th:onclick="'window.location.href=\'' + @{/listing/{id}(id=${listing.adID})} + '\''">
-    <div class="product-image">
-      <img src="/images/product-placeholder.svg" alt="Product image">
-    </div>
+  <div class="product-card" th:each="listing : ${listings}"
+       th:onclick="'window.location.href=\'' + @{/listing/{id}(id=${listing.adID})} + '\''">
+    <img>
     <div class="title" th:text="${listing.brand != null ? listing.brand + ' – ' + listing.title : listing.title}">Product Title</div>
     <div class="price" th:text="${listing.price + ' DKK'}">Price DKK</div>
-    <div class="meta" th:text="${'Direct Shipping · ' + (listing.condition != null ? listing.condition : 'Standard')}">Shipping Info</div>
+    <div class="meta" th:text="'Direct Shipping · ' + (listing.itemCondition != null ? listing.itemCondition : 'Standard')">Direct Shipping · Condition</div>
   </div>
+  </a>
 
-  <div th:if="${listings != null && listings.isEmpty()}" class="no-results">
-    <h3>No listings found</h3>
-    <p>Try adjusting your search filters or browse our categories</p>
+  <!-- Show message if no listings found -->
+  <div th:if="${listings == null || listings.isEmpty()}" class="product-card">
+    <div class="title">No listings found</div>
+    <div class="meta">Try adjusting your search filters</div>
   </div>
 </section>
 
-<!-- Mobile Footer -->
 <footer class="mobile-footer">
-  <a href="/" class="footer-btn" aria-label="Home"><img src="/images/home.svg" class="icon" alt=""></a>
-  <a href="/search" class="footer-btn" aria-label="Søg"><img src="/images/search.svg" class="icon" alt=""></a>
-  <a href="/favorites" class="footer-btn" aria-label="Favoritter"><img src="/images/heart.svg" class="icon" alt=""></a>
-  <a href="/sell" class="footer-btn" aria-label="Me/Sell"><img src="/images/user.svg" class="icon" alt=""></a>
-  <a href="/notifications" class="footer-btn" aria-label="Notifikationer"><img src="/images/Notification.svg" class="icon" alt=""></a>
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Søg">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/favorites" class="footer-btn" aria-label="Favoritter">
+    <img src="/images/heart.svg" class="icon" alt="">
+  </a>
+  <a href="/sell" class="footer-btn" aria-label="Me/Sell">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+  <a href="/notifications" class="footer-btn" aria-label="Notifikationer">
+    <img src="/images/Notification.svg" class="icon" alt="">
+  </a>
 </footer>
 
 </body>

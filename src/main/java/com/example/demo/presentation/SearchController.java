@@ -1,29 +1,35 @@
 package com.example.demo.presentation;
 
+import com.example.demo.domain.entities.Category;
 import com.example.demo.domain.entities.Listing;
 import com.example.demo.domain.usecases.listing.SearchListingsUseCase;
+import com.example.demo.data.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class SearchController {
 
     private final SearchListingsUseCase searchListingsUseCase;
+    private final CategoryRepository categoryRepository;
 
     @Autowired
-    public SearchController(SearchListingsUseCase searchListingsUseCase) {
+    public SearchController(SearchListingsUseCase searchListingsUseCase, CategoryRepository categoryRepository) {
         this.searchListingsUseCase = searchListingsUseCase;
+        this.categoryRepository = categoryRepository;
     }
 
     @GetMapping("/search")
     public String search(
             @RequestParam(required = false) String keyword,
-            @RequestParam(required = false) String category,
+            @RequestParam(required = false) Integer categoryId,
             @RequestParam(required = false) String designer,
             @RequestParam(required = false) String condition,
             @RequestParam(required = false) String size,
@@ -38,154 +44,146 @@ public class SearchController {
         // Process price range if specified
         Integer minPrice = null;
         Integer maxPrice = null;
-        if (price != null) {
-            String[] priceRange = price.split("-");
-            if (priceRange.length > 0) {
-                try {
-                    minPrice = Integer.parseInt(priceRange[0]);
-                    if (priceRange.length > 1 && !priceRange[1].equals("+")) {
+        if (price != null && !price.isEmpty()) {
+            try {
+                if (price.contains("-")) {
+                    String[] priceRange = price.split("-");
+                    if (priceRange.length >= 1) {
+                        minPrice = Integer.parseInt(priceRange[0]);
+                    }
+                    if (priceRange.length >= 2 && !priceRange[1].equals("+") && !priceRange[1].isEmpty()) {
                         maxPrice = Integer.parseInt(priceRange[1]);
                     }
-                } catch (NumberFormatException e) {
-                    // Handle parsing error
+                } else if (price.endsWith("+")) {
+                    minPrice = Integer.parseInt(price.replace("+", ""));
                 }
+            } catch (NumberFormatException e) {
+                // Handle parsing error - ignore invalid price format
             }
         }
 
-        // If designer is specified, use it as a brand filter
+        // Use designer as brand filter
         String brand = designer;
 
-        // Apply sorting based on the selected option
-        String sortField = null;
-        boolean sortAscending = true;
+        // Fetch listings with filters
+        List<Listing> listings;
+        if (categoryId != null) {
+            // Get all subcategory IDs for hierarchical filtering
+            List<Integer> categoryIds = categoryRepository.findAllDescendantCategoryIds(categoryId);
+            listings = searchListingsUseCase.searchByCategoryHierarchy(keyword, minPrice, maxPrice, condition, brand, categoryIds);
+        } else {
+            listings = searchListingsUseCase.execute(keyword, minPrice, maxPrice, condition, brand, null);
+        }
+
+        // Apply sorting
         if (sort != null) {
             switch (sort) {
-                case "latest":
-                    sortField = "createdDate";
-                    sortAscending = false;
-                    break;
                 case "price_asc":
-                    sortField = "price";
-                    sortAscending = true;
+                    listings.sort((a, b) -> Integer.compare(a.getPrice(), b.getPrice()));
                     break;
                 case "price_desc":
-                    sortField = "price";
-                    sortAscending = false;
+                    listings.sort((a, b) -> Integer.compare(b.getPrice(), a.getPrice()));
+                    break;
+                case "newest":
+                default:
+                    listings.sort((a, b) -> b.getCreatedDate().compareTo(a.getCreatedDate()));
                     break;
             }
         }
 
-        // Use SearchListingsUseCase to get listings from the repository
-        List<Listing> listings = searchListingsUseCase.execute(
-                keyword,     // Search terms
-                minPrice,    // Minimum price
-                maxPrice,    // Maximum price
-                condition,   // Product condition
-                brand        // Brand/designer
-        );
+        // Get category information for UI
+        List<Category> mainCategories = categoryRepository.findMainCategories();
+        model.addAttribute("mainCategories", mainCategories);
 
-        // Sort the results based on the selected sorting (in a real app, this would be database-side)
-        if (sortField != null) {
-            if (sortField.equals("price")) {
-                if (sortAscending) {
-                    listings.sort((a, b) -> Integer.compare(a.getPrice(), b.getPrice()));
+        // Handle category-specific data
+        Category selectedCategory = null;
+        Category parentCategory = null;
+        List<Category> subcategories = null;
+
+        if (categoryId != null) {
+            Optional<Category> selectedCategoryOpt = categoryRepository.findById(categoryId);
+            if (selectedCategoryOpt.isPresent()) {
+                selectedCategory = selectedCategoryOpt.get();
+                model.addAttribute("selectedCategory", selectedCategory);
+
+                // Check if this is a subcategory or main category
+                if (selectedCategory.getParentID() != null) {
+                    // This is a subcategory - get parent and sibling subcategories
+                    Optional<Category> parentOpt = categoryRepository.findById(selectedCategory.getParentID());
+                    if (parentOpt.isPresent()) {
+                        parentCategory = parentOpt.get();
+                        model.addAttribute("parentCategory", parentCategory);
+                        subcategories = categoryRepository.findSubcategories(selectedCategory.getParentID());
+                    }
                 } else {
-                    listings.sort((a, b) -> Integer.compare(b.getPrice(), a.getPrice()));
+                    // This is a main category - get its subcategories
+                    subcategories = categoryRepository.findSubcategories(categoryId);
                 }
-            } else if (sortField.equals("createdDate")) {
-                listings.sort((a, b) -> b.getCreatedDate().compareTo(a.getCreatedDate()));
             }
         }
 
-        // Add listings to the model
-        model.addAttribute("listings", listings);
-
-        // Set up breadcrumb based on filter parameters
-        if (category != null) {
-            model.addAttribute("breadcrumb", getCategoryBreadcrumb(category));
-            model.addAttribute("category", formatCategoryName(category));
-        } else if (designer != null) {
-            model.addAttribute("breadcrumb", "Designers");
-            model.addAttribute("category", formatDesignerName(designer));
-        } else if (keyword != null && !keyword.trim().isEmpty()) {
-            model.addAttribute("breadcrumb", "Search");
-            model.addAttribute("category", "Search Results for \"" + keyword + "\"");
-        } else {
-            model.addAttribute("breadcrumb", "Shop");
-            model.addAttribute("category", "All Products");
+        if (subcategories != null) {
+            model.addAttribute("subcategories", subcategories);
         }
 
-        // Count from the actual result set
+        // Set up breadcrumb and category display
+        String breadcrumb = "Shop";
+        String categoryDisplay = "All Products";
+
+        if (selectedCategory != null) {
+            if (selectedCategory.getParentID() != null && parentCategory != null) {
+                // This is a subcategory
+                breadcrumb = parentCategory.getName();
+                categoryDisplay = selectedCategory.getName();
+            } else {
+                // This is a main category
+                breadcrumb = selectedCategory.getName();
+                categoryDisplay = "All " + selectedCategory.getName();
+            }
+        } else if (designer != null) {
+            breadcrumb = "Designers";
+            categoryDisplay = formatDesignerName(designer);
+        } else if (keyword != null && !keyword.trim().isEmpty()) {
+            breadcrumb = "Search";
+            categoryDisplay = "Search Results for \"" + keyword + "\"";
+        }
+
+        model.addAttribute("breadcrumb", breadcrumb);
+        model.addAttribute("category", categoryDisplay);
+
+        // Add listings and count
+        model.addAttribute("listings", listings);
         model.addAttribute("count", listings.size());
 
         // Track active filters for UI highlighting
-        if (sort != null) model.addAttribute("activeSort", sort);
-        if (category != null) model.addAttribute("activeCategory", category);
-        if (designer != null) model.addAttribute("activeDesigner", designer);
-        if (condition != null) model.addAttribute("activeCondition", condition);
-        if (size != null) model.addAttribute("activeSize", size);
-        if (color != null) model.addAttribute("activeColor", color);
-        if (material != null) model.addAttribute("activeMaterial", material);
-        if (ship != null) model.addAttribute("activeShip", ship);
-        if (price != null) model.addAttribute("activePrice", price);
-        if (filter != null) model.addAttribute("activeFilter", filter);
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("activeSort", sort);
+        model.addAttribute("activeCategoryId", categoryId);
+        model.addAttribute("activeDesigner", designer);
+        model.addAttribute("activeCondition", condition);
+        model.addAttribute("activeSize", size);
+        model.addAttribute("activeColor", color);
+        model.addAttribute("activeMaterial", material);
+        model.addAttribute("activeShip", ship);
+        model.addAttribute("activePrice", price);
+        model.addAttribute("activeFilter", filter);
 
         return "search";
     }
 
-    @GetMapping("/search/category")
-    public String searchByCategory(@RequestParam String name, Model model) {
-        return search(null, name, null, null, null, null, null, null, null, null, null, model);
+    @GetMapping("/category/{id}")
+    public String categoryView(@PathVariable("id") Integer categoryId, Model model) {
+        return search(null, categoryId, null, null, null, null, null, null, null, null, null, model);
     }
 
-    @GetMapping("/search/designer")
-    public String searchByDesigner(@RequestParam String name, Model model) {
-        return search(null, null, name, null, null, null, null, null, null, null, null, model);
-    }
-
-    // Helper methods for formatting display names
-    private String getCategoryBreadcrumb(String category) {
-        switch (category.toLowerCase()) {
-            case "shirts":
-            case "jackets":
-            case "shoes":
-                return "Men's Fashion";
-            case "dresses":
-            case "bags":
-            case "heels":
-                return "Women's Fashion";
-            case "skincare":
-            case "makeup":
-            case "fragrance":
-                return "Beauty";
-            case "furniture":
-            case "decor":
-            case "textiles":
-                return "Home";
-            default:
-                return "All Categories";
-        }
-    }
-
-    private String formatCategoryName(String category) {
-        // Capitalize first letter
-        if (category == null || category.isEmpty()) {
-            return "All Products";
-        }
-        return category.substring(0, 1).toUpperCase() + category.substring(1);
-    }
-
+    // Helper method
     private String formatDesignerName(String designer) {
-        // Designer names often have specific formatting
+        if (designer == null) return "";
         switch (designer.toLowerCase()) {
-            case "gucci":
-                return "GUCCI";
-            case "prada":
-                return "PRADA";
-            case "balenciaga":
-                return "BALENCIAGA";
-            default:
-                return designer.toUpperCase();
+            case "gucci": return "GUCCI";
+            case "prada": return "PRADA";
+            case "balenciaga": return "BALENCIAGA";
+            default: return designer.toUpperCase();
         }
     }
 }

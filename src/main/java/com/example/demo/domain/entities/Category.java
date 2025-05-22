@@ -5,6 +5,7 @@ public class Category {
     private int categoryID;
     private String name;
     private String description;
+    private Integer parentID;
 
     public Category(int categoryID, String name, String description) {
         this.categoryID = categoryID;
@@ -34,5 +35,13 @@ public class Category {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getParentID() {
+        return parentID;
+    }
+
+    public void setParentID(Integer parentID) {
+        this.parentID = parentID;
     }
 }

@@ -1,5 +1,8 @@
 package com.example.demo.domain.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Listing {
 
     private String adID;
@@ -102,4 +105,5 @@ public class Listing {
     public void setCategoryID(int categoryID) {
         this.categoryID = categoryID;
     }
+
 }

@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="'Gilbert – ' + ${listing.title}">Gilbert – Product</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/css/listing-detail.css}" />
+</head>
+<body>
+
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
+      <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
+      <img src="/images/Notification.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
+      <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
+      <img src="/images/cart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<div class="overlay"></div>
+
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Close Menu">×</button>
+  <ul>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/cart">Cart</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/sell">Sell</a></li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Log Out</a></li>
+  </ul>
+</aside>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li class="dropdown">
+      <a href="#">DESIGNERS</a>
+      <ul class="submenu">
+        <li><a href="#">Luxury</a></li>
+        <li><a href="#">Streetwear</a></li>
+        <li><a href="#">Minimalist</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=1)}">MEN</a>
+      <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=2)}">WOMEN</a>
+      <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=4)}">BEAUTY</a>
+      <ul class="submenu">
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Fragrance</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=3)}">HOME</a>
+      <ul class="submenu">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Textiles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb">
+  <a th:href="@{/}">Home</a>
+  <span class="separator">›</span>
+  <a th:href="@{/search}" th:if="${parentCategory == null and category == null}">Shop</a>
+  <a th:href="@{/search(categoryId=${parentCategory.categoryID})}"
+     th:if="${parentCategory != null}"
+     th:text="${parentCategory.name}">Category</a>
+  <span class="separator" th:if="${category != null}">›</span>
+  <a th:href="@{/search(categoryId=${category.categoryID})}"
+     th:if="${category != null}"
+     th:text="${category.name}">Subcategory</a>
+  <span class="separator">›</span>
+  <span th:text="${listing.title}">Product Name</span>
+</nav>
+
+<!-- Main Product Section -->
+<main class="product-main">
+  <div class="product-container">
+    <!-- Product Images -->
+    <div class="product-images">
+      <div class="main-image">
+        <div class="image-placeholder">
+          <img src="/images/product-placeholder.svg" alt="Product image">
+          <p>Image will be displayed here</p>
+        </div>
+      </div>
+      <div class="thumbnail-images">
+        <div class="thumbnail active">
+          <img src="/images/product-placeholder.svg" alt="Thumbnail 1">
+        </div>
+        <div class="thumbnail">
+          <img src="/images/product-placeholder.svg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail">
+          <img src="/images/product-placeholder.svg" alt="Thumbnail 3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details">
+      <div class="product-header">
+        <h1 th:text="${listing.brand != null ? listing.brand + ' – ' + listing.title : listing.title}">
+          Brand – Product Title
+        </h1>
+        <div class="price" th:text="${listing.price + ' DKK'}">Price DKK</div>
+
+        <!-- Status Badge -->
+        <div class="status-badge" th:classappend="${listing.status.toLowerCase()}">
+          <span th:text="${listing.status}">ACTIVE</span>
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="product-info">
+        <div class="info-row">
+          <span class="label">Condition:</span>
+          <span class="value" th:text="${listing.itemCondition}">Good</span>
+        </div>
+        <div class="info-row" th:if="${category != null}">
+          <span class="label">Category:</span>
+          <span class="value" th:text="${category.name}">Category</span>
+        </div>
+        <div class="info-row" th:if="${listing.brand != null}">
+          <span class="label">Brand:</span>
+          <span class="value" th:text="${listing.brand}">Brand</span>
+        </div>
+        <div class="info-row">
+          <span class="label">Listed:</span>
+          <span class="value" th:text="${listing.createdDate}">Date</span>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="product-description">
+        <h3>Description</h3>
+        <p th:text="${listing.description}">Product description will be displayed here.</p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="product-actions" th:if="${!isOwner and listing.status == 'ACTIVE'}">
+        <div th:if="${isLoggedIn}">
+          <a th:href="@{'/purchase/' + ${listing.adID}}" class="btn-primary btn-buy">
+            <span th:text="'Buy Now - ' + ${listing.price} + ' DKK'">Buy Now - Price DKK</span>
+          </a>
+          <a th:href="@{'/offer/' + ${listing.adID}}" class="btn-secondary btn-offer">
+            Make Offer
+          </a>
+          <a th:href="@{'/message/' + ${seller.userID}}" class="btn-contact">
+            Contact Seller
+          </a>
+        </div>
+        <div th:unless="${isLoggedIn}" class="login-prompt">
+          <p>Please <a th:href="@{/login}">log in</a> to purchase or contact the seller.</p>
+        </div>
+      </div>
+
+      <!-- Owner Actions -->
+      <div class="owner-actions" th:if="${isOwner}">
+        <p class="owner-notice">This is your listing</p>
+        <a th:href="@{'/listing/edit/' + ${listing.adID}}" class="btn-secondary">
+          Edit Listing
+        </a>
+        <a th:href="@{'/listing/delete/' + ${listing.adID}}" class="btn-danger">
+          Delete Listing
+        </a>
+      </div>
+
+      <!-- Unavailable Notice -->
+      <div class="unavailable-notice" th:if="${listing.status != 'ACTIVE'}">
+        <p th:if="${listing.status == 'SOLD'}">This item has been sold</p>
+        <p th:if="${listing.status == 'PENDING'}">This item is pending approval</p>
+        <p th:if="${listing.status == 'RESERVED'}">This item is currently reserved</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seller Information -->
+  <div class="seller-info" th:if="${seller != null}">
+    <h3>Seller Information</h3>
+    <div class="seller-card">
+      <div class="seller-avatar">
+        <img src="/images/user-placeholder.svg" alt="Seller avatar">
+      </div>
+      <div class="seller-details">
+        <h4 th:text="${seller.name}">Seller Name</h4>
+        <p class="seller-alias" th:text="'@' + ${seller.alias}">@username</p>
+        <p class="seller-location" th:if="${seller.address != null}" th:text="'📍 ' + ${seller.address}">Location</p>
+        <div class="seller-stats">
+          <span>★★★★★ (4.8)</span>
+          <span>•</span>
+          <span>127 sales</span>
+        </div>
+      </div>
+      <div class="seller-actions">
+        <a th:href="@{'/profile/' + ${seller.userID}}" class="btn-secondary">View Profile</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Search">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/favorites" class="footer-btn" aria-label="Favorites">
+    <img src="/images/heart.svg" class="icon" alt="">
+  </a>
+  <a href="/sell" class="footer-btn" aria-label="Sell">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+  <a href="/notifications" class="footer-btn" aria-label="Notifications">
+    <img src="/images/Notification.svg" class="icon" alt="">
+  </a>
+</footer>
+
+</body>
+</html>

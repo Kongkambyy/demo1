@@ -323,11 +323,6 @@ public class HomeController {
         return "cart";
     }
 
-    @GetMapping("/favorites")
-    public String favorites() {
-        return "favorites";
-    }
-
     @GetMapping("/notifications")
     public String notifications() {
         return "notifications";

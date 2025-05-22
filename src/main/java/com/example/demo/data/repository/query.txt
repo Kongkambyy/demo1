@@ -16,7 +16,9 @@ CREATE TABLE categories (
     CategoryID INT AUTO_INCREMENT,
     Name VARCHAR(100) NOT NULL,
     Description VARCHAR(512),
-    PRIMARY KEY(CategoryID)
+    ParentID INT NULL,
+    PRIMARY KEY(CategoryID),
+    FOREIGN KEY (ParentID) REFERENCES categories(CategoryID)
 );
 
 CREATE TABLE listings (
@@ -113,7 +115,3 @@ CREATE TABLE notifications (
     PRIMARY KEY (NotificationID),
     FOREIGN KEY (UserID) REFERENCES users(UserID)
 );
-
--- Add index for efficient querying of user notifications
-CREATE INDEX idx_notifications_userid ON notifications(UserID);
-CREATE INDEX idx_notifications_isread ON notifications(IsRead);
