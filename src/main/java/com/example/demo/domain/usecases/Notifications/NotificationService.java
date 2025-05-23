@@ -133,6 +133,25 @@ public class NotificationService {
         LoggerUtility.logEvent("Offer received notification created for seller: " + sellerId);
     }
 
+    // NEW: Notification for when you submit an offer (buyer confirmation)
+    public void notifyOfferSubmitted(String buyerId, String offerId, String listingId, String listingTitle, int offerAmount) {
+        String message = "Your offer of " + offerAmount + " DKK for \"" + listingTitle + "\" has been submitted successfully. You will be notified when the seller responds.";
+
+        String createdDate = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+
+        Notification notification = new Notification(
+                buyerId,
+                offerId,
+                "OFFER",
+                "OFFER_SUBMITTED",
+                message,
+                createdDate
+        );
+
+        notificationRepository.save(notification);
+        LoggerUtility.logEvent("Offer submitted notification created for buyer: " + buyerId);
+    }
+
     // Notification for when your offer is accepted
     public void notifyOfferAccepted(String buyerId, String offerId, String listingId, String listingTitle, int offerAmount) {
         String message = "Your offer of " + offerAmount + " DKK for \"" + listingTitle + "\" has been accepted!";
@@ -171,10 +190,7 @@ public class NotificationService {
         LoggerUtility.logEvent("Offer rejected notification created for buyer: " + buyerId);
     }
 
-    // Helper method to get all users who favorited a listing
     private List<String> getUsersWhoFavoritedListing(String listingId) {
-        // This should be implemented in FavoriteRepository
-        // For now, assuming there's a method to get all users who favorited a listing
         return favoriteRepository.findUsersByListingId(listingId);
     }
 }

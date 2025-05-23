@@ -8,19 +8,19 @@
 </head>
 <body>
 <header class="header">
-    <a th:href="@{/index}" class="logo">GILBERT</a>
+    <a th:href="@{/}" class="logo">GILBERT</a>
     <div class="icons">
-        <a class="header-btn" th:href="@{/favorites}" aria-label="Favoritter">
+        <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
             <img src="/images/heart.svg" class="icon" alt="">
         </a>
         <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
             <img src="/images/Notification.svg" class="icon" alt="">
             <span class="notification-badge" th:if="${globalUnreadNotificationCount != null && globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}"></span>
         </a>
-        <a class="header-btn" th:href="@{/profile}" aria-label="user">
+        <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
             <img src="/images/user.svg" class="icon" alt="">
         </a>
-        <a class="header-btn" th:href="@{/cart}" aria-label="cart">
+        <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
             <img src="/images/cart.svg" class="icon" alt="">
         </a>
         <a class="header-btn menu-btn" aria-label="Menu">
@@ -34,17 +34,17 @@
 <aside class="mobile-menu">
     <button class="close-btn" aria-label="Close Menu">×</button>
     <ul>
-        <li><a href="/profile">Profile</a></li>
+        ="/profile">Profile</a></li>
         <li><a href="/orders">Orders</a></li>
         <li><a href="/favorites">Favorites</a></li>
         <li><a href="/cart">Cart</a></li>
-        <li><a href="/shop">Shop</a></li>
+        <li><a th:href="@{/search}">Shop</a></li>
         <li><a href="/sell">Sell</a></li>
-        <li><a href="#">Designers</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Woman</a></li>
-        <li><a href="#">Beauty</a></li>
-        <li><a href="#">Home</a></li>
+        <li><a th:href="@{/search(designer='luxury')}">Designers</a></li>
+        <li><a th:href="@{/search(categoryId=1)}">Men</a></li>
+        <li><a th:href="@{/search(categoryId=2)}">Women</a></li>
+        <li><a th:href="@{/search(categoryId=4)}">Beauty</a></li>
+        <li><a th:href="@{/search(categoryId=3)}">Home</a></li>
         <li><a href="/settings">Settings</a></li>
         <li><a href="/logout">Log Out</a></li>
     </ul>
@@ -69,43 +69,43 @@
 <nav class="navbar">
     <ul>
         <li class="dropdown">
-            <a href="#">DESIGNERS</a>
+            <a th:href="@{/search(designer='luxury')}">DESIGNERS</a>
             <ul class="submenu">
-                <li><a href="#">Luxury</a></li>
-                <li><a href="#">Streetwear</a></li>
-                <li><a href="#">Minimalist</a></li>
+                <li><a th:href="@{/search(designer='luxury')}">Luxury</a></li>
+                <li><a th:href="@{/search(designer='streetwear')}">Streetwear</a></li>
+                <li><a th:href="@{/search(designer='minimalist')}">Minimalist</a></li>
             </ul>
         </li>
         <li class="dropdown">
-            <a href="#">MEN</a>
+            <a th:href="@{/search(categoryId=1)}">MEN</a>
             <ul class="submenu">
-                <li><a href="#">Shirts</a></li>
-                <li><a href="#">Jackets</a></li>
-                <li><a href="#">Shoes</a></li>
+                <li><a th:href="@{/search(categoryId=1,keyword='shirts')}">Shirts</a></li>
+                <li><a th:href="@{/search(categoryId=1,keyword='jackets')}">Jackets</a></li>
+                <li><a th:href="@{/search(categoryId=1,keyword='shoes')}">Shoes</a></li>
             </ul>
         </li>
         <li class="dropdown">
-            <a href="#">WOMEN</a>
+            <a th:href="@{/search(categoryId=2)}">WOMEN</a>
             <ul class="submenu">
-                <li><a href="#">Dresses</a></li>
-                <li><a href="#">Bags</a></li>
-                <li><a href="#">Heels</a></li>
+                <li><a th:href="@{/search(categoryId=2,keyword='dresses')}">Dresses</a></li>
+                <li><a th:href="@{/search(categoryId=2,keyword='bags')}">Bags</a></li>
+                <li><a th:href="@{/search(categoryId=2,keyword='heels')}">Heels</a></li>
             </ul>
         </li>
         <li class="dropdown">
-            <a href="#">BEAUTY</a>
+            <a th:href="@{/search(categoryId=4)}">BEAUTY</a>
             <ul class="submenu">
-                <li><a href="#">Skincare</a></li>
-                <li><a href="#">Makeup</a></li>
-                <li><a href="#">Fragrance</a></li>
+                <li><a th:href="@{/search(categoryId=4,keyword='skincare')}">Skincare</a></li>
+                <li><a th:href="@{/search(categoryId=4,keyword='makeup')}">Makeup</a></li>
+                <li><a th:href="@{/search(categoryId=4,keyword='fragrance')}">Fragrance</a></li>
             </ul>
         </li>
         <li class="dropdown">
-            <a href="#">HOME</a>
+            <a th:href="@{/search(categoryId=3)}">HOME</a>
             <ul class="submenu">
-                <li><a href="#">Furniture</a></li>
-                <li><a href="#">Decor</a></li>
-                <li><a href="#">Textiles</a></li>
+                <li><a th:href="@{/search(categoryId=3,keyword='furniture')}">Furniture</a></li>
+                <li><a th:href="@{/search(categoryId=3,keyword='decor')}">Decor</a></li>
+                <li><a th:href="@{/search(categoryId=3,keyword='textiles')}">Textiles</a></li>
             </ul>
         </li>
     </ul>
@@ -113,7 +113,7 @@
 
 <section class="hero">
     <div class="image">
-        <a class="hero-image" th:href="@{/search}" aria-label="user">
+        <a class="hero-image" th:href="@{/search}" aria-label="Browse products">
             <img src="/images/hero.jpg" class="hero-image" alt="Handpicked bag">
         </a>
     </div>
@@ -124,7 +124,7 @@
 </section>
 
 <div class="buttons">
-    <button class="btn-shop" th:onclick="|location.href='@{/shop}'|">SHOP</button>
+    <button class="btn-shop" th:onclick="|location.href='@{/search}'|">SHOP</button>
     <br>
     <button class="btn-sell" th:onclick="|location.href='@{/sell}'|">SELL</button>
 </div>
@@ -133,16 +133,16 @@
     <a href="/" class="footer-btn" aria-label="Home">
         <img src="/images/home.svg" class="icon" alt="">
     </a>
-    <a href="/search" class="footer-btn" aria-label="Søg">
+    <a th:href="@{/search}" class="footer-btn" aria-label="Search">
         <img src="/images/search.svg" class="icon" alt="">
     </a>
-    <a href="/favorites" class="footer-btn" aria-label="Favoritter">
+    <a href="/favorites" class="footer-btn" aria-label="Favorites">
         <img src="/images/heart.svg" class="icon" alt="">
     </a>
-    <a href="/sell" class="footer-btn" aria-label="Me/Sell">
+    <a href="/sell" class="footer-btn" aria-label="Sell">
         <img src="/images/user.svg" class="icon" alt="">
     </a>
-    <a href="/notifications" class="footer-btn" aria-label="Notifikationer">
+    <a href="/notifications" class="footer-btn" aria-label="Notifications">
         <img src="/images/Notification.svg" class="icon" alt="">
     </a>
 </footer>

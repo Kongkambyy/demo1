@@ -9,19 +9,19 @@
 </head>
 <body>
 <header class="header">
-  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <a th:href="@{/}" class="logo">GILBERT</a>
   <div class="icons">
-    <a class="header-btn" th:href="@{/favorites}" aria-label="Favoritter">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
       <img src="/images/heart.svg" class="icon" alt="">
     </a>
     <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
       <img src="/images/Notification.svg" class="icon" alt="">
       <span class="notification-badge" th:if="${globalUnreadNotificationCount != null && globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}"></span>
     </a>
-    <a class="header-btn" th:href="@{/profile}" aria-label="user">
+    <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
       <img src="/images/user.svg" class="icon" alt="">
     </a>
-    <a class="header-btn" th:href="@{/cart}" aria-label="cart">
+    <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
       <img src="/images/cart.svg" class="icon" alt="">
     </a>
     <a class="header-btn menu-btn" aria-label="Menu">
@@ -35,19 +35,19 @@
 <aside class="mobile-menu">
   <button class="close-btn" aria-label="Close menu">×</button>
   <ul>
-    <li><a href="/profile">Profile</a></li>
-    <li><a href="/orders">Orders</a></li>
-    <li><a href="/favorites">Favorites</a></li>
-    <li><a href="/cart">Cart</a></li>
-    <li><a href="/shop">Shop</a></li>
-    <li><a href="/sell">Sell</a></li>
-    <li><a href="#">Designers</a></li>
-    <li><a href="#">Men</a></li>
-    <li><a href="#">Woman</a></li>
-    <li><a href="#">Beauty</a></li>
-    <li><a href="#">Home</a></li>
-    <li><a href="/settings">Settings</a></li>
-    <li><a href="/logout">Log Out</a></li>
+    <li><a th:href="@{/profile}">Profile</a></li>
+    <li><a th:href="@{/orders}">Orders</a></li>
+    <li><a th:href="@{/favorites}">Favorites</a></li>
+    <li><a th:href="@{/cart}">Cart</a></li>
+    <li><a th:href="@{/search}">Shop</a></li>
+    <li><a th:href="@{/profile}">Sell</a></li>
+    <li><a th:href="@{/search(designer='luxury')}">Designers</a></li>
+    <li><a th:href="@{/search(categoryId=1)}">Men</a></li>
+    <li><a th:href="@{/search(categoryId=2)}">Women</a></li>
+    <li><a th:href="@{/search(categoryId=4)}">Beauty</a></li>
+    <li><a th:href="@{/search(categoryId=3)}">Home</a></li>
+    <li><a th:href="@{/settings}">Settings</a></li>
+    <li><a th:href="@{/logout}">Log Out</a></li>
   </ul>
 </aside>
 
@@ -70,43 +70,43 @@
 <nav class="navbar">
   <ul>
     <li class="dropdown">
-      <a href="#">DESIGNERS</a>
+      <a th:href="@{/search(designer='luxury')}">DESIGNERS</a>
       <ul class="submenu">
-        <li><a href="#">Luxury</a></li>
-        <li><a href="#">Streetwear</a></li>
-        <li><a href="#">Minimalist</a></li>
+        <li><a th:href="@{/search(designer='luxury')}">Luxury</a></li>
+        <li><a th:href="@{/search(designer='streetwear')}">Streetwear</a></li>
+        <li><a th:href="@{/search(designer='minimalist')}">Minimalist</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#">MEN</a>
+      <a th:href="@{/search(categoryId=1)}">MEN</a>
       <ul class="submenu">
-        <li><a href="#">Shirts</a></li>
-        <li><a href="#">Jackets</a></li>
-        <li><a href="#">Shoes</a></li>
+        <li><a th:href="@{/search(categoryId=1,keyword='shirts')}">Shirts</a></li>
+        <li><a th:href="@{/search(categoryId=1,keyword='jackets')}">Jackets</a></li>
+        <li><a th:href="@{/search(categoryId=1,keyword='shoes')}">Shoes</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#">WOMEN</a>
+      <a th:href="@{/search(categoryId=2)}">WOMEN</a>
       <ul class="submenu">
-        <li><a href="#">Dresses</a></li>
-        <li><a href="#">Bags</a></li>
-        <li><a href="#">Heels</a></li>
+        <li><a th:href="@{/search(categoryId=2,keyword='dresses')}">Dresses</a></li>
+        <li><a th:href="@{/search(categoryId=2,keyword='bags')}">Bags</a></li>
+        <li><a th:href="@{/search(categoryId=2,keyword='heels')}">Heels</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#">BEAUTY</a>
+      <a th:href="@{/search(categoryId=4)}">BEAUTY</a>
       <ul class="submenu">
-        <li><a href="#">Skincare</a></li>
-        <li><a href="#">Makeup</a></li>
-        <li><a href="#">Fragrance</a></li>
+        <li><a th:href="@{/search(categoryId=4,keyword='skincare')}">Skincare</a></li>
+        <li><a th:href="@{/search(categoryId=4,keyword='makeup')}">Makeup</a></li>
+        <li><a th:href="@{/search(categoryId=4,keyword='fragrance')}">Fragrance</a></li>
       </ul>
     </li>
     <li class="dropdown">
-      <a href="#">HOME</a>
+      <a th:href="@{/search(categoryId=3)}">HOME</a>
       <ul class="submenu">
-        <li><a href="#">Furniture</a></li>
-        <li><a href="#">Decor</a></li>
-        <li><a href="#">Textiles</a></li>
+        <li><a th:href="@{/search(categoryId=3,keyword='furniture')}">Furniture</a></li>
+        <li><a th:href="@{/search(categoryId=3,keyword='decor')}">Decor</a></li>
+        <li><a th:href="@{/search(categoryId=3,keyword='textiles')}">Textiles</a></li>
       </ul>
     </li>
   </ul>
@@ -146,7 +146,7 @@
 <div th:if="${section == null || section == 'items'}" class="listings-container">
   <div th:if="${listings == null || listings.isEmpty()}" class="empty-state">
     <p>You don't have any active listings.</p>
-    <button class="btn-sell" th:onclick="|location.href='@{/sell}'|">CREATE LISTING</button>
+    <a th:href="@{/search}" class="btn-sell">CREATE LISTING</a>
   </div>
 
   <div th:if="${listings != null && !listings.isEmpty()}" class="listings-grid">
@@ -183,10 +183,78 @@
   </div>
 </div>
 
-<!-- Orders section -->
+<!-- Orders section with offers -->
 <div th:if="${section == 'orders'}" class="orders-container">
-  <div class="empty-state">
-    <p>Your purchase history will appear here.</p>
+
+  <!-- My Offers (offers I made as a buyer) -->
+  <div class="offers-section">
+    <h3>My Offers</h3>
+    <div th:if="${myOffers != null && !myOffers.isEmpty()}" class="offers-grid">
+      <div th:each="offerWithListing : ${myOffers}" class="offer-card">
+        <div class="offer-image">
+          <img src="/images/product-placeholder.svg" alt="Product Image">
+        </div>
+        <div class="offer-details">
+          <h4 th:text="${offerWithListing.listing.brand != null ? offerWithListing.listing.brand + ' – ' + offerWithListing.listing.title : offerWithListing.listing.title}">Product Title</h4>
+          <p class="offer-price">
+            <span>My Offer: </span>
+            <strong th:text="${offerWithListing.offer.offerAmount + ' DKK'}">500 DKK</strong>
+            <span th:text="'(Original: ' + ${offerWithListing.offer.originalPrice} + ' DKK)'">(Original: 800 DKK)</span>
+          </p>
+          <p class="offer-status" th:classappend="${offerWithListing.offer.status.toLowerCase()}">
+            <span th:text="${offerWithListing.offer.status}">PENDING</span>
+          </p>
+          <p class="offer-date" th:text="'Submitted: ' + ${offerWithListing.offer.createdDate}">Submitted: 2024-01-15</p>
+        </div>
+        <div class="offer-actions">
+          <a th:href="@{/listing/{id}(id=${offerWithListing.listing.adID})}" class="btn-secondary">View Listing</a>
+        </div>
+      </div>
+    </div>
+    <div th:if="${myOffers == null || myOffers.isEmpty()}" class="empty-state">
+      <p>You haven't made any offers yet.</p>
+      <a th:href="@{/search}" class="btn-secondary">Browse Items</a>
+    </div>
+  </div>
+
+  <!-- Received Offers (offers I received as a seller) -->
+  <div class="offers-section" style="margin-top: 3rem;">
+    <h3>Offers Received</h3>
+    <div th:if="${receivedOffers != null && !receivedOffers.isEmpty()}" class="offers-grid">
+      <div th:each="offerWithListing : ${receivedOffers}" class="offer-card">
+        <div class="offer-image">
+          <img src="/images/product-placeholder.svg" alt="Product Image">
+        </div>
+        <div class="offer-details">
+          <h4 th:text="${offerWithListing.listing.brand != null ? offerWithListing.listing.brand + ' – ' + offerWithListing.listing.title : offerWithListing.listing.title}">Product Title</h4>
+          <p class="offer-price">
+            <span>Offer Received: </span>
+            <strong th:text="${offerWithListing.offer.offerAmount + ' DKK'}">500 DKK</strong>
+            <span th:text="'(Your Price: ' + ${offerWithListing.offer.originalPrice} + ' DKK)'">(Your Price: 800 DKK)</span>
+          </p>
+          <p class="offer-status" th:classappend="${offerWithListing.offer.status.toLowerCase()}">
+            <span th:text="${offerWithListing.offer.status}">PENDING</span>
+          </p>
+          <p class="offer-date" th:text="'Received: ' + ${offerWithListing.offer.createdDate}">Received: 2024-01-15</p>
+        </div>
+        <div class="offer-actions" th:if="${offerWithListing.offer.status == 'PENDING'}">
+          <form th:action="@{/offers/accept}" method="post" style="display: inline;">
+            <input type="hidden" name="offerId" th:value="${offerWithListing.offer.offerID}">
+            <button type="submit" class="btn-primary">Accept</button>
+          </form>
+          <form th:action="@{/offers/reject}" method="post" style="display: inline;">
+            <input type="hidden" name="offerId" th:value="${offerWithListing.offer.offerID}">
+            <button type="submit" class="btn-secondary">Reject</button>
+          </form>
+        </div>
+        <div class="offer-actions" th:unless="${offerWithListing.offer.status == 'PENDING'}">
+          <a th:href="@{/listing/{id}(id=${offerWithListing.listing.adID})}" class="btn-secondary">View Listing</a>
+        </div>
+      </div>
+    </div>
+    <div th:if="${receivedOffers == null || receivedOffers.isEmpty()}" class="empty-state">
+      <p>You haven't received any offers yet.</p>
+    </div>
   </div>
 </div>
 
@@ -260,19 +328,19 @@
 
 <!-- Mobile footer -->
 <footer class="mobile-footer">
-  <a href="/" class="footer-btn" aria-label="Home">
+  <a th:href="@{/}" class="footer-btn" aria-label="Home">
     <img src="/images/home.svg" class="icon" alt="">
   </a>
-  <a href="/search" class="footer-btn" aria-label="Søg">
+  <a th:href="@{/search}" class="footer-btn" aria-label="Search">
     <img src="/images/search.svg" class="icon" alt="">
   </a>
-  <a href="/favorites" class="footer-btn" aria-label="Favoritter">
+  <a th:href="@{/favorites}" class="footer-btn" aria-label="Favorites">
     <img src="/images/heart.svg" class="icon" alt="">
   </a>
-  <a href="/sell" class="footer-btn" aria-label="Me/Sell">
+  <a th:href="@{/profile}" class="footer-btn" aria-label="Profile">
     <img src="/images/user.svg" class="icon" alt="">
   </a>
-  <a href="/notifications" class="footer-btn" aria-label="Notifikationer">
+  <a th:href="@{/notifications}" class="footer-btn" aria-label="Notifications">
     <img src="/images/Notification.svg" class="icon" alt="">
   </a>
 </footer>

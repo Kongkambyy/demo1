@@ -93,7 +93,7 @@ public class MakeOfferUseCase {
         // Save offer
         Offer savedOffer = offerRepository.save(offer);
 
-        // Send notifications using the notification service
+        // Send notification to seller about receiving the offer
         notificationService.notifyOfferReceived(
                 savedOffer.getSellerID(),
                 savedOffer.getListingID(),
@@ -102,7 +102,16 @@ public class MakeOfferUseCase {
                 savedOffer.getOfferAmount()
         );
 
-        // Also notify users who favorited this listing
+        // Send notification to buyer confirming offer submission
+        notificationService.notifyOfferSubmitted(
+                savedOffer.getBuyerID(),
+                savedOffer.getOfferID(),
+                savedOffer.getListingID(),
+                listing.getTitle(),
+                savedOffer.getOfferAmount()
+        );
+
+        // Also notify users who favorited this listing about the new offer
         notificationService.notifyOfferOnFavoritedListing(
                 savedOffer.getListingID(),
                 savedOffer.getOfferID(),

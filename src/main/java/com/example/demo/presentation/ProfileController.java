@@ -4,6 +4,7 @@ import com.example.demo.domain.entities.User;
 import com.example.demo.domain.usecases.user.GetUserUseCase;
 import com.example.demo.domain.usecases.user.UpdateUserUseCase;
 import com.example.demo.domain.usecases.user.DeleteUserUseCase;
+import com.example.demo.domain.usecases.Notifications.GetNotificationsUseCase;
 import com.example.demo.exceptions.user.UserNotFoundException;
 import com.example.demo.exceptions.user.DuplicateUserException;
 import com.example.demo.exceptions.user.InvalidCredentialsException;
@@ -25,26 +26,43 @@ public class ProfileController {
     private final GetUserUseCase getUserUseCase;
     private final UpdateUserUseCase updateUserUseCase;
     private final DeleteUserUseCase deleteUserUseCase;
+    private final GetNotificationsUseCase getNotificationsUseCase;
 
     @Autowired
     public ProfileController(GetUserUseCase getUserUseCase,
                              UpdateUserUseCase updateUserUseCase,
-                             DeleteUserUseCase deleteUserUseCase) {
+                             DeleteUserUseCase deleteUserUseCase,
+                             GetNotificationsUseCase getNotificationsUseCase) {
         this.getUserUseCase = getUserUseCase;
         this.updateUserUseCase = updateUserUseCase;
         this.deleteUserUseCase = deleteUserUseCase;
+        this.getNotificationsUseCase = getNotificationsUseCase;
+    }
+
+    private void addNotificationCount(Model model, HttpSession session) {
+        String userId = (String) session.getAttribute("userId");
+        if (userId != null) {
+            try {
+                int unreadCount = getNotificationsUseCase.countUnread(userId);
+                model.addAttribute("globalUnreadNotificationCount", unreadCount);
+            } catch (Exception e) {
+                LoggerUtility.logError("Error getting notification count for user " + userId + ": " + e.getMessage());
+                model.addAttribute("globalUnreadNotificationCount", 0);
+            }
+        } else {
+            model.addAttribute("globalUnreadNotificationCount", 0);
+        }
     }
 
     @GetMapping("/profile/edit")
     public String editProfile(Model model, HttpSession session) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             return "redirect:/login";
         }
 
         try {
-            // Get current user data
+            addNotificationCount(model, session);
             User user = getUserUseCase.findByIdOrThrow(userId);
             model.addAttribute("user", user);
 
@@ -77,7 +95,6 @@ public class ProfileController {
         }
 
         try {
-            // Validate required fields
             if (name == null || name.trim().isEmpty()) {
                 redirectAttributes.addFlashAttribute("error", "Name is required");
                 return "redirect:/profile/edit";
@@ -93,13 +110,11 @@ public class ProfileController {
                 return "redirect:/profile/edit";
             }
 
-            // Validate email format
             if (!email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")) {
                 redirectAttributes.addFlashAttribute("error", "Please enter a valid email address");
                 return "redirect:/profile/edit";
             }
 
-            // Update user profile
             User updatedUser = updateUserUseCase.execute(
                     userId,
                     name.trim(),
@@ -110,7 +125,6 @@ public class ProfileController {
                     password != null && !password.trim().isEmpty() ? password : null
             );
 
-            // Update session with new user data
             session.setAttribute("userName", updatedUser.getName());
             session.setAttribute("userEmail", updatedUser.getEmail());
 
@@ -145,6 +159,7 @@ public class ProfileController {
         }
 
         try {
+            addNotificationCount(model, session);
             User user = getUserUseCase.findByIdOrThrow(userId);
             model.addAttribute("user", user);
 
@@ -172,21 +187,17 @@ public class ProfileController {
         }
 
         try {
-            // Validate confirmation text
             if (!"DELETE MY ACCOUNT".equals(confirmation)) {
                 redirectAttributes.addFlashAttribute("error", "You must type 'DELETE MY ACCOUNT' exactly to confirm");
                 return "redirect:/profile/delete";
             }
 
-            // Validate password is provided
             if (password == null || password.trim().isEmpty()) {
                 redirectAttributes.addFlashAttribute("error", "Password is required to delete your account");
                 return "redirect:/profile/delete";
             }
 
-            // Execute account deletion
             deleteUserUseCase.execute(userId, password);
-
             session.invalidate();
 
             LoggerUtility.logEvent("Account successfully deleted for user: " + userId);

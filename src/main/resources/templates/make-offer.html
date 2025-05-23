@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="'Gilbert – Make Offer on ' + ${listing.title}">Gilbert – Make Offer</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/css/make-offer.css}" />
+</head>
+<body>
+
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
+      <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
+      <img src="/images/Notification.svg" class="icon" alt="">
+      <span class="notification-badge" th:if="${globalUnreadNotificationCount != null && globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}"></span>
+    </a>
+    <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
+      <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
+      <img src="/images/cart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<div class="overlay"></div>
+
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Close Menu">×</button>
+  <ul>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/cart">Cart</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/sell">Sell</a></li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Log Out</a></li>
+  </ul>
+</aside>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li class="dropdown">
+      <a href="#">DESIGNERS</a>
+      <ul class="submenu">
+        <li><a href="#">Luxury</a></li>
+        <li><a href="#">Streetwear</a></li>
+        <li><a href="#">Minimalist</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=1)}">MEN</a>
+      <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=2)}">WOMEN</a>
+      <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=4)}">BEAUTY</a>
+      <ul class="submenu">
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Fragrance</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=3)}">HOME</a>
+      <ul class="submenu">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Textiles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- Make Offer Container -->
+<main class="offer-container">
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb">
+    <a th:href="@{/}">Home</a>
+    <span class="separator">›</span>
+    <a th:href="@{/search}">Shop</a>
+    <span class="separator">›</span>
+    <a th:href="@{'/listing/' + ${listing.adID}}" th:text="${listing.title}">Product</a>
+    <span class="separator">›</span>
+    <span>Make Offer</span>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="offer-header">
+    <h1>Make an Offer</h1>
+    <p>Submit your best offer for this item. The seller will be notified and can accept or decline your offer.</p>
+  </div>
+
+  <!-- Success/Error Messages -->
+  <div th:if="${success}" class="alert alert-success" th:text="${success}">
+    Success message
+  </div>
+  <div th:if="${error}" class="alert alert-error" th:text="${error}">
+    Error message
+  </div>
+  <div th:if="${warning}" class="alert alert-warning" th:text="${warning}">
+    Warning message
+  </div>
+
+  <!-- Main Content -->
+  <div class="offer-content">
+    <!-- Product Summary -->
+    <div class="product-summary">
+      <h2>Item Details</h2>
+
+      <div class="product-info">
+        <div class="product-image">
+          <img src="/images/product-placeholder.svg" alt="Product image">
+        </div>
+
+        <div class="product-details">
+          <h3 th:text="${listing.brand != null ? listing.brand + ' – ' + listing.title : listing.title}">
+            Product Title
+          </h3>
+          <div class="product-price" th:text="${listing.price + ' DKK'}">Price DKK</div>
+          <div class="product-meta">
+            <span th:text="'Condition: ' + ${listing.itemCondition}">Condition: Good</span>
+            <span th:text="'Listed: ' + ${listing.createdDate}">Listed: Date</span>
+            <span th:text="'Status: ' + ${listing.status}">Status: Active</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seller Information -->
+      <div class="seller-info" th:if="${seller != null}">
+        <h4>Seller</h4>
+        <div class="seller-card">
+          <div class="seller-avatar">
+            <img src="/images/user-placeholder.svg" alt="Seller avatar">
+          </div>
+          <div class="seller-details">
+            <h5 th:text="${seller.name}">Seller Name</h5>
+            <p th:text="'@' + ${seller.alias}">@username</p>
+            <p th:if="${seller.address != null}" th:text="'📍 ' + ${seller.address}">Location</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer Form -->
+    <div class="offer-form-section">
+      <h2>Your Offer</h2>
+
+      <!-- Offer Guidelines -->
+      <div class="offer-guidelines">
+        <h4>Offer Guidelines</h4>
+        <ul>
+          <li>Your offer must be at least <span th:text="${minimumPercentage + '%'}">70%</span> of the asking price</li>
+          <li>Offers are valid for 7 days from submission</li>
+          <li>The seller will be notified immediately</li>
+          <li>You can only have one pending offer per item</li>
+          <li>Be respectful and make reasonable offers</li>
+        </ul>
+      </div>
+
+      <!-- Minimum Offer Info -->
+      <div class="minimum-offer-info">
+        <strong th:text="'Minimum offer: ' + ${minimumOffer} + ' DKK'">Minimum offer: 700 DKK</strong>
+        <p th:text="'(' + ${minimumPercentage} + '% of asking price)'">70% of asking price</p>
+      </div>
+
+      <!-- Offer Form -->
+      <form th:action="@{/offer/submit}" method="post"
+            onsubmit="return confirm('Are you sure you want to submit this offer?')">
+        <input type="hidden" name="listingId" th:value="${listing.adID}">
+
+        <div class="form-group">
+          <label for="offerAmount">Offer Amount *</label>
+          <div class="currency-input">
+            <input type="number"
+                   id="offerAmount"
+                   name="offerAmount"
+                   th:min="${minimumOffer}"
+                   th:max="${listing.price}"
+                   th:placeholder="'Enter amount (min. ' + ${minimumOffer} + ')'"
+                   required>
+          </div>
+          <div class="help-text" th:text="'Minimum: ' + ${minimumOffer} + ' DKK • Maximum: ' + ${listing.price} + ' DKK'">
+            Minimum: 700 DKK • Maximum: 1000 DKK
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message to Seller (Optional)</label>
+          <textarea id="message"
+                    name="message"
+                    placeholder="Add a personal message to explain your offer or ask questions..."></textarea>
+          <div class="help-text">A polite message can help your offer stand out</div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">
+            Submit Offer
+          </button>
+          <a th:href="@{'/listing/' + ${listing.adID}}" class="btn-cancel">
+            Cancel
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Existing Offers Section -->
+  <div class="existing-offers" th:if="${existingOffers != null && !existingOffers.isEmpty()}">
+    <h3>Your Previous Offers</h3>
+    <div th:each="offer : ${existingOffers}" class="offer-item">
+      <div class="offer-details">
+        <p class="offer-amount" th:text="${offer.offerAmount + ' DKK'}">500 DKK</p>
+        <p class="offer-date" th:text="'Submitted: ' + ${offer.createdDate}">Submitted: Date</p>
+        <p class="offer-date" th:text="'Expires: ' + ${offer.expiryDate}">Expires: Date</p>
+      </div>
+      <div class="offer-status" th:classappend="${offer.status.toLowerCase()}" th:text="${offer.status}">
+        PENDING
+      </div>
+    </div>
+  </div>
+
+  <div class="existing-offers" th:if="${existingOffers != null && existingOffers.isEmpty()}">
+    <p style="text-align: center; color: #F8f0e5; opacity: 0.7;">You haven't made any offers on this item yet.</p>
+  </div>
+</main>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Search">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/favorites" class="footer-btn" aria-label="Favorites">
+    <img src="/images/heart.svg" class="icon" alt="">
+  </a>
+  <a href="/sell" class="footer-btn" aria-label="Sell">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+  <a href="/notifications" class="footer-btn" aria-label="Notifications">
+    <img src="/images/Notification.svg" class="icon" alt="">
+  </a>
+</footer>
+
+</body>
+</html>

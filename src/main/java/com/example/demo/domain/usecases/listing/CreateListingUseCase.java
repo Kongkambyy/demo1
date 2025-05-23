@@ -35,7 +35,7 @@ public class CreateListingUseCase {
             throw new IllegalArgumentException("Condition cannot be empty");
         }
 
-        String createdDate = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        String createdDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
         Listing listing = new Listing(
                 userId,

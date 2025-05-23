@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilbert – My Offers</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" th:href="@{/css/offers.css}" />
+</head>
+<body>
+
+<header class="header">
+    <a th:href="@{/index}" class="logo">GILBERT</a>
+    <div class="icons">
+        <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
+            <img src="/images/heart.svg" class="icon" alt="">
+        </a>
+        <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
+            <img src="/images/Notification.svg" class="icon" alt="">
+            <span class="notification-badge" th:if="${globalUnreadNotificationCount != null && globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}"></span>
+        </a>
+        <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
+            <img src="/images/user.svg" class="icon" alt="">
+        </a>
+        <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
+            <img src="/images/cart.svg" class="icon" alt="">
+        </a>
+        <a class="header-btn menu-btn" aria-label="Menu">
+            <img src="/images/menu.svg" class="icon" alt="">
+        </a>
+    </div>
+</header>
+
+<div class="overlay"></div>
+
+<aside class="mobile-menu">
+    <button class="close-btn" aria-label="Close Menu">×</button>
+    <ul>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/orders">Orders</a></li>
+        <li><a href="/favorites">Favorites</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/sell">Sell</a></li>
+        <li><a href="/offers">Offers</a></li>
+        <li><a href="/settings">Settings</a></li>
+        <li><a href="/logout">Log Out</a></li>
+    </ul>
+</aside>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const overlay = document.querySelector('.overlay');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    function toggleMenu() {
+        overlay.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+</script>
+
+<nav class="navbar">
+    <ul>
+        <li class="dropdown">
+            <a th:href="@{/search(categoryId=4)}">BEAUTY</a>
+            <ul class="submenu">
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Fragrance</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a th:href="@{/search(categoryId=3)}">HOME</a>
+            <ul class="submenu">
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Decor</a></li>
+                <li><a href="#">Textiles</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- Offers Container -->
+<main class="offers-container">
+    <!-- Header Section -->
+    <div class="offers-header">
+        <h1>My Offers</h1>
+        <div class="offers-stats">
+            <div class="stat-item">
+                <span class="stat-number" th:text="${madeOffers != null ? madeOffers.size() : 0}">0</span>
+                <span>Made</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" th:text="${receivedOffers != null ? receivedOffers.size() : 0}">0</span>
+                <span>Received</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div th:if="${success}" class="alert alert-success" th:text="${success}">
+        Success message
+    </div>
+    <div th:if="${error}" class="alert alert-error" th:text="${error}">
+        Error message
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="offers-tabs">
+        <a th:href="@{/offers(tab=made)}" class="tab-button" th:classappend="${param.tab == null or param.tab == 'made' ? 'active' : ''}">Offers I Made</a>
+        <a th:href="@{/offers(tab=received)}" class="tab-button" th:classappend="${param.tab == 'received' ? 'active' : ''}">Offers I Received</a>
+    </div>
+
+    <!-- Made Offers Tab -->
+    <div th:if="${param.tab == null or param.tab == 'made'}" class="tab-content active">
+        <div th:if="${madeOffers != null && !madeOffers.isEmpty()}" class="offers-list">
+            <div th:each="offer : ${madeOffers}" class="offer-card">
+                <div class="offer-header">
+                    <div class="offer-info">
+                        <h3>Your Offer</h3>
+                        <div class="offer-amount" th:text="${offer.offerAmount + ' DKK'}">500 DKK</div>
+                        <div class="original-price" th:text="'Original: ' + ${offer.originalPrice + ' DKK'}">Original: 1000 DKK</div>
+                    </div>
+                    <div class="offer-status" th:classappend="${offer.status.toLowerCase()}" th:text="${offer.status}">
+                        PENDING
+                    </div>
+                </div>
+
+                <div class="offer-details">
+                    <div class="offer-product">
+                        <div class="product-image">
+                            <img src="/images/product-placeholder.svg" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <h4>Product Title</h4>
+                            <div class="product-meta">
+                                <span>Listing ID: <span th:text="${offer.listingID}">ABC123</span></span>
+                                <span>Seller ID: <span th:text="${offer.sellerID}">SELLER123</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offer-meta">
+                        <div class="offer-dates">
+                            <div><strong>Submitted:</strong> <span th:text="${offer.createdDate}">2024-01-15</span></div>
+                            <div><strong>Expires:</strong> <span th:text="${offer.expiryDate}">2024-01-22</span></div>
+                        </div>
+                        <div class="time-remaining" th:if="${offer.status == 'PENDING'}">
+                            <span>Expires in 3 days</span>
+                        </div>
+                    </div>
+
+                    <div class="offer-actions">
+                        <a th:href="@{'/listing/' + ${offer.listingID}}" class="btn-secondary">
+                            View Listing
+                        </a>
+                        <button th:if="${offer.status == 'PENDING'}"
+                                class="btn-danger"
+                                onclick="return confirm('Are you sure you want to withdraw this offer?')">
+                            Withdraw Offer
+                        </button>
+                        <span th:if="${offer.status == 'ACCEPTED'}" class="btn-success btn-disabled">
+              Accepted
+            </span>
+                        <span th:if="${offer.status == 'REJECTED'}" class="btn-danger btn-disabled">
+              Rejected
+            </span>
+                        <span th:if="${offer.status == 'EXPIRED'}" class="btn-disabled">
+              Expired
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty state for made offers -->
+        <div th:if="${madeOffers == null || madeOffers.isEmpty()}" class="empty-offers">
+            <div class="empty-icon">
+                <img src="/images/handshake.svg" alt="No offers">
+            </div>
+            <h2>No offers made yet</h2>
+            <p>When you make offers on items, they'll appear here. You can track their status and manage them.</p>
+            <div class="empty-actions">
+                <a th:href="@{/search}" class="btn-primary">Browse Items</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Received Offers Tab -->
+    <div th:if="${param.tab == 'received'}" class="tab-content active">
+        <div th:if="${receivedOffers != null && !receivedOffers.isEmpty()}" class="offers-list">
+            <div th:each="offer : ${receivedOffers}" class="offer-card">
+                <div class="offer-header">
+                    <div class="offer-info">
+                        <h3>Offer Received</h3>
+                        <div class="offer-amount" th:text="${offer.offerAmount + ' DKK'}">500 DKK</div>
+                        <div class="original-price" th:text="'Your price: ' + ${offer.originalPrice + ' DKK'}">Your price: 1000 DKK</div>
+                    </div>
+                    <div class="offer-status" th:classappend="${offer.status.toLowerCase()}" th:text="${offer.status}">
+                        PENDING
+                    </div>
+                </div>
+
+                <div class="offer-details">
+                    <div class="offer-product">
+                        <div class="product-image">
+                            <img src="/images/product-placeholder.svg" alt="Product image">
+                        </div>
+                        <div class="product-info">
+                            <h4>Your Listing</h4>
+                            <div class="product-meta">
+                                <span>Listing ID: <span th:text="${offer.listingID}">ABC123</span></span>
+                                <span>Buyer ID: <span th:text="${offer.buyerID}">BUYER123</span></span>
+                            </div>
+                            <div class="user-info">
+                                <div class="user-avatar">
+                                    <img src="/images/user-placeholder.svg" alt="Buyer avatar">
+                                </div>
+                                <span class="user-name">Buyer Name</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offer-meta">
+                        <div class="offer-dates">
+                            <div><strong>Received:</strong> <span th:text="${offer.createdDate}">2024-01-15</span></div>
+                            <div><strong>Expires:</strong> <span th:text="${offer.expiryDate}">2024-01-22</span></div>
+                        </div>
+                        <div class="time-remaining" th:if="${offer.status == 'PENDING'}">
+                            <span>Expires in 3 days</span>
+                        </div>
+                    </div>
+
+                    <div class="offer-actions">
+                        <a th:href="@{'/listing/' + ${offer.listingID}}" class="btn-secondary">
+                            View Listing
+                        </a>
+                        <div th:if="${offer.status == 'PENDING'}">
+                            <form th:action="@{/offer/respond}" method="post" style="display: inline;">
+                                <input type="hidden" name="offerId" th:value="${offer.offerID}">
+                                <button type="submit" name="action" value="accept" class="btn-success"
+                                        onclick="return confirm('Are you sure you want to accept this offer? This will mark the item as sold.')">
+                                    Accept Offer
+                                </button>
+                            </form>
+                            <form th:action="@{/offer/respond}" method="post" style="display: inline;">
+                                <input type="hidden" name="offerId" th:value="${offer.offerID}">
+                                <button type="submit" name="action" value="reject" class="btn-danger"
+                                        onclick="return confirm('Are you sure you want to reject this offer?')">
+                                    Reject Offer
+                                </button>
+                            </form>
+                        </div>
+                        <span th:if="${offer.status == 'ACCEPTED'}" class="btn-success btn-disabled">
+              Accepted
+            </span>
+                        <span th:if="${offer.status == 'REJECTED'}" class="btn-danger btn-disabled">
+              Rejected
+            </span>
+                        <span th:if="${offer.status == 'EXPIRED'}" class="btn-disabled">
+              Expired
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty state for received offers -->
+        <div th:if="${receivedOffers == null || receivedOffers.isEmpty()}" class="empty-offers">
+            <div class="empty-icon">
+                <img src="/images/handshake.svg" alt="No offers">
+            </div>
+            <h2>No offers received yet</h2>
+            <p>When buyers make offers on your listings, they'll appear here. You can accept or decline them.</p>
+            <div class="empty-actions">
+                <a th:href="@{/sell}" class="btn-primary">Create Listing</a>
+                <a th:href="@{/items}" class="btn-secondary">View My Items</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+    <a href="/" class="footer-btn" aria-label="Home">
+        <img src="/images/home.svg" class="icon" alt="">
+    </a>
+    <a href="/search" class="footer-btn" aria-label="Search">
+        <img src="/images/search.svg" class="icon" alt="">
+    </a>
+    <a href="/favorites" class="footer-btn" aria-label="Favorites">
+        <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a href="/sell" class="footer-btn" aria-label="Sell">
+        <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a href="/notifications" class="footer-btn" aria-label="Notifications">
+        <img src="/images/Notification.svg" class="icon" alt="">
+    </a>
+</footer>
+
+</body>
+</html>">
+<a href="#">DESIGNERS</a>
+<ul class="submenu">
+    <li><a href="#">Luxury</a></li>
+    <li><a href="#">Streetwear</a></li>
+    <li><a href="#">Minimalist</a></li>
+</ul>
+</li>
+<li class="dropdown">
+    <a th:href="@{/search(categoryId=1)}">MEN</a>
+    <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a th:href="@{/search(categoryId=2)}">WOMEN</a>
+    <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+    </ul>
+</li>
+<li class="dropdown

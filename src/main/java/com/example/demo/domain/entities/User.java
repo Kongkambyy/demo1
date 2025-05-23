@@ -19,9 +19,6 @@ public class User {
         this.address = address;
     }
 
-    public User(String number, String testTheTester, String testUser, String topMegaHemmeligKode, String mail, String number1, String s) {
-    }
-
     public String getUserID() {
         return userID;
     }

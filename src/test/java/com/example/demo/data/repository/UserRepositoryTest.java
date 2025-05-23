@@ -29,8 +29,7 @@ class UserRepositoryTest {
                 "TestUser",
                 "TopMegaHemmeligKode",
                 "test@example.com",
-                "12345678",
-                "Testvej 1"
+                "12345678"
         );
     }
 

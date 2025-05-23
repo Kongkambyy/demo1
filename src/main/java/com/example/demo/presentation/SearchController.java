@@ -3,13 +3,16 @@ package com.example.demo.presentation;
 import com.example.demo.domain.entities.Category;
 import com.example.demo.domain.entities.Listing;
 import com.example.demo.domain.usecases.listing.SearchListingsUseCase;
+import com.example.demo.domain.usecases.Notifications.GetNotificationsUseCase;
 import com.example.demo.data.repository.CategoryRepository;
+import com.example.demo.data.util.LoggerUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
+import jakarta.servlet.http.HttpSession;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,11 +22,30 @@ public class SearchController {
 
     private final SearchListingsUseCase searchListingsUseCase;
     private final CategoryRepository categoryRepository;
+    private final GetNotificationsUseCase getNotificationsUseCase;
 
     @Autowired
-    public SearchController(SearchListingsUseCase searchListingsUseCase, CategoryRepository categoryRepository) {
+    public SearchController(SearchListingsUseCase searchListingsUseCase,
+                            CategoryRepository categoryRepository,
+                            GetNotificationsUseCase getNotificationsUseCase) {
         this.searchListingsUseCase = searchListingsUseCase;
         this.categoryRepository = categoryRepository;
+        this.getNotificationsUseCase = getNotificationsUseCase;
+    }
+
+    private void addNotificationCount(Model model, HttpSession session) {
+        String userId = (String) session.getAttribute("userId");
+        if (userId != null) {
+            try {
+                int unreadCount = getNotificationsUseCase.countUnread(userId);
+                model.addAttribute("globalUnreadNotificationCount", unreadCount);
+            } catch (Exception e) {
+                LoggerUtility.logError("Error getting notification count for user " + userId + ": " + e.getMessage());
+                model.addAttribute("globalUnreadNotificationCount", 0);
+            }
+        } else {
+            model.addAttribute("globalUnreadNotificationCount", 0);
+        }
     }
 
     @GetMapping("/search")
@@ -39,8 +61,11 @@ public class SearchController {
             @RequestParam(required = false) String price,
             @RequestParam(required = false) String sort,
             @RequestParam(required = false) String filter,
-            Model model
+            Model model,
+            HttpSession session
     ) {
+        addNotificationCount(model, session);
+
         // Process price range if specified
         Integer minPrice = null;
         Integer maxPrice = null;
@@ -58,7 +83,7 @@ public class SearchController {
                     minPrice = Integer.parseInt(price.replace("+", ""));
                 }
             } catch (NumberFormatException e) {
-                // Handle parsing error - ignore invalid price format
+                LoggerUtility.logWarning("Invalid price format: " + price);
             }
         }
 
@@ -168,21 +193,27 @@ public class SearchController {
         model.addAttribute("activePrice", price);
         model.addAttribute("activeFilter", filter);
 
+        String userId = (String) session.getAttribute("userId");
+        LoggerUtility.logEvent("Search performed by user: " + (userId != null ? userId : "anonymous") +
+                " - keyword: " + keyword + ", categoryId: " + categoryId + ", designer: " + designer);
+
         return "search";
     }
 
     @GetMapping("/category/{id}")
-    public String categoryView(@PathVariable("id") Integer categoryId, Model model) {
-        return search(null, categoryId, null, null, null, null, null, null, null, null, null, model);
+    public String categoryView(@PathVariable("id") Integer categoryId, Model model, HttpSession session) {
+        return search(null, categoryId, null, null, null, null, null, null, null, null, null, model, session);
     }
 
-    // Helper method
     private String formatDesignerName(String designer) {
         if (designer == null) return "";
         switch (designer.toLowerCase()) {
             case "gucci": return "GUCCI";
             case "prada": return "PRADA";
             case "balenciaga": return "BALENCIAGA";
+            case "luxury": return "LUXURY BRANDS";
+            case "streetwear": return "STREETWEAR";
+            case "minimalist": return "MINIMALIST";
             default: return designer.toUpperCase();
         }
     }

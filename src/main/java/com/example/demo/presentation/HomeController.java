@@ -2,9 +2,12 @@ package com.example.demo.presentation;
 
 import com.example.demo.domain.entities.User;
 import com.example.demo.domain.entities.Listing;
+import com.example.demo.domain.entities.Offer;
 import com.example.demo.domain.usecases.listing.GetListingUseCase;
 import com.example.demo.domain.usecases.user.GetUserUseCase;
 import com.example.demo.domain.usecases.Notifications.GetNotificationsUseCase;
+import com.example.demo.data.repository.OfferRepository;
+import com.example.demo.data.repository.ListingRepository;
 import com.example.demo.data.util.LoggerUtility;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +22,7 @@ import jakarta.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.ArrayList;
 
 @Controller
 public class HomeController {
@@ -26,14 +30,20 @@ public class HomeController {
     private final GetListingUseCase getListingUseCase;
     private final GetUserUseCase getUserUseCase;
     private final GetNotificationsUseCase getNotificationsUseCase;
+    private final OfferRepository offerRepository;
+    private final ListingRepository listingRepository;
 
     @Autowired
     public HomeController(GetListingUseCase getListingUseCase,
                           GetUserUseCase getUserUseCase,
-                          GetNotificationsUseCase getNotificationsUseCase) {
+                          GetNotificationsUseCase getNotificationsUseCase,
+                          OfferRepository offerRepository,
+                          ListingRepository listingRepository) {
         this.getListingUseCase = getListingUseCase;
         this.getUserUseCase = getUserUseCase;
         this.getNotificationsUseCase = getNotificationsUseCase;
+        this.offerRepository = offerRepository;
+        this.listingRepository = listingRepository;
     }
 
     // Helper method to add notification count to model
@@ -65,15 +75,14 @@ public class HomeController {
     }
 
     @GetMapping("/shop")
-    public String shop(Model model, HttpSession session) {
-        addNotificationCount(model, session);
-        return "shop";
+    public String shop() {
+        return "redirect:/search";
     }
 
     @GetMapping("/sell")
     public String sell(Model model, HttpSession session) {
         addNotificationCount(model, session);
-        return "sell";
+        return "redirect:/profile";
     }
 
     @GetMapping("/profile")
@@ -100,6 +109,17 @@ public class HomeController {
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
             model.addAttribute("listings", activeListings);
+
+            // Calculate stats
+            List<Listing> allListings = getListingUseCase.getByUserId(userId);
+            long soldItemsCount = allListings.stream()
+                    .filter(listing -> "SOLD".equals(listing.getStatus()))
+                    .count();
+
+            model.addAttribute("soldItemsCount", soldItemsCount);
+            model.addAttribute("activeListingsCount", activeListings.size());
+            model.addAttribute("followersCount", 0);
+            model.addAttribute("followingCount", 0);
 
             // Log successful page rendering
             LoggerUtility.logEvent("Profile page accessed by user: " + userId);
@@ -251,9 +271,30 @@ public class HomeController {
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // We would typically get order/transaction data here
-            // For now, we're just providing the user's basic info
+            // Get offers made by this user (as buyer)
+            List<Offer> myOffers = offerRepository.findByBuyerId(userId);
 
+            // Get offers received by this user (as seller)
+            List<Offer> receivedOffers = offerRepository.findBySellerId(userId);
+
+            // For each offer, get the associated listing details
+            List<OfferWithListing> myOffersWithListings = new ArrayList<>();
+            for (Offer offer : myOffers) {
+                Optional<Listing> listingOpt = listingRepository.findById(offer.getListingID());
+                if (listingOpt.isPresent()) {
+                    myOffersWithListings.add(new OfferWithListing(offer, listingOpt.get()));
+                }
+            }
+
+            List<OfferWithListing> receivedOffersWithListings = new ArrayList<>();
+            for (Offer offer : receivedOffers) {
+                Optional<Listing> listingOpt = listingRepository.findById(offer.getListingID());
+                if (listingOpt.isPresent()) {
+                    receivedOffersWithListings.add(new OfferWithListing(offer, listingOpt.get()));
+                }
+            }
+
+            // Filter listings for stats
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
@@ -266,6 +307,8 @@ public class HomeController {
             model.addAttribute("section", "orders");
             model.addAttribute("soldItemsCount", soldItemsCount);
             model.addAttribute("activeListingsCount", activeListings.size());
+            model.addAttribute("myOffers", myOffersWithListings); // Offers I made
+            model.addAttribute("receivedOffers", receivedOffersWithListings); // Offers I received
             model.addAttribute("followersCount", 0);
             model.addAttribute("followingCount", 0);
 
@@ -405,6 +448,25 @@ public class HomeController {
         } catch (Exception e) {
             LoggerUtility.logError("Error loading settings for user " + userId + ": " + e.getMessage());
             return "redirect:/";
+        }
+    }
+
+    // Helper class to combine offer and listing data
+    public static class OfferWithListing {
+        private final Offer offer;
+        private final Listing listing;
+
+        public OfferWithListing(Offer offer, Listing listing) {
+            this.offer = offer;
+            this.listing = listing;
+        }
+
+        public Offer getOffer() {
+            return offer;
+        }
+
+        public Listing getListing() {
+            return listing;
         }
     }
 }
