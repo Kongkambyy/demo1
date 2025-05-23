@@ -14,8 +14,9 @@
     <a class="header-btn" th:href="@{/favorites}" aria-label="Favoritter">
       <img src="/images/heart.svg" class="icon" alt="">
     </a>
-    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifikationer">
+    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
       <img src="/images/Notification.svg" class="icon" alt="">
+      <span class="notification-badge" th:if="${globalUnreadNotificationCount != null && globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}"></span>
     </a>
     <a class="header-btn" th:href="@{/profile}" aria-label="user">
       <img src="/images/user.svg" class="icon" alt="">

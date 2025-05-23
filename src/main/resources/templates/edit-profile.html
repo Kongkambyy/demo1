@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilbert – Edit Profile</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/css/edit-profile.css}" />
+</head>
+<body>
+
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
+      <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
+      <img src="/images/Notification.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
+      <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
+      <img src="/images/cart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<div class="overlay"></div>
+
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Close Menu">×</button>
+  <ul>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/cart">Cart</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/sell">Sell</a></li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Log Out</a></li>
+  </ul>
+</aside>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li class="dropdown">
+      <a href="#">DESIGNERS</a>
+      <ul class="submenu">
+        <li><a href="#">Luxury</a></li>
+        <li><a href="#">Streetwear</a></li>
+        <li><a href="#">Minimalist</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">MEN</a>
+      <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">WOMEN</a>
+      <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">BEAUTY</a>
+      <ul class="submenu">
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Fragrance</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">HOME</a>
+      <ul class="submenu">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Textiles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- Edit Profile Form -->
+<div class="edit-profile-container">
+  <div class="page-header">
+    <h1>Edit Profile</h1>
+    <p>Update your account information and settings</p>
+  </div>
+
+  <!-- Success/Error Messages -->
+  <div th:if="${success}" class="alert alert-success" th:text="${success}">
+    Profile updated successfully!
+  </div>
+
+  <div th:if="${error}" class="alert alert-error" th:text="${error}">
+    An error occurred while updating your profile
+  </div>
+
+  <form th:action="@{/profile/update}" method="post" th:if="${user != null}">
+    <!-- Basic Information Section -->
+    <div class="form-section">
+      <h3>Basic Information</h3>
+
+      <div class="form-row">
+        <div class="form-col">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" th:value="${user.name}" required>
+          </div>
+        </div>
+        <div class="form-col">
+          <div class="form-group">
+            <label for="alias">Username *</label>
+            <input type="text" id="alias" name="alias" th:value="${user.alias}" required>
+            <div class="help-text">This is how other users will see you</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" th:value="${user.email}" required>
+        <div class="help-text">This email will be used for account notifications</div>
+      </div>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="form-section">
+      <h3>Contact Information</h3>
+
+      <div class="form-group">
+        <label for="number">Phone Number</label>
+        <input type="tel" id="number" name="number" th:value="${user.number}" placeholder="Optional">
+        <div class="help-text">Used for order updates and customer support</div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Optional" th:text="${user.address}"></textarea>
+        <div class="help-text">Your shipping address for orders</div>
+      </div>
+    </div>
+
+    <!-- Password Section -->
+    <div class="form-section">
+      <h3>Security</h3>
+      <div class="password-section">
+        <h4>Change Password</h4>
+        <div class="password-note">
+          Leave blank if you don't want to change your password
+        </div>
+        <div class="form-group">
+          <label for="password">New Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter new password">
+          <div class="help-text">Password must be at least 6 characters long</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Actions -->
+    <div class="form-actions">
+      <button type="submit" class="btn-primary">Save Changes</button>
+      <a th:href="@{/info}" class="btn-cancel">Cancel</a>
+    </div>
+  </form>
+
+  <!-- Fallback if user data is not available -->
+  <div th:if="${user == null}" class="alert alert-error">
+    <p>Unable to load user data. Please try refreshing the page or <a th:href="@{/login}">log in again</a>.</p>
+  </div>
+</div>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Search">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/favorites" class="footer-btn" aria-label="Favorites">
+    <img src="/images/heart.svg" class="icon" alt="">
+  </a>
+  <a href="/sell" class="footer-btn" aria-label="Sell">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+  <a href="/notifications" class="footer-btn" aria-label="Notifications">
+    <img src="/images/Notification.svg" class="icon" alt="">
+  </a>
+</footer>
+
+</body>
+</html>

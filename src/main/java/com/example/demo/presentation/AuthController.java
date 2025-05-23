@@ -1,6 +1,7 @@
 package com.example.demo.presentation;
 
 import com.example.demo.domain.entities.User;
+import com.example.demo.domain.usecases.Notifications.GetNotificationsUseCase;
 import com.example.demo.domain.usecases.user.UserLoginUseCase;
 import com.example.demo.domain.usecases.user.CreateUserUseCase;
 import com.example.demo.data.util.LoggerUtility;
@@ -22,16 +23,13 @@ public class AuthController {
 
     private final UserLoginUseCase userLoginUseCase;
     private final CreateUserUseCase createUserUseCase;
+    private final GetNotificationsUseCase getNotificationsUseCase;
 
     @Autowired
-    public AuthController(UserLoginUseCase userLoginUseCase, CreateUserUseCase createUserUseCase) {
+    public AuthController(UserLoginUseCase userLoginUseCase, CreateUserUseCase createUserUseCase, GetNotificationsUseCase getNotificationsUseCase) {
         this.userLoginUseCase = userLoginUseCase;
         this.createUserUseCase = createUserUseCase;
-    }
-
-    @GetMapping("/login")
-    public String loginPage() {
-        return "login";
+        this.getNotificationsUseCase = getNotificationsUseCase;
     }
 
     @PostMapping("/login")
@@ -62,9 +60,19 @@ public class AuthController {
         }
     }
 
-    @GetMapping("/register")
-    public String registerPage() {
-        return "register";
+    private void addNotificationCount(Model model, HttpSession session) {
+        String userId = (String) session.getAttribute("userId");
+        if (userId != null) {
+            try {
+                int unreadCount = getNotificationsUseCase.countUnread(userId);
+                model.addAttribute("globalUnreadNotificationCount", unreadCount);
+            } catch (Exception e) {
+                LoggerUtility.logError("Error getting notification count for user " + userId + ": " + e.getMessage());
+                model.addAttribute("globalUnreadNotificationCount", 0);
+            }
+        } else {
+            model.addAttribute("globalUnreadNotificationCount", 0);
+        }
     }
 
     @PostMapping("/register")
@@ -104,5 +112,17 @@ public class AuthController {
         session.invalidate();
 
         return "redirect:/";
+    }
+
+    @GetMapping("/login")
+    public String loginPage(Model model, HttpSession session) {
+        addNotificationCount(model, session);
+        return "login";
+    }
+
+    @GetMapping("/register")
+    public String registerPage(Model model, HttpSession session) {
+        addNotificationCount(model, session);
+        return "register";
     }
 }

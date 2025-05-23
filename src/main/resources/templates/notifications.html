@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilbert – Notifications</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/css/notifications.css}" />
+</head>
+<body>
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
+      <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn active" th:href="@{/notifications}" aria-label="Notifications">
+      <img src="/images/Notification.svg" class="icon" alt="">
+      <span class="notification-badge" th:if="${globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}">0</span>
+    </a>
+    <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
+      <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
+      <img src="/images/cart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<div class="overlay"></div>
+
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Close menu">×</button>
+  <ul>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/cart">Cart</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/sell">Sell</a></li>
+    <li><a href="#" th:each="mainCat : ${mainCategories}" th:href="@{/search(categoryId=${mainCat.categoryID})}" th:text="${mainCat.name}">Category</a></li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Log Out</a></li>
+  </ul>
+</aside>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li class="dropdown">
+      <a href="#">DESIGNERS</a>
+      <ul class="submenu">
+        <li><a href="#">Luxury</a></li>
+        <li><a href="#">Streetwear</a></li>
+        <li><a href="#">Minimalist</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=1)}">MEN</a>
+      <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=2)}">WOMEN</a>
+      <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=4)}">BEAUTY</a>
+      <ul class="submenu">
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Fragrance</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=3)}">HOME</a>
+      <ul class="submenu">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Textiles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- Notifications Container -->
+<section class="notifications-container">
+  <!-- Header Section -->
+  <div class="notifications-header">
+    <div class="header-content">
+      <h1>Notifications</h1>
+      <div class="notification-stats">
+        <span class="total-count" th:text="${totalCount} + ' total'">0 total</span>
+        <span class="unread-count" th:if="${unreadCount > 0}" th:text="${unreadCount} + ' unread'">0 unread</span>
+      </div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="header-actions" th:if="${notifications != null && !notifications.isEmpty()}">
+      <form th:action="@{/notifications/mark-all-read}" method="post" class="inline-form">
+        <button type="submit" class="btn-secondary" th:disabled="${unreadCount == 0}">
+          Mark All Read
+        </button>
+      </form>
+      <form th:action="@{/notifications/clear-all}" method="post" class="inline-form"
+            onsubmit="return confirm('Are you sure you want to delete all notifications? This action cannot be undone.')">
+        <button type="submit" class="btn-danger">
+          Clear All
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success/Error Messages -->
+  <div th:if="${success}" class="alert alert-success" th:text="${success}">
+    Success message
+  </div>
+  <div th:if="${error}" class="alert alert-error" th:text="${error}">
+    Error message
+  </div>
+
+  <!-- Notifications List -->
+  <div th:if="${notifications != null && !notifications.isEmpty()}" class="notifications-list">
+    <div th:each="notification : ${notifications}"
+         class="notification-item"
+         th:classappend="${!notification.isRead()} ? 'unread' : 'read'">
+
+      <!-- Notification Icon -->
+      <div class="notification-icon">
+        <div class="icon-wrapper" th:classappend="${notification.type}">
+          <!-- Different icons based on notification type -->
+          <img th:if="${notification.type == 'FAVORITE_PRICE_CHANGE'}" src="/images/handshake.svg" alt="Price Change" />
+          <img th:if="${notification.type == 'FAVORITE_OFFER'}" src="/images/offer.svg" alt="Offer" />
+          <img th:if="${notification.type == 'FAVORITE_SOLD'}" src="/images/sold.svg" alt="Sold" />
+          <img th:if="${notification.type == 'ITEM_SOLD'}" src="/images/celebration.svg" alt="Sale" />
+          <img th:if="${notification.type == 'OFFER_RECEIVED'}" src="/images/handshake.svg" alt="Offer Received" />
+          <img th:if="${notification.type == 'OFFER_ACCEPTED'}" src="/images/check-circle.svg" alt="Accepted" />
+          <img th:if="${notification.type == 'OFFER_REJECTED'}" src="/images/x-circle.svg" alt="Rejected" />
+          <!-- Fallback icon -->
+          <img th:unless="${notification.type == 'FAVORITE_PRICE_CHANGE' or notification.type == 'FAVORITE_OFFER' or notification.type == 'FAVORITE_SOLD' or notification.type == 'ITEM_SOLD' or notification.type == 'OFFER_RECEIVED' or notification.type == 'OFFER_ACCEPTED' or notification.type == 'OFFER_REJECTED'}"
+               src="/images/bell.svg" alt="Notification" />
+        </div>
+        <!-- Unread indicator dot -->
+        <div th:if="${!notification.isRead()}" class="unread-dot"></div>
+      </div>
+
+      <!-- Notification Content -->
+      <div class="notification-content">
+        <div class="notification-message" th:text="${notification.message}">
+          Notification message will be displayed here
+        </div>
+        <div class="notification-meta">
+          <span class="notification-time" th:text="${notification.createdDate}">2 hours ago</span>
+          <span class="notification-type" th:text="${notification.sourceType}">LISTING</span>
+        </div>
+      </div>
+
+      <!-- Notification Actions -->
+      <div class="notification-actions">
+        <!-- Mark as read button (only show for unread notifications) -->
+        <form th:if="${!notification.isRead()}" th:action="@{/notifications/mark-read}" method="post" class="inline-form">
+          <input type="hidden" name="notificationId" th:value="${notification.notificationID}">
+          <button type="submit" class="btn-icon" title="Mark as read">
+            <img src="/images/check.svg" alt="Mark as read">
+          </button>
+        </form>
+
+        <!-- Delete button -->
+        <form th:action="@{/notifications/delete}" method="post" class="inline-form"
+              onsubmit="return confirm('Are you sure you want to delete this notification?')">
+          <input type="hidden" name="notificationId" th:value="${notification.notificationID}">
+          <button type="submit" class="btn-icon delete-btn" title="Delete">
+            <img src="/images/trash.svg" alt="Delete">
+          </button>
+        </form>
+
+        <!-- Link to related content (if applicable) -->
+        <a th:if="${notification.sourceType == 'LISTING'}"
+           th:href="@{/listing/{id}(id=${notification.sourceID})}"
+           class="btn-icon view-btn"
+           title="View listing">
+          <img src="/images/external-link.svg" alt="View">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div th:if="${notifications == null || notifications.isEmpty()}" class="empty-notifications">
+    <div class="empty-icon">
+      <img src="/images/bell-off.svg" alt="No notifications">
+    </div>
+    <h2>No notifications yet</h2>
+    <p>When you receive notifications about your listings, offers, and favorites, they'll appear here.</p>
+    <div class="empty-actions">
+      <a th:href="@{/search}" class="btn-primary">Browse Items</a>
+      <a th:href="@{/sell}" class="btn-secondary">Create Listing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Search">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/favorites" class="footer-btn" aria-label="Favorites">
+    <img src="/images/heart.svg" class="icon" alt="">
+  </a>
+  <a href="/sell" class="footer-btn" aria-label="Sell">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+  <a href="/notifications" class="footer-btn active" aria-label="Notifications">
+    <img src="/images/Notification.svg" class="icon" alt="">
+    <span class="notification-badge" th:if="${globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}">0</span>
+  </a>
+</footer>
+
+
+
+</body>
+</html>

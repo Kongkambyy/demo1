@@ -1,6 +1,7 @@
 package com.example.demo.presentation;
 
 import com.example.demo.domain.entities.Listing;
+import com.example.demo.domain.usecases.Notifications.GetNotificationsUseCase;
 import com.example.demo.domain.usecases.features.AddFavoriteUseCase;
 import com.example.demo.domain.usecases.features.GetFavoritesUseCase;
 import com.example.demo.domain.usecases.features.RemoveFavoriteUseCase;
@@ -24,16 +25,17 @@ public class FavoritesController {
     private final GetFavoritesUseCase getFavoritesUseCase;
     private final AddFavoriteUseCase addFavoriteUseCase;
     private final RemoveFavoriteUseCase removeFavoriteUseCase;
+    private final GetNotificationsUseCase getNotificationsUseCase;
 
     @Autowired
     public FavoritesController(GetFavoritesUseCase getFavoritesUseCase,
                                AddFavoriteUseCase addFavoriteUseCase,
-                               RemoveFavoriteUseCase removeFavoriteUseCase) {
+                               RemoveFavoriteUseCase removeFavoriteUseCase, GetNotificationsUseCase getNotificationsUseCase) {
         this.getFavoritesUseCase = getFavoritesUseCase;
         this.addFavoriteUseCase = addFavoriteUseCase;
         this.removeFavoriteUseCase = removeFavoriteUseCase;
+        this.getNotificationsUseCase = getNotificationsUseCase;
     }
-
     @GetMapping("/favorites")
     public String favorites(Model model, HttpSession session) {
         // Check if user is logged in
@@ -42,8 +44,9 @@ public class FavoritesController {
             return "redirect:/login";
         }
 
+        addNotificationCount(model, session);
+
         try {
-            // Get user's favorite listings
             List<Listing> favoriteListings = getFavoritesUseCase.getFavoriteListings(userId);
             model.addAttribute("favoriteListings", favoriteListings);
 
@@ -123,6 +126,20 @@ public class FavoritesController {
             LoggerUtility.logError("Error removing listing " + listingId + " from favorites for user " + userId + ": " + e.getMessage());
             redirectAttributes.addFlashAttribute("error", "Could not remove from favorites");
             return "redirect:" + returnUrl;
+        }
+    }
+
+    private void addNotificationCount(Model model, HttpSession session) {
+        String userId = (String) session.getAttribute("userId");
+        if (userId != null) {
+            try {
+                int unreadCount = getNotificationsUseCase.countUnread(userId);
+                model.addAttribute("globalUnreadNotificationCount", unreadCount);
+            } catch (Exception e) {
+                model.addAttribute("globalUnreadNotificationCount", 0);
+            }
+        } else {
+            model.addAttribute("globalUnreadNotificationCount", 0);
         }
     }
 }

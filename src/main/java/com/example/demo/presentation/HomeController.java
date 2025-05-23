@@ -4,6 +4,7 @@ import com.example.demo.domain.entities.User;
 import com.example.demo.domain.entities.Listing;
 import com.example.demo.domain.usecases.listing.GetListingUseCase;
 import com.example.demo.domain.usecases.user.GetUserUseCase;
+import com.example.demo.domain.usecases.Notifications.GetNotificationsUseCase;
 import com.example.demo.data.util.LoggerUtility;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,32 +25,54 @@ public class HomeController {
 
     private final GetListingUseCase getListingUseCase;
     private final GetUserUseCase getUserUseCase;
+    private final GetNotificationsUseCase getNotificationsUseCase;
 
     @Autowired
-    public HomeController(GetListingUseCase getListingUseCase, GetUserUseCase getUserUseCase) {
+    public HomeController(GetListingUseCase getListingUseCase,
+                          GetUserUseCase getUserUseCase,
+                          GetNotificationsUseCase getNotificationsUseCase) {
         this.getListingUseCase = getListingUseCase;
         this.getUserUseCase = getUserUseCase;
+        this.getNotificationsUseCase = getNotificationsUseCase;
+    }
+
+    // Helper method to add notification count to model
+    private void addNotificationCount(Model model, HttpSession session) {
+        String userId = (String) session.getAttribute("userId");
+        if (userId != null) {
+            try {
+                int unreadCount = getNotificationsUseCase.countUnread(userId);
+                model.addAttribute("globalUnreadNotificationCount", unreadCount);
+            } catch (Exception e) {
+                LoggerUtility.logError("Error getting notification count for user " + userId + ": " + e.getMessage());
+                model.addAttribute("globalUnreadNotificationCount", 0);
+            }
+        } else {
+            model.addAttribute("globalUnreadNotificationCount", 0);
+        }
     }
 
     @GetMapping("/")
-    public String home() {
+    public String home(Model model, HttpSession session) {
+        addNotificationCount(model, session);
         return "index";
     }
 
     @GetMapping("/index")
-    public String index() {
+    public String index(Model model, HttpSession session) {
+        addNotificationCount(model, session);
         return "index";
     }
 
-    // Search functionality now handled by SearchController
-
     @GetMapping("/shop")
-    public String shop() {
+    public String shop(Model model, HttpSession session) {
+        addNotificationCount(model, session);
         return "shop";
     }
 
     @GetMapping("/sell")
-    public String sell() {
+    public String sell(Model model, HttpSession session) {
+        addNotificationCount(model, session);
         return "sell";
     }
 
@@ -64,6 +87,9 @@ public class HomeController {
         }
 
         try {
+            // Add notification count
+            addNotificationCount(model, session);
+
             // Fetch user from database
             User user = getUserUseCase.findByIdOrThrow(userId);
             model.addAttribute("user", user);
@@ -89,6 +115,9 @@ public class HomeController {
     @GetMapping("/profile/{userId}")
     public String userProfile(@PathVariable String userId, Model model, HttpSession session) {
         try {
+            // Add notification count
+            addNotificationCount(model, session);
+
             // Get the user by ID
             User profileUser = getUserUseCase.findByIdOrThrow(userId);
 
@@ -135,6 +164,9 @@ public class HomeController {
         }
 
         try {
+            // Add notification count
+            addNotificationCount(model, session);
+
             // Get user and their listings
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
@@ -172,6 +204,9 @@ public class HomeController {
         }
 
         try {
+            // Add notification count
+            addNotificationCount(model, session);
+
             // Get user and their listings
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
@@ -209,6 +244,9 @@ public class HomeController {
         }
 
         try {
+            // Add notification count
+            addNotificationCount(model, session);
+
             // Get user data
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
@@ -246,6 +284,9 @@ public class HomeController {
         }
 
         try {
+            // Add notification count
+            addNotificationCount(model, session);
+
             // Get user info
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
@@ -281,6 +322,9 @@ public class HomeController {
         }
 
         try {
+            // Add notification count
+            addNotificationCount(model, session);
+
             // Get user data
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
@@ -309,27 +353,58 @@ public class HomeController {
     }
 
     @GetMapping("/followers")
-    public String followers() {
+    public String followers(Model model, HttpSession session) {
+        addNotificationCount(model, session);
         return "followers";
     }
 
     @GetMapping("/following")
-    public String following() {
+    public String following(Model model, HttpSession session) {
+        addNotificationCount(model, session);
         return "following";
     }
 
     @GetMapping("/cart")
-    public String cart() {
+    public String cart(Model model, HttpSession session) {
+        addNotificationCount(model, session);
         return "cart";
     }
 
-    @GetMapping("/notifications")
-    public String notifications() {
-        return "notifications";
-    }
-
     @GetMapping("/settings")
-    public String settings() {
-        return "settings";
+    public String settings(Model model, HttpSession session) {
+        String userId = (String) session.getAttribute("userId");
+        if (userId == null) {
+            return "redirect:/login";
+        }
+
+        try {
+            // Add notification count
+            addNotificationCount(model, session);
+
+            // Get user data
+            User user = getUserUseCase.findByIdOrThrow(userId);
+            List<Listing> userListings = getListingUseCase.getByUserId(userId);
+
+            // Filter listings for stats
+            List<Listing> activeListings = userListings.stream()
+                    .filter(listing -> "ACTIVE".equals(listing.getStatus()))
+                    .collect(Collectors.toList());
+
+            long soldItemsCount = userListings.stream()
+                    .filter(listing -> "SOLD".equals(listing.getStatus()))
+                    .count();
+
+            model.addAttribute("user", user);
+            model.addAttribute("section", "settings");  // This tells profile.html to show settings section
+            model.addAttribute("soldItemsCount", soldItemsCount);
+            model.addAttribute("activeListingsCount", activeListings.size());
+            model.addAttribute("followersCount", 0);
+            model.addAttribute("followingCount", 0);
+
+            return "profile";  // Return profile template, not settings template
+        } catch (Exception e) {
+            LoggerUtility.logError("Error loading settings for user " + userId + ": " + e.getMessage());
+            return "redirect:/";
+        }
     }
 }

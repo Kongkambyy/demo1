@@ -3,7 +3,11 @@ package com.example.demo.domain.usecases.user;
 import com.example.demo.data.repository.UserRepository;
 import com.example.demo.domain.entities.User;
 import com.example.demo.exceptions.user.UserNotFoundException;
+import com.example.demo.exceptions.user.InvalidCredentialsException;
+import com.example.demo.data.util.LoggerUtility;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class DeleteUserUseCase {
@@ -14,13 +18,31 @@ public class DeleteUserUseCase {
         this.userRepository = userRepository;
     }
 
-    public void execute(String userId) {
-        // Tjek om bruger eksisterer
-        if (!userRepository.findById(userId).isPresent()) {
-            throw new UserNotFoundException("Bruger ikke fundet med ID: " + userId);
+    public void execute(String userId, String passwordConfirmation) {
+        LoggerUtility.logEvent("Account deletion initiated for user: " + userId);
+
+        // 1. Verify user exists
+        Optional<User> userOpt = userRepository.findById(userId);
+        if (userOpt.isEmpty()) {
+            LoggerUtility.logError("Account deletion failed - user not found: " + userId);
+            throw new UserNotFoundException(userId);
         }
 
-        // Slet bruger
-        userRepository.delete(userId);
+        User user = userOpt.get();
+
+        // 2. Verify password for security
+        if (!userRepository.verifyPassword(passwordConfirmation, user.getPassword())) {
+            LoggerUtility.logWarning("Account deletion failed - incorrect password for user: " + userId);
+            throw new InvalidCredentialsException("Incorrect password provided");
+        }
+
+        try {
+            userRepository.delete(userId);
+            LoggerUtility.logEvent("User account successfully deleted: " + userId + " (" + user.getEmail() + ")");
+
+        } catch (Exception e) {
+            LoggerUtility.logError("Error during account deletion for user " + userId + ": " + e.getMessage());
+            throw new RuntimeException("Account deletion failed.", e);
+        }
     }
 }
