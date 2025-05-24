@@ -40,7 +40,8 @@
     <li><a th:href="@{/favorites}">Favorites</a></li>
     <li><a th:href="@{/cart}">Cart</a></li>
     <li><a th:href="@{/search}">Shop</a></li>
-    <li><a th:href="@{/profile}">Sell</a></li>
+    <!-- FIXED: Changed to correct create listing route -->
+    <li><a th:href="@{/sell/create}">Sell</a></li>
     <li><a th:href="@{/search(designer='luxury')}">Designers</a></li>
     <li><a th:href="@{/search(categoryId=1)}">Men</a></li>
     <li><a th:href="@{/search(categoryId=2)}">Women</a></li>
@@ -146,7 +147,8 @@
 <div th:if="${section == null || section == 'items'}" class="listings-container">
   <div th:if="${listings == null || listings.isEmpty()}" class="empty-state">
     <p>You don't have any active listings.</p>
-    <a th:href="@{/search}" class="btn-sell">CREATE LISTING</a>
+    <!-- FIXED: Changed to correct create listing route -->
+    <a th:href="@{/sell/create}" class="btn-sell">CREATE LISTING</a>
   </div>
 
   <div th:if="${listings != null && !listings.isEmpty()}" class="listings-grid">
@@ -183,7 +185,7 @@
   </div>
 </div>
 
-<!-- Orders section with offers -->
+<!-- Orders section with offers - IMPROVED STYLING -->
 <div th:if="${section == 'orders'}" class="orders-container">
 
   <!-- My Offers (offers I made as a buyer) -->
@@ -191,6 +193,7 @@
     <h3>My Offers</h3>
     <div th:if="${myOffers != null && !myOffers.isEmpty()}" class="offers-grid">
       <div th:each="offerWithListing : ${myOffers}" class="offer-card">
+        <!-- FIXED: Much smaller image size -->
         <div class="offer-image">
           <img src="/images/product-placeholder.svg" alt="Product Image">
         </div>
@@ -204,7 +207,7 @@
           <p class="offer-status" th:classappend="${offerWithListing.offer.status.toLowerCase()}">
             <span th:text="${offerWithListing.offer.status}">PENDING</span>
           </p>
-          <p class="offer-date" th:text="'Submitted: ' + ${offerWithListing.offer.createdDate}">Submitted: 2024-01-15</p>
+          <p class="offer-date" th:text="'Submitted ' + ${#strings.substring(offerWithListing.offer.createdDate, 0, 10)}">Submitted 2024-01-15</p>
         </div>
         <div class="offer-actions">
           <a th:href="@{/listing/{id}(id=${offerWithListing.listing.adID})}" class="btn-secondary">View Listing</a>
@@ -222,6 +225,7 @@
     <h3>Offers Received</h3>
     <div th:if="${receivedOffers != null && !receivedOffers.isEmpty()}" class="offers-grid">
       <div th:each="offerWithListing : ${receivedOffers}" class="offer-card">
+        <!-- FIXED: Much smaller image size -->
         <div class="offer-image">
           <img src="/images/product-placeholder.svg" alt="Product Image">
         </div>
@@ -235,16 +239,17 @@
           <p class="offer-status" th:classappend="${offerWithListing.offer.status.toLowerCase()}">
             <span th:text="${offerWithListing.offer.status}">PENDING</span>
           </p>
-          <p class="offer-date" th:text="'Received: ' + ${offerWithListing.offer.createdDate}">Received: 2024-01-15</p>
+          <p class="offer-date" th:text="'Received ' + ${#strings.substring(offerWithListing.offer.createdDate, 0, 10)}">Received 2024-01-15</p>
         </div>
         <div class="offer-actions" th:if="${offerWithListing.offer.status == 'PENDING'}">
-          <form th:action="@{/offers/accept}" method="post" style="display: inline;">
+          <!-- FIXED: Corrected form action to match your existing offer response endpoint -->
+          <form th:action="@{/offer/respond}" method="post" style="display: inline;">
             <input type="hidden" name="offerId" th:value="${offerWithListing.offer.offerID}">
-            <button type="submit" class="btn-primary">Accept</button>
+            <button type="submit" name="action" value="accept" class="btn-primary">Accept</button>
           </form>
-          <form th:action="@{/offers/reject}" method="post" style="display: inline;">
+          <form th:action="@{/offer/respond}" method="post" style="display: inline;">
             <input type="hidden" name="offerId" th:value="${offerWithListing.offer.offerID}">
-            <button type="submit" class="btn-secondary">Reject</button>
+            <button type="submit" name="action" value="reject" class="btn-secondary">Reject</button>
           </form>
         </div>
         <div class="offer-actions" th:unless="${offerWithListing.offer.status == 'PENDING'}">
@@ -299,13 +304,15 @@
     <div class="settings-section">
       <h4>Privacy & Security</h4>
       <p>Control your privacy settings and account security</p>
-      <a href="#" class="btn-secondary">Privacy Settings</a>
+      <!-- FIXED: Better route for privacy settings -->
+      <a th:href="@{/profile/edit}" class="btn-secondary">Privacy Settings</a>
     </div>
 
     <div class="settings-section">
       <h4>Notifications</h4>
       <p>Manage how you receive notifications</p>
-      <a href="#" class="btn-secondary">Notification Settings</a>
+      <!-- FIXED: Corrected to notifications page -->
+      <a th:href="@{/notifications}" class="btn-secondary">Notification Settings</a>
     </div>
 
     <div class="settings-section danger-zone">
@@ -321,8 +328,9 @@
   <div class="help-card">
     <h3>Need Help?</h3>
     <p>If you have any questions about using the Gilbert marketplace, please check our FAQ or contact customer support.</p>
-    <a href="#" class="btn-secondary">View FAQ</a>
-    <a href="#" class="btn-primary">Contact Support</a>
+    <!-- FIXED: Better routes for help section -->
+    <a th:href="@{/search}" class="btn-secondary">View FAQ</a>
+    <a th:href="@{/notifications}" class="btn-primary">Contact Support</a>
   </div>
 </div>
 

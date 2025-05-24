@@ -96,12 +96,10 @@ public class UserRepository {
     }
 
     public User save(User user) {
-        // Generer UserID hvis det ikke er sat
         if (user.getUserID() == null || user.getUserID().isEmpty()) {
             user.setUserID(UUID.randomUUID().toString());
         }
 
-        // Hash password if it's not already hashed
         String hashedPassword;
         if (!isPasswordHashed(user.getPassword())) {
             hashedPassword = hashPassword(user.getPassword());

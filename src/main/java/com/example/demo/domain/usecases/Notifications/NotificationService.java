@@ -30,7 +30,7 @@ public class NotificationService {
         String message = "The price of \"" + listingTitle + "\" has changed from "
                 + oldPrice + " DKK to " + newPrice + " DKK.";
 
-        String createdDate = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        String createdDate = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
 
         for (String userId : userIds) {
             Notification notification = new Notification(

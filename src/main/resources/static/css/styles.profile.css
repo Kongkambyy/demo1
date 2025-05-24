@@ -258,7 +258,8 @@ body {
     margin-bottom: 1rem;
 }
 
-.btn-sell {
+/* FIXED: Remove outline and fix button styling */
+.btn-sell, .btn-secondary {
     background: #432a26;
     color: #F8f0e5;
     padding: 0.5rem 1rem;
@@ -266,10 +267,19 @@ body {
     margin-top: 1rem;
     cursor: pointer;
     border-radius: 4px;
+    outline: none !important;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
 }
 
-.btn-sell:hover {
+.btn-sell:hover, .btn-secondary:hover {
     background: #5b433f;
+}
+
+.btn-sell:focus, .btn-secondary:focus {
+    outline: none !important;
+    box-shadow: none;
 }
 
 .listings-grid {
@@ -364,12 +374,13 @@ body {
     cursor: pointer;
     font-family: 'Times New Roman', serif;
     transition: background-color 0.2s ease;
+    outline: none !important;
+    border: none;
 }
 
 .btn-primary {
     background: #432a26;
     color: #F8f0e5;
-    border: none;
 }
 
 .btn-primary:hover {
@@ -386,6 +397,11 @@ body {
 .btn-secondary:hover {
     background: #F8f0e5;
     color: #432a26;
+}
+
+.btn-secondary:focus, .btn-primary:focus {
+    outline: none !important;
+    box-shadow: none;
 }
 
 /* Settings section styles */
@@ -431,16 +447,225 @@ body {
     transition: background-color 0.2s ease;
     font-family: 'Times New Roman', serif;
     cursor: pointer;
+    outline: none !important;
 }
 
 .btn-danger:hover {
     background: rgba(255, 0, 0, 0.3);
 }
 
+.btn-danger:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
 .help-card p {
     color: #F8f0e5;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+}
+
+/* FIXED: Much smaller, cleaner and compact offer cards */
+.offers-section {
+    margin-bottom: 2rem;
+}
+
+.offers-section h3 {
+    margin-bottom: 1rem;
+    color: #F8f0e5;
+    border-bottom: 1px solid rgba(248, 240, 229, 0.1);
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+/* FIXED: Ultra-compact offer cards */
+.offer-card {
+    display: flex;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    padding: 0.75rem;
+    border: 1px solid rgba(248, 240, 229, 0.15);
+    transition: background-color 0.2s ease;
+    align-items: center;
+    min-height: auto;
+}
+
+.offer-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* FIXED: Tiny offer images */
+.offer-image {
+    width: 40px !important;
+    height: 40px !important;
+    background: rgba(248, 240, 229, 0.1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 1px solid rgba(248, 240, 229, 0.2);
+}
+
+.offer-image img {
+    width: 20px !important;
+    height: 20px !important;
+    opacity: 0.5;
+}
+
+.offer-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.offer-details h4 {
+    margin-bottom: 0.25rem;
+    color: #F8f0e5;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.offer-price {
+    margin-bottom: 0.25rem;
+    color: #F8f0e5;
+    line-height: 1.2;
+    font-size: 0.8rem;
+}
+
+.offer-price span {
+    color: rgba(248, 240, 229, 0.6);
+    font-size: 0.75rem;
+}
+
+.offer-price strong {
+    color: #F8f0e5;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.offer-status {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    display: inline-block;
+    padding: 0.15rem 0.4rem;
+    border-radius: 2px;
+    line-height: 1;
+}
+
+.offer-status.pending {
+    background: rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+    border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.offer-status.accepted {
+    background: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+.offer-status.rejected {
+    background: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.offer-status.expired {
+    background: rgba(128, 128, 128, 0.2);
+    color: #808080;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.offer-date {
+    font-size: 0.7rem;
+    color: rgba(248, 240, 229, 0.5);
+    margin: 0;
+    line-height: 1;
+}
+
+.offer-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    min-width: auto;
+}
+
+.offer-actions .btn-primary,
+.offer-actions .btn-secondary {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+    min-width: 60px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    outline: none !important;
+    line-height: 1;
+}
+
+.offer-actions .btn-primary {
+    background: #432a26;
+    color: #F8f0e5;
+}
+
+.offer-actions .btn-primary:hover {
+    background: #5b433f;
+}
+
+.offer-actions .btn-secondary {
+    background: transparent;
+    color: #F8f0e5;
+    border: 1px solid rgba(248, 240, 229, 0.4);
+}
+
+.offer-actions .btn-secondary:hover {
+    background: #F8f0e5;
+    color: #432a26;
+}
+
+.offer-actions form {
+    margin: 0;
+    display: inline-block;
+}
+
+.offer-actions button {
+    width: auto;
+}
+
+/* Empty state for offers */
+.offers-section .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.offers-section .empty-state p {
+    color: #F8f0e5;
+    margin-bottom: 1rem;
+    opacity: 0.8;
 }
 
 /* Mobile styles */
@@ -511,6 +736,38 @@ body {
     .user-info-card, .help-card, .settings-card {
         padding: 1.5rem;
     }
+
+    /* Mobile responsive improvements for offers */
+    .offer-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .offer-image {
+        align-self: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .offer-details {
+        text-align: center;
+    }
+
+    .offer-actions {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .offer-actions .btn-primary,
+    .offer-actions .btn-secondary {
+        min-width: 70px;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
 }
 
 /* Mobile footer */
@@ -554,289 +811,48 @@ body {
         padding-bottom: 60px;
     }
 
-    /* Add these styles to your styles.profile.css file */
-
-    /* Orders and Offers Styles */
-    .orders-container {
-        padding: 2rem 5rem;
-    }
-
-    .offers-section {
-        margin-bottom: 3rem;
-    }
-
-    .offers-section h3 {
-        margin-bottom: 1.5rem;
-        color: #F8f0e5;
-        border-bottom: 1px solid rgba(248, 240, 229, 0.1);
-        padding-bottom: 0.5rem;
-        font-size: 1.5rem;
-    }
-
-    .offers-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .offer-card {
-        display: flex;
-        gap: 1.5rem;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 8px;
-        padding: 1.5rem;
-        border: 1px solid rgba(248, 240, 229, 0.2);
-        transition: background-color 0.2s ease;
-    }
-
-    .offer-card:hover {
-        background: rgba(255, 255, 255, 0.08);
-    }
-
-    .offer-image {
-        width: 80px;
-        height: 80px;
-        background: #e0e0e0;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        overflow: hidden;
-    }
-
-    .offer-image img {
-        width: 40px;
-        height: 40px;
-        opacity: 0.6;
-    }
-
-    .offer-details {
-        flex: 1;
-        min-width: 0; /* Allows text to wrap properly */
-    }
-
-    .offer-details h4 {
-        margin-bottom: 0.5rem;
-        color: #F8f0e5;
-        font-size: 1.1rem;
-        line-height: 1.3;
-    }
-
-    .offer-price {
-        margin-bottom: 0.5rem;
-        color: #F8f0e5;
-        line-height: 1.4;
-    }
-
-    .offer-price span {
-        color: rgba(248, 240, 229, 0.8);
-    }
-
-    .offer-price strong {
-        color: #F8f0e5;
-        font-size: 1.1rem;
-        font-weight: bold;
-    }
-
-    .offer-status {
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        display: inline-block;
-        padding: 0.25rem 0.5rem;
-        border-radius: 3px;
-    }
-
-    .offer-status.pending {
-        background: rgba(255, 165, 0, 0.2);
-        color: #ffa500;
-        border: 1px solid rgba(255, 165, 0, 0.3);
-    }
-
-    .offer-status.accepted {
-        background: rgba(0, 255, 0, 0.2);
-        color: #00ff00;
-        border: 1px solid rgba(0, 255, 0, 0.3);
-    }
-
-    .offer-status.rejected {
-        background: rgba(255, 107, 107, 0.2);
-        color: #ff6b6b;
-        border: 1px solid rgba(255, 107, 107, 0.3);
-    }
-
-    .offer-status.expired {
-        background: rgba(128, 128, 128, 0.2);
-        color: #808080;
-        border: 1px solid rgba(128, 128, 128, 0.3);
-    }
-
-    .offer-date {
-        font-size: 0.9rem;
-        color: rgba(248, 240, 229, 0.7);
-        margin: 0;
-    }
-
     .offer-actions {
-        display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        align-items: flex-end;
-        justify-content: center;
-        flex-shrink: 0;
+        width: 100%;
     }
 
     .offer-actions .btn-primary,
     .offer-actions .btn-secondary {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-        min-width: 90px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-        font-family: 'Times New Roman', serif;
-        font-weight: bold;
-        transition: all 0.2s ease;
-    }
-
-    .offer-actions .btn-primary {
-        background: #432a26;
-        color: #F8f0e5;
-    }
-
-    .offer-actions .btn-primary:hover {
-        background: #5b433f;
-    }
-
-    .offer-actions .btn-secondary {
-        background: transparent;
-        color: #F8f0e5;
-        border: 1px solid #F8f0e5;
-    }
-
-    .offer-actions .btn-secondary:hover {
-        background: #F8f0e5;
-        color: #432a26;
-    }
-
-    .offer-actions form {
-        margin: 0;
         width: 100%;
+        min-width: auto;
     }
+}
 
-    .offer-actions button {
-        width: 100%;
-    }
+/* Enhance existing empty state for consistency */
+.orders-container .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
 
-    /* Empty state for offers */
-    .offers-section .empty-state {
-        text-align: center;
-        padding: 3rem 1rem;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px dashed rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-    }
+.orders-container .empty-state p {
+    color: #F8f0e5;
+    margin-bottom: 1rem;
+}
 
-    .offers-section .empty-state p {
-        color: #F8f0e5;
-        margin-bottom: 1rem;
-        opacity: 0.8;
-    }
+.orders-container .empty-state .btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Times New Roman', serif;
+    transition: background-color 0.2s ease;
+    background: transparent;
+    color: #F8f0e5;
+    border: 1px solid #F8f0e5;
+    outline: none !important;
+}
 
-    /* Mobile responsive styles for offers */
-    @media (max-width: 768px) {
-        .orders-container {
-            padding: 1.5rem;
-        }
-
-        .offer-card {
-            flex-direction: column;
-            text-align: center;
-            gap: 1rem;
-        }
-
-        .offer-image {
-            align-self: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .offer-details {
-            text-align: center;
-        }
-
-        .offer-actions {
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .offer-actions .btn-primary,
-        .offer-actions .btn-secondary {
-            min-width: 80px;
-            padding: 0.5rem 1rem;
-        }
-
-        .offers-section h3 {
-            font-size: 1.3rem;
-        }
-    }
-
-    @media (max-width: 600px) {
-        body {
-            padding-bottom: 60px; /* Space for mobile footer */
-        }
-
-        .orders-container {
-            padding: 1rem;
-        }
-
-        .offer-actions {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .offer-actions .btn-primary,
-        .offer-actions .btn-secondary {
-            width: 100%;
-            min-width: auto;
-        }
-    }
-
-    /* Enhance existing empty state for consistency */
-    .orders-container .empty-state {
-        text-align: center;
-        padding: 3rem 1rem;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px dashed rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        margin-bottom: 2rem;
-    }
-
-    .orders-container .empty-state p {
-        color: #F8f0e5;
-        margin-bottom: 1rem;
-    }
-
-    .orders-container .empty-state .btn-secondary {
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        text-decoration: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-family: 'Times New Roman', serif;
-        transition: background-color 0.2s ease;
-        background: transparent;
-        color: #F8f0e5;
-        border: 1px solid #F8f0e5;
-    }
-
-    .orders-container .empty-state .btn-secondary:hover {
-        background: #F8f0e5;
-        color: #432a26;
-    }
+.orders-container .empty-state .btn-secondary:hover {
+    background: #F8f0e5;
+    color: #432a26;
 }

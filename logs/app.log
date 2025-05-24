@@ -10111,3 +10111,609 @@ SEVERE: [2025-05-23 22:40:36] ERROR: Unhandled exception: No endpoint GET /favic
 maj 23, 2025 10:40:38 PM com.example.demo.data.util.LoggerUtility logError
 SEVERE: [2025-05-23 22:40:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
 [2025-05-23 22:40:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: CategoryRepository initialized
+[2025-05-23 22:48:34] EVENT: CategoryRepository initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: ListingRepository initialized
+[2025-05-23 22:48:34] EVENT: ListingRepository initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: FavoriteRepository initialized
+[2025-05-23 22:48:34] EVENT: FavoriteRepository initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: MessageRepository initialiseret
+[2025-05-23 22:48:34] EVENT: MessageRepository initialiseret
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: NotificationRepository initialized
+[2025-05-23 22:48:34] EVENT: NotificationRepository initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: OfferRepository initialized
+[2025-05-23 22:48:34] EVENT: OfferRepository initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: ReviewRepository initialized
+[2025-05-23 22:48:34] EVENT: ReviewRepository initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: TransactionRepository initialized
+[2025-05-23 22:48:34] EVENT: TransactionRepository initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: UserRepository initialiseret
+[2025-05-23 22:48:34] EVENT: UserRepository initialiseret
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: GetCategoriesUseCase initialized
+[2025-05-23 22:48:34] EVENT: GetCategoriesUseCase initialized
+maj 23, 2025 10:48:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:34] EVENT: GetCategoryUseCase initialized
+[2025-05-23 22:48:34] EVENT: GetCategoryUseCase initialized
+maj 23, 2025 10:48:35 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:35] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-23 22:48:35] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 23, 2025 10:48:35 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:35] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: null, categoryId: null, designer: null
+[2025-05-23 22:48:35] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: null, categoryId: null, designer: null
+maj 23, 2025 10:48:35 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:35] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:48:35] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:48:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:48:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:48:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:38] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:48:38] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:48:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:48:38] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:48:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:48:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:48:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:48:39] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:48:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:48:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:48:45 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:45] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:48:45] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:48:46 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:46] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:48:46] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:48:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:47] EVENT: Retrieving all categories
+[2025-05-23 22:48:47] EVENT: Retrieving all categories
+maj 23, 2025 10:48:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:48:47] EVENT: Retrieving all categories
+[2025-05-23 22:48:47] EVENT: Retrieving all categories
+maj 23, 2025 10:48:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:47] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:48:47] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:48:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:48:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:48:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:49:07 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:07] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:49:07] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:49:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:49:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:49:08 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:49:08] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:49:08] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:49:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:49:08] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:49:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:49:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:49:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:49:09] EVENT: Retrieving all categories
+[2025-05-23 22:49:09] EVENT: Retrieving all categories
+maj 23, 2025 10:49:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:49:09] EVENT: Retrieving all categories
+[2025-05-23 22:49:09] EVENT: Retrieving all categories
+maj 23, 2025 10:49:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:49:09] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:49:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:49:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:49:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:49:12] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:49:12] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:49:12 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:12] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:49:12] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:49:12 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:49:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:49:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:54:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:54:11] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:54:11] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:54:11 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:54:11] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:54:11] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:54:12 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:54:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:54:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:54:13 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:54:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:54:13] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:54:14 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:54:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:54:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:54:28 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:54:28] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:54:28] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:54:28 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:54:28] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:54:28] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:56:43] EVENT: Listing viewed: LST015 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:56:43] EVENT: Listing viewed: LST015 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:56:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:43] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 23, 2025 10:56:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:43] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:43] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-23 22:56:43] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:44] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:44] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:45 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:45] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:45] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:56:46] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+[2025-05-23 22:56:46] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+maj 23, 2025 10:56:46 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:46] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:46] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:56:47] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:56:47] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:56:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:47] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:47] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:49] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:49] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:49] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:49] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:50] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:50] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:50] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:53] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:54] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:54] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:54] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:56:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:56:57] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+[2025-05-23 22:56:57] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+maj 23, 2025 10:56:57 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:56:57] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:56:57 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:56:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:56:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:57:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:57:00] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:57:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:57:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:57:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:57:02] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:57:02] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:57:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:57:02] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:57:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:57:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:57:03 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:57:03] EVENT: Retrieving all categories
+[2025-05-23 22:57:03] EVENT: Retrieving all categories
+maj 23, 2025 10:57:03 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:57:03] EVENT: Retrieving all categories
+[2025-05-23 22:57:03] EVENT: Retrieving all categories
+maj 23, 2025 10:57:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:57:03] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:57:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:57:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:57:05 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:57:05] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 22:57:05] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 10:57:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:57:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 10:57:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:57:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 22:57:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: CategoryRepository initialized
+[2025-05-23 22:59:58] EVENT: CategoryRepository initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: ListingRepository initialized
+[2025-05-23 22:59:58] EVENT: ListingRepository initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: FavoriteRepository initialized
+[2025-05-23 22:59:58] EVENT: FavoriteRepository initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: MessageRepository initialiseret
+[2025-05-23 22:59:58] EVENT: MessageRepository initialiseret
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: NotificationRepository initialized
+[2025-05-23 22:59:58] EVENT: NotificationRepository initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: OfferRepository initialized
+[2025-05-23 22:59:58] EVENT: OfferRepository initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: ReviewRepository initialized
+[2025-05-23 22:59:58] EVENT: ReviewRepository initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: TransactionRepository initialized
+[2025-05-23 22:59:58] EVENT: TransactionRepository initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: UserRepository initialiseret
+[2025-05-23 22:59:58] EVENT: UserRepository initialiseret
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: GetCategoriesUseCase initialized
+[2025-05-23 22:59:58] EVENT: GetCategoriesUseCase initialized
+maj 23, 2025 10:59:58 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:58] EVENT: GetCategoryUseCase initialized
+[2025-05-23 22:59:58] EVENT: GetCategoryUseCase initialized
+maj 23, 2025 10:59:59 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:59] EVENT: Hierarchical search performed with categoryIds: [2, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], keyword: null, condition: null, brand: null
+[2025-05-23 22:59:59] EVENT: Hierarchical search performed with categoryIds: [2, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], keyword: null, condition: null, brand: null
+maj 23, 2025 10:59:59 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 22:59:59] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: null, categoryId: 2, designer: null
+[2025-05-23 22:59:59] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: null, categoryId: 2, designer: null
+maj 23, 2025 10:59:59 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 22:59:59] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 22:59:59] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:01] EVENT: Listing viewed: LST063 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:00:01] EVENT: Listing viewed: LST063 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:00:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:01] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-23 23:00:01] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 23, 2025 11:00:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:04 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:04] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea accessed make offer page for listing LST063
+[2025-05-23 23:00:04] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea accessed make offer page for listing LST063
+maj 23, 2025 11:00:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:04] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-23 23:00:04] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 23, 2025 11:00:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:11] EVENT: Hierarchical search performed with categoryIds: [1, 5, 6, 7, 8, 9, 10, 11, 12, 13], keyword: jackets, condition: null, brand: null
+[2025-05-23 23:00:11] EVENT: Hierarchical search performed with categoryIds: [1, 5, 6, 7, 8, 9, 10, 11, 12, 13], keyword: jackets, condition: null, brand: null
+maj 23, 2025 11:00:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:11] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: jackets, categoryId: 1, designer: null
+[2025-05-23 23:00:11] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: jackets, categoryId: 1, designer: null
+maj 23, 2025 11:00:11 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:11] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:11] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:11 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:11] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:11] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:13 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:13] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:13 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:13] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:13] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:14] EVENT: Hierarchical search performed with categoryIds: [2, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], keyword: heels, condition: null, brand: null
+[2025-05-23 23:00:14] EVENT: Hierarchical search performed with categoryIds: [2, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], keyword: heels, condition: null, brand: null
+maj 23, 2025 11:00:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:14] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: heels, categoryId: 2, designer: null
+[2025-05-23 23:00:14] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: heels, categoryId: 2, designer: null
+maj 23, 2025 11:00:14 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:14] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:14 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:16 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:16] EVENT: Listing viewed: LST088 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:00:16] EVENT: Listing viewed: LST088 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:00:16 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-23 23:00:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 23, 2025 11:00:16 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:16] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:16 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:33] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:00:35 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:00:35] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea accessed profile edit page
+[2025-05-23 23:00:35] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea accessed profile edit page
+maj 23, 2025 11:00:35 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:35] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:00:35] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:00:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:00:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:00:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:34 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:34] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:34] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:06:36] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:06:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:38] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-23 23:06:38] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 23, 2025 11:06:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:38] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: null, categoryId: null, designer: null
+[2025-05-23 23:06:38] EVENT: Search performed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea - keyword: null, categoryId: null, designer: null
+maj 23, 2025 11:06:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:06:38] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:06:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:39] EVENT: Listing viewed: LST044 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:06:39] EVENT: Listing viewed: LST044 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:06:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:39] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-23 23:06:39] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 23, 2025 11:06:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:06:39] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:06:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:43] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea accessed make offer page for listing LST044
+[2025-05-23 23:06:43] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea accessed make offer page for listing LST044
+maj 23, 2025 11:06:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:43] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-23 23:06:43] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 23, 2025 11:06:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:43] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:06:43] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:06:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Offer created: 3fe1e40f-bd31-47f4-83ce-a99adeb1b90f for listing: LST044
+[2025-05-23 23:06:47] EVENT: Offer created: 3fe1e40f-bd31-47f4-83ce-a99adeb1b90f for listing: LST044
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Notification created: a40de7ce-3c88-4ea3-877f-9040e0577b27 for user: USR004
+[2025-05-23 23:06:47] EVENT: Notification created: a40de7ce-3c88-4ea3-877f-9040e0577b27 for user: USR004
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Offer received notification created for seller: USR004
+[2025-05-23 23:06:47] EVENT: Offer received notification created for seller: USR004
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Notification created: d5aaa98d-5a59-48d8-8680-c4b067fcad59 for user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:06:47] EVENT: Notification created: d5aaa98d-5a59-48d8-8680-c4b067fcad59 for user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Offer submitted notification created for buyer: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:06:47] EVENT: Offer submitted notification created for buyer: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Offer created: 3fe1e40f-bd31-47f4-83ce-a99adeb1b90f for listing: LST044 by buyer: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:06:47] EVENT: Offer created: 3fe1e40f-bd31-47f4-83ce-a99adeb1b90f for listing: LST044 by buyer: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Offer created successfully: 3fe1e40f-bd31-47f4-83ce-a99adeb1b90f by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:06:47] EVENT: Offer created successfully: 3fe1e40f-bd31-47f4-83ce-a99adeb1b90f by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:47] EVENT: Listing viewed: LST044 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:06:47] EVENT: Listing viewed: LST044 by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:47] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-23 23:06:47] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:47] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:06:47] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:06:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:48] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+[2025-05-23 23:06:48] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+maj 23, 2025 11:06:48 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:48] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:06:48] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:06:48 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:06:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:55] EVENT: 1 notifications marked as read for user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-23 23:06:55] EVENT: 1 notifications marked as read for user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 23, 2025 11:06:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:55] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea marked all notifications as read
+[2025-05-23 23:06:55] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea marked all notifications as read
+maj 23, 2025 11:06:55 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:06:55] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+[2025-05-23 23:06:55] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+maj 23, 2025 11:06:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:06:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:06:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:06:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:06:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 23, 2025 11:08:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:08:49] EVENT: Notification deleted: d5aaa98d-5a59-48d8-8680-c4b067fcad59
+[2025-05-23 23:08:49] EVENT: Notification deleted: d5aaa98d-5a59-48d8-8680-c4b067fcad59
+maj 23, 2025 11:08:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:08:49] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea deleted notification d5aaa98d-5a59-48d8-8680-c4b067fcad59
+[2025-05-23 23:08:49] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea deleted notification d5aaa98d-5a59-48d8-8680-c4b067fcad59
+maj 23, 2025 11:08:49 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-23 23:08:49] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+[2025-05-23 23:08:49] EVENT: User 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea viewed notifications page
+maj 23, 2025 11:08:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:08:49] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-23 23:08:49] ERROR: Unhandled exception: No static resource home.svg.
+maj 23, 2025 11:08:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-23 23:08:50] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-23 23:08:50] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: CategoryRepository initialized
+[2025-05-24 16:29:25] EVENT: CategoryRepository initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: ListingRepository initialized
+[2025-05-24 16:29:25] EVENT: ListingRepository initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: FavoriteRepository initialized
+[2025-05-24 16:29:25] EVENT: FavoriteRepository initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: MessageRepository initialiseret
+[2025-05-24 16:29:25] EVENT: MessageRepository initialiseret
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: NotificationRepository initialized
+[2025-05-24 16:29:25] EVENT: NotificationRepository initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: OfferRepository initialized
+[2025-05-24 16:29:25] EVENT: OfferRepository initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: ReviewRepository initialized
+[2025-05-24 16:29:25] EVENT: ReviewRepository initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: TransactionRepository initialized
+[2025-05-24 16:29:25] EVENT: TransactionRepository initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: UserRepository initialiseret
+[2025-05-24 16:29:25] EVENT: UserRepository initialiseret
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: GetCategoriesUseCase initialized
+[2025-05-24 16:29:25] EVENT: GetCategoriesUseCase initialized
+maj 24, 2025 4:29:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:25] EVENT: GetCategoryUseCase initialized
+[2025-05-24 16:29:25] EVENT: GetCategoryUseCase initialized
+maj 24, 2025 4:29:29 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:29] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-24 16:29:29] ERROR: Unhandled exception: No static resource home.svg.
+maj 24, 2025 4:29:30 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:30] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 16:29:30] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 4:29:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-24 16:29:31] ERROR: Unhandled exception: No static resource home.svg.
+maj 24, 2025 4:29:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 16:29:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 4:29:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:40] EVENT: Successful login for email: kongkamby1@gmail.com
+[2025-05-24 16:29:40] EVENT: Successful login for email: kongkamby1@gmail.com
+maj 24, 2025 4:29:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:40] EVENT: User logged in: kongkamby1@gmail.com
+[2025-05-24 16:29:40] EVENT: User logged in: kongkamby1@gmail.com
+maj 24, 2025 4:29:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:40] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+[2025-05-24 16:29:40] EVENT: Profile page accessed by user: 5bb244ca-fe3f-42b1-91c7-b960fb2fc3ea
+maj 24, 2025 4:29:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-24 16:29:40] ERROR: Unhandled exception: No static resource home.svg.
+maj 24, 2025 4:29:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 16:29:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 4:29:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:42] EVENT: Retrieving all categories
+[2025-05-24 16:29:42] EVENT: Retrieving all categories
+maj 24, 2025 4:29:42 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:42] EVENT: Retrieving all categories
+[2025-05-24 16:29:42] EVENT: Retrieving all categories
+maj 24, 2025 4:29:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:43] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-24 16:29:43] ERROR: Unhandled exception: No static resource home.svg.
+maj 24, 2025 4:29:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 16:29:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 4:29:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:56] ERROR: Error creating listing: PreparedStatementCallback; SQL [INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, ItemCondition, Status, Brand, CategoryID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; Cannot add or update a child row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_2` FOREIGN KEY (`CategoryID`) REFERENCES `categories` (`CategoryID`))
+[2025-05-24 16:29:56] ERROR: Error creating listing: PreparedStatementCallback; SQL [INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, ItemCondition, Status, Brand, CategoryID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; Cannot add or update a child row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_2` FOREIGN KEY (`CategoryID`) REFERENCES `categories` (`CategoryID`))
+maj 24, 2025 4:29:56 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:56] EVENT: Retrieving all categories
+[2025-05-24 16:29:56] EVENT: Retrieving all categories
+maj 24, 2025 4:29:56 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:29:56] EVENT: Retrieving all categories
+[2025-05-24 16:29:56] EVENT: Retrieving all categories
+maj 24, 2025 4:29:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-24 16:29:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 24, 2025 4:29:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:29:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 16:29:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 4:30:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:30:26] ERROR: Error creating listing: PreparedStatementCallback; SQL [INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, ItemCondition, Status, Brand, CategoryID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; Cannot add or update a child row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_2` FOREIGN KEY (`CategoryID`) REFERENCES `categories` (`CategoryID`))
+[2025-05-24 16:30:26] ERROR: Error creating listing: PreparedStatementCallback; SQL [INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, ItemCondition, Status, Brand, CategoryID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; Cannot add or update a child row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_2` FOREIGN KEY (`CategoryID`) REFERENCES `categories` (`CategoryID`))
+maj 24, 2025 4:30:26 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:30:26] EVENT: Retrieving all categories
+[2025-05-24 16:30:26] EVENT: Retrieving all categories
+maj 24, 2025 4:30:26 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 16:30:26] EVENT: Retrieving all categories
+[2025-05-24 16:30:26] EVENT: Retrieving all categories
+maj 24, 2025 4:30:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:30:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-24 16:30:26] ERROR: Unhandled exception: No static resource home.svg.
+maj 24, 2025 4:30:27 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 16:30:27] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 16:30:27] ERROR: Unhandled exception: No endpoint GET /favicon.ico.

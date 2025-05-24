@@ -123,7 +123,6 @@ public class NotificationController {
         }
 
         try {
-            // Verify the notification belongs to the user before deleting
             Notification notification = getNotificationsUseCase.getById(notificationId, userId);
 
             notificationRepository.delete(notificationId);
