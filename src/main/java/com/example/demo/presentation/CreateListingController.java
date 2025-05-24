@@ -18,6 +18,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import jakarta.servlet.http.HttpSession;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Controller
@@ -77,17 +79,33 @@ public class CreateListingController {
         }
 
         try {
-            // Use the proper use case as intended
-            Listing listing = createListingUseCase.execute(userId, title, description, price, condition, brand);
+            String createdDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
-            // Set the category and update
+            Listing listing = new Listing(
+                    userId,
+                    title.trim(),
+                    description.trim(),
+                    price,
+                    createdDate,
+                    condition.trim(),
+                    "ACTIVE"
+            );
+
+            // Set the brand if provided
+            if (brand != null && !brand.trim().isEmpty()) {
+                listing.setBrand(brand.trim());
+            }
+
+            // IMPORTANT: Set the category BEFORE saving
             listing.setCategoryID(categoryId);
-            listingRepository.update(listing);
 
-            LoggerUtility.logEvent("Listing created: " + listing.getAdID() + " with category: " + categoryId + " by user: " + userId);
+            // Now save the listing with all data including categoryID
+            Listing savedListing = listingRepository.save(listing);
+
+            LoggerUtility.logEvent("Listing created: " + savedListing.getAdID() + " with category: " + categoryId + " by user: " + userId);
 
             redirectAttributes.addFlashAttribute("success", "Your listing has been created successfully and is now live!");
-            return "redirect:/listing/" + listing.getAdID();
+            return "redirect:/listing/" + savedListing.getAdID();
 
         } catch (Exception e) {
             LoggerUtility.logError("Error creating listing: " + e.getMessage());

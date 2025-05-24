@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="'Gilbert – Purchase ' + ${listing.title}">Gilbert – Purchase Confirmation</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/css/purchase-confirmation.css}" />
+</head>
+<body>
+
+<header class="header">
+  <a th:href="@{/index}" class="logo">GILBERT</a>
+  <div class="icons">
+    <a class="header-btn" th:href="@{/favorites}" aria-label="Favorites">
+      <img src="/images/heart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/notifications}" aria-label="Notifications">
+      <img src="/images/Notification.svg" class="icon" alt="">
+      <span class="notification-badge" th:if="${globalUnreadNotificationCount != null && globalUnreadNotificationCount > 0}" th:text="${globalUnreadNotificationCount}"></span>
+    </a>
+    <a class="header-btn" th:href="@{/profile}" aria-label="Profile">
+      <img src="/images/user.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn" th:href="@{/cart}" aria-label="Cart">
+      <img src="/images/cart.svg" class="icon" alt="">
+    </a>
+    <a class="header-btn menu-btn" aria-label="Menu">
+      <img src="/images/menu.svg" class="icon" alt="">
+    </a>
+  </div>
+</header>
+
+<div class="overlay"></div>
+
+<aside class="mobile-menu">
+  <button class="close-btn" aria-label="Close Menu">×</button>
+  <ul>
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/orders">Orders</a></li>
+    <li><a href="/favorites">Favorites</a></li>
+    <li><a href="/cart">Cart</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/sell">Sell</a></li>
+    <li><a href="/settings">Settings</a></li>
+    <li><a href="/logout">Log Out</a></li>
+  </ul>
+</aside>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.overlay');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeBtn = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    overlay.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', toggleMenu);
+  overlay.addEventListener('click', toggleMenu);
+</script>
+
+<nav class="navbar">
+  <ul>
+    <li class="dropdown">
+      <a href="#">DESIGNERS</a>
+      <ul class="submenu">
+        <li><a href="#">Luxury</a></li>
+        <li><a href="#">Streetwear</a></li>
+        <li><a href="#">Minimalist</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=1)}">MEN</a>
+      <ul class="submenu">
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Jackets</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=2)}">WOMEN</a>
+      <ul class="submenu">
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Heels</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=4)}">BEAUTY</a>
+      <ul class="submenu">
+        <li><a href="#">Skincare</a></li>
+        <li><a href="#">Makeup</a></li>
+        <li><a href="#">Fragrance</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a th:href="@{/search(categoryId=3)}">HOME</a>
+      <ul class="submenu">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Textiles</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb">
+  <a th:href="@{/}">Home</a>
+  <span class="separator">›</span>
+  <a th:href="@{/search}">Shop</a>
+  <span class="separator">›</span>
+  <a th:href="@{'/listing/' + ${listing.adID}}" th:text="${listing.title}">Product</a>
+  <span class="separator">›</span>
+  <span>Purchase</span>
+</nav>
+
+<!-- Main Purchase Container -->
+<main class="purchase-container">
+  <!-- Header Section -->
+  <div class="purchase-header">
+    <h1>Confirm Purchase</h1>
+    <p>Please review your purchase details before proceeding</p>
+  </div>
+
+  <!-- Success/Error Messages -->
+  <div th:if="${success}" class="alert alert-success" th:text="${success}">
+    Success message
+  </div>
+  <div th:if="${error}" class="alert alert-error" th:text="${error}">
+    Error message
+  </div>
+
+  <!-- Main Content -->
+  <div class="purchase-content">
+    <!-- Product Summary -->
+    <div class="product-summary">
+      <h2>Item Details</h2>
+
+      <div class="product-info">
+        <div class="product-image">
+          <img src="/images/product-placeholder.svg" alt="Product image">
+        </div>
+
+        <div class="product-details">
+          <h3 th:text="${listing.brand != null ? listing.brand + ' – ' + listing.title : listing.title}">
+            Product Title
+          </h3>
+          <div class="product-price" th:text="${listing.price + ' DKK'}">Price DKK</div>
+          <div class="product-meta">
+            <span th:text="'Condition: ' + ${listing.itemCondition}">Condition: Good</span>
+            <span th:text="'Listed: ' + ${listing.createdDate}">Listed: Date</span>
+            <span th:text="'Status: ' + ${listing.status}">Status: Active</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seller Information -->
+      <div class="seller-info" th:if="${seller != null}">
+        <h4>Seller</h4>
+        <div class="seller-card">
+          <div class="seller-avatar">
+            <img src="/images/user-placeholder.svg" alt="Seller avatar">
+          </div>
+          <div class="seller-details">
+            <h5 th:text="${seller.name}">Seller Name</h5>
+            <p th:text="'@' + ${seller.alias}">@username</p>
+            <p th:if="${seller.address != null}" th:text="'📍 ' + ${seller.address}">Location</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkout Summary -->
+    <div class="checkout-summary">
+      <h2>Checkout Summary</h2>
+
+      <!-- Price Breakdown -->
+      <div class="price-breakdown">
+        <div class="price-row">
+          <span class="price-label">Item Price</span>
+          <span class="price-value" th:text="${listing.price + ' DKK'}">1000 DKK</span>
+        </div>
+        <div class="price-row">
+          <span class="price-label">Platform Fee</span>
+          <span class="price-value">0 DKK</span>
+        </div>
+        <div class="price-row">
+          <span class="price-label">Shipping</span>
+          <span class="price-value">0 DKK</span>
+        </div>
+        <div class="price-row total">
+          <span class="price-label">Total</span>
+          <span class="price-value" th:text="${listing.price + ' DKK'}">1000 DKK</span>
+        </div>
+      </div>
+
+      <!-- Delivery Information -->
+      <div class="delivery-info">
+        <h3>Delivery Information</h3>
+        <p>You'll arrange delivery details directly with the seller after purchase. They will contact you via the Gilbert messaging system.</p>
+      </div>
+
+      <!-- Buyer Information -->
+      <div class="buyer-info" th:if="${buyer != null}">
+        <h3>Your Information</h3>
+        <div class="info-row">
+          <span class="info-label">Name:</span>
+          <span class="info-value" th:text="${buyer.name}">Your Name</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Email:</span>
+          <span class="info-value" th:text="${buyer.email}">Your Email</span>
+        </div>
+        <div class="info-row" th:if="${buyer.number != null}">
+          <span class="info-label">Phone:</span>
+          <span class="info-value" th:text="${buyer.number}">Your Phone</span>
+        </div>
+        <div class="info-row" th:if="${buyer.address != null}">
+          <span class="info-label">Address:</span>
+          <span class="info-value" th:text="${buyer.address}">Your Address</span>
+        </div>
+      </div>
+
+      <!-- Purchase Disclaimer -->
+      <div class="purchase-disclaimer">
+        <p>By completing this purchase, you agree to Gilbert's terms of service and purchase policies. This is a direct sale between you and the seller.</p>
+      </div>
+
+      <!-- Confirm Purchase Button -->
+      <form th:action="@{/purchase/confirm}" method="post" class="purchase-form">
+        <input type="hidden" name="listingId" th:value="${listing.adID}">
+        <button type="submit" class="btn-primary" onclick="return confirm('Are you sure you want to complete this purchase?')">
+          Complete Purchase
+        </button>
+        <a th:href="@{'/listing/' + ${listing.adID}}" class="btn-cancel">
+          Cancel
+        </a>
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+  <a href="/" class="footer-btn" aria-label="Home">
+    <img src="/images/home.svg" class="icon" alt="">
+  </a>
+  <a href="/search" class="footer-btn" aria-label="Search">
+    <img src="/images/search.svg" class="icon" alt="">
+  </a>
+  <a href="/favorites" class="footer-btn" aria-label="Favorites">
+    <img src="/images/heart.svg" class="icon" alt="">
+  </a>
+  <a href="/sell" class="footer-btn" aria-label="Sell">
+    <img src="/images/user.svg" class="icon" alt="">
+  </a>
+  <a href="/notifications" class="footer-btn" aria-label="Notifications">
+    <img src="/images/Notification.svg" class="icon" alt="">
+  </a>
+</footer>
+
+</body>
+</html>

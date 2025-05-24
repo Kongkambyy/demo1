@@ -1,6 +1,7 @@
-CREATE DATABASE gilbert;
-USE gilbert;
+CREATE DATABASE gilbertTest;
+USE gilbertTest;
 
+-- Create users table
 CREATE TABLE users (
     UserID VARCHAR(50),
     Name VARCHAR(100) NOT NULL,
@@ -12,6 +13,7 @@ CREATE TABLE users (
     PRIMARY KEY (UserID)
 );
 
+-- Create categories table
 CREATE TABLE categories (
     CategoryID INT AUTO_INCREMENT,
     Name VARCHAR(100) NOT NULL,
@@ -21,6 +23,7 @@ CREATE TABLE categories (
     FOREIGN KEY (ParentID) REFERENCES categories(CategoryID)
 );
 
+-- Create listings table
 CREATE TABLE listings (
     AdID VARCHAR(50),
     UserID VARCHAR(50),
@@ -37,6 +40,7 @@ CREATE TABLE listings (
     FOREIGN KEY (CategoryID) REFERENCES categories(CategoryID)
 );
 
+-- Create favorites table
 CREATE TABLE favorites (
     FavoriteID VARCHAR(50),
     UserID VARCHAR(50),
@@ -48,6 +52,7 @@ CREATE TABLE favorites (
     UNIQUE (UserID, ListingAdID)
 );
 
+-- Create reviews table
 CREATE TABLE reviews (
     ReviewID VARCHAR(50),
     ReviewerID VARCHAR(50),
@@ -60,6 +65,7 @@ CREATE TABLE reviews (
     FOREIGN KEY (ReviewedUserID) REFERENCES users(UserID)
 );
 
+-- Create transactions table
 CREATE TABLE transactions (
     TransactionID VARCHAR(50),
     ListingID VARCHAR(50),
@@ -75,6 +81,7 @@ CREATE TABLE transactions (
     FOREIGN KEY (SellerID) REFERENCES users(UserID)
 );
 
+-- Create offers table
 CREATE TABLE offers (
     OfferID VARCHAR(50),
     ListingID VARCHAR(50),
@@ -91,6 +98,7 @@ CREATE TABLE offers (
     FOREIGN KEY (SellerID) REFERENCES users(UserID)
 );
 
+-- Create messages table
 CREATE TABLE messages (
     MessageID VARCHAR(50),
     SenderID VARCHAR(50),
@@ -103,6 +111,7 @@ CREATE TABLE messages (
     FOREIGN KEY (ReceiverID) REFERENCES users(UserID)
 );
 
+-- Create notifications table
 CREATE TABLE notifications (
     NotificationID VARCHAR(50),
     UserID VARCHAR(50),
@@ -115,3 +124,202 @@ CREATE TABLE notifications (
     PRIMARY KEY (NotificationID),
     FOREIGN KEY (UserID) REFERENCES users(UserID)
 );
+
+-- ============================================
+-- INSERT MAIN CATEGORIES
+-- ============================================
+
+INSERT INTO categories (CategoryID, Name, Description, ParentID) VALUES
+(1, 'MEN', 'Men''s fashion and accessories', NULL),
+(2, 'WOMEN', 'Women''s fashion and accessories', NULL),
+(3, 'HOME', 'Home goods and furniture', NULL),
+(4, 'BEAUTY', 'Beauty and personal care products', NULL),
+(5, 'DESIGNER', 'Luxury designer brands', NULL);
+
+-- ============================================
+-- MEN'S CATEGORIES
+-- ============================================
+
+-- Outerwear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jackets', 'Men''s jackets', 1),
+('Coats', 'Men''s coats', 1),
+('Vests', 'Men''s vests', 1);
+
+-- Tops
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('T-Shirts', 'Men''s t-shirts', 1),
+('Shirts', 'Men''s shirts', 1),
+('Sweatshirts', 'Men''s sweatshirts', 1),
+('Hoodies', 'Men''s hoodies', 1),
+('Sweaters', 'Men''s sweaters', 1);
+
+-- Bottoms
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jeans', 'Men''s jeans', 1),
+('Pants', 'Men''s pants', 1),
+('Shorts', 'Men''s shorts', 1),
+('Joggers', 'Men''s joggers', 1);
+
+-- Formal
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Blazers', 'Men''s blazers', 1),
+('Suits', 'Men''s suits', 1);
+
+-- Activewear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sportswear', 'Men''s sportswear', 1);
+
+-- Shoes
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sneakers', 'Men''s sneakers', 1),
+('Boots', 'Men''s boots', 1),
+('Loafers', 'Men''s loafers', 1),
+('Dress Shoes', 'Men''s dress shoes', 1);
+
+-- Accessories
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Bags', 'Men''s bags', 1),
+('Belts', 'Men''s belts', 1),
+('Hats', 'Men''s hats', 1),
+('Watches', 'Men''s watches', 1),
+('Sunglasses', 'Men''s sunglasses', 1);
+
+-- ============================================
+-- WOMEN'S CATEGORIES
+-- ============================================
+
+-- Outerwear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jackets', 'Women''s jackets', 2),
+('Coats', 'Women''s coats', 2),
+('Vests', 'Women''s vests', 2);
+
+-- Tops
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('T-Shirts', 'Women''s t-shirts', 2),
+('Blouses', 'Women''s blouses', 2),
+('Tops', 'Women''s tops', 2),
+('Sweatshirts', 'Women''s sweatshirts', 2),
+('Hoodies', 'Women''s hoodies', 2),
+('Cardigans', 'Women''s cardigans', 2),
+('Sweaters', 'Women''s sweaters', 2);
+
+-- Bottoms
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jeans', 'Women''s jeans', 2),
+('Pants', 'Women''s pants', 2),
+('Shorts', 'Women''s shorts', 2),
+('Skirts', 'Women''s skirts', 2),
+('Leggings', 'Women''s leggings', 2);
+
+-- Dresses
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Dresses', 'Women''s dresses', 2),
+('Jumpsuits', 'Women''s jumpsuits', 2);
+
+-- Formal
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Blazers', 'Women''s blazers', 2),
+('Suits', 'Women''s suits', 2);
+
+-- Activewear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sportswear', 'Women''s sportswear', 2);
+
+-- Shoes
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sneakers', 'Women''s sneakers', 2),
+('Boots', 'Women''s boots', 2),
+('Sandals', 'Women''s sandals', 2),
+('High Heels', 'Women''s high heels', 2),
+('Flats', 'Women''s flats', 2);
+
+-- Accessories
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Handbags', 'Women''s handbags', 2),
+('Belts', 'Women''s belts', 2),
+('Hats', 'Women''s hats', 2),
+('Jewelry', 'Women''s jewelry', 2),
+('Watches', 'Women''s watches', 2),
+('Sunglasses', 'Women''s sunglasses', 2),
+('Scarves', 'Women''s scarves', 2);
+
+-- ============================================
+-- HOME CATEGORIES
+-- ============================================
+
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Furniture', 'Furniture and seating', 3),
+('Lighting', 'Lighting and lamps', 3),
+('Textiles', 'Home textiles and fabrics', 3),
+('Kitchen', 'Kitchen items and appliances', 3),
+('Decor', 'Home decoration and art', 3),
+('Storage', 'Storage solutions', 3),
+('Bathroom', 'Bathroom accessories', 3),
+('Garden', 'Garden and outdoor', 3);
+
+-- ============================================
+-- BEAUTY CATEGORIES
+-- ============================================
+
+-- Skincare
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Face Cream', 'Face creams and moisturizers', 4),
+('Cleanser', 'Cleansers and face wash', 4),
+('Serum', 'Face serums and treatments', 4),
+('Face Masks', 'Face masks', 4),
+('Sunscreen', 'Sunscreen and SPF', 4),
+('Eye Cream', 'Eye creams and treatments', 4);
+
+-- Makeup
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Foundation', 'Foundation and base makeup', 4),
+('Eyeshadow', 'Eyeshadow and eye makeup', 4),
+('Lipstick', 'Lipstick and lip products', 4),
+('Mascara', 'Mascara and lashes', 4),
+('Blush', 'Blush and cheek products', 4),
+('Makeup Brushes', 'Makeup brushes and tools', 4);
+
+-- Hair Care
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Shampoo', 'Shampoo and hair wash', 4),
+('Conditioner', 'Conditioner and hair care', 4),
+('Hair Styling', 'Hair styling products', 4),
+('Hair Masks', 'Hair masks and treatments', 4);
+
+-- Body Care
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Body Lotion', 'Body lotions and moisturizers', 4),
+('Body Wash', 'Body wash and shower products', 4),
+('Deodorant', 'Deodorants and antiperspirants', 4),
+('Hand Cream', 'Hand creams and care', 4);
+
+-- Fragrance
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Perfume', 'Perfumes and fragrances', 4),
+('Candles', 'Scented candles', 4);
+
+-- ============================================
+-- DESIGNER CATEGORIES (LUXURY BRANDS)
+-- ============================================
+
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Gucci', 'Gucci luxury items', 5),
+('Louis Vuitton', 'Louis Vuitton luxury items', 5),
+('Hermès', 'Hermès luxury items', 5),
+('Chanel', 'Chanel luxury items', 5),
+('Prada', 'Prada luxury items', 5),
+('Balenciaga', 'Balenciaga luxury items', 5),
+('Dior', 'Dior luxury items', 5),
+('Versace', 'Versace luxury items', 5),
+('Saint Laurent', 'Saint Laurent luxury items', 5),
+('Bottega Veneta', 'Bottega Veneta luxury items', 5),
+('Fendi', 'Fendi luxury items', 5),
+('Givenchy', 'Givenchy luxury items', 5),
+('Valentino', 'Valentino luxury items', 5),
+('Tom Ford', 'Tom Ford luxury items', 5),
+('Hugo Boss', 'Hugo Boss luxury items', 5),
+('Tommy Hilfiger', 'Tommy Hilfiger luxury items', 5),
+('Ralph Lauren', 'Ralph Lauren luxury items', 5),
+('Armani', 'Armani luxury items', 5);
