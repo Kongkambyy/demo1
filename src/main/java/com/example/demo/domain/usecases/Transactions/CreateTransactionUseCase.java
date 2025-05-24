@@ -65,13 +65,14 @@ public class CreateTransactionUseCase {
                 buyerId,
                 listing.getUserID(),
                 listing.getPrice(),
-                "PENDING",
+                "COMPLETED", // Changed from "PENDING" to "COMPLETED" since this is an instant purchase
                 createdDate
         );
 
         Transaction savedTransaction = transactionRepository.save(transaction);
 
-        listingRepository.updateStatus(listingId, "RESERVED");
+        // FIXED: Change status to "SOLD" instead of "RESERVED"
+        listingRepository.updateStatus(listingId, "SOLD");
 
         LoggerUtility.logEvent("Transaction created: " + savedTransaction.getTransactionID() +
                 " for listing: " + listingId + " by buyer: " + buyerId);

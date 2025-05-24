@@ -1,5 +1,8 @@
 package com.example.demo.presentation;
 
+import com.example.demo.data.repository.TransactionRepository;
+import com.example.demo.data.repository.UserRepository;
+import com.example.demo.domain.entities.Transaction;
 import com.example.demo.domain.entities.User;
 import com.example.demo.domain.entities.Listing;
 import com.example.demo.domain.entities.Offer;
@@ -19,10 +22,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpSession;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.ArrayList;
 
 @Controller
 public class HomeController {
@@ -32,18 +33,20 @@ public class HomeController {
     private final GetNotificationsUseCase getNotificationsUseCase;
     private final OfferRepository offerRepository;
     private final ListingRepository listingRepository;
+    private final TransactionRepository transactionRepository;
 
     @Autowired
     public HomeController(GetListingUseCase getListingUseCase,
                           GetUserUseCase getUserUseCase,
                           GetNotificationsUseCase getNotificationsUseCase,
                           OfferRepository offerRepository,
-                          ListingRepository listingRepository) {
+                          ListingRepository listingRepository, TransactionRepository transactionRepository) {
         this.getListingUseCase = getListingUseCase;
         this.getUserUseCase = getUserUseCase;
         this.getNotificationsUseCase = getNotificationsUseCase;
         this.offerRepository = offerRepository;
         this.listingRepository = listingRepository;
+        this.transactionRepository = transactionRepository;
     }
 
     // Helper method to add notification count to model
@@ -271,13 +274,15 @@ public class HomeController {
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // Get offers made by this user (as buyer)
+            // EXISTING: Get offers
             List<Offer> myOffers = offerRepository.findByBuyerId(userId);
-
-            // Get offers received by this user (as seller)
             List<Offer> receivedOffers = offerRepository.findBySellerId(userId);
 
-            // For each offer, get the associated listing details
+            // NEW: Get transactions
+            List<Transaction> myPurchases = transactionRepository.findByBuyerId(userId);
+            List<Transaction> mySales = transactionRepository.findBySellerId(userId);
+
+            // EXISTING: Offers with listings (keep your existing OfferWithListing approach)
             List<OfferWithListing> myOffersWithListings = new ArrayList<>();
             for (Offer offer : myOffers) {
                 Optional<Listing> listingOpt = listingRepository.findById(offer.getListingID());
@@ -294,6 +299,20 @@ public class HomeController {
                 }
             }
 
+            Map<String, Listing> listingMap = new HashMap<>();
+
+            Set<String> listingIds = new HashSet<>();
+            myPurchases.forEach(t -> listingIds.add(t.getListingID()));
+            mySales.forEach(t -> listingIds.add(t.getListingID()));
+
+            // Fetch all needed listings once
+            for (String listingId : listingIds) {
+                Optional<Listing> listingOpt = listingRepository.findById(listingId);
+                if (listingOpt.isPresent()) {
+                    listingMap.put(listingId, listingOpt.get());
+                }
+            }
+
             // Filter listings for stats
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
@@ -303,12 +322,21 @@ public class HomeController {
                     .filter(listing -> "SOLD".equals(listing.getStatus()))
                     .count();
 
+            // Add everything to model
             model.addAttribute("user", user);
             model.addAttribute("section", "orders");
             model.addAttribute("soldItemsCount", soldItemsCount);
             model.addAttribute("activeListingsCount", activeListings.size());
-            model.addAttribute("myOffers", myOffersWithListings); // Offers I made
-            model.addAttribute("receivedOffers", receivedOffersWithListings); // Offers I received
+
+            // EXISTING
+            model.addAttribute("myOffers", myOffersWithListings);
+            model.addAttribute("receivedOffers", receivedOffersWithListings);
+
+            // NEW: Transactions and listings separately
+            model.addAttribute("myPurchases", myPurchases);
+            model.addAttribute("mySales", mySales);
+            model.addAttribute("transactionListings", listingMap);
+
             model.addAttribute("followersCount", 0);
             model.addAttribute("followingCount", 0);
 

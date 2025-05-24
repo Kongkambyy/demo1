@@ -12208,3 +12208,408 @@ SEVERE: [2025-05-24 22:26:09] ERROR: Unhandled exception: No static resource hom
 maj 24, 2025 10:26:09 PM com.example.demo.data.util.LoggerUtility logError
 SEVERE: [2025-05-24 22:26:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
 [2025-05-24 22:26:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: CategoryRepository initialized
+[2025-05-24 22:33:02] EVENT: CategoryRepository initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: ListingRepository initialized
+[2025-05-24 22:33:02] EVENT: ListingRepository initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: FavoriteRepository initialized
+[2025-05-24 22:33:02] EVENT: FavoriteRepository initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: MessageRepository initialiseret
+[2025-05-24 22:33:02] EVENT: MessageRepository initialiseret
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: NotificationRepository initialized
+[2025-05-24 22:33:02] EVENT: NotificationRepository initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: OfferRepository initialized
+[2025-05-24 22:33:02] EVENT: OfferRepository initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: ReviewRepository initialized
+[2025-05-24 22:33:02] EVENT: ReviewRepository initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: TransactionRepository initialized
+[2025-05-24 22:33:02] EVENT: TransactionRepository initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: UserRepository initialiseret
+[2025-05-24 22:33:02] EVENT: UserRepository initialiseret
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: GetCategoriesUseCase initialized
+[2025-05-24 22:33:02] EVENT: GetCategoriesUseCase initialized
+maj 24, 2025 10:33:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:02] EVENT: GetCategoryUseCase initialized
+[2025-05-24 22:33:02] EVENT: GetCategoryUseCase initialized
+maj 24, 2025 10:33:04 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:04] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-24 22:33:04] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 24, 2025 10:33:04 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:04] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+[2025-05-24 22:33:04] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+maj 24, 2025 10:33:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:08 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:08] EVENT: Listing viewed: 0532f074-ac36-4934-8043-6a4bede7f533 by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-24 22:33:08] EVENT: Listing viewed: 0532f074-ac36-4934-8043-6a4bede7f533 by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 24, 2025 10:33:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:08] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-24 22:33:08] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 24, 2025 10:33:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:09] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed purchase confirmation page for listing 0532f074-ac36-4934-8043-6a4bede7f533
+[2025-05-24 22:33:09] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed purchase confirmation page for listing 0532f074-ac36-4934-8043-6a4bede7f533
+maj 24, 2025 10:33:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:09] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-24 22:33:09] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 24, 2025 10:33:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:12] EVENT: Transaction created: 78dc2da2-c875-42e7-a155-761da3983e26
+[2025-05-24 22:33:12] EVENT: Transaction created: 78dc2da2-c875-42e7-a155-761da3983e26
+maj 24, 2025 10:33:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:12] EVENT: Listing status updated: 0532f074-ac36-4934-8043-6a4bede7f533 - New status: SOLD
+[2025-05-24 22:33:12] EVENT: Listing status updated: 0532f074-ac36-4934-8043-6a4bede7f533 - New status: SOLD
+maj 24, 2025 10:33:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:12] EVENT: Transaction created: 78dc2da2-c875-42e7-a155-761da3983e26 for listing: 0532f074-ac36-4934-8043-6a4bede7f533 by buyer: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-24 22:33:12] EVENT: Transaction created: 78dc2da2-c875-42e7-a155-761da3983e26 for listing: 0532f074-ac36-4934-8043-6a4bede7f533 by buyer: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 24, 2025 10:33:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:12] EVENT: Notification created: a39316c5-d4ae-43c1-a54b-0700370ddac6 for user: 288fc138-6e76-4e74-ab52-299ed165ff83
+[2025-05-24 22:33:12] EVENT: Notification created: a39316c5-d4ae-43c1-a54b-0700370ddac6 for user: 288fc138-6e76-4e74-ab52-299ed165ff83
+maj 24, 2025 10:33:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:12] EVENT: Sale notification created for seller: 288fc138-6e76-4e74-ab52-299ed165ff83
+[2025-05-24 22:33:12] EVENT: Sale notification created for seller: 288fc138-6e76-4e74-ab52-299ed165ff83
+maj 24, 2025 10:33:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:33:12] EVENT: Purchase completed: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 bought listing 0532f074-ac36-4934-8043-6a4bede7f533
+[2025-05-24 22:33:12] EVENT: Purchase completed: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 bought listing 0532f074-ac36-4934-8043-6a4bede7f533
+maj 24, 2025 10:33:12 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:13 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:13] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:13] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:14 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:16 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:20 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:33:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:33:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:33:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: CategoryRepository initialized
+[2025-05-24 22:40:57] EVENT: CategoryRepository initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: ListingRepository initialized
+[2025-05-24 22:40:57] EVENT: ListingRepository initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: FavoriteRepository initialized
+[2025-05-24 22:40:57] EVENT: FavoriteRepository initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: MessageRepository initialiseret
+[2025-05-24 22:40:57] EVENT: MessageRepository initialiseret
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: NotificationRepository initialized
+[2025-05-24 22:40:57] EVENT: NotificationRepository initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: OfferRepository initialized
+[2025-05-24 22:40:57] EVENT: OfferRepository initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: ReviewRepository initialized
+[2025-05-24 22:40:57] EVENT: ReviewRepository initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: TransactionRepository initialized
+[2025-05-24 22:40:57] EVENT: TransactionRepository initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: UserRepository initialiseret
+[2025-05-24 22:40:57] EVENT: UserRepository initialiseret
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: GetCategoriesUseCase initialized
+[2025-05-24 22:40:57] EVENT: GetCategoriesUseCase initialized
+maj 24, 2025 10:40:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:40:57] EVENT: GetCategoryUseCase initialized
+[2025-05-24 22:40:57] EVENT: GetCategoryUseCase initialized
+maj 24, 2025 10:41:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:00] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:00] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:02] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:02] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:03 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:03] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-24 22:41:03] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 24, 2025 10:41:03 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:03] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+[2025-05-24 22:41:03] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+maj 24, 2025 10:41:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:03] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:03] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:04 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:04] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-24 22:41:04] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 24, 2025 10:41:04 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:04] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+[2025-05-24 22:41:04] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+maj 24, 2025 10:41:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:04] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:04] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:06] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:06] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:06] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:06] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:08 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:08] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-24 22:41:08] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 24, 2025 10:41:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:08] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:08] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:09] EVENT: Retrieving all categories
+[2025-05-24 22:41:09] EVENT: Retrieving all categories
+maj 24, 2025 10:41:09 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:09] EVENT: Retrieving all categories
+[2025-05-24 22:41:09] EVENT: Retrieving all categories
+maj 24, 2025 10:41:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:09] ERROR: Unhandled exception: No endpoint GET /css/create-listing.css.
+[2025-05-24 22:41:09] ERROR: Unhandled exception: No endpoint GET /css/create-listing.css.
+maj 24, 2025 10:41:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:09] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:09] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:15] EVENT: Retrieving all categories
+[2025-05-24 22:41:15] EVENT: Retrieving all categories
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:15] EVENT: Retrieving all categories
+[2025-05-24 22:41:15] EVENT: Retrieving all categories
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /css/create-listing.css.
+[2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /css/create-listing.css.
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:15] EVENT: Retrieving all categories
+[2025-05-24 22:41:15] EVENT: Retrieving all categories
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:15] EVENT: Retrieving all categories
+[2025-05-24 22:41:15] EVENT: Retrieving all categories
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /css/create-listing.css.
+[2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /css/create-listing.css.
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:15 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:18 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:18] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:18] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:18 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:19] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-24 22:41:19] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 24, 2025 10:41:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:19] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+[2025-05-24 22:41:19] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+maj 24, 2025 10:41:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:19] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:19] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:21] EVENT: Hierarchical search performed with categoryIds: [4, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91], keyword: null, condition: null, brand: null
+[2025-05-24 22:41:21] EVENT: Hierarchical search performed with categoryIds: [4, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91], keyword: null, condition: null, brand: null
+maj 24, 2025 10:41:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:21] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: 4, designer: null
+[2025-05-24 22:41:21] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: 4, designer: null
+maj 24, 2025 10:41:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:21] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:21] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:22 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:22] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:22] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:22 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:22] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:22] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:23] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-24 22:41:23] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 24, 2025 10:41:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:23] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:23] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:24 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:24] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:24] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:24 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:24] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:24] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:25 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:25] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+[2025-05-24 22:41:25] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+maj 24, 2025 10:41:25 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:25] ERROR: Unhandled exception: No endpoint GET /css/edit-profile.css.
+[2025-05-24 22:41:25] ERROR: Unhandled exception: No endpoint GET /css/edit-profile.css.
+maj 24, 2025 10:41:25 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:25] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:25] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:25 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:25] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:25] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:27 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:27] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-24 22:41:27] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 24, 2025 10:41:27 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:27] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:27] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:27 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:27] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:27] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:28 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:28] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:28] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:28 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:28] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:28] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:29 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:29] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-24 22:41:29] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 24, 2025 10:41:29 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:29] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+[2025-05-24 22:41:29] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+maj 24, 2025 10:41:29 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:29] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:29] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:29 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:31] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-24 22:41:31] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 24, 2025 10:41:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:31] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:31] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:32 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:32 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:32] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:32] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:32 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:33] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+[2025-05-24 22:41:33] EVENT: Search performed with params - keyword: null, categoryId: null, minPrice: null, maxPrice: null, condition: null, brand: null
+maj 24, 2025 10:41:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:33] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+[2025-05-24 22:41:33] EVENT: Search performed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959 - keyword: null, categoryId: null, designer: null
+maj 24, 2025 10:41:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:33] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:33] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:35 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:35] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-24 22:41:35] EVENT: Profile page accessed by user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 24, 2025 10:41:35 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:35] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:35] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:35 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:35] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:35] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:36 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:36] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+[2025-05-24 22:41:36] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+maj 24, 2025 10:41:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /css/edit-profile.css.
+[2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /css/edit-profile.css.
+maj 24, 2025 10:41:36 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:36] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:37 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:39 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:39] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 viewed notifications page
+[2025-05-24 22:41:39] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 viewed notifications page
+maj 24, 2025 10:41:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /css/notifications.css.
+[2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /css/notifications.css.
+maj 24, 2025 10:41:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /images/bell-off.svg.
+[2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /images/bell-off.svg.
+maj 24, 2025 10:41:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-24 22:41:41] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+[2025-05-24 22:41:41] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+maj 24, 2025 10:41:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:41] ERROR: Unhandled exception: No endpoint GET /css/edit-profile.css.
+[2025-05-24 22:41:41] ERROR: Unhandled exception: No endpoint GET /css/edit-profile.css.
+maj 24, 2025 10:41:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:41] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+[2025-05-24 22:41:41] ERROR: Unhandled exception: No endpoint GET /images/home.svg.
+maj 24, 2025 10:41:42 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:42] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:42] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 24, 2025 10:41:43 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-24 22:41:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-24 22:41:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
