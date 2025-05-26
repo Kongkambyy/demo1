@@ -41,7 +41,6 @@ public class OfferRepository {
         LoggerUtility.logEvent("OfferRepository initialized");
     }
 
-    // Create a new offer
     public Offer save(Offer offer) {
         if (offer.getOfferID() == null || offer.getOfferID().isEmpty()) {
             offer.setOfferID(UUID.randomUUID().toString());
@@ -66,7 +65,6 @@ public class OfferRepository {
         return offer;
     }
 
-    // Find offer by ID
     public Optional<Offer> findById(String offerId) {
         String sql = "SELECT * FROM offers WHERE OfferID = ?";
 
@@ -79,31 +77,26 @@ public class OfferRepository {
         }
     }
 
-    // Find offers by buyer ID
     public List<Offer> findByBuyerId(String buyerId) {
         String sql = "SELECT * FROM offers WHERE BuyerID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, offerRowMapper, buyerId);
     }
 
-    // Find offers by seller ID
     public List<Offer> findBySellerId(String sellerId) {
         String sql = "SELECT * FROM offers WHERE SellerID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, offerRowMapper, sellerId);
     }
 
-    // Find offers by listing ID
     public List<Offer> findByListingId(String listingId) {
         String sql = "SELECT * FROM offers WHERE ListingID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, offerRowMapper, listingId);
     }
 
-    // Find pending offers by listing ID
     public List<Offer> findPendingOffersByListingId(String listingId) {
         String sql = "SELECT * FROM offers WHERE ListingID = ? AND Status = 'PENDING' ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, offerRowMapper, listingId);
     }
 
-    // Update offer status
     public Offer updateStatus(String offerId, String newStatus) {
         String sql = "UPDATE offers SET Status = ? WHERE OfferID = ?";
 
@@ -118,12 +111,5 @@ public class OfferRepository {
         LoggerUtility.logEvent("Offer status updated: " + offerId + " to " + newStatus);
 
         return updatedOffer.orElseThrow(() -> new RuntimeException("Could not find updated offer"));
-    }
-
-    // Count active offers for a listing
-    public int countPendingOffersForListing(String listingId) {
-        String sql = "SELECT COUNT(*) FROM offers WHERE ListingID = ? AND Status = 'PENDING'";
-        Integer count = jdbcTemplate.queryForObject(sql, Integer.class, listingId);
-        return count != null ? count : 0;
     }
 }

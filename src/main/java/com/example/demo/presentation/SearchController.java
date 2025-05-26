@@ -66,7 +66,6 @@ public class SearchController {
     ) {
         addNotificationCount(model, session);
 
-        // Process price range if specified
         Integer minPrice = null;
         Integer maxPrice = null;
         if (price != null && !price.isEmpty()) {
@@ -87,20 +86,16 @@ public class SearchController {
             }
         }
 
-        // Use designer as brand filter
         String brand = designer;
 
-        // Fetch listings with filters
         List<Listing> listings;
         if (categoryId != null) {
-            // Get all subcategory IDs for hierarchical filtering
             List<Integer> categoryIds = categoryRepository.findAllDescendantCategoryIds(categoryId);
             listings = searchListingsUseCase.searchByCategoryHierarchy(keyword, minPrice, maxPrice, condition, brand, categoryIds);
         } else {
             listings = searchListingsUseCase.execute(keyword, minPrice, maxPrice, condition, brand, null);
         }
 
-        // Apply sorting
         if (sort != null) {
             switch (sort) {
                 case "price_asc":
@@ -116,11 +111,9 @@ public class SearchController {
             }
         }
 
-        // Get category information for UI
         List<Category> mainCategories = categoryRepository.findMainCategories();
         model.addAttribute("mainCategories", mainCategories);
 
-        // Handle category-specific data
         Category selectedCategory = null;
         Category parentCategory = null;
         List<Category> subcategories = null;
@@ -131,9 +124,7 @@ public class SearchController {
                 selectedCategory = selectedCategoryOpt.get();
                 model.addAttribute("selectedCategory", selectedCategory);
 
-                // Check if this is a subcategory or main category
                 if (selectedCategory.getParentID() != null) {
-                    // This is a subcategory - get parent and sibling subcategories
                     Optional<Category> parentOpt = categoryRepository.findById(selectedCategory.getParentID());
                     if (parentOpt.isPresent()) {
                         parentCategory = parentOpt.get();
@@ -141,7 +132,6 @@ public class SearchController {
                         subcategories = categoryRepository.findSubcategories(selectedCategory.getParentID());
                     }
                 } else {
-                    // This is a main category - get its subcategories
                     subcategories = categoryRepository.findSubcategories(categoryId);
                 }
             }
@@ -151,17 +141,14 @@ public class SearchController {
             model.addAttribute("subcategories", subcategories);
         }
 
-        // Set up breadcrumb and category display
         String breadcrumb = "Shop";
         String categoryDisplay = "All Products";
 
         if (selectedCategory != null) {
             if (selectedCategory.getParentID() != null && parentCategory != null) {
-                // This is a subcategory
                 breadcrumb = parentCategory.getName();
                 categoryDisplay = selectedCategory.getName();
             } else {
-                // This is a main category
                 breadcrumb = selectedCategory.getName();
                 categoryDisplay = "All " + selectedCategory.getName();
             }
@@ -176,11 +163,9 @@ public class SearchController {
         model.addAttribute("breadcrumb", breadcrumb);
         model.addAttribute("category", categoryDisplay);
 
-        // Add listings and count
         model.addAttribute("listings", listings);
         model.addAttribute("count", listings.size());
 
-        // Track active filters for UI highlighting
         model.addAttribute("keyword", keyword);
         model.addAttribute("activeSort", sort);
         model.addAttribute("activeCategoryId", categoryId);
@@ -194,8 +179,6 @@ public class SearchController {
         model.addAttribute("activeFilter", filter);
 
         String userId = (String) session.getAttribute("userId");
-        LoggerUtility.logEvent("Search performed by user: " + (userId != null ? userId : "anonymous") +
-                " - keyword: " + keyword + ", categoryId: " + categoryId + ", designer: " + designer);
 
         return "search";
     }

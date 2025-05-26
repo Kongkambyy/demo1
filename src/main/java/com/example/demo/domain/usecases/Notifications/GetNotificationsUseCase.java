@@ -39,9 +39,7 @@ public class GetNotificationsUseCase {
 
         Notification notification = notificationOpt.get();
 
-        // Check if the notification belongs to the user
         if (!notification.getUserID().equals(userId)) {
-            LoggerUtility.logError("User " + userId + " attempted to access notification that doesn't belong to them: " + notificationId);
             throw new RuntimeException("Access denied to this notification");
         }
 

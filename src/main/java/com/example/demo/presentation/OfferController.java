@@ -124,7 +124,6 @@ public class OfferController {
                               @RequestParam(value = "message", required = false) String message,
                               HttpSession session,
                               RedirectAttributes redirectAttributes) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             redirectAttributes.addFlashAttribute("error", "Please log in to make an offer");
@@ -132,13 +131,11 @@ public class OfferController {
         }
 
         try {
-            // Validate offer amount
             if (offerAmount <= 0) {
                 redirectAttributes.addFlashAttribute("error", "Offer amount must be greater than 0");
                 return "redirect:/offer/" + listingId;
             }
 
-            // Make the offer using the use case
             Offer offer = makeOfferUseCase.execute(userId, listingId, offerAmount);
 
             LoggerUtility.logEvent("Offer created successfully: " + offer.getOfferID() + " by user: " + userId);
@@ -150,23 +147,18 @@ public class OfferController {
             return "redirect:/listing/" + listingId;
 
         } catch (ListingNotFoundException e) {
-            LoggerUtility.logError("Listing not found for offer submission: " + listingId);
             redirectAttributes.addFlashAttribute("error", "Listing not found");
             return "redirect:/search";
         } catch (ListingNotActiveException e) {
-            LoggerUtility.logError("Offer attempt on non-active listing: " + listingId);
             redirectAttributes.addFlashAttribute("error", "This listing is no longer available for offers");
             return "redirect:/listing/" + listingId;
         } catch (UserNotFoundException e) {
-            LoggerUtility.logError("User not found for offer submission: " + userId);
             redirectAttributes.addFlashAttribute("error", "User account not found");
             return "redirect:/login";
         } catch (IllegalArgumentException e) {
-            LoggerUtility.logWarning("Invalid offer attempt by user " + userId + ": " + e.getMessage());
             redirectAttributes.addFlashAttribute("error", e.getMessage());
             return "redirect:/offer/" + listingId;
         } catch (Exception e) {
-            LoggerUtility.logError("Error submitting offer for listing " + listingId + " by user " + userId + ": " + e.getMessage());
             redirectAttributes.addFlashAttribute("error", "An error occurred while submitting your offer. Please try again.");
             return "redirect:/offer/" + listingId;
         }
@@ -174,31 +166,24 @@ public class OfferController {
 
     @GetMapping("/offers")
     public String viewOffers(Model model, HttpSession session) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             return "redirect:/login";
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get offers made by the user
             List<Offer> madeOffers = offerRepository.findByBuyerId(userId);
 
-            // Get offers received by the user (for their listings)
             List<Offer> receivedOffers = offerRepository.findBySellerId(userId);
 
             model.addAttribute("madeOffers", madeOffers);
             model.addAttribute("receivedOffers", receivedOffers);
 
-            LoggerUtility.logEvent("User " + userId + " viewed offers page");
-
             return "offers";
 
         } catch (Exception e) {
-            LoggerUtility.logError("Error loading offers page for user " + userId + ": " + e.getMessage());
             model.addAttribute("error", "An error occurred while loading your offers");
             return "offers";
         }
@@ -209,7 +194,6 @@ public class OfferController {
                                  @RequestParam("action") String action,
                                  HttpSession session,
                                  RedirectAttributes redirectAttributes) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             redirectAttributes.addFlashAttribute("error", "Please log in to respond to offers");
@@ -217,7 +201,6 @@ public class OfferController {
         }
 
         try {
-            // Get the offer
             Optional<Offer> offerOpt = offerRepository.findById(offerId);
             if (offerOpt.isEmpty()) {
                 redirectAttributes.addFlashAttribute("error", "Offer not found");
@@ -226,19 +209,16 @@ public class OfferController {
 
             Offer offer = offerOpt.get();
 
-            // Check if user is the seller
             if (!offer.getSellerID().equals(userId)) {
                 redirectAttributes.addFlashAttribute("error", "You are not authorized to respond to this offer");
                 return "redirect:/offers";
             }
 
-            // Check if offer is still pending
             if (!"PENDING".equals(offer.getStatus())) {
                 redirectAttributes.addFlashAttribute("error", "This offer has already been responded to");
                 return "redirect:/offers";
             }
 
-            // Update offer status based on action
             String newStatus;
             String successMessage;
 
@@ -253,7 +233,6 @@ public class OfferController {
                 return "redirect:/offers";
             }
 
-            // Update the offer status
             offerRepository.updateStatus(offerId, newStatus);
 
             LoggerUtility.logEvent("Offer " + offerId + " " + newStatus.toLowerCase() + " by user: " + userId);
@@ -275,7 +254,6 @@ public class OfferController {
                 int unreadCount = getNotificationsUseCase.countUnread(userId);
                 model.addAttribute("globalUnreadNotificationCount", unreadCount);
             } catch (Exception e) {
-                LoggerUtility.logError("Error getting notification count for user " + userId + ": " + e.getMessage());
                 model.addAttribute("globalUnreadNotificationCount", 0);
             }
         } else {

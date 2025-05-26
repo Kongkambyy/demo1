@@ -17,19 +17,16 @@ public class RemoveFavoriteUseCase {
     }
 
     public void execute(String userId, String listingAdId) {
-        // Check if the listing exists
         if (!listingRepository.findById(listingAdId).isPresent()) {
             LoggerUtility.logWarning("Attempt to remove favorite for non-existent listing: " + listingAdId);
             throw new RuntimeException("Listing not found: " + listingAdId);
         }
 
-        // Check if the listing is in user's favorites
         if (!favoriteRepository.isFavorite(userId, listingAdId)) {
             LoggerUtility.logWarning("Listing not in favorites: " + listingAdId + " for user: " + userId);
             throw new RuntimeException("Listing not in favorites");
         }
 
-        // Remove the favorite
         favoriteRepository.delete(userId, listingAdId);
         LoggerUtility.logEvent("Favorite removed: " + listingAdId + " for user: " + userId);
     }

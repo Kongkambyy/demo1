@@ -49,7 +49,6 @@ public class PurchaseController {
                                            Model model,
                                            HttpSession session,
                                            RedirectAttributes redirectAttributes) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             redirectAttributes.addFlashAttribute("error", "Please log in to make a purchase");
@@ -57,29 +56,23 @@ public class PurchaseController {
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get the listing
             Listing listing = getListingUseCase.execute(listingId, userId);
 
-            // Check if listing is active
             if (!"ACTIVE".equals(listing.getStatus())) {
                 redirectAttributes.addFlashAttribute("error", "This listing is not available for purchase");
                 return "redirect:/listing/" + listingId;
             }
 
-            // Check if user is trying to buy their own listing
             if (listing.getUserID().equals(userId)) {
                 redirectAttributes.addFlashAttribute("error", "You cannot buy your own listing");
                 return "redirect:/listing/" + listingId;
             }
 
-            // Get buyer information
             User buyer = getUserUseCase.findByIdOrThrow(userId);
             model.addAttribute("buyer", buyer);
 
-            // Get seller information
             Optional<User> sellerOpt = getUserUseCase.findById(listing.getUserID());
             if (sellerOpt.isEmpty()) {
                 redirectAttributes.addFlashAttribute("error", "Seller information not found");
@@ -89,7 +82,6 @@ public class PurchaseController {
             User seller = sellerOpt.get();
             model.addAttribute("seller", seller);
 
-            // Add listing to model
             model.addAttribute("listing", listing);
 
             LoggerUtility.logEvent("User " + userId + " accessed purchase confirmation page for listing " + listingId);
@@ -106,7 +98,6 @@ public class PurchaseController {
     public String confirmPurchase(String listingId,
                                   HttpSession session,
                                   RedirectAttributes redirectAttributes) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             redirectAttributes.addFlashAttribute("error", "Please log in to make a purchase");
@@ -114,13 +105,10 @@ public class PurchaseController {
         }
 
         try {
-            // Create transaction
             Transaction transaction = createTransactionUseCase.execute(userId, listingId);
 
-            // Get listing info for notification
             Listing listing = getListingUseCase.execute(listingId, userId);
 
-            // Send notification to seller
             notificationService.notifyListingSold(
                     listing.getUserID(),
                     listingId,
@@ -128,7 +116,6 @@ public class PurchaseController {
                     listing.getPrice()
             );
 
-            // Send notification to users who favorited this listing
             notificationService.notifyFavoritedListingSold(
                     listingId,
                     listing.getTitle()

@@ -30,7 +30,6 @@ public class UpdateListingUseCase {
         Listing existingListing = existingListingOpt.get();
 
         if (!existingListing.getUserID().equals(userId)) {
-            LoggerUtility.logError("User " + userId + " attempted to edit listing owned by " + existingListing.getUserID());
             throw new InsufficientPermissionsException(userId, "Cannot edit listing owned by another user");
         }
 

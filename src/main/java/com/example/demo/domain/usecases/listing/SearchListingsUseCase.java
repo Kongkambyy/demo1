@@ -20,29 +20,18 @@ public class SearchListingsUseCase {
 
     public List<Listing> execute(String keyword, Integer minPrice, Integer maxPrice,
                                  String condition, String brand, Integer categoryId) {
-        // Validation
         validateSearchParameters(minPrice, maxPrice);
-
-        LoggerUtility.logEvent("Search performed with params - keyword: " + keyword +
-                ", categoryId: " + categoryId +
-                ", minPrice: " + minPrice + ", maxPrice: " + maxPrice +
-                ", condition: " + condition + ", brand: " + brand);
 
         return listingRepository.searchListings(keyword, minPrice, maxPrice, condition, brand, categoryId);
     }
 
     public List<Listing> searchByCategoryHierarchy(String keyword, Integer minPrice, Integer maxPrice,
                                                    String condition, String brand, List<Integer> categoryIds) {
-        // Validation
         validateSearchParameters(minPrice, maxPrice);
-
-        LoggerUtility.logEvent("Hierarchical search performed with categoryIds: " + categoryIds +
-                ", keyword: " + keyword + ", condition: " + condition + ", brand: " + brand);
 
         return listingRepository.searchListingsInCategoryHierarchy(keyword, minPrice, maxPrice, condition, brand, categoryIds);
     }
 
-    // Convenience methods
     public List<Listing> searchByKeyword(String keyword) {
         return execute(keyword, null, null, null, null, null);
     }

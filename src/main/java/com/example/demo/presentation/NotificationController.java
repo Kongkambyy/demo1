@@ -32,18 +32,15 @@ public class NotificationController {
 
     @GetMapping("/notifications")
     public String notifications(Model model, HttpSession session) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             return "redirect:/login";
         }
 
         try {
-            // Get all notifications for the user
             List<Notification> allNotifications = getNotificationsUseCase.getAllForUser(userId);
             List<Notification> unreadNotifications = getNotificationsUseCase.getUnreadForUser(userId);
 
-            // Sort notifications by created date (most recent first)
             allNotifications.sort((n1, n2) -> n2.getCreatedDate().compareTo(n1.getCreatedDate()));
 
             model.addAttribute("notifications", allNotifications);
@@ -75,10 +72,8 @@ public class NotificationController {
         }
 
         try {
-            // Verify the notification belongs to the user
             Notification notification = getNotificationsUseCase.getById(notificationId, userId);
 
-            // Mark as read
             notificationRepository.markAsRead(notificationId);
 
             LoggerUtility.logEvent("User " + userId + " marked notification " + notificationId + " as read");

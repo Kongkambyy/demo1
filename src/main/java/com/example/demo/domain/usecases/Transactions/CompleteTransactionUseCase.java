@@ -23,7 +23,7 @@ public class CompleteTransactionUseCase {
     }
 
     public Transaction execute(String transactionId, String userId) {
-        // Find transaction
+
         Optional<Transaction> transactionOpt = transactionRepository.findById(transactionId);
         if (transactionOpt.isEmpty()) {
             LoggerUtility.logError("Completion attempt for non-existent transaction: " + transactionId);

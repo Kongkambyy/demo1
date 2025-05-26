@@ -21,14 +21,12 @@ public class ChangeListingStatusUseCase {
         Optional<Listing> listingOpt = listingRepository.findById(adId);
 
         if (listingOpt.isEmpty()) {
-            LoggerUtility.logError("Status change attempt for non-existent listing: " + adId);
             throw new ListingNotFoundException(adId);
         }
 
         Listing listing = listingOpt.get();
 
         if (!listing.getUserID().equals(userId)) {
-            LoggerUtility.logError("User " + userId + " attempted to change status of listing owned by " + listing.getUserID());
             throw new InsufficientPermissionsException(userId, "Cannot change status of listing owned by another user");
         }
 

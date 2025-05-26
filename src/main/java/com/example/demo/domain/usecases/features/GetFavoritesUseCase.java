@@ -28,8 +28,4 @@ public class GetFavoritesUseCase {
     public boolean isListingFavorite(String userId, String listingAdId) {
         return favoriteRepository.isFavorite(userId, listingAdId);
     }
-
-    public int countFavorites(String userId) {
-        return favoriteRepository.findByUserId(userId).size();
-    }
 }

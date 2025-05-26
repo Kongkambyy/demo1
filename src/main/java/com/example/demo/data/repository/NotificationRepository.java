@@ -40,7 +40,6 @@ public class NotificationRepository {
         LoggerUtility.logEvent("NotificationRepository initialized");
     }
 
-    // Create a new notification
     public Notification save(Notification notification) {
         if (notification.getNotificationID() == null || notification.getNotificationID().isEmpty()) {
             notification.setNotificationID(UUID.randomUUID().toString());
@@ -64,7 +63,6 @@ public class NotificationRepository {
         return notification;
     }
 
-    // Find notification by ID
     public Optional<Notification> findById(String notificationId) {
         String sql = "SELECT * FROM notifications WHERE NotificationID = ?";
 
@@ -77,46 +75,39 @@ public class NotificationRepository {
         }
     }
 
-    // Find all notifications for a user
     public List<Notification> findByUserId(String userId) {
         String sql = "SELECT * FROM notifications WHERE UserID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, notificationRowMapper, userId);
     }
 
-    // Find unread notifications for a user
     public List<Notification> findUnreadByUserId(String userId) {
         String sql = "SELECT * FROM notifications WHERE UserID = ? AND IsRead = FALSE ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, notificationRowMapper, userId);
     }
 
-    // Find notifications related to a specific source (like a listing)
     public List<Notification> findBySourceId(String sourceId) {
         String sql = "SELECT * FROM notifications WHERE SourceID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, notificationRowMapper, sourceId);
     }
 
-    // Count unread notifications
     public int countUnreadNotifications(String userId) {
         String sql = "SELECT COUNT(*) FROM notifications WHERE UserID = ? AND IsRead = FALSE";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, userId);
         return count != null ? count : 0;
     }
 
-    // Mark notification as read
     public void markAsRead(String notificationId) {
         String sql = "UPDATE notifications SET IsRead = TRUE WHERE NotificationID = ?";
         jdbcTemplate.update(sql, notificationId);
         LoggerUtility.logEvent("Notification marked as read: " + notificationId);
     }
 
-    // Mark all notifications as read for a user
     public void markAllAsRead(String userId) {
         String sql = "UPDATE notifications SET IsRead = TRUE WHERE UserID = ?";
         int rowsAffected = jdbcTemplate.update(sql, userId);
         LoggerUtility.logEvent(rowsAffected + " notifications marked as read for user: " + userId);
     }
 
-    // Delete notification
     public void delete(String notificationId) {
         String sql = "DELETE FROM notifications WHERE NotificationID = ?";
         int rowsAffected = jdbcTemplate.update(sql, notificationId);
@@ -128,7 +119,6 @@ public class NotificationRepository {
         }
     }
 
-    // Delete all notifications for a user
     public void deleteAllForUser(String userId) {
         String sql = "DELETE FROM notifications WHERE UserID = ?";
         int rowsAffected = jdbcTemplate.update(sql, userId);

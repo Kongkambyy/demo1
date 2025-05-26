@@ -40,7 +40,6 @@ public class TransactionRepository {
         LoggerUtility.logEvent("TransactionRepository initialized");
     }
 
-    // Create a new transaction
     public Transaction save(Transaction transaction) {
         if (transaction.getTransactionID() == null || transaction.getTransactionID().isEmpty()) {
             transaction.setTransactionID(UUID.randomUUID().toString());
@@ -64,7 +63,6 @@ public class TransactionRepository {
         return transaction;
     }
 
-    // Find transaction by ID
     public Optional<Transaction> findById(String transactionId) {
         String sql = "SELECT * FROM transactions WHERE TransactionID = ?";
 
@@ -77,25 +75,21 @@ public class TransactionRepository {
         }
     }
 
-    // Find transactions by buyer ID
     public List<Transaction> findByBuyerId(String buyerId) {
         String sql = "SELECT * FROM transactions WHERE BuyerID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, transactionRowMapper, buyerId);
     }
 
-    // Find transactions by seller ID
     public List<Transaction> findBySellerId(String sellerId) {
         String sql = "SELECT * FROM transactions WHERE SellerID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, transactionRowMapper, sellerId);
     }
 
-    // Find transactions by listing ID
     public List<Transaction> findByListingId(String listingId) {
         String sql = "SELECT * FROM transactions WHERE ListingID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, transactionRowMapper, listingId);
     }
 
-    // Update transaction status
     public Transaction updateStatus(String transactionId, String newStatus, String completedDate) {
         String sql = "UPDATE transactions SET Status = ?, CompletedDate = ? WHERE TransactionID = ?";
 
@@ -112,7 +106,6 @@ public class TransactionRepository {
         return updatedTransaction.orElseThrow(() -> new RuntimeException("Could not find updated transaction"));
     }
 
-    // Delete transaction (usually not recommended in production systems)
     public void delete(String transactionId) {
         String sql = "DELETE FROM transactions WHERE TransactionID = ?";
         int rowsAffected = jdbcTemplate.update(sql, transactionId);

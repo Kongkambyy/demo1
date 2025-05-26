@@ -38,7 +38,6 @@ public class FavoritesController {
     }
     @GetMapping("/favorites")
     public String favorites(Model model, HttpSession session) {
-        // Check if user is logged in
         String userId = (String) session.getAttribute("userId");
         if (userId == null) {
             return "redirect:/login";
@@ -73,7 +72,6 @@ public class FavoritesController {
         }
 
         try {
-            // Check if already in favorites before adding
             boolean isAlreadyFavorite = getFavoritesUseCase.isListingFavorite(userId, listingId);
 
             if (!isAlreadyFavorite) {
@@ -82,7 +80,6 @@ public class FavoritesController {
                 redirectAttributes.addFlashAttribute("success", "Item added to favorites");
             }
 
-            // Redirect back to the appropriate page
             if (returnUrl.startsWith("/listing")) {
                 return "redirect:" + returnUrl + "/" + listingId;
             } else {
@@ -92,7 +89,6 @@ public class FavoritesController {
             LoggerUtility.logError("Error adding listing " + listingId + " to favorites for user " + userId + ": " + e.getMessage());
             redirectAttributes.addFlashAttribute("error", "Could not add to favorites");
 
-            // Redirect back to the listing page or other source page
             if (returnUrl.startsWith("/listing")) {
                 return "redirect:" + returnUrl + "/" + listingId;
             } else {

@@ -22,9 +22,7 @@ public class NotificationService {
         this.favoriteRepository = favoriteRepository;
     }
 
-    // Notification for when a listing price changes
     public void notifyPriceChange(String listingId, String sellerId, String listingTitle, int oldPrice, int newPrice) {
-        // Notify all users who favorited this listing
         List<String> userIds = getUsersWhoFavoritedListing(listingId);
 
         String message = "The price of \"" + listingTitle + "\" has changed from "
@@ -47,9 +45,8 @@ public class NotificationService {
         }
     }
 
-    // Notification for when an offer is made on a favorited listing
     public void notifyOfferOnFavoritedListing(String listingId, String offerId, String listingTitle, int offerAmount) {
-        // Notify all users who favorited this listing
+
         List<String> userIds = getUsersWhoFavoritedListing(listingId);
 
         String message = "An offer of " + offerAmount + " DKK has been made on \"" + listingTitle + "\" that you favorited.";
@@ -71,9 +68,8 @@ public class NotificationService {
         }
     }
 
-    // Notification for when a favorited listing is sold
     public void notifyFavoritedListingSold(String listingId, String listingTitle) {
-        // Notify all users who favorited this listing
+
         List<String> userIds = getUsersWhoFavoritedListing(listingId);
 
         String message = "The listing \"" + listingTitle + "\" that you favorited has been sold.";
@@ -95,7 +91,6 @@ public class NotificationService {
         }
     }
 
-    // Notification for when your own listing is sold
     public void notifyListingSold(String sellerId, String listingId, String listingTitle, int price) {
         String message = "Congratulations! Your listing \"" + listingTitle + "\" has been sold for " + price + " DKK.";
 
@@ -114,7 +109,6 @@ public class NotificationService {
         LoggerUtility.logEvent("Sale notification created for seller: " + sellerId);
     }
 
-    // Notification for when an offer is made on your listing
     public void notifyOfferReceived(String sellerId, String listingId, String offerId, String listingTitle, int offerAmount) {
         String message = "You have received an offer of " + offerAmount + " DKK for your listing \"" + listingTitle + "\".";
 
@@ -133,7 +127,6 @@ public class NotificationService {
         LoggerUtility.logEvent("Offer received notification created for seller: " + sellerId);
     }
 
-    // NEW: Notification for when you submit an offer (buyer confirmation)
     public void notifyOfferSubmitted(String buyerId, String offerId, String listingId, String listingTitle, int offerAmount) {
         String message = "Your offer of " + offerAmount + " DKK for \"" + listingTitle + "\" has been submitted successfully. You will be notified when the seller responds.";
 
@@ -152,7 +145,6 @@ public class NotificationService {
         LoggerUtility.logEvent("Offer submitted notification created for buyer: " + buyerId);
     }
 
-    // Notification for when your offer is accepted
     public void notifyOfferAccepted(String buyerId, String offerId, String listingId, String listingTitle, int offerAmount) {
         String message = "Your offer of " + offerAmount + " DKK for \"" + listingTitle + "\" has been accepted!";
 
@@ -171,7 +163,6 @@ public class NotificationService {
         LoggerUtility.logEvent("Offer accepted notification created for buyer: " + buyerId);
     }
 
-    // Notification for when your offer is rejected
     public void notifyOfferRejected(String buyerId, String offerId, String listingId, String listingTitle, int offerAmount) {
         String message = "Your offer of " + offerAmount + " DKK for \"" + listingTitle + "\" has been rejected.";
 

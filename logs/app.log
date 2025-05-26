@@ -14218,3 +14218,1281 @@ SEVERE: [2025-05-24 23:00:48] ERROR: Unhandled exception: No static resource hom
 maj 24, 2025 11:00:48 PM com.example.demo.data.util.LoggerUtility logError
 SEVERE: [2025-05-24 23:00:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
 [2025-05-24 23:00:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: CategoryRepository initialized
+[2025-05-26 13:00:13] EVENT: CategoryRepository initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: ListingRepository initialized
+[2025-05-26 13:00:13] EVENT: ListingRepository initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: FavoriteRepository initialized
+[2025-05-26 13:00:13] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: MessageRepository initialiseret
+[2025-05-26 13:00:13] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: NotificationRepository initialized
+[2025-05-26 13:00:13] EVENT: NotificationRepository initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: OfferRepository initialized
+[2025-05-26 13:00:13] EVENT: OfferRepository initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: ReviewRepository initialized
+[2025-05-26 13:00:13] EVENT: ReviewRepository initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: TransactionRepository initialized
+[2025-05-26 13:00:13] EVENT: TransactionRepository initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: UserRepository initialiseret
+[2025-05-26 13:00:13] EVENT: UserRepository initialiseret
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:00:13] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:00:13 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:13] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:00:13] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:00:16 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:00:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:00:16] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:00:16 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:00:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:00:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: CategoryRepository initialized
+[2025-05-26 13:00:32] EVENT: CategoryRepository initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: ListingRepository initialized
+[2025-05-26 13:00:32] EVENT: ListingRepository initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: FavoriteRepository initialized
+[2025-05-26 13:00:32] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: MessageRepository initialiseret
+[2025-05-26 13:00:32] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: NotificationRepository initialized
+[2025-05-26 13:00:32] EVENT: NotificationRepository initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: OfferRepository initialized
+[2025-05-26 13:00:32] EVENT: OfferRepository initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: ReviewRepository initialized
+[2025-05-26 13:00:32] EVENT: ReviewRepository initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: TransactionRepository initialized
+[2025-05-26 13:00:32] EVENT: TransactionRepository initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: UserRepository initialiseret
+[2025-05-26 13:00:32] EVENT: UserRepository initialiseret
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:00:32] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:00:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:00:32] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:00:32] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: CategoryRepository initialized
+[2025-05-26 13:01:50] EVENT: CategoryRepository initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: ListingRepository initialized
+[2025-05-26 13:01:50] EVENT: ListingRepository initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: FavoriteRepository initialized
+[2025-05-26 13:01:50] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: MessageRepository initialiseret
+[2025-05-26 13:01:50] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: NotificationRepository initialized
+[2025-05-26 13:01:50] EVENT: NotificationRepository initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: OfferRepository initialized
+[2025-05-26 13:01:50] EVENT: OfferRepository initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: ReviewRepository initialized
+[2025-05-26 13:01:50] EVENT: ReviewRepository initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: TransactionRepository initialized
+[2025-05-26 13:01:50] EVENT: TransactionRepository initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: UserRepository initialiseret
+[2025-05-26 13:01:50] EVENT: UserRepository initialiseret
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:01:50] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:01:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:01:50] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:01:50] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: CategoryRepository initialized
+[2025-05-26 13:05:43] EVENT: CategoryRepository initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: ListingRepository initialized
+[2025-05-26 13:05:43] EVENT: ListingRepository initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: FavoriteRepository initialized
+[2025-05-26 13:05:43] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: MessageRepository initialiseret
+[2025-05-26 13:05:43] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: NotificationRepository initialized
+[2025-05-26 13:05:43] EVENT: NotificationRepository initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: OfferRepository initialized
+[2025-05-26 13:05:43] EVENT: OfferRepository initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: ReviewRepository initialized
+[2025-05-26 13:05:43] EVENT: ReviewRepository initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: TransactionRepository initialized
+[2025-05-26 13:05:43] EVENT: TransactionRepository initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: UserRepository initialiseret
+[2025-05-26 13:05:43] EVENT: UserRepository initialiseret
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:05:43] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:05:43 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:05:43] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:05:43] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: CategoryRepository initialized
+[2025-05-26 13:08:52] EVENT: CategoryRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: ListingRepository initialized
+[2025-05-26 13:08:52] EVENT: ListingRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: FavoriteRepository initialized
+[2025-05-26 13:08:52] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: MessageRepository initialiseret
+[2025-05-26 13:08:52] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: NotificationRepository initialized
+[2025-05-26 13:08:52] EVENT: NotificationRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: OfferRepository initialized
+[2025-05-26 13:08:52] EVENT: OfferRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: ReviewRepository initialized
+[2025-05-26 13:08:52] EVENT: ReviewRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: TransactionRepository initialized
+[2025-05-26 13:08:52] EVENT: TransactionRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: UserRepository initialized
+[2025-05-26 13:08:52] EVENT: UserRepository initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:08:52] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:08:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:08:52] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:08:52] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: CategoryRepository initialized
+[2025-05-26 13:09:38] EVENT: CategoryRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: ListingRepository initialized
+[2025-05-26 13:09:38] EVENT: ListingRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: FavoriteRepository initialized
+[2025-05-26 13:09:38] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: MessageRepository initialiseret
+[2025-05-26 13:09:38] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: NotificationRepository initialized
+[2025-05-26 13:09:38] EVENT: NotificationRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: OfferRepository initialized
+[2025-05-26 13:09:38] EVENT: OfferRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: ReviewRepository initialized
+[2025-05-26 13:09:38] EVENT: ReviewRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: TransactionRepository initialized
+[2025-05-26 13:09:38] EVENT: TransactionRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: UserRepository initialized
+[2025-05-26 13:09:38] EVENT: UserRepository initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:09:38] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:09:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:09:38] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:09:38] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: CategoryRepository initialized
+[2025-05-26 13:14:33] EVENT: CategoryRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: ListingRepository initialized
+[2025-05-26 13:14:33] EVENT: ListingRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: FavoriteRepository initialized
+[2025-05-26 13:14:33] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: MessageRepository initialiseret
+[2025-05-26 13:14:33] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: NotificationRepository initialized
+[2025-05-26 13:14:33] EVENT: NotificationRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: OfferRepository initialized
+[2025-05-26 13:14:33] EVENT: OfferRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: ReviewRepository initialized
+[2025-05-26 13:14:33] EVENT: ReviewRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: TransactionRepository initialized
+[2025-05-26 13:14:33] EVENT: TransactionRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: UserRepository initialized
+[2025-05-26 13:14:33] EVENT: UserRepository initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:14:33] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:14:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:14:33] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:14:33] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: CategoryRepository initialized
+[2025-05-26 13:20:48] EVENT: CategoryRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: ListingRepository initialized
+[2025-05-26 13:20:48] EVENT: ListingRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: FavoriteRepository initialized
+[2025-05-26 13:20:48] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: MessageRepository initialiseret
+[2025-05-26 13:20:48] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: NotificationRepository initialized
+[2025-05-26 13:20:48] EVENT: NotificationRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: OfferRepository initialized
+[2025-05-26 13:20:48] EVENT: OfferRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: ReviewRepository initialized
+[2025-05-26 13:20:48] EVENT: ReviewRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: TransactionRepository initialized
+[2025-05-26 13:20:48] EVENT: TransactionRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: UserRepository initialized
+[2025-05-26 13:20:48] EVENT: UserRepository initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:20:48] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:20:48 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:48] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:20:48] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:20:51 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:51] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:20:51] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:20:52 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:52] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:20:52] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:20:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:52] EVENT: Search performed by user: anonymous - keyword: null, categoryId: null, designer: null
+[2025-05-26 13:20:52] EVENT: Search performed by user: anonymous - keyword: null, categoryId: null, designer: null
+maj 26, 2025 1:20:52 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:20:52] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:20:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:20:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:20:53 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:53] EVENT: Listing viewed: 64b5259b-3721-4bed-8c14-8e52eb88b6bd by user: anonymous
+[2025-05-26 13:20:53] EVENT: Listing viewed: 64b5259b-3721-4bed-8c14-8e52eb88b6bd by user: anonymous
+maj 26, 2025 1:20:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:20:53] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:20:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:53] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-26 13:20:53] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 26, 2025 1:20:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:20:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:20:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:20:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:20:55 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:20:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:20:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:20:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:20:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:20:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:20:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:57] EVENT: Successful login for email: kracer48@gmail.com
+[2025-05-26 13:20:57] EVENT: Successful login for email: kracer48@gmail.com
+maj 26, 2025 1:20:57 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:20:57] EVENT: User logged in: kracer48@gmail.com
+[2025-05-26 13:20:57] EVENT: User logged in: kracer48@gmail.com
+maj 26, 2025 1:20:57 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:20:57] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:20:57 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:20:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:20:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:21:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:21:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:21:04 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:21:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:21:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:21:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:21:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:21:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:21:06 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:21:06] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+[2025-05-26 13:21:06] EVENT: User d3a20feb-09e9-48a0-b837-f2ef6cfa6959 accessed profile edit page
+maj 26, 2025 1:21:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:06] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:21:06] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:21:06 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:06] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:21:06] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:21:08 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:21:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:21:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 13:21:09] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 1:21:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:21:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:21:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:21:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:21:12 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:21:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 13:21:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: CategoryRepository initialized
+[2025-05-26 13:24:19] EVENT: CategoryRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: ListingRepository initialized
+[2025-05-26 13:24:19] EVENT: ListingRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: FavoriteRepository initialized
+[2025-05-26 13:24:19] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: MessageRepository initialiseret
+[2025-05-26 13:24:19] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: NotificationRepository initialized
+[2025-05-26 13:24:19] EVENT: NotificationRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: OfferRepository initialized
+[2025-05-26 13:24:19] EVENT: OfferRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: ReviewRepository initialized
+[2025-05-26 13:24:19] EVENT: ReviewRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: TransactionRepository initialized
+[2025-05-26 13:24:19] EVENT: TransactionRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: UserRepository initialized
+[2025-05-26 13:24:19] EVENT: UserRepository initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:24:19] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:24:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:24:19] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:24:19] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: CategoryRepository initialized
+[2025-05-26 13:30:40] EVENT: CategoryRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: ListingRepository initialized
+[2025-05-26 13:30:40] EVENT: ListingRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: FavoriteRepository initialized
+[2025-05-26 13:30:40] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: MessageRepository initialiseret
+[2025-05-26 13:30:40] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: NotificationRepository initialized
+[2025-05-26 13:30:40] EVENT: NotificationRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: OfferRepository initialized
+[2025-05-26 13:30:40] EVENT: OfferRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: ReviewRepository initialized
+[2025-05-26 13:30:40] EVENT: ReviewRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: TransactionRepository initialized
+[2025-05-26 13:30:40] EVENT: TransactionRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: UserRepository initialized
+[2025-05-26 13:30:40] EVENT: UserRepository initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:30:40] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:30:40 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:40] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:30:40] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:41] EVENT: User deleted: b005c42f-4d73-44b7-b3f2-cdd497291892
+[2025-05-26 13:30:41] EVENT: User deleted: b005c42f-4d73-44b7-b3f2-cdd497291892
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-26 13:30:41] WARNING: User not found with ID: b005c42f-4d73-44b7-b3f2-cdd497291892
+[2025-05-26 13:30:41] WARNING: User not found with ID: b005c42f-4d73-44b7-b3f2-cdd497291892
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:30:41] ERROR: Duplicate user creation attempt: TopMegaHemmeligKode
+[2025-05-26 13:30:41] ERROR: Duplicate user creation attempt: TopMegaHemmeligKode
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:41] EVENT: User updated: 10096ad7-0fe4-4849-a41f-c6ef27e72d80
+[2025-05-26 13:30:41] EVENT: User updated: 10096ad7-0fe4-4849-a41f-c6ef27e72d80
+maj 26, 2025 1:30:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:30:41] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: CategoryRepository initialized
+[2025-05-26 13:35:01] EVENT: CategoryRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: ListingRepository initialized
+[2025-05-26 13:35:01] EVENT: ListingRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: FavoriteRepository initialized
+[2025-05-26 13:35:01] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: MessageRepository initialiseret
+[2025-05-26 13:35:01] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: NotificationRepository initialized
+[2025-05-26 13:35:01] EVENT: NotificationRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: OfferRepository initialized
+[2025-05-26 13:35:01] EVENT: OfferRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: ReviewRepository initialized
+[2025-05-26 13:35:01] EVENT: ReviewRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: TransactionRepository initialized
+[2025-05-26 13:35:01] EVENT: TransactionRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: UserRepository initialized
+[2025-05-26 13:35:01] EVENT: UserRepository initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:35:01] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:35:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:01] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:35:01] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:35:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:02] EVENT: User created: test1748259302561@example.com
+[2025-05-26 13:35:02] EVENT: User created: test1748259302561@example.com
+maj 26, 2025 1:35:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:02] EVENT: User created: test1748259302899@example.com
+[2025-05-26 13:35:02] EVENT: User created: test1748259302899@example.com
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: CategoryRepository initialized
+[2025-05-26 13:35:21] EVENT: CategoryRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: ListingRepository initialized
+[2025-05-26 13:35:21] EVENT: ListingRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: FavoriteRepository initialized
+[2025-05-26 13:35:21] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: MessageRepository initialiseret
+[2025-05-26 13:35:21] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: NotificationRepository initialized
+[2025-05-26 13:35:21] EVENT: NotificationRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: OfferRepository initialized
+[2025-05-26 13:35:21] EVENT: OfferRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: ReviewRepository initialized
+[2025-05-26 13:35:21] EVENT: ReviewRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: TransactionRepository initialized
+[2025-05-26 13:35:21] EVENT: TransactionRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: UserRepository initialized
+[2025-05-26 13:35:21] EVENT: UserRepository initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:35:21] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:35:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:21] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:35:21] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:35:22 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:35:22] EVENT: User created: test1748259322226@example.com
+[2025-05-26 13:35:22] EVENT: User created: test1748259322226@example.com
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: CategoryRepository initialized
+[2025-05-26 13:39:23] EVENT: CategoryRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: ListingRepository initialized
+[2025-05-26 13:39:23] EVENT: ListingRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: FavoriteRepository initialized
+[2025-05-26 13:39:23] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: MessageRepository initialiseret
+[2025-05-26 13:39:23] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: NotificationRepository initialized
+[2025-05-26 13:39:23] EVENT: NotificationRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: OfferRepository initialized
+[2025-05-26 13:39:23] EVENT: OfferRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: ReviewRepository initialized
+[2025-05-26 13:39:23] EVENT: ReviewRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: TransactionRepository initialized
+[2025-05-26 13:39:23] EVENT: TransactionRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: UserRepository initialized
+[2025-05-26 13:39:23] EVENT: UserRepository initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:39:23] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:39:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:23] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:39:23] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:24] EVENT: User deleted: f6121d1e-3c2c-4d21-a1ae-bf29b5e0411d
+[2025-05-26 13:39:24] EVENT: User deleted: f6121d1e-3c2c-4d21-a1ae-bf29b5e0411d
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-26 13:39:24] WARNING: User not found with ID: f6121d1e-3c2c-4d21-a1ae-bf29b5e0411d
+[2025-05-26 13:39:24] WARNING: User not found with ID: f6121d1e-3c2c-4d21-a1ae-bf29b5e0411d
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 13:39:24] ERROR: Duplicate user creation attempt: TopMegaHemmeligKode
+[2025-05-26 13:39:24] ERROR: Duplicate user creation attempt: TopMegaHemmeligKode
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:24] EVENT: User updated: 97b5a572-b44d-4ac9-8d04-4e72d903d588
+[2025-05-26 13:39:24] EVENT: User updated: 97b5a572-b44d-4ac9-8d04-4e72d903d588
+maj 26, 2025 1:39:24 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+[2025-05-26 13:39:24] EVENT: User created: TopMegaHemmeligKode
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: CategoryRepository initialized
+[2025-05-26 13:40:11] EVENT: CategoryRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: ListingRepository initialized
+[2025-05-26 13:40:11] EVENT: ListingRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: FavoriteRepository initialized
+[2025-05-26 13:40:11] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: MessageRepository initialiseret
+[2025-05-26 13:40:11] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: NotificationRepository initialized
+[2025-05-26 13:40:11] EVENT: NotificationRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: OfferRepository initialized
+[2025-05-26 13:40:11] EVENT: OfferRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: ReviewRepository initialized
+[2025-05-26 13:40:11] EVENT: ReviewRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: TransactionRepository initialized
+[2025-05-26 13:40:11] EVENT: TransactionRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: UserRepository initialized
+[2025-05-26 13:40:11] EVENT: UserRepository initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:40:11] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:40:11 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:11] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:40:11] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:40:12 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:12] EVENT: User created: test1748259612521@example.com
+[2025-05-26 13:40:12] EVENT: User created: test1748259612521@example.com
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: CategoryRepository initialized
+[2025-05-26 13:40:21] EVENT: CategoryRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: ListingRepository initialized
+[2025-05-26 13:40:21] EVENT: ListingRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: FavoriteRepository initialized
+[2025-05-26 13:40:21] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: MessageRepository initialiseret
+[2025-05-26 13:40:21] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: NotificationRepository initialized
+[2025-05-26 13:40:21] EVENT: NotificationRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: OfferRepository initialized
+[2025-05-26 13:40:21] EVENT: OfferRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: ReviewRepository initialized
+[2025-05-26 13:40:21] EVENT: ReviewRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: TransactionRepository initialized
+[2025-05-26 13:40:21] EVENT: TransactionRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: UserRepository initialized
+[2025-05-26 13:40:21] EVENT: UserRepository initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:40:21] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:40:21 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:21] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:40:21] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:40:22 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:40:22] EVENT: User created: test1748259622386@example.com
+[2025-05-26 13:40:22] EVENT: User created: test1748259622386@example.com
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: CategoryRepository initialized
+[2025-05-26 13:41:46] EVENT: CategoryRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: ListingRepository initialized
+[2025-05-26 13:41:46] EVENT: ListingRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: FavoriteRepository initialized
+[2025-05-26 13:41:46] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: MessageRepository initialiseret
+[2025-05-26 13:41:46] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: NotificationRepository initialized
+[2025-05-26 13:41:46] EVENT: NotificationRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: OfferRepository initialized
+[2025-05-26 13:41:46] EVENT: OfferRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: ReviewRepository initialized
+[2025-05-26 13:41:46] EVENT: ReviewRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: TransactionRepository initialized
+[2025-05-26 13:41:46] EVENT: TransactionRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: UserRepository initialized
+[2025-05-26 13:41:46] EVENT: UserRepository initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:41:46] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:41:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:41:46] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:41:46] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: CategoryRepository initialized
+[2025-05-26 13:42:37] EVENT: CategoryRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: ListingRepository initialized
+[2025-05-26 13:42:37] EVENT: ListingRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: FavoriteRepository initialized
+[2025-05-26 13:42:37] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: MessageRepository initialiseret
+[2025-05-26 13:42:37] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: NotificationRepository initialized
+[2025-05-26 13:42:37] EVENT: NotificationRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: OfferRepository initialized
+[2025-05-26 13:42:37] EVENT: OfferRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: ReviewRepository initialized
+[2025-05-26 13:42:37] EVENT: ReviewRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: TransactionRepository initialized
+[2025-05-26 13:42:37] EVENT: TransactionRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: UserRepository initialized
+[2025-05-26 13:42:37] EVENT: UserRepository initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:42:37] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:42:37 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:37] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:42:37] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:42:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:38] EVENT: User created: test1748259758181@example.com
+[2025-05-26 13:42:38] EVENT: User created: test1748259758181@example.com
+maj 26, 2025 1:42:38 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-26 13:42:38] WARNING: Login attempt with incorrect password for email: test1748259758181@example.com
+[2025-05-26 13:42:38] WARNING: Login attempt with incorrect password for email: test1748259758181@example.com
+maj 26, 2025 1:42:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:38] EVENT: User created: test1748259758212@example.com
+[2025-05-26 13:42:38] EVENT: User created: test1748259758212@example.com
+maj 26, 2025 1:42:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:42:38] EVENT: Successful login for email: test1748259758212@example.com
+[2025-05-26 13:42:38] EVENT: Successful login for email: test1748259758212@example.com
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: CategoryRepository initialized
+[2025-05-26 13:43:31] EVENT: CategoryRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: ListingRepository initialized
+[2025-05-26 13:43:31] EVENT: ListingRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: FavoriteRepository initialized
+[2025-05-26 13:43:31] EVENT: FavoriteRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: MessageRepository initialiseret
+[2025-05-26 13:43:31] EVENT: MessageRepository initialiseret
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: NotificationRepository initialized
+[2025-05-26 13:43:31] EVENT: NotificationRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: OfferRepository initialized
+[2025-05-26 13:43:31] EVENT: OfferRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: ReviewRepository initialized
+[2025-05-26 13:43:31] EVENT: ReviewRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: TransactionRepository initialized
+[2025-05-26 13:43:31] EVENT: TransactionRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: UserRepository initialized
+[2025-05-26 13:43:31] EVENT: UserRepository initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 13:43:31] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 1:43:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:31] EVENT: GetCategoryUseCase initialized
+[2025-05-26 13:43:31] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 1:43:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:32] EVENT: User created: listing1748259812064@example.com
+[2025-05-26 13:43:32] EVENT: User created: listing1748259812064@example.com
+maj 26, 2025 1:43:32 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 13:43:32] EVENT: User created: listing1748259812402@example.com
+[2025-05-26 13:43:32] EVENT: User created: listing1748259812402@example.com
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: CategoryRepository initialized
+[2025-05-26 14:02:46] EVENT: CategoryRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: ListingRepository initialized
+[2025-05-26 14:02:46] EVENT: ListingRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: FavoriteRepository initialized
+[2025-05-26 14:02:46] EVENT: FavoriteRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: MessageRepository initialiseret
+[2025-05-26 14:02:46] EVENT: MessageRepository initialiseret
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: NotificationRepository initialized
+[2025-05-26 14:02:46] EVENT: NotificationRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: OfferRepository initialized
+[2025-05-26 14:02:46] EVENT: OfferRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: ReviewRepository initialized
+[2025-05-26 14:02:46] EVENT: ReviewRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: TransactionRepository initialized
+[2025-05-26 14:02:46] EVENT: TransactionRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: UserRepository initialized
+[2025-05-26 14:02:46] EVENT: UserRepository initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 14:02:46] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 2:02:46 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:46] EVENT: GetCategoryUseCase initialized
+[2025-05-26 14:02:46] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 2:02:47 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:02:47] EVENT: User created: listing1748260967472@example.com
+[2025-05-26 14:02:47] EVENT: User created: listing1748260967472@example.com
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: CategoryRepository initialized
+[2025-05-26 14:40:51] EVENT: CategoryRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: ListingRepository initialized
+[2025-05-26 14:40:51] EVENT: ListingRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: FavoriteRepository initialized
+[2025-05-26 14:40:51] EVENT: FavoriteRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: MessageRepository initialiseret
+[2025-05-26 14:40:51] EVENT: MessageRepository initialiseret
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: NotificationRepository initialized
+[2025-05-26 14:40:51] EVENT: NotificationRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: OfferRepository initialized
+[2025-05-26 14:40:51] EVENT: OfferRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: ReviewRepository initialized
+[2025-05-26 14:40:51] EVENT: ReviewRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: TransactionRepository initialized
+[2025-05-26 14:40:51] EVENT: TransactionRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: UserRepository initialized
+[2025-05-26 14:40:51] EVENT: UserRepository initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 14:40:51] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 2:40:51 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:40:51] EVENT: GetCategoryUseCase initialized
+[2025-05-26 14:40:51] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: CategoryRepository initialized
+[2025-05-26 14:46:14] EVENT: CategoryRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: ListingRepository initialized
+[2025-05-26 14:46:14] EVENT: ListingRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: FavoriteRepository initialized
+[2025-05-26 14:46:14] EVENT: FavoriteRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: MessageRepository initialiseret
+[2025-05-26 14:46:14] EVENT: MessageRepository initialiseret
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: NotificationRepository initialized
+[2025-05-26 14:46:14] EVENT: NotificationRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: OfferRepository initialized
+[2025-05-26 14:46:14] EVENT: OfferRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: ReviewRepository initialized
+[2025-05-26 14:46:14] EVENT: ReviewRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: TransactionRepository initialized
+[2025-05-26 14:46:14] EVENT: TransactionRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: UserRepository initialized
+[2025-05-26 14:46:14] EVENT: UserRepository initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 14:46:14] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 2:46:14 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 14:46:14] EVENT: GetCategoryUseCase initialized
+[2025-05-26 14:46:14] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: CategoryRepository initialized
+[2025-05-26 16:38:19] EVENT: CategoryRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: ListingRepository initialized
+[2025-05-26 16:38:19] EVENT: ListingRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: FavoriteRepository initialized
+[2025-05-26 16:38:19] EVENT: FavoriteRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: MessageRepository initialiseret
+[2025-05-26 16:38:19] EVENT: MessageRepository initialiseret
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: NotificationRepository initialized
+[2025-05-26 16:38:19] EVENT: NotificationRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: OfferRepository initialized
+[2025-05-26 16:38:19] EVENT: OfferRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: ReviewRepository initialized
+[2025-05-26 16:38:19] EVENT: ReviewRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: TransactionRepository initialized
+[2025-05-26 16:38:19] EVENT: TransactionRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: UserRepository initialized
+[2025-05-26 16:38:19] EVENT: UserRepository initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 16:38:19] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 4:38:19 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:19] EVENT: GetCategoryUseCase initialized
+[2025-05-26 16:38:19] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 4:38:28 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:28] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:38:28] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:38:29 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:38:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:38:30 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:30] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:38:30] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:38:30 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:30] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:38:30] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:38:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:38:31] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:38:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:38:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:38:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:52] EVENT: User created: TEST@TEST.DK
+[2025-05-26 16:38:52] EVENT: User created: TEST@TEST.DK
+maj 26, 2025 4:38:52 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:38:52] EVENT: New user registered: TEST@TEST.DK
+[2025-05-26 16:38:52] EVENT: New user registered: TEST@TEST.DK
+maj 26, 2025 4:38:52 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:38:52] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:38:52 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:38:52] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:38:52] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:04 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-26 16:39:04] WARNING: Login attempt for non-existent email: TEST@TEST.com
+[2025-05-26 16:39:04] WARNING: Login attempt for non-existent email: TEST@TEST.com
+maj 26, 2025 4:39:04 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-26 16:39:04] WARNING: Login failed for email: TEST@TEST.com
+[2025-05-26 16:39:04] WARNING: Login failed for email: TEST@TEST.com
+maj 26, 2025 4:39:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:05 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:09 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-26 16:39:09] WARNING: Login attempt for non-existent email: TEST@TEST
+[2025-05-26 16:39:09] WARNING: Login attempt for non-existent email: TEST@TEST
+maj 26, 2025 4:39:09 PM com.example.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-26 16:39:09] WARNING: Login failed for email: TEST@TEST
+[2025-05-26 16:39:09] WARNING: Login failed for email: TEST@TEST
+maj 26, 2025 4:39:09 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:09] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:10 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:34] EVENT: Successful login for email: TEST@TEST.DK
+[2025-05-26 16:39:34] EVENT: Successful login for email: TEST@TEST.DK
+maj 26, 2025 4:39:34 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:34] EVENT: User logged in: TEST@TEST.DK
+[2025-05-26 16:39:34] EVENT: User logged in: TEST@TEST.DK
+maj 26, 2025 4:39:34 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:34] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:34] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:34 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:34] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:34] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:39] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:39 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:40] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:40 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:41] EVENT: Retrieving all categories
+[2025-05-26 16:39:41] EVENT: Retrieving all categories
+maj 26, 2025 4:39:41 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:41] EVENT: Retrieving all categories
+[2025-05-26 16:39:41] EVENT: Retrieving all categories
+maj 26, 2025 4:39:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:41] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:41] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:41] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:41] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:53 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:53] EVENT: New listing created: 2cffdc36-a58d-4170-8249-a25058570672
+[2025-05-26 16:39:53] EVENT: New listing created: 2cffdc36-a58d-4170-8249-a25058570672
+maj 26, 2025 4:39:53 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:53] EVENT: Listing created: 2cffdc36-a58d-4170-8249-a25058570672 with category: 14 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:39:53] EVENT: Listing created: 2cffdc36-a58d-4170-8249-a25058570672 with category: 14 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:39:53 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:53] EVENT: Listing viewed: 2cffdc36-a58d-4170-8249-a25058570672 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:39:53] EVENT: Listing viewed: 2cffdc36-a58d-4170-8249-a25058570672 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:39:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:53] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-26 16:39:53] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 26, 2025 4:39:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:53] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:53 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:56 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:58 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:58] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:58 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:58] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:58] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:39:59 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:39:59] EVENT: Listing viewed: 2cffdc36-a58d-4170-8249-a25058570672 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:39:59] EVENT: Listing viewed: 2cffdc36-a58d-4170-8249-a25058570672 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:39:59 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:59] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 26, 2025 4:39:59 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:59] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:39:59] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-26 16:39:59] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:39:59 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:39:59] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:39:59] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:00] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:00 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:01] EVENT: Listing viewed: 64b5259b-3721-4bed-8c14-8e52eb88b6bd by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:40:01] EVENT: Listing viewed: 64b5259b-3721-4bed-8c14-8e52eb88b6bd by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:40:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:01] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 26, 2025 4:40:01 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:01] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-26 16:40:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:03 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:03] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed purchase confirmation page for listing 64b5259b-3721-4bed-8c14-8e52eb88b6bd
+[2025-05-26 16:40:03] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed purchase confirmation page for listing 64b5259b-3721-4bed-8c14-8e52eb88b6bd
+maj 26, 2025 4:40:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:03] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:03] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-26 16:40:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:03] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 26, 2025 4:40:03 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:17] EVENT: Transaction created: 276b0998-b699-420f-be77-d5d19763d661
+[2025-05-26 16:40:17] EVENT: Transaction created: 276b0998-b699-420f-be77-d5d19763d661
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:17] EVENT: Listing status updated: 64b5259b-3721-4bed-8c14-8e52eb88b6bd - New status: SOLD
+[2025-05-26 16:40:17] EVENT: Listing status updated: 64b5259b-3721-4bed-8c14-8e52eb88b6bd - New status: SOLD
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:17] EVENT: Transaction created: 276b0998-b699-420f-be77-d5d19763d661 for listing: 64b5259b-3721-4bed-8c14-8e52eb88b6bd by buyer: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:40:17] EVENT: Transaction created: 276b0998-b699-420f-be77-d5d19763d661 for listing: 64b5259b-3721-4bed-8c14-8e52eb88b6bd by buyer: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:17] EVENT: Notification created: 144be8e8-523f-4abd-986a-282c405c2b3b for user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-26 16:40:17] EVENT: Notification created: 144be8e8-523f-4abd-986a-282c405c2b3b for user: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:17] EVENT: Sale notification created for seller: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+[2025-05-26 16:40:17] EVENT: Sale notification created for seller: d3a20feb-09e9-48a0-b837-f2ef6cfa6959
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:17] EVENT: Purchase completed: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae bought listing 64b5259b-3721-4bed-8c14-8e52eb88b6bd
+[2025-05-26 16:40:17] EVENT: Purchase completed: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae bought listing 64b5259b-3721-4bed-8c14-8e52eb88b6bd
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:17] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:17] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:17 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:17] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:17] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:19] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:19] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:19 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:20 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:20] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:20] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:20 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:21] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:21] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:21] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:21] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:21 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:22 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:22] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:22 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:22] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:22] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:23 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:23] EVENT: Listing viewed: 2cffdc36-a58d-4170-8249-a25058570672 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:40:23] EVENT: Listing viewed: 2cffdc36-a58d-4170-8249-a25058570672 by user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:40:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:23] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 26, 2025 4:40:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:23] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:23] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-26 16:40:23] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:23 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:26] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:26 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:26] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:26] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:28 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:28] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:28] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:29 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:31] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:32 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:32] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:32 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:33 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:33] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed profile edit page
+[2025-05-26 16:40:33] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed profile edit page
+maj 26, 2025 4:40:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:33] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:33 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:38] EVENT: User updated: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:40:38] EVENT: User updated: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:40:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:38] EVENT: User updated successfully: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:40:38] EVENT: User updated successfully: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:40:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:38] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae successfully updated profile
+[2025-05-26 16:40:38] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae successfully updated profile
+maj 26, 2025 4:40:38 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:38] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed profile edit page
+[2025-05-26 16:40:38] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed profile edit page
+maj 26, 2025 4:40:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:38] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:38 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:41] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:41] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:41 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:41] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:41] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:44] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:44] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:44 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:47] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:47] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:47 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:47] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:49] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:49] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:49 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:49] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:49] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:50 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:50] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+[2025-05-26 16:40:50] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+maj 26, 2025 4:40:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:50] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:50 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:50] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:50] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:40:54 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:40:54] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+[2025-05-26 16:40:54] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+maj 26, 2025 4:40:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:40:54] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:40:54 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:40:54] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:40:54] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:41:01 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:41:01] EVENT: Account deletion initiated for user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:41:01] EVENT: Account deletion initiated for user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:41:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:02] ERROR: Error during account deletion for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: PreparedStatementCallback; SQL [DELETE FROM users WHERE UserID = ?]; Cannot delete or update a parent row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`))
+[2025-05-26 16:41:02] ERROR: Error during account deletion for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: PreparedStatementCallback; SQL [DELETE FROM users WHERE UserID = ?]; Cannot delete or update a parent row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`))
+maj 26, 2025 4:41:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:02] ERROR: Account deletion failed for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: Account deletion failed.
+[2025-05-26 16:41:02] ERROR: Account deletion failed for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: Account deletion failed.
+maj 26, 2025 4:41:02 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:41:02] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+[2025-05-26 16:41:02] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+maj 26, 2025 4:41:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:41:02] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:41:02 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:41:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 26, 2025 4:41:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:41:31] EVENT: Account deletion initiated for user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+[2025-05-26 16:41:31] EVENT: Account deletion initiated for user: 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae
+maj 26, 2025 4:41:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:31] ERROR: Error during account deletion for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: PreparedStatementCallback; SQL [DELETE FROM users WHERE UserID = ?]; Cannot delete or update a parent row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`))
+[2025-05-26 16:41:31] ERROR: Error during account deletion for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: PreparedStatementCallback; SQL [DELETE FROM users WHERE UserID = ?]; Cannot delete or update a parent row: a foreign key constraint fails (`gilberttest`.`listings`, CONSTRAINT `listings_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`))
+maj 26, 2025 4:41:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:31] ERROR: Account deletion failed for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: Account deletion failed.
+[2025-05-26 16:41:31] ERROR: Account deletion failed for user 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae: Account deletion failed.
+maj 26, 2025 4:41:31 PM com.example.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 16:41:31] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+[2025-05-26 16:41:31] EVENT: User 65ba34c5-3d39-4f1e-bd3e-d7c44ee4c2ae accessed account deletion confirmation page
+maj 26, 2025 4:41:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-26 16:41:31] ERROR: Unhandled exception: No static resource home.svg.
+maj 26, 2025 4:41:31 PM com.example.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-26 16:41:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-26 16:41:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.

@@ -20,34 +20,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
-/**
- * UserRepository - JDBC implementering for bruger datahåndtering
- *
- * Denne klasse håndterer al database kommunikation relateret til brugere i systemet.
- * Den fungerer som et abstraktionslag mellem domænelogikken og den fysiske database.
- *
- * Hovedfunktioner:
- * - Oprette nye brugere i databasen med unik validering på email
- * - Hente brugeroplysninger baseret på forskellige kriterier (ID, email)
- * - Opdatere eksisterende brugerdata
- * - Slette brugere fra systemet
- * - Validere brugereksistens
- * - Håndtere login-validering med email og password
- * - Håndtere password hashing
- *
- * Klassen bruger Spring's JdbcTemplate for at udføre SQL forespørgsler og
- * implementerer RowMapper interfacet for at mappe database rækker til User objekter.
- *
- * Fejlhåndtering:
- * - Kaster UserNotFoundException når en bruger ikke findes
- * - Kaster DuplicateUserException når en bruger med samme email allerede eksisterer
- * - Logger alle vigtige operationer og fejl via LoggerUtility
- *
- * Sikkerhed:
- * - Passwords gemmes aldrig i klartekst, de hashes med SHA-256 før lagring
- * - Bruger parameteriserede SQL queries for at undgå SQL injection
- */
-
 @Repository
 public class UserRepository {
 
@@ -69,10 +41,9 @@ public class UserRepository {
         }
     };
 
-
     public UserRepository(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
-        LoggerUtility.logEvent("UserRepository initialiseret");
+        LoggerUtility.logEvent("UserRepository initialized");
     }
 
     private String hashPassword(String password) {
@@ -81,8 +52,8 @@ public class UserRepository {
             byte[] hashBytes = digest.digest(password.getBytes());
             return Base64.getEncoder().encodeToString(hashBytes);
         } catch (NoSuchAlgorithmException e) {
-            LoggerUtility.logError("SHA-256 algorithm not found: " + e.getMessage());
-            throw new RuntimeException("SHA-256 algorithm not found", e);
+            LoggerUtility.logError("SHA256 algorithm not found: " + e.getMessage());
+            throw new RuntimeException("SHA256 algorithm not found", e);
         }
     }
 
@@ -119,7 +90,7 @@ public class UserRepository {
                     user.getNumber(),
                     user.getAddress()
             );
-            LoggerUtility.logEvent("Bruger oprettet: " + user.getEmail());
+            LoggerUtility.logEvent("User created: " + user.getEmail());
 
             User savedUser = new User(
                     user.getName(),
@@ -132,11 +103,11 @@ public class UserRepository {
             savedUser.setUserID(user.getUserID());
             return savedUser;
         } catch (DuplicateKeyException e) {
-            LoggerUtility.logError("Duplikat bruger forsøgt oprettet: " + user.getEmail());
+            LoggerUtility.logError("Duplicate user creation attempt: " + user.getEmail());
             throw new DuplicateUserException(user.getEmail());
         } catch (DataAccessException e) {
-            LoggerUtility.logError("Database fejl ved oprettelse af bruger: " + e.getMessage());
-            throw new RuntimeException("Kunne ikke oprette bruger", e);
+            LoggerUtility.logError("Database error during user creation: " + e.getMessage());
+            throw new RuntimeException("Couldnt register user", e);
         }
     }
 
@@ -147,12 +118,11 @@ public class UserRepository {
             User user = jdbcTemplate.queryForObject(sql, userRowMapper, userId);
             return Optional.of(user);
         } catch (EmptyResultDataAccessException e) {
-            LoggerUtility.logWarning("Bruger ikke fundet med ID: " + userId);
+            LoggerUtility.logWarning("User not found with ID: " + userId);
             return Optional.empty();
         }
     }
 
-    // Finder bruger baseret på email
     public Optional<User> findByEmail(String email) {
         String sql = "SELECT * FROM users WHERE Email = ?";
 
@@ -165,7 +135,6 @@ public class UserRepository {
     }
 
     public User update(User user) {
-        // Hash password if needed
         String passwordToUse;
         if (!isPasswordHashed(user.getPassword())) {
             passwordToUse = hashPassword(user.getPassword());
@@ -178,7 +147,7 @@ public class UserRepository {
         int rowsAffected = jdbcTemplate.update(sql,
                 user.getName(),
                 user.getAlias(),
-                passwordToUse,  // Use hashed password
+                passwordToUse,
                 user.getEmail(),
                 user.getNumber(),
                 user.getAddress(),
@@ -186,13 +155,12 @@ public class UserRepository {
         );
 
         if (rowsAffected == 0) {
-            LoggerUtility.logError("Opdatering fejlede - bruger ikke fundet: " + user.getUserID());
+            LoggerUtility.logError("Update failed for: " + user.getUserID());
             throw new UserNotFoundException(user.getUserID());
         }
 
-        LoggerUtility.logEvent("Bruger opdateret: " + user.getUserID());
+        LoggerUtility.logEvent("User updated: " + user.getUserID());
 
-        // Return user with hashed password
         User updatedUser = new User(
                 user.getName(),
                 user.getAlias(),
@@ -204,27 +172,24 @@ public class UserRepository {
         return updatedUser;
     }
 
-    // Sletter bruger
     public void delete(String userId) {
         String sql = "DELETE FROM users WHERE UserID = ?";
 
         int rowsAffected = jdbcTemplate.update(sql, userId);
 
         if (rowsAffected == 0) {
-            LoggerUtility.logError("Sletning fejlede - bruger ikke fundet: " + userId);
+            LoggerUtility.logError("Deletion failed. User not found: " + userId);
             throw new UserNotFoundException(userId);
         }
 
-        LoggerUtility.logEvent("Bruger slettet: " + userId);
+        LoggerUtility.logEvent("User deleted: " + userId);
     }
 
-    // Finder alle brugere
     public List<User> findAll() {
         String sql = "SELECT * FROM users";
         return jdbcTemplate.query(sql, userRowMapper);
     }
 
-    // Tjekker om bruger eksisterer
     public boolean existsByEmail(String email) {
         String sql = "SELECT COUNT(*) FROM users WHERE Email = ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, email);

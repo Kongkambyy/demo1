@@ -43,31 +43,26 @@ public class ListingController {
                               Model model,
                               HttpSession session) {
         try {
-            // Get current user ID from session
             String currentUserId = (String) session.getAttribute("userId");
 
             addNotificationCount(model, session);
 
 
-            // Get the listing
             Listing listing = getListingUseCase.execute(listingId, currentUserId);
             model.addAttribute("listing", listing);
 
-            // Get seller information
             Optional<User> sellerOpt = userRepository.findById(listing.getUserID());
             if (sellerOpt.isPresent()) {
                 User seller = sellerOpt.get();
                 model.addAttribute("seller", seller);
             }
 
-            // Get category information
             if (listing.getCategoryID() != 0) {
                 Optional<Category> categoryOpt = categoryRepository.findById(listing.getCategoryID());
                 if (categoryOpt.isPresent()) {
                     Category category = categoryOpt.get();
                     model.addAttribute("category", category);
 
-                    // Get parent category if this is a subcategory
                     if (category.getParentID() != null) {
                         Optional<Category> parentOpt = categoryRepository.findById(category.getParentID());
                         parentOpt.ifPresent(parent -> model.addAttribute("parentCategory", parent));
@@ -75,14 +70,11 @@ public class ListingController {
                 }
             }
 
-            // Check if current user is the owner
             boolean isOwner = currentUserId != null && currentUserId.equals(listing.getUserID());
             model.addAttribute("isOwner", isOwner);
 
-            // Check if user is logged in
             model.addAttribute("isLoggedIn", currentUserId != null);
 
-            // Check if listing is in user's favorites (ADD THIS BLOCK)
             boolean isFavorite = false;
             if (currentUserId != null) {
                 isFavorite = getFavoritesUseCase.isListingFavorite(currentUserId, listingId);

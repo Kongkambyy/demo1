@@ -17,7 +17,6 @@ public class CreateReviewUseCase {
     }
 
     public Review execute(String reviewerID, String reviewedUserID, int rating, String comment) {
-        // Validation
         if (rating < 1 || rating > 5) {
             throw new IllegalArgumentException("Rating must be between 1 and 5");
         }

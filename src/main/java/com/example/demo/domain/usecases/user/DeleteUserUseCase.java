@@ -21,7 +21,6 @@ public class DeleteUserUseCase {
     public void execute(String userId, String passwordConfirmation) {
         LoggerUtility.logEvent("Account deletion initiated for user: " + userId);
 
-        // 1. Verify user exists
         Optional<User> userOpt = userRepository.findById(userId);
         if (userOpt.isEmpty()) {
             LoggerUtility.logError("Account deletion failed - user not found: " + userId);
@@ -30,9 +29,7 @@ public class DeleteUserUseCase {
 
         User user = userOpt.get();
 
-        // 2. Verify password for security
         if (!userRepository.verifyPassword(passwordConfirmation, user.getPassword())) {
-            LoggerUtility.logWarning("Account deletion failed - incorrect password for user: " + userId);
             throw new InvalidCredentialsException("Incorrect password provided");
         }
 

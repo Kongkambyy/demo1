@@ -31,13 +31,12 @@ public class CreateTransactionUseCase {
     }
 
     public Transaction execute(String buyerId, String listingId) {
-        // Validate buyer exists
+
         if (!userRepository.findById(buyerId).isPresent()) {
             LoggerUtility.logError("Transaction creation attempt by non-existent user: " + buyerId);
             throw new UserNotFoundException(buyerId);
         }
 
-        // Validate and get listing
         Optional<Listing> listingOpt = listingRepository.findById(listingId);
         if (listingOpt.isEmpty()) {
             LoggerUtility.logError("Transaction creation attempt for non-existent listing: " + listingId);
@@ -46,13 +45,11 @@ public class CreateTransactionUseCase {
 
         Listing listing = listingOpt.get();
 
-        // Check if listing is active
         if (!"ACTIVE".equals(listing.getStatus())) {
             LoggerUtility.logError("Transaction creation attempt for non-active listing: " + listingId);
             throw new ListingNotActiveException(listingId);
         }
 
-        // Prevent buyer from buying their own listing
         if (listing.getUserID().equals(buyerId)) {
             LoggerUtility.logError("User attempted to buy their own listing: " + buyerId);
             throw new IllegalArgumentException("Cannot buy your own listing");
@@ -65,13 +62,12 @@ public class CreateTransactionUseCase {
                 buyerId,
                 listing.getUserID(),
                 listing.getPrice(),
-                "COMPLETED", // Changed from "PENDING" to "COMPLETED" since this is an instant purchase
+                "COMPLETED",
                 createdDate
         );
 
         Transaction savedTransaction = transactionRepository.save(transaction);
 
-        // FIXED: Change status to "SOLD" instead of "RESERVED"
         listingRepository.updateStatus(listingId, "SOLD");
 
         LoggerUtility.logEvent("Transaction created: " + savedTransaction.getTransactionID() +

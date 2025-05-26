@@ -23,8 +23,6 @@ public class MakeOfferUseCase {
     private final ListingRepository listingRepository;
     private final UserRepository userRepository;
     private final NotificationService notificationService;
-
-    // Minimum offer percentage (70% of original price)
     private static final double MINIMUM_OFFER_PERCENTAGE = 0.7;
 
     public MakeOfferUseCase(OfferRepository offerRepository,
@@ -38,13 +36,12 @@ public class MakeOfferUseCase {
     }
 
     public Offer execute(String buyerId, String listingId, int offerAmount) {
-        // Validate buyer exists
+
         if (!userRepository.findById(buyerId).isPresent()) {
             LoggerUtility.logError("Offer creation attempt by non-existent user: " + buyerId);
             throw new UserNotFoundException(buyerId);
         }
 
-        // Validate and get listing
         Optional<Listing> listingOpt = listingRepository.findById(listingId);
         if (listingOpt.isEmpty()) {
             LoggerUtility.logError("Offer creation attempt for non-existent listing: " + listingId);
@@ -53,32 +50,25 @@ public class MakeOfferUseCase {
 
         Listing listing = listingOpt.get();
 
-        // Check if listing is active
         if (!"ACTIVE".equals(listing.getStatus())) {
             LoggerUtility.logError("Offer creation attempt for non-active listing: " + listingId);
             throw new ListingNotActiveException(listingId);
         }
 
-        // Prevent buyer from making offer on their own listing
         if (listing.getUserID().equals(buyerId)) {
             LoggerUtility.logError("User attempted to make offer on their own listing: " + buyerId);
             throw new IllegalArgumentException("Cannot make offer on your own listing");
         }
 
-        // Validate offer amount meets minimum requirement (70% of original price)
         int minimumAmount = (int) (listing.getPrice() * MINIMUM_OFFER_PERCENTAGE);
         if (offerAmount < minimumAmount) {
-            LoggerUtility.logError("Offer amount too low: " + offerAmount + " (minimum: " + minimumAmount + ")");
             throw new IllegalArgumentException("Offer amount must be at least " +
                     (MINIMUM_OFFER_PERCENTAGE * 100) + "% of the original price (" + minimumAmount + " DKK)");
         }
 
-        // Set dates
         String createdDate = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-        // Set expiry date to 7 days from now
         String expiryDate = LocalDateTime.now().plusDays(7).format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 
-        // Create offer with PENDING status
         Offer offer = new Offer(
                 listingId,
                 buyerId,
@@ -90,10 +80,8 @@ public class MakeOfferUseCase {
                 expiryDate
         );
 
-        // Save offer
         Offer savedOffer = offerRepository.save(offer);
 
-        // Send notification to seller about receiving the offer
         notificationService.notifyOfferReceived(
                 savedOffer.getSellerID(),
                 savedOffer.getListingID(),
@@ -102,7 +90,6 @@ public class MakeOfferUseCase {
                 savedOffer.getOfferAmount()
         );
 
-        // Send notification to buyer confirming offer submission
         notificationService.notifyOfferSubmitted(
                 savedOffer.getBuyerID(),
                 savedOffer.getOfferID(),
@@ -111,16 +98,12 @@ public class MakeOfferUseCase {
                 savedOffer.getOfferAmount()
         );
 
-        // Also notify users who favorited this listing about the new offer
         notificationService.notifyOfferOnFavoritedListing(
                 savedOffer.getListingID(),
                 savedOffer.getOfferID(),
                 listing.getTitle(),
                 savedOffer.getOfferAmount()
         );
-
-        LoggerUtility.logEvent("Offer created: " + savedOffer.getOfferID() +
-                " for listing: " + listingId + " by buyer: " + buyerId);
 
         return savedOffer;
     }

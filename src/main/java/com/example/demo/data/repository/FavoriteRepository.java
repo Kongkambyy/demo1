@@ -40,7 +40,6 @@ public class FavoriteRepository {
         LoggerUtility.logEvent("FavoriteRepository initialized");
     }
 
-    // Add a listing to favorites
     public Favorite save(Favorite favorite) {
         if (favorite.getFavoriteID() == null || favorite.getFavoriteID().isEmpty()) {
             favorite.setFavoriteID(UUID.randomUUID().toString());
@@ -65,20 +64,17 @@ public class FavoriteRepository {
         }
     }
 
-    // Find if a listing is in user's favorites
     public boolean isFavorite(String userId, String listingAdId) {
         String sql = "SELECT COUNT(*) FROM favorites WHERE UserID = ? AND ListingAdID = ?";
         Integer count = jdbcTemplate.queryForObject(sql, Integer.class, userId, listingAdId);
         return count != null && count > 0;
     }
 
-    // Get all favorites for a user
     public List<Favorite> findByUserId(String userId) {
         String sql = "SELECT * FROM favorites WHERE UserID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, favoriteRowMapper, userId);
     }
 
-    // Get all favorite listings for a user
     public List<Listing> findFavoriteListings(String userId) {
         String sql = "SELECT ListingAdID FROM favorites WHERE UserID = ?";
         List<String> listingIds = jdbcTemplate.queryForList(sql, String.class, userId);
@@ -90,7 +86,6 @@ public class FavoriteRepository {
                 .collect(java.util.stream.Collectors.toList());
     }
 
-    // Remove a listing from favorites
     public void delete(String userId, String listingAdId) {
         String sql = "DELETE FROM favorites WHERE UserID = ? AND ListingAdID = ?";
         int rowsAffected = jdbcTemplate.update(sql, userId, listingAdId);
@@ -100,7 +95,6 @@ public class FavoriteRepository {
         }
     }
 
-    // Remove all favorites for a listing (e.g., when listing is deleted)
     public void deleteByListingId(String listingAdId) {
         String sql = "DELETE FROM favorites WHERE ListingAdID = ?";
         jdbcTemplate.update(sql, listingAdId);

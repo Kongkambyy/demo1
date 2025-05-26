@@ -11,35 +11,6 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * MessageRepository - JDBC implementering for besked/chat datahåndtering
- *
- * Denne klasse håndterer al database kommunikation for beskeder mellem brugere.
- * Den implementerer funktionalitet for intern kommunikation i markedspladsen.
- *
- * Hovedfunktioner:
- * - Sende beskeder mellem brugere (køber og sælger)
- * - Hente beskedhistorik for samtaler
- * - Markere beskeder som læst/ulæst
- * - Hente alle samtaler for en bruger
- * - Slette beskeder (hvis tilladt)
- * - Håndtere notifikationer for nye beskeder
- *
- * Samtale funktioner:
- * - Gruppere beskeder i samtaler mellem to brugere
- * - Hente seneste besked i hver samtale
- * - Tælle ulæste beskeder
- * - Sortere samtaler efter seneste aktivitet
- *
- * Sikkerhedsovervejelser:
- * - Brugere kan kun se beskeder de er afsender eller modtager af
- * - Beskeder kan ikke redigeres efter afsendelse
- * - Slettede beskeder forbliver i databasen med slettet-markering
- *
- * Relations håndtering:
- * - Hver besked er knyttet til én afsender og én modtager
- * - Beskeder er typisk relateret til en specifik annonce/handel
- */
 @Repository
 public class MessageRepository {
 
@@ -86,7 +57,6 @@ public class MessageRepository {
         return message;
     }
 
-    // Henter beskeder mellem to brugere
     public List<Message> findConversation(String userId1, String userId2) {
         String sql = "SELECT * FROM messages " +
                 "WHERE (SenderID = ? AND ReceiverID = ?) " +
@@ -96,7 +66,6 @@ public class MessageRepository {
         return jdbcTemplate.query(sql, messageRowMapper, userId1, userId2, userId2, userId1);
     }
 
-    // Henter alle beskeder for en bruger
     public List<Message> findByUserId(String userId) {
         String sql = "SELECT * FROM messages " +
                 "WHERE SenderID = ? OR ReceiverID = ? " +
@@ -105,7 +74,6 @@ public class MessageRepository {
         return jdbcTemplate.query(sql, messageRowMapper, userId, userId);
     }
 
-    // Henter seneste besked i hver samtale for en bruger
     public List<Message> findLatestMessagesByUserId(String userId) {
         String sql = "SELECT m1.* FROM messages m1 " +
                 "INNER JOIN ( " +
@@ -125,7 +93,6 @@ public class MessageRepository {
         return jdbcTemplate.query(sql, messageRowMapper, userId, userId, userId, userId, userId);
     }
 
-    // Tæller ulæste beskeder for en bruger
     public int countUnreadMessages(String userId) {
         String sql = "SELECT COUNT(*) FROM messages " +
                 "WHERE ReceiverID = ? AND IsRead = false";
@@ -134,14 +101,12 @@ public class MessageRepository {
         return count != null ? count : 0;
     }
 
-    // Markerer besked som læst
     public void markAsRead(String messageId) {
         String sql = "UPDATE messages SET IsRead = true WHERE MessageID = ?";
         jdbcTemplate.update(sql, messageId);
         LoggerUtility.logEvent("Besked markeret som læst: " + messageId);
     }
 
-    // Markerer alle beskeder i en samtale som læst
     public void markConversationAsRead(String userId, String otherUserId) {
         String sql = "UPDATE messages SET IsRead = true " +
                 "WHERE ReceiverID = ? AND SenderID = ?";

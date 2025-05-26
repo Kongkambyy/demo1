@@ -48,10 +48,8 @@ public class CreateListingController {
             return "redirect:/login";
         }
 
-        // Add notification count
         addNotificationCount(model, session);
 
-        // Get main categories and all categories for the dropdown
         List<Category> mainCategories = getCategoriesUseCase.execute()
                 .stream()
                 .filter(cat -> cat.getParentID() == null)
@@ -91,15 +89,12 @@ public class CreateListingController {
                     "ACTIVE"
             );
 
-            // Set the brand if provided
             if (brand != null && !brand.trim().isEmpty()) {
                 listing.setBrand(brand.trim());
             }
 
-            // IMPORTANT: Set the category BEFORE saving
             listing.setCategoryID(categoryId);
 
-            // Now save the listing with all data including categoryID
             Listing savedListing = listingRepository.save(listing);
 
             LoggerUtility.logEvent("Listing created: " + savedListing.getAdID() + " with category: " + categoryId + " by user: " + userId);

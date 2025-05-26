@@ -49,7 +49,6 @@ public class HomeController {
         this.transactionRepository = transactionRepository;
     }
 
-    // Helper method to add notification count to model
     private void addNotificationCount(Model model, HttpSession session) {
         String userId = (String) session.getAttribute("userId");
         if (userId != null) {
@@ -90,30 +89,24 @@ public class HomeController {
 
     @GetMapping("/profile")
     public String profile(Model model, HttpSession session) {
-        // Get current user ID from session
         String userId = (String) session.getAttribute("userId");
 
-        // If user is not logged in, redirect to login page
         if (userId == null) {
             return "redirect:/login";
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Fetch user from database
             User user = getUserUseCase.findByIdOrThrow(userId);
             model.addAttribute("user", user);
 
-            // Get active listings (simplified)
             List<Listing> activeListings = getListingUseCase.getByUserId(userId)
                     .stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
             model.addAttribute("listings", activeListings);
 
-            // Calculate stats
             List<Listing> allListings = getListingUseCase.getByUserId(userId);
             long soldItemsCount = allListings.stream()
                     .filter(listing -> "SOLD".equals(listing.getStatus()))
@@ -124,13 +117,8 @@ public class HomeController {
             model.addAttribute("followersCount", 0);
             model.addAttribute("followingCount", 0);
 
-            // Log successful page rendering
-            LoggerUtility.logEvent("Profile page accessed by user: " + userId);
-
-            return "profile"; // This should match your template name
+            return "profile";
         } catch (Exception e) {
-            LoggerUtility.logError("Error loading profile for user " + userId + ": " + e.getMessage());
-            e.printStackTrace(); // Print stacktrace for debugging
             return "redirect:/";
         }
     }
@@ -138,26 +126,20 @@ public class HomeController {
     @GetMapping("/profile/{userId}")
     public String userProfile(@PathVariable String userId, Model model, HttpSession session) {
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get the user by ID
             User profileUser = getUserUseCase.findByIdOrThrow(userId);
 
-            // Get all listings for this user
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // Filter active listings (only these should be publicly visible)
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
 
-            // Count sold listings for stats
             long soldItemsCount = userListings.stream()
                     .filter(listing -> "SOLD".equals(listing.getStatus()))
                     .count();
 
-            // Add data to model
             model.addAttribute("user", profileUser);
             model.addAttribute("section", "items");
             model.addAttribute("soldItemsCount", soldItemsCount);
@@ -166,7 +148,6 @@ public class HomeController {
             model.addAttribute("followersCount", 0);
             model.addAttribute("followingCount", 0);
 
-            // Log the visit (could be used for analytics)
             String visitorId = (String) session.getAttribute("userId");
             if (visitorId != null) {
                 LoggerUtility.logEvent("User " + visitorId + " viewed profile of user " + userId);
@@ -187,14 +168,11 @@ public class HomeController {
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get user and their listings
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // Filter listings by status
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
@@ -203,7 +181,6 @@ public class HomeController {
                     .filter(listing -> "SOLD".equals(listing.getStatus()))
                     .count();
 
-            // Populate model with data
             model.addAttribute("user", user);
             model.addAttribute("section", "items");
             model.addAttribute("soldItemsCount", soldItemsCount);
@@ -227,14 +204,11 @@ public class HomeController {
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get user and their listings
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // Filter listings by status
             List<Listing> soldListings = userListings.stream()
                     .filter(listing -> "SOLD".equals(listing.getStatus()))
                     .collect(Collectors.toList());
@@ -243,7 +217,6 @@ public class HomeController {
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
 
-            // Populate model with data
             model.addAttribute("user", user);
             model.addAttribute("section", "sales");
             model.addAttribute("soldItemsCount", soldListings.size());
@@ -267,22 +240,17 @@ public class HomeController {
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get user data
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // EXISTING: Get offers
             List<Offer> myOffers = offerRepository.findByBuyerId(userId);
             List<Offer> receivedOffers = offerRepository.findBySellerId(userId);
 
-            // NEW: Get transactions
             List<Transaction> myPurchases = transactionRepository.findByBuyerId(userId);
             List<Transaction> mySales = transactionRepository.findBySellerId(userId);
 
-            // EXISTING: Offers with listings (keep your existing OfferWithListing approach)
             List<OfferWithListing> myOffersWithListings = new ArrayList<>();
             for (Offer offer : myOffers) {
                 Optional<Listing> listingOpt = listingRepository.findById(offer.getListingID());
@@ -305,7 +273,6 @@ public class HomeController {
             myPurchases.forEach(t -> listingIds.add(t.getListingID()));
             mySales.forEach(t -> listingIds.add(t.getListingID()));
 
-            // Fetch all needed listings once
             for (String listingId : listingIds) {
                 Optional<Listing> listingOpt = listingRepository.findById(listingId);
                 if (listingOpt.isPresent()) {
@@ -313,7 +280,6 @@ public class HomeController {
                 }
             }
 
-            // Filter listings for stats
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
@@ -322,17 +288,14 @@ public class HomeController {
                     .filter(listing -> "SOLD".equals(listing.getStatus()))
                     .count();
 
-            // Add everything to model
             model.addAttribute("user", user);
             model.addAttribute("section", "orders");
             model.addAttribute("soldItemsCount", soldItemsCount);
             model.addAttribute("activeListingsCount", activeListings.size());
 
-            // EXISTING
             model.addAttribute("myOffers", myOffersWithListings);
             model.addAttribute("receivedOffers", receivedOffersWithListings);
 
-            // NEW: Transactions and listings separately
             model.addAttribute("myPurchases", myPurchases);
             model.addAttribute("mySales", mySales);
             model.addAttribute("transactionListings", listingMap);
@@ -355,14 +318,11 @@ public class HomeController {
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get user info
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // Filter listings for stats
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
@@ -393,14 +353,11 @@ public class HomeController {
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get user data
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // Filter listings for stats
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
@@ -449,14 +406,11 @@ public class HomeController {
         }
 
         try {
-            // Add notification count
             addNotificationCount(model, session);
 
-            // Get user data
             User user = getUserUseCase.findByIdOrThrow(userId);
             List<Listing> userListings = getListingUseCase.getByUserId(userId);
 
-            // Filter listings for stats
             List<Listing> activeListings = userListings.stream()
                     .filter(listing -> "ACTIVE".equals(listing.getStatus()))
                     .collect(Collectors.toList());
@@ -466,20 +420,19 @@ public class HomeController {
                     .count();
 
             model.addAttribute("user", user);
-            model.addAttribute("section", "settings");  // This tells profile.html to show settings section
+            model.addAttribute("section", "settings");
             model.addAttribute("soldItemsCount", soldItemsCount);
             model.addAttribute("activeListingsCount", activeListings.size());
             model.addAttribute("followersCount", 0);
             model.addAttribute("followingCount", 0);
 
-            return "profile";  // Return profile template, not settings template
+            return "profile";
         } catch (Exception e) {
             LoggerUtility.logError("Error loading settings for user " + userId + ": " + e.getMessage());
             return "redirect:/";
         }
     }
 
-    // Helper class to combine offer and listing data
     public static class OfferWithListing {
         private final Offer offer;
         private final Listing listing;

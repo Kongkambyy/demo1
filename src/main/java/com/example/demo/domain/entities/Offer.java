@@ -7,7 +7,7 @@ public class Offer {
     private String sellerID;
     private int originalPrice;
     private int offerAmount;
-    private String status; // PENDING, ACCEPTED, REJECTED, EXPIRED
+    private String status;
     private String createdDate;
     private String expiryDate;
 

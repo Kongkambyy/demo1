@@ -17,11 +17,6 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.ArrayList;
 
-/**
- * ListingRepository - JDBC implementation for listing data handling
- *
- * This class handles all database communication for listings in the marketplace.
- */
 @Repository
 public class ListingRepository {
 
@@ -51,7 +46,6 @@ public class ListingRepository {
         LoggerUtility.logEvent("ListingRepository initialized");
     }
 
-    // Create a new listing
     public Listing save(Listing listing) {
         if (listing.getAdID() == null || listing.getAdID().isEmpty()) {
             listing.setAdID(UUID.randomUUID().toString());
@@ -77,7 +71,6 @@ public class ListingRepository {
         return listing;
     }
 
-    // Find listing by ID
     public Optional<Listing> findById(String adId) {
         String sql = "SELECT * FROM listings WHERE AdID = ?";
 
@@ -90,19 +83,16 @@ public class ListingRepository {
         }
     }
 
-    // Find all listings for a user
     public List<Listing> findByUserId(String userId) {
         String sql = "SELECT * FROM listings WHERE UserID = ? ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, listingRowMapper, userId);
     }
 
-    // Find active listings
     public List<Listing> findActiveListings() {
         String sql = "SELECT * FROM listings WHERE Status = 'ACTIVE' ORDER BY CreatedDate DESC";
         return jdbcTemplate.query(sql, listingRowMapper);
     }
 
-    // Update a listing
     public Listing update(Listing listing) {
         String sql = "UPDATE listings SET Title = ?, Description = ?, Price = ?, " +
                 "ItemCondition = ?, Status = ?, Brand = ?, CategoryID = ? WHERE AdID = ?";
@@ -127,7 +117,6 @@ public class ListingRepository {
         return listing;
     }
 
-    // Update listing status
     public void updateStatus(String adId, String status) {
         // Validate current status first
         Optional<Listing> currentListing = findById(adId);
@@ -137,7 +126,6 @@ public class ListingRepository {
 
         Listing listing = currentListing.get();
 
-        // Check for invalid status transitions
         if ("SOLD".equals(listing.getStatus())) {
             throw new ListingAlreadySoldException("Listing is already sold: " + adId);
         }
@@ -152,7 +140,6 @@ public class ListingRepository {
         LoggerUtility.logEvent("Listing status updated: " + adId + " - New status: " + status);
     }
 
-    // Delete a listing
     public void delete(String adId) {
         String sql = "DELETE FROM listings WHERE AdID = ?";
 
@@ -166,7 +153,6 @@ public class ListingRepository {
         LoggerUtility.logEvent("Listing deleted: " + adId);
     }
 
-    // Search listings with filters
     public List<Listing> searchListings(String keyword, Integer minPrice, Integer maxPrice,
                                         String condition, String brand, Integer categoryId) {
         StringBuilder sql = new StringBuilder("SELECT * FROM listings WHERE Status = 'ACTIVE'");
@@ -209,7 +195,6 @@ public class ListingRepository {
         return jdbcTemplate.query(sql.toString(), listingRowMapper, params.toArray());
     }
 
-    // Search listings with category hierarchy
     public List<Listing> searchListingsInCategoryHierarchy(String keyword, Integer minPrice, Integer maxPrice,
                                                            String condition, String brand, List<Integer> categoryIds) {
         if (categoryIds == null || categoryIds.isEmpty()) {
@@ -219,7 +204,6 @@ public class ListingRepository {
         StringBuilder sql = new StringBuilder("SELECT * FROM listings WHERE Status = 'ACTIVE'");
         List<Object> params = new ArrayList<>();
 
-        // Add standard conditions
         if (keyword != null && !keyword.isEmpty()) {
             sql.append(" AND (Title LIKE ? OR Description LIKE ?)");
             String searchPattern = "%" + keyword + "%";
@@ -247,7 +231,6 @@ public class ListingRepository {
             params.add(brand);
         }
 
-        // Add category hierarchy condition
         sql.append(" AND CategoryID IN (");
         for (int i = 0; i < categoryIds.size(); i++) {
             sql.append(i > 0 ? ", ?" : "?");
@@ -258,24 +241,5 @@ public class ListingRepository {
         sql.append(" ORDER BY CreatedDate DESC");
 
         return jdbcTemplate.query(sql.toString(), listingRowMapper, params.toArray());
-    }
-
-    // Count search results
-    public int countSearchResults(String keyword, Integer minPrice, Integer maxPrice,
-                                  String condition, String brand, Integer categoryId) {
-        StringBuilder sql = new StringBuilder("SELECT COUNT(*) FROM listings WHERE Status = 'ACTIVE'");
-        List<Object> params = new ArrayList<>();
-
-        // Add conditions (same as in searchListings)
-        if (keyword != null && !keyword.isEmpty()) {
-            sql.append(" AND (Title LIKE ? OR Description LIKE ?)");
-            String searchPattern = "%" + keyword + "%";
-            params.add(searchPattern);
-            params.add(searchPattern);
-        }
-
-        // Add other conditions...
-
-        return jdbcTemplate.queryForObject(sql.toString(), Integer.class, params.toArray());
     }
 }

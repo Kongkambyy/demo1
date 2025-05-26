@@ -28,7 +28,6 @@ public class UpdateUserUseCase {
 
         User existingUser = existingUserOpt.get();
 
-        // Check if email is being changed and if it's already in use by another user
         if (email != null && !email.trim().isEmpty() && !email.equals(existingUser.getEmail())) {
             if (userRepository.existsByEmail(email)) {
                 LoggerUtility.logError("Update attempt with duplicate email: " + email);
@@ -36,7 +35,6 @@ public class UpdateUserUseCase {
             }
         }
 
-        // Create updated user object with new values or keep existing ones
         User updatedUser = new User(
                 name != null && !name.trim().isEmpty() ? name.trim() : existingUser.getName(),
                 alias != null && !alias.trim().isEmpty() ? alias.trim() : existingUser.getAlias(),
@@ -46,24 +44,11 @@ public class UpdateUserUseCase {
                 address != null && !address.trim().isEmpty() ? address.trim() : existingUser.getAddress()
         );
 
-        // Set the user ID for the update
         updatedUser.setUserID(userId);
 
         User savedUser = userRepository.update(updatedUser);
         LoggerUtility.logEvent("User updated successfully: " + userId);
 
         return savedUser;
-    }
-
-    public User executePartialUpdate(String userId, User updates) {
-        return execute(
-                userId,
-                updates.getName(),
-                updates.getAlias(),
-                updates.getEmail(),
-                updates.getNumber(),
-                updates.getAddress(),
-                updates.getPassword()
-        );
     }
 }

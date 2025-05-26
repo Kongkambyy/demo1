@@ -213,7 +213,6 @@ public class ProfileController {
             redirectAttributes.addFlashAttribute("error", e.getMessage());
             return "redirect:/profile/delete";
         } catch (Exception e) {
-            LoggerUtility.logError("Unexpected error during account deletion for user " + userId + ": " + e.getMessage());
             redirectAttributes.addFlashAttribute("error", "An unexpected error occurred. Please try again or contact support.");
             return "redirect:/profile/delete";
         }

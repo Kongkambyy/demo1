@@ -31,7 +31,7 @@ public class GetListingUseCase {
         Listing listing = listingOpt.get();
 
         if ("PENDING".equals(listing.getStatus()) || "REJECTED".equals(listing.getStatus())) {
-            if (!listing.getUserID().equals(requestingUserId) && !isAdmin(requestingUserId)) {
+            if (!listing.getUserID().equals(requestingUserId)) {
                 throw new ListingNotFoundException(adId);
             }
         }
@@ -43,16 +43,4 @@ public class GetListingUseCase {
         return listingRepository.findByUserId(userId);
     }
 
-    public List<Listing> getActiveListings() {
-        return listingRepository.findActiveListings();
-    }
-
-    private boolean isAdmin(String userId) {
-        Optional<User> userOpt = userRepository.findById(userId);
-        if (userOpt.isEmpty()) {
-            return false;
-        }
-        User user = userOpt.get();
-        return user.getEmail() != null && user.getEmail().endsWith("@admin.com");
-    }
 }
