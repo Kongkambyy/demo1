@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
@@ -6,7 +7,7 @@ sequenceDiagram
     Bruger->>System: Logger ind
     System->>Database: Verificer loginoplysninger
     Database-->>System: Returner brugerrolle (admin eller alm. bruger)
-    
+
     alt Bruger er admin
         System->>Bruger: Vis admin-dashboard
         Bruger->>System: Administrer brugere/data/promoveringer
