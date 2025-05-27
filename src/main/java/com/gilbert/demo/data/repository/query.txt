@@ -20,7 +20,7 @@ CREATE TABLE categories (
     Description VARCHAR(512),
     ParentID INT NULL,
     PRIMARY KEY(CategoryID),
-    FOREIGN KEY (ParentID) REFERENCES categories(CategoryID)
+    FOREIGN KEY (ParentID) REFERENCES categories(CategoryID) ON DELETE CASCADE
 );
 
 -- Create listings table
@@ -36,8 +36,8 @@ CREATE TABLE listings (
     Brand VARCHAR(100),
     CategoryID INT,
     PRIMARY KEY (AdID),
-    FOREIGN KEY (UserID) REFERENCES users(UserID),
-    FOREIGN KEY (CategoryID) REFERENCES categories(CategoryID)
+    FOREIGN KEY (UserID) REFERENCES users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (CategoryID) REFERENCES categories(CategoryID) ON DELETE CASCADE
 );
 
 -- Create favorites table
@@ -47,8 +47,8 @@ CREATE TABLE favorites (
     ListingAdID VARCHAR(50),
     CreatedDate VARCHAR(50),
     PRIMARY KEY (FavoriteID),
-    FOREIGN KEY (UserID) REFERENCES users(UserID),
-    FOREIGN KEY (ListingAdID) REFERENCES listings(AdID),
+    FOREIGN KEY (UserID) REFERENCES users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (ListingAdID) REFERENCES listings(AdID) ON DELETE CASCADE,
     UNIQUE (UserID, ListingAdID)
 );
 
@@ -61,8 +61,8 @@ CREATE TABLE reviews (
     Comment VARCHAR(512),
     CreatedDate VARCHAR(50),
     PRIMARY KEY (ReviewID),
-    FOREIGN KEY (ReviewerID) REFERENCES users(UserID),
-    FOREIGN KEY (ReviewedUserID) REFERENCES users(UserID)
+    FOREIGN KEY (ReviewerID) REFERENCES users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (ReviewedUserID) REFERENCES users(UserID) ON DELETE CASCADE
 );
 
 -- Create transactions table
@@ -72,13 +72,13 @@ CREATE TABLE transactions (
     BuyerID VARCHAR(50),
     SellerID VARCHAR(50),
     Amount INT NOT NULL,
-    Status VARCHAR(50) NOT NULL, -- PENDING, COMPLETED, CANCELLED, REFUNDED
+    Status VARCHAR(50) NOT NULL,
     CreatedDate VARCHAR(50),
     CompletedDate VARCHAR(50) NULL,
     PRIMARY KEY (TransactionID),
-    FOREIGN KEY (ListingID) REFERENCES listings(AdID),
-    FOREIGN KEY (BuyerID) REFERENCES users(UserID),
-    FOREIGN KEY (SellerID) REFERENCES users(UserID)
+    FOREIGN KEY (ListingID) REFERENCES listings(AdID) ON DELETE CASCADE,
+    FOREIGN KEY (BuyerID) REFERENCES users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (SellerID) REFERENCES users(UserID) ON DELETE CASCADE
 );
 
 -- Create offers table
@@ -89,13 +89,13 @@ CREATE TABLE offers (
     SellerID VARCHAR(50),
     OriginalPrice INT NOT NULL,
     OfferAmount INT NOT NULL,
-    Status VARCHAR(50) NOT NULL, -- PENDING, ACCEPTED, REJECTED, EXPIRED
+    Status VARCHAR(50) NOT NULL,
     CreatedDate VARCHAR(50),
     ExpiryDate VARCHAR(50),
     PRIMARY KEY (OfferID),
-    FOREIGN KEY (ListingID) REFERENCES listings(AdID),
-    FOREIGN KEY (BuyerID) REFERENCES users(UserID),
-    FOREIGN KEY (SellerID) REFERENCES users(UserID)
+    FOREIGN KEY (ListingID) REFERENCES listings(AdID) ON DELETE CASCADE,
+    FOREIGN KEY (BuyerID) REFERENCES users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (SellerID) REFERENCES users(UserID) ON DELETE CASCADE
 );
 
 -- Create messages table
@@ -107,20 +107,20 @@ CREATE TABLE messages (
     Date VARCHAR(50),
     IsRead BOOLEAN DEFAULT FALSE,
     PRIMARY KEY (MessageID),
-    FOREIGN KEY (SenderID) REFERENCES users(UserID),
-    FOREIGN KEY (ReceiverID) REFERENCES users(UserID)
+    FOREIGN KEY (SenderID) REFERENCES users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (ReceiverID) REFERENCES users(UserID) ON DELETE CASCADE
 );
 
 -- Create notifications table
 CREATE TABLE notifications (
     NotificationID VARCHAR(50),
     UserID VARCHAR(50),
-    SourceID VARCHAR(100),  -- ID of the related object (listing, offer, etc.)
-    SourceType VARCHAR(50), -- Type of source (LISTING, OFFER, MESSAGE, etc.)
-    Type VARCHAR(50),       -- FAVORITE_PRICE_CHANGE, FAVORITE_OFFER, FAVORITE_SOLD, ITEM_SOLD, etc.
+    SourceID VARCHAR(100),
+    SourceType VARCHAR(50),
+    Type VARCHAR(50),
     Message VARCHAR(255),
     IsRead BOOLEAN DEFAULT FALSE,
     CreatedDate VARCHAR(50),
     PRIMARY KEY (NotificationID),
-    FOREIGN KEY (UserID) REFERENCES users(UserID)
+    FOREIGN KEY (UserID) REFERENCES users(UserID) ON DELETE CASCADE
 );
