@@ -1,0 +1,448 @@
+﻿-- ============================================
+-- INSERT MAIN CATEGORIES
+-- ============================================
+
+INSERT INTO categories (CategoryID, Name, Description, ParentID) VALUES
+(1, 'MEN', 'Men''s fashion and accessories', NULL),
+(2, 'WOMEN', 'Women''s fashion and accessories', NULL),
+(3, 'HOME', 'Home goods and furniture', NULL),
+(4, 'BEAUTY', 'Beauty and personal care products', NULL),
+(5, 'DESIGNER', 'Luxury designer brands', NULL);
+
+-- ============================================
+-- MEN'S CATEGORIES
+-- ============================================
+
+-- Outerwear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jackets', 'Men''s jackets', 1),
+('Coats', 'Men''s coats', 1),
+('Vests', 'Men''s vests', 1);
+
+-- Tops
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('T-Shirts', 'Men''s t-shirts', 1),
+('Shirts', 'Men''s shirts', 1),
+('Sweatshirts', 'Men''s sweatshirts', 1),
+('Hoodies', 'Men''s hoodies', 1),
+('Sweaters', 'Men''s sweaters', 1);
+
+-- Bottoms
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jeans', 'Men''s jeans', 1),
+('Pants', 'Men''s pants', 1),
+('Shorts', 'Men''s shorts', 1),
+('Joggers', 'Men''s joggers', 1);
+
+-- Formal
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Blazers', 'Men''s blazers', 1),
+('Suits', 'Men''s suits', 1);
+
+-- Activewear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sportswear', 'Men''s sportswear', 1);
+
+-- Shoes
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sneakers', 'Men''s sneakers', 1),
+('Boots', 'Men''s boots', 1),
+('Loafers', 'Men''s loafers', 1),
+('Dress Shoes', 'Men''s dress shoes', 1);
+
+-- Accessories
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Bags', 'Men''s bags', 1),
+('Belts', 'Men''s belts', 1),
+('Hats', 'Men''s hats', 1),
+('Watches', 'Men''s watches', 1),
+('Sunglasses', 'Men''s sunglasses', 1);
+
+-- ============================================
+-- WOMEN'S CATEGORIES
+-- ============================================
+
+-- Outerwear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jackets', 'Women''s jackets', 2),
+('Coats', 'Women''s coats', 2),
+('Vests', 'Women''s vests', 2);
+
+-- Tops
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('T-Shirts', 'Women''s t-shirts', 2),
+('Blouses', 'Women''s blouses', 2),
+('Tops', 'Women''s tops', 2),
+('Sweatshirts', 'Women''s sweatshirts', 2),
+('Hoodies', 'Women''s hoodies', 2),
+('Cardigans', 'Women''s cardigans', 2),
+('Sweaters', 'Women''s sweaters', 2);
+
+-- Bottoms
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Jeans', 'Women''s jeans', 2),
+('Pants', 'Women''s pants', 2),
+('Shorts', 'Women''s shorts', 2),
+('Skirts', 'Women''s skirts', 2),
+('Leggings', 'Women''s leggings', 2);
+
+-- Dresses
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Dresses', 'Women''s dresses', 2),
+('Jumpsuits', 'Women''s jumpsuits', 2);
+
+-- Formal
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Blazers', 'Women''s blazers', 2),
+('Suits', 'Women''s suits', 2);
+
+-- Activewear
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sportswear', 'Women''s sportswear', 2);
+
+-- Shoes
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Sneakers', 'Women''s sneakers', 2),
+('Boots', 'Women''s boots', 2),
+('Sandals', 'Women''s sandals', 2),
+('High Heels', 'Women''s high heels', 2),
+('Flats', 'Women''s flats', 2);
+
+-- Accessories
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Handbags', 'Women''s handbags', 2),
+('Belts', 'Women''s belts', 2),
+('Hats', 'Women''s hats', 2),
+('Jewelry', 'Women''s jewelry', 2),
+('Watches', 'Women''s watches', 2),
+('Sunglasses', 'Women''s sunglasses', 2),
+('Scarves', 'Women''s scarves', 2);
+
+-- ============================================
+-- HOME CATEGORIES
+-- ============================================
+
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Furniture', 'Furniture and seating', 3),
+('Lighting', 'Lighting and lamps', 3),
+('Textiles', 'Home textiles and fabrics', 3),
+('Kitchen', 'Kitchen items and appliances', 3),
+('Decor', 'Home decoration and art', 3),
+('Storage', 'Storage solutions', 3),
+('Bathroom', 'Bathroom accessories', 3),
+('Garden', 'Garden and outdoor', 3);
+
+-- ============================================
+-- BEAUTY CATEGORIES
+-- ============================================
+
+-- Skincare
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Face Cream', 'Face creams and moisturizers', 4),
+('Cleanser', 'Cleansers and face wash', 4),
+('Serum', 'Face serums and treatments', 4),
+('Face Masks', 'Face masks', 4),
+('Sunscreen', 'Sunscreen and SPF', 4),
+('Eye Cream', 'Eye creams and treatments', 4);
+
+-- Makeup
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Foundation', 'Foundation and base makeup', 4),
+('Eyeshadow', 'Eyeshadow and eye makeup', 4),
+('Lipstick', 'Lipstick and lip products', 4),
+('Mascara', 'Mascara and lashes', 4),
+('Blush', 'Blush and cheek products', 4),
+('Makeup Brushes', 'Makeup brushes and tools', 4);
+
+-- Hair Care
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Shampoo', 'Shampoo and hair wash', 4),
+('Conditioner', 'Conditioner and hair care', 4),
+('Hair Styling', 'Hair styling products', 4),
+('Hair Masks', 'Hair masks and treatments', 4);
+
+-- Body Care
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Body Lotion', 'Body lotions and moisturizers', 4),
+('Body Wash', 'Body wash and shower products', 4),
+('Deodorant', 'Deodorants and antiperspirants', 4),
+('Hand Cream', 'Hand creams and care', 4);
+
+-- Fragrance
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Perfume', 'Perfumes and fragrances', 4),
+('Candles', 'Scented candles', 4);
+
+-- ============================================
+-- DESIGNER CATEGORIES (LUXURY BRANDS)
+-- ============================================
+
+INSERT INTO categories (Name, Description, ParentID) VALUES
+('Gucci', 'Gucci luxury items', 5),
+('Louis Vuitton', 'Louis Vuitton luxury items', 5),
+('Hermès', 'Hermès luxury items', 5),
+('Chanel', 'Chanel luxury items', 5),
+('Prada', 'Prada luxury items', 5),
+('Balenciaga', 'Balenciaga luxury items', 5),
+('Dior', 'Dior luxury items', 5),
+('Versace', 'Versace luxury items', 5),
+('Saint Laurent', 'Saint Laurent luxury items', 5),
+('Bottega Veneta', 'Bottega Veneta luxury items', 5),
+('Fendi', 'Fendi luxury items', 5),
+('Givenchy', 'Givenchy luxury items', 5),
+('Valentino', 'Valentino luxury items', 5),
+('Tom Ford', 'Tom Ford luxury items', 5),
+('Hugo Boss', 'Hugo Boss luxury items', 5),
+('Tommy Hilfiger', 'Tommy Hilfiger luxury items', 5),
+('Ralph Lauren', 'Ralph Lauren luxury items', 5),
+('Armani', 'Armani luxury items', 5);
+
+INSERT INTO users (UserID, Name, Alias, Password, Email, Number, Address) VALUES
+('U001', 'Kai Nakamura', 'KaiN_Minimalist', 'hashed_password_46', 'kai.nakamura@email.dk', '+45 99 45 67 89', 'Store Strandstræde 21, 1255 København K'),
+('U002', 'Luna Rodriguez', 'LunaR_Boho', 'hashed_password_47', 'luna.rodriguez@gmail.com', '+45 21 56 78 90', 'Gl. Kongevej 178, 1850 Frederiksberg C'),
+('U003', 'Felix Weber', 'FelixW_Tech', 'hashed_password_48', 'felix.weber@yahoo.dk', '+45 31 67 89 01', 'Hausergade 34, 1128 København K'),
+('U004', 'Aria Blackwood', 'AriaB_Gothic', 'hashed_password_49', 'aria.blackwood@hotmail.com', '+45 41 78 90 12', 'Skt. Peders Stræde 45, 1453 København K'),
+('U005', 'River Thompson', 'RiverT_Outdoor', 'hashed_password_50', 'river.thompson@outlook.dk', '+45 51 89 01 23', 'Nyhavn 17, 1051 København K'),
+('U006', 'Sage Chen', 'SageC_Wellness', 'hashed_password_51', 'sage.chen@email.dk', '+45 61 90 12 34', 'Kronprinsessegade 78, 1306 København K'),
+('U007', 'Phoenix Martinez', 'PhoenixM_Art', 'hashed_password_52', 'phoenix.martinez@gmail.com', '+45 71 01 23 45', 'Gothersgade 123, 1123 København K'),
+('U008', 'Echo Johnson', 'EchoJ_Vintage', 'hashed_password_53', 'echo.johnson@yahoo.dk', '+45 81 12 34 56', 'Kompagnistræde 56, 1208 København K'),
+('U009', 'Orion Silva', 'OrionS_Luxury', 'hashed_password_54', 'orion.silva@hotmail.com', '+45 91 23 45 67', 'Ny Adelgade 12, 1104 København K'),
+('U010', 'Nova Kim', 'NovaK_Future', 'hashed_password_55', 'nova.kim@outlook.dk', '+45 22 34 56 78', 'Pilestræde 89, 1112 København K'),
+('U011', 'Lars Nielsen', 'LarsN_DK', 'hashed_password_1', 'lars.nielsen@email.dk', '+45 20 12 34 56', 'Hovedgaden 15, 4200 Slagelse'),
+('U012', 'Emma Johansen', 'EmmaJ_Style', 'hashed_password_2', 'emma.johansen@gmail.com', '+45 30 45 67 89', 'Roskildevej 82, 2620 Albertslund'),
+('U013', 'Mikkel Andersen', 'MikkelA_Fashion', 'hashed_password_3', 'mikkel.andersen@yahoo.dk', '+45 40 78 90 12', 'Nørrebrogade 134, 2200 København N'),
+('U014', 'Sofie Hansen', 'SofieH_Beauty', 'hashed_password_4', 'sofie.hansen@hotmail.com', '+45 50 23 45 67', 'Vestergade 23, 8000 Aarhus C'),
+('U015', 'Christian Petersen', 'ChrisP_Luxury', 'hashed_password_5', 'christian.petersen@outlook.dk', '+45 60 34 56 78', 'Strandvejen 88, 2900 Hellerup'),
+('U016', 'Anna Larsen', 'AnnaL_Home', 'hashed_password_6', 'anna.larsen@email.dk', '+45 70 45 67 89', 'Bygaden 12, 5000 Odense C'),
+('U017', 'Frederik Møller', 'FrederikM_Sports', 'hashed_password_7', 'frederik.moller@gmail.com', '+45 80 56 78 90', 'Jernbanegade 45, 9000 Aalborg'),
+('U018', 'Caroline Jensen', 'CaroJ_Vintage', 'hashed_password_8', 'caroline.jensen@yahoo.dk', '+45 90 67 89 01', 'Torvegade 67, 3000 Helsingør'),
+('U019', 'Mads Kristensen', 'MadsK_Sneakers', 'hashed_password_9', 'mads.kristensen@hotmail.com', '+45 25 78 90 12', 'Borgergade 34, 1300 København K'),
+('U020', 'Julie Sørensen', 'JulieS_Designer', 'hashed_password_10', 'julie.sorensen@outlook.dk', '+45 35 89 01 23', 'Frederiksberggade 78, 1459 København K'),
+('U021', 'Thomas Rasmussen', 'ThomasR_Tech', 'hashed_password_11', 'thomas.rasmussen@email.dk', '+45 45 90 12 34', 'Universitetsparken 2, 2100 København Ø'),
+('U022', 'Isabella Olsen', 'IsabellaO_Chic', 'hashed_password_12', 'isabella.olsen@gmail.com', '+45 55 01 23 45', 'H.C. Andersens Boulevard 12, 1553 København V'),
+('U023', 'Oliver Nielsen', 'OliverN_Casual', 'hashed_password_13', 'oliver.nielsen@yahoo.dk', '+45 65 12 34 56', 'Strøget 89, 1160 København K'),
+('U024', 'Victoria Hansen', 'VictoriaH_Elegant', 'hashed_password_14', 'victoria.hansen@hotmail.com', '+45 75 23 45 67', 'Gammel Kongevej 56, 1610 København V'),
+('U025', 'Alexander Pedersen', 'AlexP_Urban', 'hashed_password_15', 'alexander.pedersen@outlook.dk', '+45 85 34 56 78', 'Istedgade 123, 1650 København V'),
+('U026', 'Alba Martinez', 'AlbaM_Spanish', 'hashed_password_31', 'alba.martinez@email.dk', '+45 28 90 12 34', 'Amagerbrogade 156, 2300 København S'),
+('U027', 'Filip Novák', 'FilipN_Czech', 'hashed_password_32', 'filip.novak@gmail.com', '+45 38 01 23 45', 'Nørre Voldgade 78, 1358 København K'),
+('U028', 'Ingrid Svensson', 'IngridS_Swedish', 'hashed_password_33', 'ingrid.svensson@yahoo.dk', '+45 48 12 34 56', 'Studiestræde 45, 1455 København K'),
+('U029', 'Marco Rossi', 'MarcoR_Italian', 'hashed_password_34', 'marco.rossi@hotmail.com', '+45 58 23 45 67', 'Sankt Hans Gade 23, 2200 København N'),
+('U030', 'Amara Okafor', 'AmaraO_Global', 'hashed_password_35', 'amara.okafor@outlook.dk', '+45 68 34 56 78', 'Østerbrogade 89, 2100 København Ø'),
+('U031', 'Hans Mueller', 'HansM_German', 'hashed_password_36', 'hans.mueller@email.dk', '+45 78 45 67 89', 'Ryesgade 67, 2200 København N'),
+('U032', 'Zara Ahmed', 'ZaraA_Modern', 'hashed_password_37', 'zara.ahmed@gmail.com', '+45 88 56 78 90', 'Griffenfeldsgade 34, 2200 København N'),
+('U033', 'Pierre Dubois', 'PierreD_French', 'hashed_password_38', 'pierre.dubois@yahoo.dk', '+45 98 67 89 01', 'Store Regnegade 12, 1110 København K'),
+('U034', 'Yuki Tanaka', 'YukiT_Japanese', 'hashed_password_39', 'yuki.tanaka@hotmail.com', '+45 29 78 90 12', 'Bredgade 56, 1260 København K'),
+('U035', 'Ravi Patel', 'RaviP_Tech', 'hashed_password_40', 'ravi.patel@outlook.dk', '+45 39 89 01 23', 'Jagtvej 123, 2200 København N'),
+('U036', 'Stella Kim', 'StellaK_Korean', 'hashed_password_41', 'stella.kim@email.dk', '+45 49 90 12 34', 'Farvergade 78, 1463 København K'),
+('U037', 'Ahmed Hassan', 'AhmedH_Vintage', 'hashed_password_42', 'ahmed.hassan@gmail.com', '+45 59 01 23 45', 'Tagensvej 145, 2200 København N'),
+('U038', 'Elena Popović', 'ElenaP_Balkan', 'hashed_password_43', 'elena.popovic@yahoo.dk', '+45 69 12 34 56', 'Niels Hemmingsens Gade 23, 1153 København K'),
+('U039', 'James Wilson', 'JamesW_British', 'hashed_password_44', 'james.wilson@hotmail.com', '+45 79 23 45 67', 'Grønnegade 45, 1107 København K'),
+('U040', 'Sofia Andersson', 'SofiaA_Nordic', 'hashed_password_45', 'sofia.andersson@outlook.dk', '+45 89 34 56 78', 'Wildersgade 67, 1408 København K');
+
+-- ============================================
+-- INSERT SAMPLE LISTINGS
+-- ============================================
+
+INSERT INTO listings (AdID, UserID, Title, Description, Price, CreatedDate, ItemCondition, Status, Brand, CategoryID) VALUES
+-- Jackets & Outerwear (CategoryID for Men's Jackets would be around 6 based on the insert order)
+('L001', 'U001', 'Hugo Boss Black Wool Coat', 'Elegant black wool coat from Hugo Boss. Perfect for winter business meetings. Size L, worn only a few times.', 2500, '2025-05-20', 'Excellent', 'ACTIVE', 'Hugo Boss', 7),
+('L002', 'U003', 'North Face Winter Jacket', 'Warm and waterproof winter jacket. Great for outdoor activities. Size M, good condition.', 800, '2025-05-18', 'Good', 'ACTIVE', 'The North Face', 6),
+('L003', 'U007', 'Vintage Levi''s Denim Jacket', 'Classic 80s Levi''s denim jacket. Authentic vintage piece. Size L, some signs of wear but adds character.', 650, '2025-05-15', 'Fair', 'ACTIVE', 'Levi''s', 6),
+
+-- T-Shirts & Tops
+('L004', 'U009', 'Supreme Box Logo T-Shirt', 'Authentic Supreme box logo tee from 2023 drop. Size M, never worn, still with tags.', 1200, '2025-05-22', 'New', 'ACTIVE', 'Supreme', 10),
+('L005', 'U011', 'Ralph Lauren Polo Shirt', 'Classic navy blue Ralph Lauren polo. Size L, great for casual wear.', 350, '2025-05-21', 'Good', 'ACTIVE', 'Ralph Lauren', 11),
+('L006', 'U013', 'Uniqlo Cotton T-Shirts (Pack of 3)', 'Three basic cotton t-shirts in white, black, and gray. Size M, excellent quality basics.', 200, '2025-05-19', 'Excellent', 'ACTIVE', 'Uniqlo', 10),
+
+-- Jeans & Bottoms
+('L007', 'U001', 'Acne Studios Slim Jeans', 'Dark blue Acne Studios jeans. Size 32/34, modern slim fit. Worn but well maintained.', 900, '2025-05-17', 'Good', 'ACTIVE', 'Acne Studios', 14),
+('L008', 'U015', 'Adidas Track Pants', 'Black Adidas track pants with white stripes. Size L, perfect for gym or casual wear.', 280, '2025-05-16', 'Excellent', 'ACTIVE', 'Adidas', 17),
+
+-- Shoes
+('L009', 'U009', 'Nike Air Jordan 1 Retro High', 'Classic red and black colorway. Size 42 EU, worn few times, great condition.', 1800, '2025-05-23', 'Excellent', 'ACTIVE', 'Air Jordan', 20),
+('L010', 'U003', 'Common Projects Achilles Low', 'White leather minimalist sneakers. Size 41 EU, some creasing but still stylish.', 2200, '2025-05-20', 'Good', 'ACTIVE', 'Common Projects', 20),
+('L011', 'U005', 'Church''s Oxford Dress Shoes', 'Classic black Oxford shoes from Church''s. Size 43 EU, perfect for formal occasions.', 3500, '2025-05-18', 'Excellent', 'ACTIVE', 'Church''s', 23),
+
+-- Accessories
+('L012', 'U005', 'Omega Speedmaster Watch', 'Vintage Omega Speedmaster from 1995. Serviced recently, comes with original box.', 25000, '2025-05-24', 'Excellent', 'ACTIVE', 'Omega', 28),
+('L013', 'U007', 'Ray-Ban Aviator Sunglasses', 'Classic gold frame aviators. Prescription lenses can be changed. Good condition.', 800, '2025-05-21', 'Good', 'ACTIVE', 'Ray-Ban', 29),
+
+-- WOMEN'S CLOTHING LISTINGS
+-- Outerwear
+('L014', 'U002', 'Zara Wool Blend Coat', 'Elegant beige wool coat from Zara. Size S, perfect for spring and fall.', 450, '2025-05-22', 'Excellent', 'ACTIVE', 'Zara', 31),
+('L015', 'U004', 'Canada Goose Parka', 'Warm winter parka in navy blue. Size M, excellent for Danish winters.', 4500, '2025-05-19', 'Good', 'ACTIVE', 'Canada Goose', 32),
+
+-- Tops & Blouses
+('L016', 'U008', 'Silk Blouse by Equipment', 'Beautiful cream silk blouse. Size S, perfect for office or dinner.', 650, '2025-05-23', 'Excellent', 'ACTIVE', 'Equipment', 35),
+('L017', 'U010', 'Acne Studios Oversized Sweater', 'Gray wool oversized sweater. Size M, cozy and stylish.', 1200, '2025-05-20', 'Good', 'ACTIVE', 'Acne Studios', 39),
+('L018', 'U012', 'COS Cotton T-Shirt', 'Minimalist white cotton tee. Size S, perfect basic piece.', 180, '2025-05-18', 'Excellent', 'ACTIVE', 'COS', 34),
+
+-- Dresses
+('L019', 'U014', 'Ganni Floral Midi Dress', 'Beautiful floral print midi dress. Size M, perfect for summer events.', 800, '2025-05-24', 'Excellent', 'ACTIVE', 'Ganni', 47),
+('L020', 'U002', 'H&M Little Black Dress', 'Classic black cocktail dress. Size S, versatile for many occasions.', 250, '2025-05-21', 'Good', 'ACTIVE', 'H&M', 47),
+
+-- Shoes
+('L021', 'U004', 'Manolo Blahnik Heels', 'Classic black pointed-toe heels. Size 38 EU, timeless elegance.', 3200, '2025-05-22', 'Good', 'ACTIVE', 'Manolo Blahnik', 53),
+('L022', 'U008', 'Veja V-10 Sneakers', 'White and green sustainable sneakers. Size 37 EU, comfortable and stylish.', 650, '2025-05-19', 'Excellent', 'ACTIVE', 'Veja', 50),
+('L023', 'U012', 'Dr. Martens 1460 Boots', 'Classic black leather boots. Size 39 EU, perfect for any season.', 900, '2025-05-17', 'Good', 'ACTIVE', 'Dr. Martens', 51),
+
+-- Accessories
+('L024', 'U010', 'Hermès Silk Scarf', 'Vintage Hermès silk scarf with horse pattern. Authentic, excellent condition.', 2800, '2025-05-25', 'Excellent', 'ACTIVE', 'Hermès', 61),
+('L025', 'U006', 'Cartier Love Bracelet', 'Classic gold Love bracelet. Size 17, comes with screwdriver and box.', 35000, '2025-05-23', 'Excellent', 'ACTIVE', 'Cartier', 58),
+('L026', 'U014', 'Celine Trio Crossbody Bag', 'Black leather crossbody bag. Perfect size for essentials, barely used.', 5500, '2025-05-20', 'Excellent', 'ACTIVE', 'Celine', 56),
+
+-- HOME GOODS LISTINGS
+('L027', 'U006', 'IKEA Ektorp Sofa', 'Comfortable 3-seat sofa in light gray. Good condition, covers are washable.', 1500, '2025-05-18', 'Good', 'ACTIVE', 'IKEA', 63),
+('L028', 'U011', 'Muuto Pendant Lamp', 'Modern pendant lamp in mint green. Perfect for dining room or kitchen.', 800, '2025-05-21', 'Excellent', 'ACTIVE', 'Muuto', 64),
+('L029', 'U006', 'Hay Mags Sofa', 'Designer modular sofa in dark blue. Excellent condition, very comfortable.', 8500, '2025-05-22', 'Excellent', 'ACTIVE', 'HAY', 63),
+('L030', 'U013', 'Vintage Persian Rug', 'Beautiful handwoven Persian rug. 200x300cm, adds character to any room.', 3500, '2025-05-19', 'Good', 'ACTIVE', 'Handmade', 65),
+
+-- BEAUTY PRODUCTS LISTINGS
+('L031', 'U004', 'La Mer Moisturizing Cream', 'Luxury face cream, 60ml jar. Used twice, almost full.', 1800, '2025-05-24', 'Excellent', 'ACTIVE', 'La Mer', 69),
+('L032', 'U002', 'Charlotte Tilbury Makeup Set', 'Complete makeup set including foundation, lipstick, and eyeshadow palette. Lightly used.', 1200, '2025-05-20', 'Good', 'ACTIVE', 'Charlotte Tilbury', 75),
+('L033', 'U008', 'Dyson Hair Dryer', 'Supersonic hair dryer in pink. Excellent condition, barely used.', 2200, '2025-05-21', 'Excellent', 'ACTIVE', 'Dyson', 83),
+('L034', 'U012', 'Tom Ford Perfume', 'Black Orchid perfume, 50ml. Half full, intoxicating scent.', 800, '2025-05-23', 'Good', 'ACTIVE', 'Tom Ford', 87),
+
+-- DESIGNER/LUXURY LISTINGS
+('L035', 'U005', 'Gucci Ace Sneakers', 'White leather sneakers with green and red stripe. Size 42 EU, excellent condition.', 4500, '2025-05-25', 'Excellent', 'ACTIVE', 'Gucci', 89),
+('L036', 'U010', 'Louis Vuitton Neverfull MM', 'Classic monogram tote bag. Perfect for work or travel. Excellent condition.', 8500, '2025-05-24', 'Excellent', 'ACTIVE', 'Louis Vuitton', 90),
+('L037', 'U005', 'Rolex Submariner', 'Classic black Submariner from 2018. Box and papers included. Excellent condition.', 65000, '2025-05-26', 'Excellent', 'ACTIVE', 'Rolex', 28),
+('L038', 'U014', 'Chanel Classic Flap Bag', 'Medium black quilted bag with gold hardware. Timeless piece, good condition.', 28000, '2025-05-25', 'Good', 'ACTIVE', 'Chanel', 92),
+('L039', 'U012', 'Balenciaga Triple S Sneakers', 'Chunky sneakers in white/gray colorway. Size 38 EU, worn few times.', 3200, '2025-05-23', 'Excellent', 'ACTIVE', 'Balenciaga', 94),
+('L040', 'U003', 'Stone Island Jacket', 'Military green jacket with removable badge. Size L, excellent quality.', 2800, '2025-05-22', 'Excellent', 'ACTIVE', 'Stone Island', 6),
+
+-- Additional diverse listings
+('L041', 'U007', 'Patagonia Fleece Jacket', 'Outdoor fleece in navy blue. Size M, perfect for hiking and casual wear.', 400, '2025-05-17', 'Good', 'ACTIVE', 'Patagonia', 6),
+('L042', 'U009', 'Vintage Band T-Shirt', 'Original Pink Floyd Dark Side of the Moon tour shirt from 1973. Size L, rare collector item.', 1500, '2025-05-24', 'Fair', 'ACTIVE', 'Vintage', 10),
+('L043', 'U001', 'Barbour Wax Jacket', 'Classic British wax jacket in olive green. Size L, reproofed recently.', 1800, '2025-05-21', 'Good', 'ACTIVE', 'Barbour', 6),
+('L044', 'U015', 'Nike Air Max 90', 'Classic colorway in white/gray/black. Size 43 EU, comfortable daily sneakers.', 650, '2025-05-20', 'Good', 'ACTIVE', 'Nike', 20),
+('L045', 'U011', 'Uniqlo Heattech Long Sleeve', 'Thermal long sleeve shirt in black. Size M, perfect base layer for winter.', 120, '2025-05-18', 'Excellent', 'ACTIVE', 'Uniqlo', 10),
+
+-- Women's additional items
+('L046', 'U002', 'Acne Studios Mom Jeans', 'High-waisted mom jeans in light blue. Size 27, vintage-inspired fit.', 1100, '2025-05-23', 'Excellent', 'ACTIVE', 'Acne Studios', 40),
+('L047', 'U004', 'Reformation Slip Dress', 'Silk slip dress in champagne color. Size S, perfect for special occasions.', 850, '2025-05-22', 'Excellent', 'ACTIVE', 'Reformation', 47),
+('L048', 'U008', 'Ganni Cowboy Boots', 'Tan leather cowboy boots. Size 38 EU, statement piece for any outfit.', 1200, '2025-05-21', 'Good', 'ACTIVE', 'Ganni', 51),
+('L049', 'U014', 'Bottega Veneta Mini Bag', 'The Pouch mini bag in butter yellow. Excellent condition, comes with dust bag.', 12000, '2025-05-26', 'Excellent', 'ACTIVE', 'Bottega Veneta', 97),
+('L050', 'U006', 'Marimekko Unikko Dress', 'Classic poppy print dress. Size M, Finnish design icon.', 450, '2025-05-19', 'Good', 'ACTIVE', 'Marimekko', 47),
+('L151', 'U031', 'Palomo Spain Embroidered Shirt', 'Spanish designer shirt with intricate embroidery. Size M, artistic wearable piece.', 1800, '2025-05-20', 'Excellent', 'ACTIVE', 'Palomo Spain', 11),
+('L152', 'U032', 'Heron Preston NASA Hoodie', 'Orange hoodie with NASA collaboration graphics. Size L, limited edition.', 2200, '2025-05-21', 'Good', 'ACTIVE', 'Heron Preston', 13),
+('L153', 'U033', 'Acne Studios Face Sweatshirt', 'Pink sweatshirt with minimalist face logo. Size S, Swedish design.', 1400, '2025-05-19', 'Excellent', 'ACTIVE', 'Acne Studios', 38),
+('L154', 'U034', 'Marni Market Tote', 'Colorful striped tote bag. Perfect for summer, Italian craftsmanship.', 980, '2025-05-22', 'Good', 'ACTIVE', 'Marni', 56),
+('L155', 'U035', 'Christopher John Rogers Dress', 'Dramatic structured dress in emerald green. Size M, statement piece.', 3500, '2025-05-24', 'Excellent', 'ACTIVE', 'Christopher John Rogers', 47),
+
+-- Tech & Electronics Expansion
+('L156', 'U040', 'Sony A7 IV Camera', 'Mirrorless full-frame camera. Excellent for photography enthusiasts.', 18000, '2025-05-25', 'Excellent', 'ACTIVE', 'Sony', 25),
+('L157', 'U036', 'Bose QuietComfort Earbuds', 'Wireless noise-canceling earbuds. Perfect for commuting and travel.', 1200, '2025-05-18', 'Good', 'ACTIVE', 'Bose', 25),
+('L158', 'U040', 'iPad Air with Apple Pencil', '2022 model with 256GB storage. Comes with 2nd gen Apple Pencil.', 4500, '2025-05-23', 'Excellent', 'ACTIVE', 'Apple', 25),
+('L159', 'U032', 'Nintendo Switch OLED', 'Gaming console with vibrant OLED screen. Barely used, like new.', 2200, '2025-05-20', 'Excellent', 'ACTIVE', 'Nintendo', 25),
+('L160', 'U026', 'DJI Mini 3 Drone', 'Compact drone with 4K camera. Perfect for aerial photography.', 4800, '2025-05-24', 'Good', 'ACTIVE', 'DJI', 25),
+
+-- Vintage & Collectibles
+('L161', 'U025', 'Vintage Chanel Brooch', 'Gold-tone CC brooch from the 80s. Authentic vintage piece.', 2800, '2025-05-22', 'Good', 'ACTIVE', 'Chanel', 58),
+('L162', 'U031', 'Hermès Vintage Scarf', 'Silk scarf from 1970s with equestrian print. Collector item.', 1200, '2025-05-21', 'Good', 'ACTIVE', 'Hermès', 61),
+('L163', 'U024', 'Vintage Levi''s Type 3 Jacket', 'Rare denim jacket from 1960s. Size M, authentic vintage piece.', 2500, '2025-05-23', 'Fair', 'ACTIVE', 'Levi''s', 6),
+('L164', 'U033', 'Vintage Omega Constellation', 'Gold watch from 1970s. Pie-pan dial, recently serviced.', 15000, '2025-05-25', 'Good', 'ACTIVE', 'Omega', 28),
+('L165', 'U038', 'Vintage Hermès Kelly Bag', 'Brown leather Kelly from 1980s. Shows wear but authentic vintage.', 45000, '2025-05-26', 'Fair', 'ACTIVE', 'Hermès', 91),
+
+-- Sustainable & Ethical Fashion
+('L166', 'U037', 'Gabriela Hearst Wool Coat', 'Sustainable wool coat in navy. Size M, ethical luxury fashion.', 6500, '2025-05-24', 'Excellent', 'ACTIVE', 'Gabriela Hearst', 32),
+('L167', 'U035', 'Stella McCartney Falabella Bag', 'Vegan leather chain bag. Sustainable luxury, excellent condition.', 4200, '2025-05-22', 'Excellent', 'ACTIVE', 'Stella McCartney', 56),
+('L168', 'U023', 'Pangaia Tracksuit', 'Organic cotton tracksuit in lavender. Size S, sustainable streetwear.', 850, '2025-05-20', 'Good', 'ACTIVE', 'Pangaia', 17),
+('L169', 'U037', 'Veja Esplar Sneakers', 'White sustainable sneakers. Size 39 EU, eco-friendly materials.', 580, '2025-05-18', 'Good', 'ACTIVE', 'Veja', 50),
+('L170', 'U033', 'Filippa K Linen Dress', 'Minimalist linen dress in beige. Size S, Scandinavian sustainability.', 680, '2025-05-19', 'Excellent', 'ACTIVE', 'Filippa K', 47),
+
+-- Korean & Japanese Fashion
+('L171', 'U022', 'Gentle Monster Sunglasses', 'Avant-garde sunglasses in black acetate. Korean design, excellent condition.', 1800, '2025-05-23', 'Excellent', 'ACTIVE', 'Gentle Monster', 60),
+('L172', 'U039', 'Issey Miyake Pleats Please', 'Pleated midi skirt in black. Innovative Japanese design, one size.', 2200, '2025-05-24', 'Excellent', 'ACTIVE', 'Issey Miyake', 44),
+('L173', 'U020', 'Ader Error Knit Sweater', 'Oversized sweater with logo detail. Size M, Korean streetwear.', 950, '2025-05-21', 'Good', 'ACTIVE', 'Ader Error', 39),
+('L174', 'U039', 'Comme des Garçons PLAY Tee', 'White t-shirt with red heart logo. Size S, Japanese minimalism.', 450, '2025-05-20', 'Good', 'ACTIVE', 'Comme des Garçons', 34),
+('L175', 'U021', 'We11done Cargo Pants', 'Technical cargo pants in black. Size S, Korean avant-garde.', 1400, '2025-05-22', 'Excellent', 'ACTIVE', 'We11done', 41),
+
+-- More Home & Lifestyle
+('L176', 'U036', 'Braun Dieter Rams Calculator', 'Iconic ET66 calculator. Vintage design classic, working condition.', 850, '2025-05-19', 'Good', 'ACTIVE', 'Braun', 67),
+('L177', 'U038', 'Le Creuset Dutch Oven', 'Cast iron pot in cherry red. 5.5L, perfect for cooking enthusiasts.', 1200, '2025-05-21', 'Good', 'ACTIVE', 'Le Creuset', 66),
+('L178', 'U019', 'Marimekko Unikko Pillows', 'Set of 2 throw pillows in classic poppy print. Finnish design.', 380, '2025-05-18', 'Good', 'ACTIVE', 'Marimekko', 65),
+('L179', 'U018', 'Anglepoise Type 75 Lamp', 'British task lamp in black. Perfect for desk or reading.', 1800, '2025-05-22', 'Excellent', 'ACTIVE', 'Anglepoise', 64),
+('L180', 'U035', 'Fornasetti Face Plate', 'Decorative plate with Lina face design. Italian surrealist art.', 650, '2025-05-20', 'Excellent', 'ACTIVE', 'Fornasetti', 67),
+
+-- More Beauty & Personal Care
+('L181', 'U037', 'Augustinus Bader Face Cream', 'The Rich Cream, 50ml. Luxury skincare, used twice.', 1800, '2025-05-23', 'Excellent', 'ACTIVE', 'Augustinus Bader', 69),
+('L182', 'U017', 'Glossier Makeup Set', 'Complete set including Cloud Paint, Boy Brow, and Balm Dotcom.', 450, '2025-05-21', 'Good', 'ACTIVE', 'Glossier', 75),
+('L183', 'U033', 'Byredo Gypsy Water Perfume', 'Unisex fragrance, 50ml. Modern nomadic scent, half full.', 1200, '2025-05-24', 'Good', 'ACTIVE', 'Byredo', 87),
+('L184', 'U039', 'Tatcha Dewy Skin Cream', 'Japanese skincare, 50ml jar. Plumping moisture cream, barely used.', 450, '2025-05-20', 'Excellent', 'ACTIVE', 'Tatcha', 69),
+('L185', 'U035', 'Rare Beauty Soft Pinch Blush', 'Liquid blush in Joy shade. Selena Gomez brand, lightly used.', 180, '2025-05-19', 'Good', 'ACTIVE', 'Rare Beauty', 78),
+
+-- Street Art & Culture
+('L186', 'U016', 'KAWS Holiday Vinyl Figure', 'Limited edition floating figure. Collectible art toy, mint condition.', 1500, '2025-05-25', 'New', 'ACTIVE', 'KAWS', 67),
+('L187', 'U015', 'Takashi Murakami Print', 'Flower print in rainbow colors. Framed, authentic gallery piece.', 8500, '2025-05-26', 'Excellent', 'ACTIVE', 'Takashi Murakami', 67),
+('L188', 'U038', 'Jean-Michel Basquiat Book', 'Complete works catalogue. Coffee table art book, excellent condition.', 650, '2025-05-22', 'Excellent', 'ACTIVE', 'Taschen', 67),
+
+-- More Sports & Outdoor
+('L189', 'U032', 'Nike x Off-White Air Jordan 1', 'Chicago colorway with signature zip-tie. Size 42 EU, deadstock.', 15000, '2025-05-26', 'New', 'ACTIVE', 'Air Jordan', 20),
+('L190', 'U036', 'Canada Goose Expedition Parka', 'Extreme cold weather parka. Size L, built for Arctic conditions.', 5500, '2025-05-24', 'Good', 'ACTIVE', 'Canada Goose', 6),
+('L191', 'U040', 'Lululemon ABC Pants', 'Anti-ball crushing pants in navy. Size 32, perfect for travel.', 650, '2025-05-21', 'Good', 'ACTIVE', 'Lululemon', 14),
+('L192', 'U014', 'Patagonia Nano Puff Vest', 'Lightweight insulation vest in black. Size L, packable design.', 850, '2025-05-20', 'Excellent', 'ACTIVE', 'Patagonia', 8),
+('L193', 'U032', 'Salomon Speedcross 5', 'Trail running shoes in black/red. Size 43 EU, aggressive traction.', 750, '2025-05-19', 'Good', 'ACTIVE', 'Salomon', 20),
+
+-- More Affordable Fashion
+('L194', 'U013', 'COS Wool Sweater', 'Minimalist gray wool pullover. Size M, Scandinavian design.', 420, '2025-05-18', 'Good', 'ACTIVE', 'COS', 39),
+('L195', 'U037', '& Other Stories Silk Blouse', 'Cream silk shirt with pearl buttons. Size S, office appropriate.', 350, '2025-05-17', 'Good', 'ACTIVE', '& Other Stories', 35),
+('L196', 'U012', 'Monki Mom Jeans', 'High-waisted jeans in vintage wash. Size 27, trendy fit.', 280, '2025-05-16', 'Good', 'ACTIVE', 'Monki', 40),
+('L197', 'U033', 'Arket Merino Sweater', 'Sustainable merino wool in dusty pink. Size S, soft and warm.', 580, '2025-05-20', 'Excellent', 'ACTIVE', 'Arket', 39),
+('L198', 'U035', 'Weekday Trench Coat', 'Oversized trench in beige. Size M, modern take on classic.', 680, '2025-05-21', 'Good', 'ACTIVE', 'Weekday', 32),
+
+-- More Designer Accessories
+('L199', 'U038', 'Cartier Santos Watch', 'Square watch in steel and gold. Medium size, timeless design.', 38000, '2025-05-26', 'Excellent', 'ACTIVE', 'Cartier', 28),
+('L200', 'U034', 'Bulgari Serpenti Bracelet', 'Gold bracelet watch with snake design. Iconic Italian luxury.', 25000, '2025-05-25', 'Good', 'ACTIVE', 'Bulgari', 58),
+('L201', 'U011', 'Mulberry Bayswater Bag', 'Classic leather handbag in oak. British heritage, excellent condition.', 3500, '2025-05-24', 'Excellent', 'ACTIVE', 'Mulberry', 56),
+('L202', 'U036', 'Montblanc Meisterstück Pen', 'Classic black fountain pen. German craftsmanship, gold nib.', 1200, '2025-05-22', 'Excellent', 'ACTIVE', 'Montblanc', 25),
+
+-- Final Batch of Diverse Items
+('L203', 'U039', 'Uniqlo +J Coat', 'Jil Sander collaboration coat. Size S, minimalist luxury at accessible price.', 850, '2025-05-23', 'Excellent', 'ACTIVE', 'Uniqlo', 32),
+('L204', 'U031', 'Paloma Wool Knit Dress', 'Spanish knitwear in sage green. Size M, artistic contemporary design.', 680, '2025-05-21', 'Good', 'ACTIVE', 'Paloma Wool', 47),
+('L205', 'U028', 'Vintage Gucci Loafers', 'Horsebit loafers from 1980s. Size 41 EU, classic Italian style.', 4500, '2025-05-25', 'Good', 'ACTIVE', 'Gucci', 22),
+('L206', 'U039', 'Toteme Wool Coat', 'Swedish minimalist coat in camel. Size S, modern Scandinavian luxury.', 3200, '2025-05-24', 'Excellent', 'ACTIVE', 'Toteme', 32),
+('L207', 'U034', 'Stone Island Shadow Project', 'Technical jacket with innovative fabrics. Size L, Italian innovation.', 3800, '2025-05-26', 'Excellent', 'ACTIVE', 'Stone Island', 6),
+('L208', 'U040', 'Tesla Model 3 Accessories', 'Complete interior protection kit. Brand new, never installed.', 1200, '2025-05-25', 'New', 'ACTIVE', 'Tesla', 25),
+('L209', 'U038', 'Hermès Oran Sandals', 'Leather sandals in gold. Size 39 EU, summer luxury essential.', 2800, '2025-05-24', 'Good', 'ACTIVE', 'Hermès', 52),
+('L210', 'U001', 'Maison Kitsune Sweatshirt', 'Fox logo sweatshirt in navy. Size M, French-Japanese collaboration.', 650, '2025-05-22', 'Good', 'ACTIVE', 'Maison Kitsune', 38),
+('L211', 'U036', 'Rimowa Classic Cabin', 'Aluminum carry-on suitcase. Excellent for business travel.', 4500, '2025-05-26', 'Good', 'ACTIVE', 'Rimowa', 24),
+('L212', 'U019', 'Jacquemus Le Bambino Bag', 'Tiny structured bag in pink. Statement micro bag, barely used.', 2200, '2025-05-25', 'Excellent', 'ACTIVE', 'Jacquemus', 56),
+('L213', 'U039', 'Pleats Please Cardigan', 'Pleated cardigan in black. Issey Miyake innovation, one size fits all.', 1800, '2025-05-24', 'Excellent', 'ACTIVE', 'Pleats Please', 37),
+('L214', 'U032', 'Nike Dunk Low Panda', 'Black and white colorway. Size 42 EU, classic basketball silhouette.', 850, '2025-05-23', 'Good', 'ACTIVE', 'Nike', 20),
+('L215', 'U017', 'The Row Margaux Bag', 'Soft leather tote in black. Ultimate luxury everyday bag.', 28000, '2025-05-27', 'Excellent', 'ACTIVE', 'The Row', 56),
+('L216', 'U037', 'Ganni Rubber Boots', 'Chelsea boots in black rubber. Size 38 EU, practical Danish design.', 420, '2025-05-21', 'Good', 'ACTIVE', 'Ganni', 51),
+('L217', 'U031', 'Loewe Gate Bag', 'Small shoulder bag in tan leather. Architectural design, excellent condition.', 8500, '2025-05-26', 'Excellent', 'ACTIVE', 'Loewe', 56),
+('L218', 'U001', 'Barbour International Jacket', 'Waxed cotton motorcycle jacket. Size L, British heritage piece.', 1800, '2025-05-25', 'Good', 'ACTIVE', 'Barbour', 6),
+('L219', 'U034', 'Prada Re-Edition 2005', 'Black nylon shoulder bag with silver hardware. Y2K revival piece.', 6500, '2025-05-24', 'Excellent', 'ACTIVE', 'Prada', 56),
+('L220', 'U040', 'Dyson V15 Detect', 'Cordless vacuum cleaner. Laser dust detection, barely used.', 3200, '2025-05-23', 'Excellent', 'ACTIVE', 'Dyson', 25),
+('L221', 'U033', 'Acne Studios Baker Jeans', 'Straight leg jeans in mid blue. Size 29, Swedish denim excellence.', 1200, '2025-05-22', 'Good', 'ACTIVE', 'Acne Studios', 40),
+('L222', 'U038', 'Diptyque Baies Candle', 'Blackcurrant leaves candle, 190g. Half burned, beautiful scent.', 380, '2025-05-21', 'Good', 'ACTIVE', 'Diptyque', 88),
+('L223', 'U015', 'Vintage Rolex Explorer', 'Classic 36mm Explorer from 1990s. Service history, excellent condition.', 55000, '2025-05-26', 'Good', 'ACTIVE', 'Rolex', 28),
+('L224', 'U035', 'JW Anderson Pierce Bag', 'Medium leather bag with signature ring detail. British design innovation.', 3200, '2025-05-25', 'Excellent', 'ACTIVE', 'JW Anderson', 56),
+('L225', 'U036', 'Orlebar Brown Swim Shorts', 'Navy swim shorts with side adjusters. Size M, luxury swimwear.', 450, '2025-05-20', 'Good', 'ACTIVE', 'Orlebar Brown', 16),
+('L226', 'U040', 'Raf Simons Destroyed Sweater', 'Deconstructed knit in gray. Size S, avant-garde Belgian design.', 2800, '2025-05-24', 'Excellent', 'ACTIVE', 'Raf Simons', 39),
+('L227', 'U040', 'Maison Margiela Tabi Boots', 'Split-toe boots in black leather. Size 38 EU, iconic design.', 3500, '2025-05-26', 'Good', 'ACTIVE', 'Maison Margiela', 51),
+('L228', 'U039', 'Visvim FBT Sneakers', 'Moccasin-inspired sneakers. Size 42 EU, Japanese craftsmanship.', 4200, '2025-05-25', 'Good', 'ACTIVE', 'Visvim', 20),
+('L229', 'U031', 'Rejina Pyo Olivia Bag', 'Structured bag in caramel leather. Korean-Spanish designer collaboration.', 1800, '2025-05-23', 'Excellent', 'ACTIVE', 'Rejina Pyo', 56),
+('L230', 'U027', 'Margaret Howell Linen Shirt', 'Classic white linen shirt. Size M, British tailoring excellence.', 850, '2025-05-22', 'Good', 'ACTIVE', 'Margaret Howell', 11),
+('L231', 'U032', 'Nike Air Force 1 Low', 'All-white leather sneakers. Size 43 EU, basketball icon.', 650, '2025-05-21', 'Good', 'ACTIVE', 'Nike', 20),
+('L232', 'U037', 'Ganni Software Boots', 'Recycled rubber boots in brown. Size 39 EU, sustainable footwear.', 680, '2025-05-20', 'Excellent', 'ACTIVE', 'Ganni', 51),
+('L233', 'U002', 'COS Leather Jacket', 'Minimalist black leather jacket. Size S, timeless Scandinavian design.', 1200, '2025-05-25', 'Excellent', 'ACTIVE', 'COS', 6),
+('L234', 'U034', 'Bottega Veneta Intrecciato Wallet', 'Woven leather wallet in brown. Classic Italian craftsmanship.', 1800, '2025-05-24', 'Excellent', 'ACTIVE', 'Bottega Veneta', 25),
+('L235', 'U038', 'Celine Box Bag', 'Medium calfskin bag in black. Architectural design, excellent condition.', 12000, '2025-05-26', 'Excellent', 'ACTIVE', 'Celine', 56),
+('L236', 'U040', 'AirPods Pro 2nd Gen', 'Wireless earbuds with active noise cancellation. Like new condition.', 1800, '2025-05-25', 'Excellent', 'ACTIVE', 'Apple', 25),
+('L237', 'U038', 'Vintage Cartier Must Tank', 'Gold-plated Tank watch from 1980s. Quartz movement, serviced.', 8500, '2025-05-24', 'Good', 'ACTIVE', 'Cartier', 28),
+('L238', 'U033', 'Acne Studios Velocite Jacket', 'Black leather moto jacket. Size S, Swedish minimalist edge.', 3800, '2025-05-26', 'Excellent', 'ACTIVE', 'Acne Studios', 6),
+('L239', 'U036', 'Porsche Design Sunglasses', 'Titanium aviators with precision engineering. German automotive luxury.', 2200, '2025-05-25', 'Excellent', 'ACTIVE', 'Porsche Design', 29),
+('L240', 'U017', 'Comme des Garçons Shirt', 'White shirt with asymmetrical details. Size S, Japanese avant-garde.', 1200, '2025-05-24', 'Good', 'ACTIVE', 'Comme des Garçons', 35),
+('L241', 'U039', 'Neighborhood Military Jacket', 'Olive green tactical jacket. Size M, Japanese streetwear militaria.', 1800, '2025-05-23', 'Good', 'ACTIVE', 'Neighborhood', 6),
+('L242', 'U040', 'Burberry Nova Check Scarf', 'Classic cashmere scarf in signature check. British heritage piece.', 1200, '2025-05-22', 'Good', 'ACTIVE', 'Burberry', 61),
+('L243', 'U031', 'Sies Marjan Silk Dress', 'Liquid silk slip dress in emerald. Size M, New York luxury brand.', 2200, '2025-05-25', 'Excellent', 'ACTIVE', 'Sies Marjan', 47),
+('L244', 'U035', 'Wales Bonner Track Jacket', 'Cream track jacket with Jamaican-inspired details. Size S, cultural fusion.', 1800, '2025-05-24', 'Good', 'ACTIVE', 'Wales Bonner', 6),
+('L245', 'U032', 'Undercover Scab Jeans', 'Distressed denim with punk aesthetics. Size 32, Japanese rebellion.', 2500, '2025-05-26', 'Good', 'ACTIVE', 'Undercover', 14),
+('L246', 'U039', 'Dries Van Noten Floral Shirt', 'Silk shirt with botanical print. Size M, Belgian maximalist design.', 1400, '2025-05-25', 'Excellent', 'ACTIVE', 'Dries Van Noten', 11),
+('L247', 'U037', 'Nanushka Vegan Leather Pants', 'Black faux leather trousers. Size S, sustainable luxury alternative.', 1200, '2025-05-23', 'Good', 'ACTIVE', 'Nanushka', 41),
+('L248', 'U039', 'Lemaire Twisted Jeans', 'High-waisted jeans with twisted seams. Size 26, French craftsmanship.', 1400, '2025-05-24', 'Excellent', 'ACTIVE', 'Lemaire', 40),
+('L249', 'U038', 'Maison Kitsuné Polo Shirt', 'Navy polo with fox embroidery. Size M, Franco-Japanese elegance.', 380, '2025-05-21', 'Good', 'ACTIVE', 'Maison Kitsuné', 11),
+('L250', 'U040', 'Nothing Phone (2)', 'Transparent smartphone with glyph interface. 256GB, tech innovation.', 4200, '2025-05-26', 'Excellent', 'ACTIVE', 'Nothing', 25);

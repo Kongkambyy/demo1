@@ -16369,3 +16369,1089 @@ INFO: [2025-05-26 22:27:50] EVENT: GetCategoriesUseCase initialized
 maj 26, 2025 10:27:50 PM com.gilbert.demo.data.util.LoggerUtility logEvent
 INFO: [2025-05-26 22:27:50] EVENT: GetCategoryUseCase initialized
 [2025-05-26 22:27:50] EVENT: GetCategoryUseCase initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: CategoryRepository initialized
+[2025-05-26 22:28:42] EVENT: CategoryRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: ListingRepository initialized
+[2025-05-26 22:28:42] EVENT: ListingRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: FavoriteRepository initialized
+[2025-05-26 22:28:42] EVENT: FavoriteRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: MessageRepository initialiseret
+[2025-05-26 22:28:42] EVENT: MessageRepository initialiseret
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: NotificationRepository initialized
+[2025-05-26 22:28:42] EVENT: NotificationRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: OfferRepository initialized
+[2025-05-26 22:28:42] EVENT: OfferRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: ReviewRepository initialized
+[2025-05-26 22:28:42] EVENT: ReviewRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: TransactionRepository initialized
+[2025-05-26 22:28:42] EVENT: TransactionRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: UserRepository initialized
+[2025-05-26 22:28:42] EVENT: UserRepository initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: GetCategoriesUseCase initialized
+[2025-05-26 22:28:42] EVENT: GetCategoriesUseCase initialized
+maj 26, 2025 10:28:42 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-26 22:28:42] EVENT: GetCategoryUseCase initialized
+[2025-05-26 22:28:42] EVENT: GetCategoryUseCase initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: CategoryRepository initialized
+[2025-05-27 13:02:52] EVENT: CategoryRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: ListingRepository initialized
+[2025-05-27 13:02:52] EVENT: ListingRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: FavoriteRepository initialized
+[2025-05-27 13:02:52] EVENT: FavoriteRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: MessageRepository initialiseret
+[2025-05-27 13:02:52] EVENT: MessageRepository initialiseret
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: NotificationRepository initialized
+[2025-05-27 13:02:52] EVENT: NotificationRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: OfferRepository initialized
+[2025-05-27 13:02:52] EVENT: OfferRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: ReviewRepository initialized
+[2025-05-27 13:02:52] EVENT: ReviewRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: TransactionRepository initialized
+[2025-05-27 13:02:52] EVENT: TransactionRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: UserRepository initialized
+[2025-05-27 13:02:52] EVENT: UserRepository initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: GetCategoriesUseCase initialized
+[2025-05-27 13:02:52] EVENT: GetCategoriesUseCase initialized
+maj 27, 2025 1:02:52 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:02:52] EVENT: GetCategoryUseCase initialized
+[2025-05-27 13:02:52] EVENT: GetCategoryUseCase initialized
+maj 27, 2025 1:02:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:02:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:02:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:02:56 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:02:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:02:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:02:56 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:02:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:02:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:02:56 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:02:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:02:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:02:57 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:02:57] WARNING: Login attempt for non-existent email: TEST@TEST.DK
+[2025-05-27 13:02:57] WARNING: Login attempt for non-existent email: TEST@TEST.DK
+maj 27, 2025 1:02:57 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:02:57] WARNING: Login failed for email: TEST@TEST.DK
+[2025-05-27 13:02:57] WARNING: Login failed for email: TEST@TEST.DK
+maj 27, 2025 1:02:57 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:02:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:02:57] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:02:57 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:02:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:02:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:03:00 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:03:00] WARNING: Login attempt for non-existent email: TEST@TEST.DK
+[2025-05-27 13:03:00] WARNING: Login attempt for non-existent email: TEST@TEST.DK
+maj 27, 2025 1:03:00 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:03:00] WARNING: Login failed for email: TEST@TEST.DK
+[2025-05-27 13:03:00] WARNING: Login failed for email: TEST@TEST.DK
+maj 27, 2025 1:03:00 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:03:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:03:00] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:03:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:03:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:03:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:03:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:03:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:03:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:03:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:03:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:03:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:03:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:03:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:03:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:03:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:03:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:03:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: CategoryRepository initialized
+[2025-05-27 13:10:25] EVENT: CategoryRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: ListingRepository initialized
+[2025-05-27 13:10:25] EVENT: ListingRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: FavoriteRepository initialized
+[2025-05-27 13:10:25] EVENT: FavoriteRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: MessageRepository initialiseret
+[2025-05-27 13:10:25] EVENT: MessageRepository initialiseret
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: NotificationRepository initialized
+[2025-05-27 13:10:25] EVENT: NotificationRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: OfferRepository initialized
+[2025-05-27 13:10:25] EVENT: OfferRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: ReviewRepository initialized
+[2025-05-27 13:10:25] EVENT: ReviewRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: TransactionRepository initialized
+[2025-05-27 13:10:25] EVENT: TransactionRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: UserRepository initialized
+[2025-05-27 13:10:25] EVENT: UserRepository initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: GetCategoriesUseCase initialized
+[2025-05-27 13:10:25] EVENT: GetCategoriesUseCase initialized
+maj 27, 2025 1:10:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:10:25] EVENT: GetCategoryUseCase initialized
+[2025-05-27 13:10:25] EVENT: GetCategoryUseCase initialized
+maj 27, 2025 1:10:33 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:10:33] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:10:34 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:34] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:10:34] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:10:36 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:10:36] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:10:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:10:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:10:37 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:10:37] WARNING: Login attempt for non-existent email: TEST@TEST.DK
+[2025-05-27 13:10:37] WARNING: Login attempt for non-existent email: TEST@TEST.DK
+maj 27, 2025 1:10:37 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:10:37] WARNING: Login failed for email: TEST@TEST.DK
+[2025-05-27 13:10:37] WARNING: Login failed for email: TEST@TEST.DK
+maj 27, 2025 1:10:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:37] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:10:37] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:10:38 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:10:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:10:38 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:10:38] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:10:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:10:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:10:44 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:10:44] WARNING: Registration failed - duplicate email: kracer48@gmail.com
+[2025-05-27 13:10:44] WARNING: Registration failed - duplicate email: kracer48@gmail.com
+maj 27, 2025 1:10:44 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:44] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:10:44] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:10:44 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:10:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:10:51 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:10:51] WARNING: Registration failed - duplicate email: sabinehw18@gmail.com
+[2025-05-27 13:10:51] WARNING: Registration failed - duplicate email: sabinehw18@gmail.com
+maj 27, 2025 1:10:51 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:51] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:10:51] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:10:51 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:10:51] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:10:51] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:00 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:11:00] EVENT: User created: kongkamby@gmail.com
+[2025-05-27 13:11:00] EVENT: User created: kongkamby@gmail.com
+maj 27, 2025 1:11:00 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:11:00] EVENT: New user registered: kongkamby@gmail.com
+[2025-05-27 13:11:00] EVENT: New user registered: kongkamby@gmail.com
+maj 27, 2025 1:11:00 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:00] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:00 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:10 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:11:10] EVENT: Successful login for email: kongkamby@gmail.com
+[2025-05-27 13:11:10] EVENT: Successful login for email: kongkamby@gmail.com
+maj 27, 2025 1:11:10 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:11:10] EVENT: User logged in: kongkamby@gmail.com
+[2025-05-27 13:11:10] EVENT: User logged in: kongkamby@gmail.com
+maj 27, 2025 1:11:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:11 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:11] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:11] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:11 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:11] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:11] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:15] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:15] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:16] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:17 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:17] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:17] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:17 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:17] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:17] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:18] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:19 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:19] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:19 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:19] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:19 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:19] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:20 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:20 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:20] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:20] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:20 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:20] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:21 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:21] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:21] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:21 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:21] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:22 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:22] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:22 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:22] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:22] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:23 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:23] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:23] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:23 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:24 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:24] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:24] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:24 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:24] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:24] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:24 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:24] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:24] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:25 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:25] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:25] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:25 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:25] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:25] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:26 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:26] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:26] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:26 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:26] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:27 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:27] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:27] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:29 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:29] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:29] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:29 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:29] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:30 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:30] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:30] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:30 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:30] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:30] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:33 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:33] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:33 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:34 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:34] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:34] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:35] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:35] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:37] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:37] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:38 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:38] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:11:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:11:39] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:11:40 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:11:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:11:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: CategoryRepository initialized
+[2025-05-27 13:18:59] EVENT: CategoryRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: ListingRepository initialized
+[2025-05-27 13:18:59] EVENT: ListingRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: FavoriteRepository initialized
+[2025-05-27 13:18:59] EVENT: FavoriteRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: MessageRepository initialiseret
+[2025-05-27 13:18:59] EVENT: MessageRepository initialiseret
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: NotificationRepository initialized
+[2025-05-27 13:18:59] EVENT: NotificationRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: OfferRepository initialized
+[2025-05-27 13:18:59] EVENT: OfferRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: ReviewRepository initialized
+[2025-05-27 13:18:59] EVENT: ReviewRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: TransactionRepository initialized
+[2025-05-27 13:18:59] EVENT: TransactionRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: UserRepository initialized
+[2025-05-27 13:18:59] EVENT: UserRepository initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: GetCategoriesUseCase initialized
+[2025-05-27 13:18:59] EVENT: GetCategoriesUseCase initialized
+maj 27, 2025 1:18:59 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:18:59] EVENT: GetCategoryUseCase initialized
+[2025-05-27 13:18:59] EVENT: GetCategoryUseCase initialized
+maj 27, 2025 1:19:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:03 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:03] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:03 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:06 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:06] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:06] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:06 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:06] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:06] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:06 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:06] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:06] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:06 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:06] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:06] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:07 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:07] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:07] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:07 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:07] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:07] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:10] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: CategoryRepository initialized
+[2025-05-27 13:19:31] EVENT: CategoryRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: ListingRepository initialized
+[2025-05-27 13:19:31] EVENT: ListingRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: FavoriteRepository initialized
+[2025-05-27 13:19:31] EVENT: FavoriteRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: MessageRepository initialiseret
+[2025-05-27 13:19:31] EVENT: MessageRepository initialiseret
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: NotificationRepository initialized
+[2025-05-27 13:19:31] EVENT: NotificationRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: OfferRepository initialized
+[2025-05-27 13:19:31] EVENT: OfferRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: ReviewRepository initialized
+[2025-05-27 13:19:31] EVENT: ReviewRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: TransactionRepository initialized
+[2025-05-27 13:19:31] EVENT: TransactionRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: UserRepository initialized
+[2025-05-27 13:19:31] EVENT: UserRepository initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: GetCategoriesUseCase initialized
+[2025-05-27 13:19:31] EVENT: GetCategoriesUseCase initialized
+maj 27, 2025 1:19:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:31] EVENT: GetCategoryUseCase initialized
+[2025-05-27 13:19:31] EVENT: GetCategoryUseCase initialized
+maj 27, 2025 1:19:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:35] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:35] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:35] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:35] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:36 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:36] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:36 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:36] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:37] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:37] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:39 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:39] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:39] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:39 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:39] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:39] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:39] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:39] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:40 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:40] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:40] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:40 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:40] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:40] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:40 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:40] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:40 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:42 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:42] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:42] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:42 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:42] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:42] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:42 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:42] ERROR: Error loading orders for user 2db91f32-cb15-41c7-91b8-d8f8b98de08d: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:42] ERROR: Error loading orders for user 2db91f32-cb15-41c7-91b8-d8f8b98de08d: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:42 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:42] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:42] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:42 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:42] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:42] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:19:44] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed favorites page with 0 items
+[2025-05-27 13:19:44] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed favorites page with 0 items
+maj 27, 2025 1:19:44 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:44] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:44] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:44 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:44] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:45 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:45] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:45] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:45 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:45] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:45] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:46 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:46] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:46] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:46 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:46] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:46] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:48 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:48] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:48] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:48 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:48] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:48] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:48 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:48] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:48] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:48 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:49 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:49] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:49] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:49 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:49] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:49] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:51 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:51] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:51] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:51 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:51] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:51] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:52 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:52] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:52 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:52] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:52] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:53 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:53] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:53] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:53 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:53] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:53] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:53 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:53] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:53 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:53] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:55 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:55] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:55] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:55 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:55] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:55] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:55] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:56 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:56 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:57 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:57] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:57 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:58 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:58] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:58] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:58 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:58] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:58] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:58 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:58] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:59] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:59] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:19:59 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:59] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:59] WARNING: User not found with ID: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:59 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:19:59] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+[2025-05-27 13:19:59] WARNING: User not found: 2db91f32-cb15-41c7-91b8-d8f8b98de08d
+maj 27, 2025 1:19:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:59] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:19:59] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:19:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:19:59] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:19:59] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:00 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:00] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed notifications page
+[2025-05-27 13:20:00] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed notifications page
+maj 27, 2025 1:20:00 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:00] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:00 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:00] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:01] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed favorites page with 0 items
+[2025-05-27 13:20:01] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed favorites page with 0 items
+maj 27, 2025 1:20:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:01] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed favorites page with 0 items
+[2025-05-27 13:20:01] EVENT: User 2db91f32-cb15-41c7-91b8-d8f8b98de08d viewed favorites page with 0 items
+maj 27, 2025 1:20:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:04 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:04] EVENT: User logged out: kongkamby@gmail.com
+[2025-05-27 13:20:04] EVENT: User logged out: kongkamby@gmail.com
+maj 27, 2025 1:20:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:08] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:09] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:09] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:12] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:12] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:18] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:26 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:26] EVENT: User created: kracer48@gmail.com
+[2025-05-27 13:20:26] EVENT: User created: kracer48@gmail.com
+maj 27, 2025 1:20:26 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:26] EVENT: New user registered: kracer48@gmail.com
+[2025-05-27 13:20:26] EVENT: New user registered: kracer48@gmail.com
+maj 27, 2025 1:20:26 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:26] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:26 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:26] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:26] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:31] EVENT: Successful login for email: kracer48@gmail.com
+[2025-05-27 13:20:31] EVENT: Successful login for email: kracer48@gmail.com
+maj 27, 2025 1:20:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:20:31] EVENT: User logged in: kracer48@gmail.com
+[2025-05-27 13:20:31] EVENT: User logged in: kracer48@gmail.com
+maj 27, 2025 1:20:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:31] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:31] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:32 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:32] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:32 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:32] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:20:33 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:20:33] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:20:33 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:20:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:20:33] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:22:24 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:22:24] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:22:24] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:22:24 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:22:24] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:22:24] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:28:54 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:28:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:28:54] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:28:54 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:28:54] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:28:54] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:02] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:03 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:03] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:08 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:08] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:08] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:08] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:08] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:08] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:12 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:12] EVENT: User efbc046c-d8b3-4eca-a360-dd5df519e206 accessed make offer page for listing L194
+[2025-05-27 13:29:12] EVENT: User efbc046c-d8b3-4eca-a360-dd5df519e206 accessed make offer page for listing L194
+maj 27, 2025 1:29:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:12] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:12] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:12] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:12] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:14 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:14] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:14] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:14 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:14] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:14 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:14] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:14] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:14 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:14] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:15 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:15] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:15] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:15 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:15] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:15] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:15] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:15] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:15 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:15] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:15] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:15] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:15] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:15] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:15] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:15] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:16 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:16] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:16] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:16 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:16] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:16] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:16] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:16] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:16 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:16] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:16] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:16] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:16] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:17 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:17] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:17] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:17 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:17] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:17] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:17 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:17] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:17] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:17] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:17] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:17 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:17] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:17 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:17] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:17] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:17] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:18] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:23 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:23] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:23] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:23 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:23] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:23] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:23 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:23] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:23] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:23 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:23] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:23] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:23 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:23] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:23 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:23] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:23] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:23] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:23 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:23] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:25 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:25] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:25] WARNING: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:25 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-05-27 13:29:25] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:25] WARNING: User not found: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:25 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:25] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:25] ERROR: Error loading purchase page for listing L194: User not found with ID: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:25] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+[2025-05-27 13:29:25] EVENT: Listing viewed: L194 by user: efbc046c-d8b3-4eca-a360-dd5df519e206
+maj 27, 2025 1:29:25 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:25] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:29:25 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:25] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:25] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:29:25] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:25 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:25] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:25] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:36 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:36] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:37] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:40 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:40] EVENT: User logged out: kracer48@gmail.com
+[2025-05-27 13:29:40] EVENT: User logged out: kracer48@gmail.com
+maj 27, 2025 1:29:40 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:40] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:40 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:40] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:41 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:41] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:41] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:41 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:41] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:41] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:43 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:43] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:43] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:43 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:43] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:48 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:48] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:48] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:48 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:48] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:29:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:54] EVENT: User created: sabinehw18@gmail.com
+[2025-05-27 13:29:54] EVENT: User created: sabinehw18@gmail.com
+maj 27, 2025 1:29:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:29:54] EVENT: New user registered: sabinehw18@gmail.com
+[2025-05-27 13:29:54] EVENT: New user registered: sabinehw18@gmail.com
+maj 27, 2025 1:29:54 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:29:54] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:29:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:29:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:29:55] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:01] EVENT: Successful login for email: sabinehw18@gmail.com
+[2025-05-27 13:30:01] EVENT: Successful login for email: sabinehw18@gmail.com
+maj 27, 2025 1:30:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:01] EVENT: User logged in: sabinehw18@gmail.com
+[2025-05-27 13:30:01] EVENT: User logged in: sabinehw18@gmail.com
+maj 27, 2025 1:30:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:01] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:01] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:02] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:02] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:03 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:03] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:03 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:03] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:04 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:04] EVENT: Listing viewed: L207 by user: fe596e5c-4c10-4034-838f-82c640847e3b
+[2025-05-27 13:30:04] EVENT: Listing viewed: L207 by user: fe596e5c-4c10-4034-838f-82c640847e3b
+maj 27, 2025 1:30:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:04] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:30:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:04] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:30:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:04] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:05 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:05] EVENT: User fe596e5c-4c10-4034-838f-82c640847e3b accessed purchase confirmation page for listing L207
+[2025-05-27 13:30:05] EVENT: User fe596e5c-4c10-4034-838f-82c640847e3b accessed purchase confirmation page for listing L207
+maj 27, 2025 1:30:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:05] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:30:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:05] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:30:05] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:08 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:08] EVENT: Listing viewed: L207 by user: fe596e5c-4c10-4034-838f-82c640847e3b
+[2025-05-27 13:30:08] EVENT: Listing viewed: L207 by user: fe596e5c-4c10-4034-838f-82c640847e3b
+maj 27, 2025 1:30:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:08] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+maj 27, 2025 1:30:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:08] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-05-27 13:30:08] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:08] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:09 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:09] EVENT: User fe596e5c-4c10-4034-838f-82c640847e3b viewed profile of user U034
+[2025-05-27 13:30:09] EVENT: User fe596e5c-4c10-4034-838f-82c640847e3b viewed profile of user U034
+maj 27, 2025 1:30:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:09] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:09] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:10] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:11 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:11] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:11] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:12] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:12] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:12] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:13 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:13] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:13 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:13] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:13] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: CategoryRepository initialized
+[2025-05-27 13:30:54] EVENT: CategoryRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: ListingRepository initialized
+[2025-05-27 13:30:54] EVENT: ListingRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: FavoriteRepository initialized
+[2025-05-27 13:30:54] EVENT: FavoriteRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: MessageRepository initialiseret
+[2025-05-27 13:30:54] EVENT: MessageRepository initialiseret
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: NotificationRepository initialized
+[2025-05-27 13:30:54] EVENT: NotificationRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: OfferRepository initialized
+[2025-05-27 13:30:54] EVENT: OfferRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: ReviewRepository initialized
+[2025-05-27 13:30:54] EVENT: ReviewRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: TransactionRepository initialized
+[2025-05-27 13:30:54] EVENT: TransactionRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: UserRepository initialized
+[2025-05-27 13:30:54] EVENT: UserRepository initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: GetCategoriesUseCase initialized
+[2025-05-27 13:30:54] EVENT: GetCategoriesUseCase initialized
+maj 27, 2025 1:30:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:54] EVENT: GetCategoryUseCase initialized
+[2025-05-27 13:30:54] EVENT: GetCategoryUseCase initialized
+maj 27, 2025 1:30:56 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:56] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:56] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:56 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:56] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:30:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-05-27 13:30:57] EVENT: User fe596e5c-4c10-4034-838f-82c640847e3b accessed account deletion confirmation page
+[2025-05-27 13:30:57] EVENT: User fe596e5c-4c10-4034-838f-82c640847e3b accessed account deletion confirmation page
+maj 27, 2025 1:30:57 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:30:57] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:30:57 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:30:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:30:57] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+maj 27, 2025 1:31:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:31:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-05-27 13:31:04] ERROR: Unhandled exception: No static resource home.svg.
+maj 27, 2025 1:31:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-05-27 13:31:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+[2025-05-27 13:31:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
