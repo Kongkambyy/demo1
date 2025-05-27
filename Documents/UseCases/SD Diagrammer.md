@@ -18,6 +18,7 @@ sequenceDiagram
         System->>Bruger: Vis almindelig brugerprofil
     end
 
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
@@ -35,6 +36,7 @@ sequenceDiagram
         System-->>Bruger: Returner til login-side
     end
 
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
@@ -56,6 +58,7 @@ sequenceDiagram
         System-->>Bruger: Returner til login-side
     end
 
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
@@ -78,6 +81,7 @@ sequenceDiagram
         System-->>Bruger: Returner til login-side
     end
 
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
@@ -99,6 +103,7 @@ sequenceDiagram
         System-->>Bruger: Returner til login-side
     end
 
+```mermaid
 sequenceDiagram
     participant Køber
     participant System
@@ -118,6 +123,7 @@ sequenceDiagram
         System->>Sælger: Send email-notifikation
     end
 
+```mermaid
 sequenceDiagram
     participant NyBruger
     participant System
@@ -136,6 +142,7 @@ sequenceDiagram
         System-->>NyBruger: Bekræft oprettelse gennemført
     end
 
+```mermaid
 sequenceDiagram
     participant Køber
     participant System
@@ -146,6 +153,7 @@ sequenceDiagram
     Database-->>System: Bekræft rating gemt
     System-->>Køber: Bekræft rating modtaget
 
+```mermaid
 sequenceDiagram
     participant Køber
     participant System
@@ -162,6 +170,7 @@ sequenceDiagram
     Database-->>System: Bekræft appel modtaget
     System-->>Sælger: Bekræft appel sendt
 
+```mermaid
 sequenceDiagram
     participant Sælger
     participant System
@@ -177,6 +186,7 @@ sequenceDiagram
         System-->>Sælger: Informer ingen salg
     end
 
+```mermaid
 sequenceDiagram
     participant Køber
     participant System
@@ -187,6 +197,7 @@ sequenceDiagram
     Database-->>System: Returner data
     System-->>Køber: Vis oversigt over bud og køb
 
+```mermaid
 sequenceDiagram
     participant Sælger
     participant System
@@ -197,6 +208,7 @@ sequenceDiagram
     Database-->>System: Bekræft annonce gemt
     System-->>Sælger: Annonce publiceret
 
+```mermaid
 sequenceDiagram
     participant Køber
     participant System
@@ -211,6 +223,7 @@ sequenceDiagram
     Database-->>System: Bekræft status opdateret
     System-->>Sælger: Informer sælger om salg gennemført
 
+```mermaid
 sequenceDiagram
     participant Køber
     participant System
@@ -227,6 +240,7 @@ sequenceDiagram
         System-->>Køber: Vis fejlbesked om betaling
     end
 
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
@@ -237,6 +251,7 @@ sequenceDiagram
     Database-->>System: Returner filtrerede varer
     System-->>Bruger: Vis opdateret produktliste
 
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
@@ -247,6 +262,7 @@ sequenceDiagram
     Database-->>System: Returner resultater
     System-->>Bruger: Vis søgeresultater (eller "ingen fundet")
 
+```mermaid
 sequenceDiagram
     participant Bruger
     participant System
