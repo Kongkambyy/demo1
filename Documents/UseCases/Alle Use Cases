@@ -1,1 +1,379 @@
+Use Case - Admin bruger
+
+Objective: Administratorer kan styre brugere, data og kampagner
+Preconditions: Aktiv databaseforbindelse, aktiv session, og brugerrollen er admin.
+Use Case:
+Logger en bruger ind på systemet, og har brugeren administratorrettigheder, vil der blive displayet et dashboard.
+Herfra vil admin kunne styre brugernes data, og påbegynde nye promoveringer for virksomheden som product owner ønsker.
+Har brugeren ikke administratorrettigheder, vil de blive logget ind på en almindelig brugerprofil, såfremt kontoinformationen stemmer. 
+
+Postcondition: Administratorens handlinger bliver logget og gemt.
+
+___________________________________________________________________________
+
+Use Case - Se profil
+
+Objective: At brugeren kan se sine profil detaljer.
+Preconditions: Database Forbindelsen skal være aktiv og session skal være aktiv.
+Use case: 
+Brugeren interagerer med systemet, således at han/hun kommer til profil detaljer. 
+Her vil der blive vist oprettelsesdato, samt display-navn og email.
+Andre muligheder vil være: Ordrehistorik og forrige køb.
+Er databaseforbindelsen ikke aktiv, skal der returneres en fejl-besked til brugeren under indhentning af data. 
+Er brugerens session udløbet, bliver brugeren returneret til login-screen.
+
+Postcondition: 
+Database Forbindelse og session er aktiv. Brugeren får returneret detaljerne omkring profilen.
+
+_________________________________________________________________________
+
+Use Case - Rediger profil
+
+Objective: Brugeren skal kunne redigere i specifikke detaljer.
+Preconditions: Database Forbindelse og session skal være aktiv.
+Use Case:
+Brugeren interagere med systemet, således at han/hun kommer ind til redigering af profil.
+På denne side skal brugeren kunne redigere display-navn, email og password.
+Er der fejl i Database Forbindelsen, vil der blive returneret en fejl-besked til brugeren.
+Er brugerens session udløbet bliver han/hun returneret til login-screen.
+
+Postcondition:
+Database Forbindelsen og session er aktiv. Brugeren får returneret siden som muliggøre redigering af visse punkter vedrørende deres profil-detaljer
+
+___________________________________________________________________________
+
+
+
+
+
+Use Case - Slet profil
+
+Objective: Brugeren skal efter bekræftelse, kunne slette sin profil samt data fra systemet.
+Preconditions: Database Forbindelsen og session skal være aktiv.
+Use Case: 
+Brugeren interagere med systemet, og kommer til knappen vedrørende sletning af bruger.
+Idet brugeren trykker på knappen, vil en ekstra bekræftelses-knap komme frem til brugeren. Bekræfter brugeren, vil han/hun blive bedt om at indtaste profilens nuværende kodeord for endelig bekræftelse.
+Er Database Forbindelsen ikke aktiv, vil der blive returneret en fejl-besked til brugeren.
+Er brugerens session udløbet, vil de blive returneret til login-screen.
+
+Postcondition: Brugeren får slettet deres profil permanent. Profil data bliver slettet fra database.
+
+___________________________________________________________________________
+
+Use Case - Profil Reviews
+
+Objective: Brugeren skal kunne se reviews der er indsendt fra andre brugere der er handlet med.
+Preconditions: Databaseforbindelsen og session skal være aktiv.
+Use Case:
+Brugeren interagere med systemet, og kommer til profil-reviews siden. Her vil andre brugere der har handlet med brugeren, have mulighed for at aflægge et review.
+Brugeren vil ikke have mulighed for at slette disse reviews. 
+Brugeren vil have mulighed for at appellere reviews til virksomheden.
+Er databaseforbindelsen ikke aktiv, vil der blive returneret en fejl-besked til brugeren.
+Er brugerens session udløbet, vil de blive returneret til login-screen.
+
+Postcondition: 
+Brugeren får returneret profil-review siden, hvor han/hun kan se andres holdning til afsluttede handler.
+
+___________________________________________________________________________
+
+
+Use Case - Køber Sælger chat
+
+Objective:  Køber og sælger kan skrive sammen i realtid.
+Preconditions: Database Forbindelse, wifi og session skal være aktiv
+Use Case:
+Brugere kan starte en chat med andre brugere. Denne chat skal kunne startes både som neutral chat, men også om specifikke vare.
+Vil køberen have yderligere information vedrørende en vare, kan de derfra påbegynde en chat.
+Offline brugere skal modtage en mail omkring ny besked.
+
+Postcondition: Chat-historikken skal være tilgængelig for begge parter.
+
+___________________________________________________________________________
+
+
+
+
+
+
+
+Use Case - Oprettelse af bruger
+Objective: Nye brugere kan oprette en profil på hjemmesiden.
+Preconditions: Internetforbindelse skal være aktiv, databaseforbindelse skal være aktiv.
+Use Case:
+Bruger udfylder en registreringsformular. Systemet tjekker, om email og adgangskode allerede er benyttet i systemet. Herfra vil brugeren få en fejl-besked hvis informationerne allerede er brugt.
+Ellers vil brugeren blive returneret besked omkring at oprettelse af profilen er gennemført.
+
+Postcondition: Kontoen er oprettet og aktiveret. Klare fejlbeskeder skal vises til brugeren.
+
+___________________________________________________________________________
+
+Use Case - Handel rating
+
+Objective: Køberen kan give sælgeren en stjerne rating.
+Preconditions: Ordren er markeret afsluttet. Databaseforbindelse og wifi aktivt.
+Use Case: 
+Køber vælger antal stjerner og gemmer rating. Låst til enkelt rating per ordre.
+Rating bliver gemt under sælgers profil.
+
+Postcondition: Rating indgår i sælgers rating-gennemsnit.
+
+___________________________________________________________________________
+
+Use Case - Handel Feedback
+
+Objective: Kommentare vedrørende køb og afsluttede handler.
+Preconditions: Afsluttet køb, aktiv databaseforbindelse og aktiv session.
+Use Case:
+Efter en handel er gennemført mellem 2 parter. Vil køberen have mulighed for at give offentlig feedback til sælger. Dette sker i tekstform og vil blive vist på sælgers profil.
+Handel skal være gennemført før der kan gives feedback.
+Modtager af review skal kunne appellere review til virksomheden. I tilfælde af spam.
+
+Postcondition: Feedback gemmes, modtageren notificeres og feedback vist på profil.
+
+___________________________________________________________________________
+
+
+Use Case - Salgsoversigt
+
+Objective: Bruger ser alle aktive og afsluttede salg.
+Preconditions: Aktiv session og databaseforbindelse.
+Use Case: 
+Systemet skal hente samtlige informationer omkring brugerens aktive eller afsluttede handler.
+Brugeren skal kunne gennemse alle hans aktive opslag samt alle hans afsluttede opslag.
+Har brugeren ikke solgt, eller opsat en annonce, vil der blive returneret en informations besked til bruger, at han ikke har nogen data.
+
+Postcondition: Fuld oversigt over aktive og inaktive salg.
+
+___________________________________________________________________________
+
+Use Case - Købsoversigt
+
+Objective: Bruger ser alle aktive og afsluttede køb.
+Preconditions: Aktiv session og databaseforbindelse.
+Use Case:
+Systemet skal hente samtlige informationer omkring brugerens aktive bud og/eller afsluttede køb.
+Brugeren skal kunne gennemse hvilke aktive bud han/hun har. Brugeren skal kunne se afsluttede køb.
+
+Postcondition: Fuld oversigt over aktive bud og afsluttede køb.
+
+___________________________________________________________________________
+
+Use Case - Oprettelse af salg
+
+Objective: Bruger skal kunne oprette en annonce til salg af vare.
+Preconditions: Oprettet bruger, aktiv session og databaseforbindelse.
+Use Case:
+Sælger indtaster navnet af brand, vare model, pris, stand og lokation. 
+Postcondition: Annoncen bliver klar på platformen og andre brugere kan se det.
+
+___________________________________________________________________________
+
+Use Case - Salg af vare
+
+Objective: Føre en vare fra annonce til afsluttet handel
+Preconditions: Varen er aktiv, begge parter oprettet i systemet. Aktiv session og database.
+Use Case:
+Køber betaler via. en betalingsplatform. Når sælgeren har købt varen, vil varen forsvinde som annonce, og kan derfra ikke længere findes af andre brugere.
+Postcondition: Handlen afsluttes og rating af sælger bliver mulig.
+
+___________________________________________________________________________
+
+Use Case - Køb af vare
+
+Objective: Køber betaler for vare. Handel gennemføres.
+Preconditions: Varen er aktiv, begge parter registreret. Aktiv session og databaseforbindelse.
+Use Case: 
+Bruger klikker på køb nu. Brugeren bliver derfra ført til købsbekræftelse, hvor han/hun vælger hvilken betalingsplatform der skal benyttes.
+Ved solgt varer, validerer systemet handlen, og ordren vil blive vist i købshistorik og sælgers salgshistorik.
+Er varen solgt ved checkout, vises en fejl-besked til køber.
+Postcondition: Handel bliver gennemført mellem 2 parter.
+
+___________________________________________________________________________
+
+Use Case - Checkout funktion
+
+Objective: Håndtere betaling med ekstern betalingsgateway
+Preconditions: Varen er i kurv, session aktiv og gateway online.
+Use Case: 
+Bruger indtaster betalingsoplysninger. Gateway bekræfter købet.
+Postcondition: Købet bliver gennemført eller transaktionen bliver afvist med fejl-besked.
+
+___________________________________________________________________________
+
+
+
+Use Case - Filtrering af vare
+
+
+Objective: Bruger kan filtrere aktive produkter efter pris, kategori, brand og stand.
+Preconditions: Produktliste er hentet. Aktiv session og database.
+Use Case: 
+Ved filtervalg opdatere systemet automatisk visningen med relevante produkter. Denne proces skal foregå uden at brugeren skal genindlæse siden.
+Postcondition: Lister kun de vare der matcher de angivet filtre.
+
+___________________________________________________________________________
+
+Use Case - Søgefunktion af vare
+
+Objective: Bruger kan søge frit blandt alle aktive varer.
+Preconditions: Aktiv database og session. Forbindelse til internettet.
+Use Case: Bruger skriver søgetekst. Systemet returnere resultaterne sorteret efter relevans.
+Postcondition: Søgeresultater vises eller “ingen fundet”.
+
+___________________________________________________________________________
+
+Use Case - Se indkøbskurv
+
+Objective: Bruger kan se og ændre varer før betaling.
+Preconditions: Sessionen og databasen skal være aktive. Varer skal være i kurv.
+Use Case: 
+Kurven vises med antal og totalpris. Brugeren kan her frasortere varer han/hun har lagt i indkøbskurven. 
+Postcondition: Opdateret kurv med totalsum. Overblik over varer bruger ønsker at købe.
+
+___________________________________________________________________________
+
+
+
+
+
+
+
+Use Case -  Favoritter
+
+Objective: Bruger kan gemme varer som favoritter.
+Preconditions: Aktiv session, varen er aktiv.
+Use Case:
+Brugeren vil have muligheden for at interagere med et hjerte på alle varer. Herfra vil de vare bliver tilføjet til brugerens favoritliste. 
+Bliver annoncer solgt, mens det står på brugerens favoritliste, vil der blive sendt en notifikation og varen vil blive fjernet.
+Bliver der afgivet bud på annoncer, vil brugeren modtage en notifikation.
+Postcondition: Varen fremgår i brugerens favoritliste.
+
+___________________________________________________________________________
+
+Use Case - Mail system
+
+Objective: Sende information beskeder til brugeren.
+Preconditions: Samtykke givet, internetforbindelse aktiv.
+Use Case: 
+Systemet danner mail indhold ud fra udvalgte skabeloner.
+Har brugeren en vare i favoritlisten, vil brugeren modtage en mail.
+Har brugeren forsøgt at gendanne deres password, vil der blive afsendt en mail.
+Postcondition: Mail leveret.
+
+___________________________________________________________________________
+
+Use Case - Notifikationer
+
+Objective: Brugeren modtager beskeder på hjemmesiden.
+Preconditions: Aktiv session og databaseforbindelse. Internetforbindelse.
+Use Case: 
+Systemet skal kunne notificere brugeren om relevante hændelser i relation til hjemmesiden.
+Har brugeren annoncer i favoritlisten, vil der blive notificeret omkring nye bud.
+Har brugeren en annonce i favoritlisten, som er faldet i pris, skal brugeren notificeres.
+
+Postcondition: Beskeder vises til brugeren som ulæst.
+
+___________________________________________________________________________
+
+Use Case - Virksomheds promovering
+
+Objective: Fremhæve nye kampagner fra virksomheden på forside.
+Preconditions: Admin bruger, aktiv session og databaseforbindelse.
+Use Case: 
+Admin bruger kan oprette nye annoncer fra virksomheden.
+Forsiden vil hente de angivet data admin inputter. Systemet vil derfra vise den annonce på forsiden for den almindelige bruger.
+Postcondition: Kampagnerne vises på forsiden.
+
+___________________________________________________________________________
+
+Use Case - Detaljer af varer
+
+Objective: Vis fuld information om en vare.
+Preconditions: Varen eksistere og er aktiv.
+Use Case:
+Systemet henter varedata, billeder, sælgers rating og angivede leveringsinformationer.
+
+Postcondition: Vare detaljerne vises.
+
+___________________________________________________________________________
+
+Use Case - Tracking af vare
+
+Objective: Køber kan følge pakken direkte på hjemmesiden
+Preconditions: Tracking-nummer, understøttet transportør. Aktiv internetforbindelse.
+Use Case:
+Brugeren skal efter afsluttede handler og afsendt vare, modtage et trackingnummer, såfremt kunden ønsker at betale for det.
+Herfra skal de kunne fra hjemmesiden, kunne tracke deres vare igennem trackingnummeret.
+
+Postcondition: Aktuel tracking vises til køber.
+
+___________________________________________________________________________
+
+Use Case - Statistik af bruger
+
+Objective: Give brugeren et overblik over den komplette køb/salgs historik.
+Preconditions: Aktiv session og database.
+Use Case:
+Systemet beregner en total omsætning og gennemsnitsrating. Systemet returnere grafer der viser udgifter mod indtægter til brugeren.
+Postcondition: Statistikdashboard vises.
+
+___________________________________________________________________________
+
+Use Case - Rabatkode
+
+Objective: Bruger kan anvende en gyldig rabatkode.
+Preconditions: Rabatkode aktiv, database og session er aktiv.
+Use Case: Bruger indtaster den angivne kode, hvorefter et procent af prisen vil blive fratrukket.
+Postcondition: Rabatkode accepteret eller afvist.
+
+___________________________________________________________________________
+
+Use Case - Byd på vare
+
+Objective: Understøtte budgivning på angivne varer.
+Preconditions: Sælger har valgt bud funktion, aktiv session og database.
+Use Case: 
+Sælger angiver han acceptere bud på annonce.
+Købere kan afgive bud, med et minimum af 40% under den angivede normalpris sat af sælger.
+Bud bliver registreret af systemet, sælger får en notifikation og kan vælge at acceptere buddet.
+
+Postcondition: Bud registreret, notifikation til sælger sendt.
+___________________________________________________________________________
+
+
+
+ Use Case - Skriv til support
+
+Objective: Mail afsendes fra bruger til systemadministratorer via. mail.
+Preconditions: Aktiv session, supportformular.
+Use Case: 
+Brugeren interagere med systemet, således at en supportformular bliver vist.
+Her skal bruger udfylde navn, mail og en uddybende tekst vedrørende problemet.
+Er problemet vedrørende en ordre, skal der også angives et ordrenummer.
+
+Postcondition: Supportsag er oprettet.
+___________________________________________________________________________
+
+
+ Use Case - Badge funktion
+
+Objective: Tildele badges for milepæle, som fx. “Elite seller”, eller “Elite køber”. Virksomheds badge til officielle virksomheder.
+Preconditions: Aktiv database, aktiv internetforbindelse.
+Use Case: 
+Systemet registrere brugerens statistikker, således at når han/hun opnår kriterier for milepæl, vil der automatisk blive tildelt et badge.
+Officielle virksomhedsprofiler, kan efter verificering af Gilbert, modtage et officielt badge.
+
+Postcondition: Badge vises på brugerens profil.
+___________________________________________________________________________
+
+ Use Case - Glemt password
+
+Objective: Bruger kan nulstille password.
+Preconditions: Mailsystem kører, e-mail er registreret.
+Use Case: 
+Bruger beder om at nulstille password. Systemet viser derefter en formular, der beder bruger om at indtaste den oprettede email. 
+En mail med et nyt password vil derefter blive tilsendt brugeren, såfremt at mail-addressen er registreret i systemet. 
+Postcondition: Adgangskoden er ændret.
+___________________________________________________________________________
+
 
