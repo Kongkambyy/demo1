@@ -129,19 +129,33 @@
     <!-- Product Images -->
     <div class="product-images">
       <div class="main-image">
-        <div class="image-placeholder">
+        <!-- Show actual product image if available -->
+        <div th:if="${listing.hasImages()}">
+          <img th:src="${listing.imagePaths[0]}" th:alt="${listing.title}" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <!-- Show placeholder if no images -->
+        <div th:unless="${listing.hasImages()}" class="image-placeholder">
           <img src="/images/product-placeholder.svg" alt="Product image">
           <p>Image will be displayed here</p>
         </div>
       </div>
       <div class="thumbnail-images">
-        <div class="thumbnail active">
+        <!-- Show thumbnails if multiple images -->
+        <div th:if="${listing.hasImages() && listing.imagePaths.size() > 1}"
+             th:each="imagePath, iterStat : ${listing.imagePaths}"
+             class="thumbnail"
+             th:classappend="${iterStat.index == 0} ? 'active' : ''"
+             th:onclick="'changeMainImage(' + ${iterStat.index} + ')'">
+          <img th:src="${imagePath}" th:alt="'Thumbnail ' + ${iterStat.index + 1}" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <!-- Show placeholder thumbnails if no images -->
+        <div th:unless="${listing.hasImages()}" class="thumbnail active">
           <img src="/images/product-placeholder.svg" alt="Thumbnail 1">
         </div>
-        <div class="thumbnail">
+        <div th:unless="${listing.hasImages()}" class="thumbnail">
           <img src="/images/product-placeholder.svg" alt="Thumbnail 2">
         </div>
-        <div class="thumbnail">
+        <div th:unless="${listing.hasImages()}" class="thumbnail">
           <img src="/images/product-placeholder.svg" alt="Thumbnail 3">
         </div>
       </div>
@@ -159,27 +173,6 @@
         <div class="status-badge" th:classappend="${listing.status.toLowerCase()}">
           <span th:text="${listing.status}">ACTIVE</span>
         </div>
-      </div>
-
-      <!-- Favorite Section for logged in users -->
-      <div th:if="${isLoggedIn and !isOwner}" class="favorite-section">
-        <!-- Add to favorites -->
-        <form th:if="${!isFavorite}" th:action="@{/favorites/add}" method="post" style="display: inline;">
-          <input type="hidden" name="listingId" th:value="${listing.adID}">
-          <button type="submit" class="btn-favorite">
-            <span>♡</span>
-            Add to Favorites
-          </button>
-        </form>
-
-        <!-- Remove from favorites -->
-        <form th:if="${isFavorite}" th:action="@{/favorites/remove}" method="post" style="display: inline;">
-          <input type="hidden" name="listingId" th:value="${listing.adID}">
-          <button type="submit" class="btn-favorite is-favorite">
-            <span>♥</span>
-            Remove from Favorites
-          </button>
-        </form>
       </div>
 
       <!-- Product Info -->
@@ -288,6 +281,38 @@
     <img src="/images/Notification.svg" class="icon" alt="">
   </a>
 </footer>
+
+<script>
+  // Image switching functionality
+  function changeMainImage(index) {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.querySelector('.main-image img');
+
+    if (!mainImage || !thumbnails[index]) return;
+
+    // Remove active class from all thumbnails
+    thumbnails.forEach(thumb => thumb.classList.remove('active'));
+
+    // Add active class to clicked thumbnail
+    thumbnails[index].classList.add('active');
+
+    // Get the image source from the thumbnail
+    const newImageSrc = thumbnails[index].querySelector('img').src;
+
+    // Update main image
+    mainImage.src = newImageSrc;
+  }
+
+  // Add click event listeners to thumbnails when page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+
+    thumbnails.forEach((thumbnail, index) => {
+      thumbnail.addEventListener('click', () => changeMainImage(index));
+      thumbnail.style.cursor = 'pointer';
+    });
+  });
+</script>
 
 </body>
 </html>

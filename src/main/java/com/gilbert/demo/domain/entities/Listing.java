@@ -1,5 +1,9 @@
 package com.gilbert.demo.domain.entities;
 
+
+import java.util.List;
+import java.util.ArrayList;
+
 public class Listing {
 
     private String adID;
@@ -12,6 +16,7 @@ public class Listing {
     private String status;
     private String brand;
     private int categoryID;
+    private List<String> imagePaths; // New field for image paths
 
     public Listing(String userID, String title, String description, int price, String createdDate, String itemCondition, String status) {
         this.userID = userID;
@@ -21,8 +26,10 @@ public class Listing {
         this.createdDate = createdDate;
         this.itemCondition = itemCondition;
         this.status = status;
+        this.imagePaths = new ArrayList<>(); // Initialize empty list
     }
 
+    // Existing getters and setters
     public String getAdID() {
         return adID;
     }
@@ -103,4 +110,27 @@ public class Listing {
         this.categoryID = categoryID;
     }
 
+    // New methods for image handling
+    public List<String> getImagePaths() {
+        return imagePaths != null ? imagePaths : new ArrayList<>();
+    }
+
+    public void setImagePaths(List<String> imagePaths) {
+        this.imagePaths = imagePaths != null ? imagePaths : new ArrayList<>();
+    }
+
+    public void addImagePath(String imagePath) {
+        if (this.imagePaths == null) {
+            this.imagePaths = new ArrayList<>();
+        }
+        this.imagePaths.add(imagePath);
+    }
+
+    public String getMainImage() {
+        return (imagePaths != null && !imagePaths.isEmpty()) ? imagePaths.get(0) : null;
+    }
+
+    public boolean hasImages() {
+        return imagePaths != null && !imagePaths.isEmpty();
+    }
 }

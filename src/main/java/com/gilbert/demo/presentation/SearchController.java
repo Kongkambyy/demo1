@@ -3,6 +3,7 @@ package com.gilbert.demo.presentation;
 import com.gilbert.demo.domain.entities.Category;
 import com.gilbert.demo.domain.entities.Listing;
 import com.gilbert.demo.domain.usecases.listing.SearchListingsUseCase;
+import com.gilbert.demo.domain.usecases.listing.ImageUploadService;
 import com.gilbert.demo.domain.usecases.Notifications.GetNotificationsUseCase;
 import com.gilbert.demo.data.repository.CategoryRepository;
 import com.gilbert.demo.data.util.LoggerUtility;
@@ -23,14 +24,17 @@ public class SearchController {
     private final SearchListingsUseCase searchListingsUseCase;
     private final CategoryRepository categoryRepository;
     private final GetNotificationsUseCase getNotificationsUseCase;
+    private final ImageUploadService imageUploadService;
 
     @Autowired
     public SearchController(SearchListingsUseCase searchListingsUseCase,
                             CategoryRepository categoryRepository,
-                            GetNotificationsUseCase getNotificationsUseCase) {
+                            GetNotificationsUseCase getNotificationsUseCase,
+                            ImageUploadService imageUploadService) {
         this.searchListingsUseCase = searchListingsUseCase;
         this.categoryRepository = categoryRepository;
         this.getNotificationsUseCase = getNotificationsUseCase;
+        this.imageUploadService = imageUploadService;
     }
 
     private void addNotificationCount(Model model, HttpSession session) {
@@ -94,6 +98,17 @@ public class SearchController {
             listings = searchListingsUseCase.searchByCategoryHierarchy(keyword, minPrice, maxPrice, condition, brand, categoryIds);
         } else {
             listings = searchListingsUseCase.execute(keyword, minPrice, maxPrice, condition, brand, null);
+        }
+
+        // Load images for each listing
+        for (Listing listing : listings) {
+            try {
+                List<String> imagePaths = imageUploadService.getListingImages(listing.getAdID());
+                listing.setImagePaths(imagePaths);
+            } catch (Exception e) {
+                LoggerUtility.logError("Error loading images for listing " + listing.getAdID() + ": " + e.getMessage());
+                // Continue without images
+            }
         }
 
         if (sort != null) {

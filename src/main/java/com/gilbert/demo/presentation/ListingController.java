@@ -6,6 +6,7 @@ import com.gilbert.demo.domain.entities.User;
 import com.gilbert.demo.domain.usecases.Notifications.GetNotificationsUseCase;
 import com.gilbert.demo.domain.usecases.features.GetFavoritesUseCase;
 import com.gilbert.demo.domain.usecases.listing.GetListingUseCase;
+import com.gilbert.demo.domain.usecases.listing.ImageUploadService;
 import com.gilbert.demo.data.repository.CategoryRepository;
 import com.gilbert.demo.data.repository.UserRepository;
 import com.gilbert.demo.data.util.LoggerUtility;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import jakarta.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -26,18 +28,21 @@ public class ListingController {
     private final UserRepository userRepository;
     private final GetFavoritesUseCase getFavoritesUseCase;
     private final GetNotificationsUseCase getNotificationsUseCase;
+    private final ImageUploadService imageUploadService;
 
     @Autowired
     public ListingController(GetListingUseCase getListingUseCase,
                              CategoryRepository categoryRepository,
                              UserRepository userRepository,
                              GetFavoritesUseCase getFavoritesUseCase,
-                             GetNotificationsUseCase getNotificationsUseCase) {
+                             GetNotificationsUseCase getNotificationsUseCase,
+                             ImageUploadService imageUploadService) {
         this.getListingUseCase = getListingUseCase;
         this.categoryRepository = categoryRepository;
         this.userRepository = userRepository;
         this.getFavoritesUseCase = getFavoritesUseCase;
         this.getNotificationsUseCase = getNotificationsUseCase;
+        this.imageUploadService = imageUploadService;
     }
 
     @GetMapping("/listing/{id}")
@@ -49,8 +54,12 @@ public class ListingController {
 
             addNotificationCount(model, session);
 
-
             Listing listing = getListingUseCase.execute(listingId, currentUserId);
+
+            // Get images for this listing
+            List<String> imagePaths = imageUploadService.getListingImages(listingId);
+            listing.setImagePaths(imagePaths);
+
             model.addAttribute("listing", listing);
 
             Optional<User> sellerOpt = userRepository.findById(listing.getUserID());
@@ -78,7 +87,7 @@ public class ListingController {
             model.addAttribute("isLoggedIn", currentUserId != null);
 
             boolean isFavorite = false;
-            if (currentUserId != null && !isOwner) {
+            if (currentUserId != null) {
                 isFavorite = getFavoritesUseCase.isListingFavorite(currentUserId, listingId);
             }
             model.addAttribute("isFavorite", isFavorite);
