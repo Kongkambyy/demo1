@@ -17455,3 +17455,1452 @@ SEVERE: [2025-05-27 13:31:04] ERROR: Unhandled exception: No static resource hom
 maj 27, 2025 1:31:05 PM com.gilbert.demo.data.util.LoggerUtility logError
 SEVERE: [2025-05-27 13:31:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
 [2025-05-27 13:31:05] ERROR: Unhandled exception: No endpoint GET /favicon.ico.
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: CategoryRepository initialized
+[2025-06-08 14:48:25] EVENT: CategoryRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: ListingRepository initialized
+[2025-06-08 14:48:25] EVENT: ListingRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: FavoriteRepository initialized
+[2025-06-08 14:48:25] EVENT: FavoriteRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: MessageRepository initialiseret
+[2025-06-08 14:48:25] EVENT: MessageRepository initialiseret
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: NotificationRepository initialized
+[2025-06-08 14:48:25] EVENT: NotificationRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: OfferRepository initialized
+[2025-06-08 14:48:25] EVENT: OfferRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: ReviewRepository initialized
+[2025-06-08 14:48:25] EVENT: ReviewRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: TransactionRepository initialized
+[2025-06-08 14:48:25] EVENT: TransactionRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: UserRepository initialized
+[2025-06-08 14:48:25] EVENT: UserRepository initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: GetCategoriesUseCase initialized
+[2025-06-08 14:48:25] EVENT: GetCategoriesUseCase initialized
+Jun 08, 2025 2:48:25 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:25] EVENT: GetCategoryUseCase initialized
+[2025-06-08 14:48:25] EVENT: GetCategoryUseCase initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: CategoryRepository initialized
+[2025-06-08 14:48:29] EVENT: CategoryRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: ListingRepository initialized
+[2025-06-08 14:48:29] EVENT: ListingRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: FavoriteRepository initialized
+[2025-06-08 14:48:29] EVENT: FavoriteRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: MessageRepository initialiseret
+[2025-06-08 14:48:29] EVENT: MessageRepository initialiseret
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: NotificationRepository initialized
+[2025-06-08 14:48:29] EVENT: NotificationRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: OfferRepository initialized
+[2025-06-08 14:48:29] EVENT: OfferRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: ReviewRepository initialized
+[2025-06-08 14:48:29] EVENT: ReviewRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: TransactionRepository initialized
+[2025-06-08 14:48:29] EVENT: TransactionRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: UserRepository initialized
+[2025-06-08 14:48:29] EVENT: UserRepository initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: GetCategoriesUseCase initialized
+[2025-06-08 14:48:29] EVENT: GetCategoriesUseCase initialized
+Jun 08, 2025 2:48:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:29] EVENT: GetCategoryUseCase initialized
+[2025-06-08 14:48:29] EVENT: GetCategoryUseCase initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: CategoryRepository initialized
+[2025-06-08 14:48:57] EVENT: CategoryRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: ListingRepository initialized
+[2025-06-08 14:48:57] EVENT: ListingRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: FavoriteRepository initialized
+[2025-06-08 14:48:57] EVENT: FavoriteRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: MessageRepository initialiseret
+[2025-06-08 14:48:57] EVENT: MessageRepository initialiseret
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: NotificationRepository initialized
+[2025-06-08 14:48:57] EVENT: NotificationRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: OfferRepository initialized
+[2025-06-08 14:48:57] EVENT: OfferRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: ReviewRepository initialized
+[2025-06-08 14:48:57] EVENT: ReviewRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: TransactionRepository initialized
+[2025-06-08 14:48:57] EVENT: TransactionRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: UserRepository initialized
+[2025-06-08 14:48:57] EVENT: UserRepository initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: GetCategoriesUseCase initialized
+[2025-06-08 14:48:57] EVENT: GetCategoriesUseCase initialized
+Jun 08, 2025 2:48:57 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:48:57] EVENT: GetCategoryUseCase initialized
+[2025-06-08 14:48:57] EVENT: GetCategoryUseCase initialized
+Jun 08, 2025 2:49:00 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 14:49:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 14:49:00] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 2:49:00 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 14:49:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 14:49:00] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 2:49:04 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 14:49:04] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+[2025-06-08 14:49:04] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+Jun 08, 2025 2:49:12 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 14:49:12] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+[2025-06-08 14:49:12] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: CategoryRepository initialized
+[2025-06-08 14:56:29] EVENT: CategoryRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: ListingRepository initialized
+[2025-06-08 14:56:29] EVENT: ListingRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: FavoriteRepository initialized
+[2025-06-08 14:56:29] EVENT: FavoriteRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: MessageRepository initialiseret
+[2025-06-08 14:56:29] EVENT: MessageRepository initialiseret
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: NotificationRepository initialized
+[2025-06-08 14:56:29] EVENT: NotificationRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: OfferRepository initialized
+[2025-06-08 14:56:29] EVENT: OfferRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: ReviewRepository initialized
+[2025-06-08 14:56:29] EVENT: ReviewRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: TransactionRepository initialized
+[2025-06-08 14:56:29] EVENT: TransactionRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: UserRepository initialized
+[2025-06-08 14:56:29] EVENT: UserRepository initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: GetCategoriesUseCase initialized
+[2025-06-08 14:56:29] EVENT: GetCategoriesUseCase initialized
+Jun 08, 2025 2:56:29 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 14:56:29] EVENT: GetCategoryUseCase initialized
+[2025-06-08 14:56:29] EVENT: GetCategoryUseCase initialized
+Jun 08, 2025 2:56:34 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 14:56:34] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 14:56:34] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 2:56:34 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 14:56:34] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 14:56:34] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 2:56:38 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 14:56:38] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+[2025-06-08 14:56:38] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: CategoryRepository initialized
+[2025-06-08 15:00:44] EVENT: CategoryRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: ListingRepository initialized
+[2025-06-08 15:00:44] EVENT: ListingRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: FavoriteRepository initialized
+[2025-06-08 15:00:44] EVENT: FavoriteRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: MessageRepository initialiseret
+[2025-06-08 15:00:44] EVENT: MessageRepository initialiseret
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: NotificationRepository initialized
+[2025-06-08 15:00:44] EVENT: NotificationRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: OfferRepository initialized
+[2025-06-08 15:00:44] EVENT: OfferRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: ReviewRepository initialized
+[2025-06-08 15:00:44] EVENT: ReviewRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: TransactionRepository initialized
+[2025-06-08 15:00:44] EVENT: TransactionRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: UserRepository initialized
+[2025-06-08 15:00:44] EVENT: UserRepository initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: GetCategoriesUseCase initialized
+[2025-06-08 15:00:44] EVENT: GetCategoriesUseCase initialized
+Jun 08, 2025 3:00:44 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:00:44] EVENT: GetCategoryUseCase initialized
+[2025-06-08 15:00:44] EVENT: GetCategoryUseCase initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: CategoryRepository initialized
+[2025-06-08 15:05:35] EVENT: CategoryRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: ListingRepository initialized
+[2025-06-08 15:05:35] EVENT: ListingRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: FavoriteRepository initialized
+[2025-06-08 15:05:35] EVENT: FavoriteRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: MessageRepository initialiseret
+[2025-06-08 15:05:35] EVENT: MessageRepository initialiseret
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: NotificationRepository initialized
+[2025-06-08 15:05:35] EVENT: NotificationRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: OfferRepository initialized
+[2025-06-08 15:05:35] EVENT: OfferRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: ReviewRepository initialized
+[2025-06-08 15:05:35] EVENT: ReviewRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: TransactionRepository initialized
+[2025-06-08 15:05:35] EVENT: TransactionRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: UserRepository initialized
+[2025-06-08 15:05:35] EVENT: UserRepository initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: GetCategoriesUseCase initialized
+[2025-06-08 15:05:35] EVENT: GetCategoriesUseCase initialized
+Jun 08, 2025 3:05:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-08 15:05:35] EVENT: GetCategoryUseCase initialized
+[2025-06-08 15:05:35] EVENT: GetCategoryUseCase initialized
+Jun 08, 2025 3:05:36 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 15:05:36] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 3:05:36 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 15:05:36] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 3:05:45 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:45] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 15:05:45] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 3:05:48 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:48] ERROR: Login error: Could not open JPA EntityManager for transaction
+[2025-06-08 15:05:48] ERROR: Login error: Could not open JPA EntityManager for transaction
+Jun 08, 2025 3:05:48 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:48] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 15:05:48] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 3:05:52 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:52] ERROR: Login error: Could not open JPA EntityManager for transaction
+[2025-06-08 15:05:52] ERROR: Login error: Could not open JPA EntityManager for transaction
+Jun 08, 2025 3:05:52 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 15:05:52] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 3:05:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:05:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 15:05:55] ERROR: Unhandled exception: No static resource home.svg.
+Jun 08, 2025 3:06:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:06:18] ERROR: Registration error: Could not open JPA EntityManager for transaction
+[2025-06-08 15:06:18] ERROR: Registration error: Could not open JPA EntityManager for transaction
+Jun 08, 2025 3:06:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-08 15:06:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-08 15:06:18] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: CategoryRepository initialized
+[2025-06-09 15:16:56] EVENT: CategoryRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: ListingRepository initialized
+[2025-06-09 15:16:56] EVENT: ListingRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: FavoriteRepository initialized
+[2025-06-09 15:16:56] EVENT: FavoriteRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: MessageRepository initialiseret
+[2025-06-09 15:16:56] EVENT: MessageRepository initialiseret
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: NotificationRepository initialized
+[2025-06-09 15:16:56] EVENT: NotificationRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: OfferRepository initialized
+[2025-06-09 15:16:56] EVENT: OfferRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: ReviewRepository initialized
+[2025-06-09 15:16:56] EVENT: ReviewRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: TransactionRepository initialized
+[2025-06-09 15:16:56] EVENT: TransactionRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: UserRepository initialized
+[2025-06-09 15:16:56] EVENT: UserRepository initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 15:16:56] EVENT: GetCategoriesUseCase initialized
+Jun 09, 2025 3:16:56 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:16:56] EVENT: GetCategoryUseCase initialized
+[2025-06-09 15:16:56] EVENT: GetCategoryUseCase initialized
+Jun 09, 2025 3:16:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:16:59] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:16:59] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:16:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:16:59] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:16:59] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:16:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:16:59] ERROR: Unhandled exception: No endpoint GET /apple-touch-icon-precomposed.png.
+[2025-06-09 15:16:59] ERROR: Unhandled exception: No endpoint GET /apple-touch-icon-precomposed.png.
+Jun 09, 2025 3:16:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:16:59] ERROR: Unhandled exception: No endpoint GET /apple-touch-icon.png.
+[2025-06-09 15:16:59] ERROR: Unhandled exception: No endpoint GET /apple-touch-icon.png.
+Jun 09, 2025 3:17:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:17:02] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+[2025-06-09 15:17:02] ERROR: Unhandled exception: Failed to obtain JDBC Connection
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: CategoryRepository initialized
+[2025-06-09 15:17:54] EVENT: CategoryRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: ListingRepository initialized
+[2025-06-09 15:17:54] EVENT: ListingRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: FavoriteRepository initialized
+[2025-06-09 15:17:54] EVENT: FavoriteRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: MessageRepository initialiseret
+[2025-06-09 15:17:54] EVENT: MessageRepository initialiseret
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: NotificationRepository initialized
+[2025-06-09 15:17:54] EVENT: NotificationRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: OfferRepository initialized
+[2025-06-09 15:17:54] EVENT: OfferRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: ReviewRepository initialized
+[2025-06-09 15:17:54] EVENT: ReviewRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: TransactionRepository initialized
+[2025-06-09 15:17:54] EVENT: TransactionRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: UserRepository initialized
+[2025-06-09 15:17:54] EVENT: UserRepository initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 15:17:54] EVENT: GetCategoriesUseCase initialized
+Jun 09, 2025 3:17:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 15:17:54] EVENT: GetCategoryUseCase initialized
+[2025-06-09 15:17:54] EVENT: GetCategoryUseCase initialized
+Jun 09, 2025 3:17:58 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:17:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:17:58] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:17:59 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:17:59] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:17:59] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:16] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:18] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:18] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:19 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:19] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:19 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:19] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:21 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:21] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:21] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:21 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:21] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:21] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:22 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:22] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:22 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:22] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:24 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 15:18:24] WARNING: Login attempt for non-existent email: gab1@gmail.com
+[2025-06-09 15:18:24] WARNING: Login attempt for non-existent email: gab1@gmail.com
+Jun 09, 2025 3:18:24 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 15:18:24] WARNING: Login failed for email: gab1@gmail.com
+[2025-06-09 15:18:24] WARNING: Login failed for email: gab1@gmail.com
+Jun 09, 2025 3:18:24 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:24] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:24] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 3:18:27 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 15:18:27] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:18:27] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 15:35:10] EVENT: CategoryRepository initialized
+[2025-06-09 15:35:10] EVENT: ListingRepository initialized
+[2025-06-09 15:35:10] EVENT: FavoriteRepository initialized
+[2025-06-09 15:35:10] EVENT: MessageRepository initialiseret
+[2025-06-09 15:35:10] EVENT: NotificationRepository initialized
+[2025-06-09 15:35:10] EVENT: OfferRepository initialized
+[2025-06-09 15:35:10] EVENT: ReviewRepository initialized
+[2025-06-09 15:35:10] EVENT: TransactionRepository initialized
+[2025-06-09 15:35:10] EVENT: UserRepository initialized
+[2025-06-09 15:35:10] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 15:35:10] EVENT: GetCategoryUseCase initialized
+[2025-06-09 15:35:11] EVENT: User created: peter1749476111090@email.dk
+[2025-06-09 15:35:11] EVENT: User created: maria1749476111099@email.dk
+[2025-06-09 15:35:11] EVENT: User created: peter1749476111322@email.dk
+[2025-06-09 15:35:11] EVENT: User created: maria1749476111323@email.dk
+[2025-06-09 15:35:11] EVENT: User created: peter1749476111331@email.dk
+[2025-06-09 15:35:11] EVENT: User created: maria1749476111333@email.dk
+[2025-06-09 15:39:28] EVENT: CategoryRepository initialized
+[2025-06-09 15:39:28] EVENT: ListingRepository initialized
+[2025-06-09 15:39:28] EVENT: FavoriteRepository initialized
+[2025-06-09 15:39:28] EVENT: MessageRepository initialiseret
+[2025-06-09 15:39:28] EVENT: NotificationRepository initialized
+[2025-06-09 15:39:28] EVENT: OfferRepository initialized
+[2025-06-09 15:39:28] EVENT: ReviewRepository initialized
+[2025-06-09 15:39:28] EVENT: TransactionRepository initialized
+[2025-06-09 15:39:28] EVENT: UserRepository initialized
+[2025-06-09 15:39:28] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 15:39:28] EVENT: GetCategoryUseCase initialized
+[2025-06-09 15:39:28] EVENT: User created: peter1749476368557@email.dk
+[2025-06-09 15:39:28] EVENT: User created: maria1749476368566@email.dk
+[2025-06-09 15:39:28] EVENT: New listing created: 118a4f71-ff20-46e7-9573-bae474d315ab
+[2025-06-09 15:39:28] ERROR: User attempted to make offer on their own listing: 0f3286ee-beb8-4790-a067-336afcdd0e0c
+[2025-06-09 15:39:28] EVENT: User created: peter1749476368589@email.dk
+[2025-06-09 15:39:28] EVENT: User created: maria1749476368591@email.dk
+[2025-06-09 15:39:28] EVENT: New listing created: 4f00d46a-54e7-4e6f-998a-7c2b892d5f92
+[2025-06-09 15:39:28] EVENT: User created: peter1749476368604@email.dk
+[2025-06-09 15:39:28] EVENT: User created: maria1749476368607@email.dk
+[2025-06-09 15:39:28] EVENT: New listing created: 255e8e10-1ec0-4f5e-a1c5-a208cf819162
+[2025-06-09 15:39:28] EVENT: Offer created: b3bd7405-556e-441a-8e22-ce677dbb211c for listing: 255e8e10-1ec0-4f5e-a1c5-a208cf819162
+[2025-06-09 15:39:28] EVENT: Notification created: 06d5ae41-7000-4ac2-88ef-cd2e98b46c2a for user: 53bea669-902a-4252-97bf-cae55a7f85f8
+[2025-06-09 15:39:28] EVENT: Offer received notification created for seller: 53bea669-902a-4252-97bf-cae55a7f85f8
+[2025-06-09 15:39:28] EVENT: Notification created: a48417c6-0af4-42ee-a847-23ea4deef148 for user: 3132c8ea-3864-4ef6-82a9-6e12cb9d1073
+[2025-06-09 15:39:28] EVENT: Offer submitted notification created for buyer: 3132c8ea-3864-4ef6-82a9-6e12cb9d1073
+[2025-06-09 15:40:54] EVENT: CategoryRepository initialized
+[2025-06-09 15:40:54] EVENT: ListingRepository initialized
+[2025-06-09 15:40:54] EVENT: FavoriteRepository initialized
+[2025-06-09 15:40:54] EVENT: MessageRepository initialiseret
+[2025-06-09 15:40:54] EVENT: NotificationRepository initialized
+[2025-06-09 15:40:54] EVENT: OfferRepository initialized
+[2025-06-09 15:40:54] EVENT: ReviewRepository initialized
+[2025-06-09 15:40:54] EVENT: TransactionRepository initialized
+[2025-06-09 15:40:54] EVENT: UserRepository initialized
+[2025-06-09 15:40:54] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 15:40:54] EVENT: GetCategoryUseCase initialized
+[2025-06-09 15:40:55] EVENT: User created: peter1749476455019@email.dk
+[2025-06-09 15:40:55] EVENT: User created: maria1749476455026@email.dk
+[2025-06-09 15:40:55] EVENT: New listing created: bd6e59ed-9a4d-4467-bb58-c48b0507f81a
+[2025-06-09 15:40:55] ERROR: User attempted to make offer on their own listing: f26471b9-ed9e-4b07-8f50-d218345b636f
+[2025-06-09 15:40:55] EVENT: User created: peter1749476455054@email.dk
+[2025-06-09 15:40:55] EVENT: User created: maria1749476455055@email.dk
+[2025-06-09 15:40:55] EVENT: New listing created: 004821c4-5a63-4337-abac-2212f84ea8b3
+[2025-06-09 15:40:55] EVENT: User created: peter1749476455064@email.dk
+[2025-06-09 15:40:55] EVENT: User created: maria1749476455065@email.dk
+[2025-06-09 15:40:55] EVENT: New listing created: e0f09a36-c0c8-4178-804b-8174f45e8bb4
+[2025-06-09 15:40:55] EVENT: Offer created: 437662f2-6684-4f6d-a1c4-7e3cdece203a for listing: e0f09a36-c0c8-4178-804b-8174f45e8bb4
+[2025-06-09 15:40:55] EVENT: Notification created: ec2459af-6def-42da-b8da-fece96768b69 for user: 5dc12121-52a9-4dc0-980a-f2caf6791362
+[2025-06-09 15:40:55] EVENT: Offer received notification created for seller: 5dc12121-52a9-4dc0-980a-f2caf6791362
+[2025-06-09 15:40:55] EVENT: Notification created: 68092609-aecb-470d-a69f-3fb8d5a6a97c for user: 1e224bf1-5ce5-4575-b388-d09a3f7ebe4a
+[2025-06-09 15:40:55] EVENT: Offer submitted notification created for buyer: 1e224bf1-5ce5-4575-b388-d09a3f7ebe4a
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: CategoryRepository initialized
+[2025-06-09 23:27:36] EVENT: CategoryRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: ListingRepository initialized
+[2025-06-09 23:27:36] EVENT: ListingRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: FavoriteRepository initialized
+[2025-06-09 23:27:36] EVENT: FavoriteRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: MessageRepository initialiseret
+[2025-06-09 23:27:36] EVENT: MessageRepository initialiseret
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: NotificationRepository initialized
+[2025-06-09 23:27:36] EVENT: NotificationRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: OfferRepository initialized
+[2025-06-09 23:27:36] EVENT: OfferRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: ReviewRepository initialized
+[2025-06-09 23:27:36] EVENT: ReviewRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: TransactionRepository initialized
+[2025-06-09 23:27:36] EVENT: TransactionRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: UserRepository initialized
+[2025-06-09 23:27:36] EVENT: UserRepository initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 23:27:36] EVENT: GetCategoriesUseCase initialized
+Jun 09, 2025 11:27:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:36] EVENT: GetCategoryUseCase initialized
+[2025-06-09 23:27:36] EVENT: GetCategoryUseCase initialized
+Jun 09, 2025 11:27:42 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:27:42] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:27:42] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:27:42 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:27:42] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:27:42] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:27:44 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:27:44] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:27:44] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:27:46 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:27:46] EVENT: Listing viewed: L215 by user: anonymous
+[2025-06-09 23:27:46] EVENT: Listing viewed: L215 by user: anonymous
+Jun 09, 2025 11:27:46 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:27:46] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:27:46] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:27:46 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:27:46] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:27:46] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:27:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:27:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:27:55] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:28:13 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 23:28:13] WARNING: Login attempt for non-existent email: gab1@gmail.com
+[2025-06-09 23:28:13] WARNING: Login attempt for non-existent email: gab1@gmail.com
+Jun 09, 2025 11:28:13 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 23:28:13] WARNING: Login failed for email: gab1@gmail.com
+[2025-06-09 23:28:13] WARNING: Login failed for email: gab1@gmail.com
+Jun 09, 2025 11:28:13 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:28:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:28:13] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:28:18 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 23:28:18] WARNING: Login attempt for non-existent email: gab@gmail.com
+[2025-06-09 23:28:18] WARNING: Login attempt for non-existent email: gab@gmail.com
+Jun 09, 2025 11:28:18 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 23:28:18] WARNING: Login failed for email: gab@gmail.com
+[2025-06-09 23:28:18] WARNING: Login failed for email: gab@gmail.com
+Jun 09, 2025 11:28:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:28:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:28:18] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:28:32 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 23:28:32] WARNING: Login attempt for non-existent email: gab123@gmail.com
+[2025-06-09 23:28:32] WARNING: Login attempt for non-existent email: gab123@gmail.com
+Jun 09, 2025 11:28:32 PM com.gilbert.demo.data.util.LoggerUtility logWarning
+WARNING: [2025-06-09 23:28:32] WARNING: Login failed for email: gab123@gmail.com
+[2025-06-09 23:28:32] WARNING: Login failed for email: gab123@gmail.com
+Jun 09, 2025 11:28:32 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:28:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:28:32] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:28:34 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:28:34] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:28:34] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:28:34 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:28:34] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:28:34] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:08 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:29:08] EVENT: User created: morten@morten.org
+[2025-06-09 23:29:08] EVENT: User created: morten@morten.org
+Jun 09, 2025 11:29:08 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:29:08] EVENT: New user registered: morten@morten.org
+[2025-06-09 23:29:08] EVENT: New user registered: morten@morten.org
+Jun 09, 2025 11:29:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:29:08] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:28 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:29:28] EVENT: Successful login for email: morten@morten.org
+[2025-06-09 23:29:28] EVENT: Successful login for email: morten@morten.org
+Jun 09, 2025 11:29:28 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:29:28] EVENT: User logged in: morten@morten.org
+[2025-06-09 23:29:28] EVENT: User logged in: morten@morten.org
+Jun 09, 2025 11:29:28 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:28] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:29:28] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:29:31] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:29:31] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:32 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:29:32] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:32 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:29:32] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:29:35] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:29:35] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:29:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:35] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:29:35] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:29:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:35] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:29:35] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:29:37 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:29:37] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:29:37] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:29:37 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:29:37] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+[2025-06-09 23:29:37] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+Jun 09, 2025 11:29:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:29:37] ERROR: Unhandled exception: No endpoint GET /listing/L215/L215.
+[2025-06-09 23:29:37] ERROR: Unhandled exception: No endpoint GET /listing/L215/L215.
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: CategoryRepository initialized
+[2025-06-09 23:32:01] EVENT: CategoryRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: ListingRepository initialized
+[2025-06-09 23:32:01] EVENT: ListingRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: FavoriteRepository initialized
+[2025-06-09 23:32:01] EVENT: FavoriteRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: MessageRepository initialiseret
+[2025-06-09 23:32:01] EVENT: MessageRepository initialiseret
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: NotificationRepository initialized
+[2025-06-09 23:32:01] EVENT: NotificationRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: OfferRepository initialized
+[2025-06-09 23:32:01] EVENT: OfferRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: ReviewRepository initialized
+[2025-06-09 23:32:01] EVENT: ReviewRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: TransactionRepository initialized
+[2025-06-09 23:32:01] EVENT: TransactionRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: UserRepository initialized
+[2025-06-09 23:32:01] EVENT: UserRepository initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 23:32:01] EVENT: GetCategoriesUseCase initialized
+Jun 09, 2025 11:32:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:01] EVENT: GetCategoryUseCase initialized
+[2025-06-09 23:32:01] EVENT: GetCategoryUseCase initialized
+Jun 09, 2025 11:32:05 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:05] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:05] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:05] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:32:05] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:32:05 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:05] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:05] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:08] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:09] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:09 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:09] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:09] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:10 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:10] EVENT: Listing viewed: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:10] EVENT: Listing viewed: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:10] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:32:10] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:32:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:10] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:11 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:11] EVENT: Listing added to favorites: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:11] EVENT: Listing added to favorites: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:11 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:11] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L250 to favorites
+[2025-06-09 23:32:11] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L250 to favorites
+Jun 09, 2025 11:32:11 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:11] EVENT: Listing viewed: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:11] EVENT: Listing viewed: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:11 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:11] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:32:11] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:32:11 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:11] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:11] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:13 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:13] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:13 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:13] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:16] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:18 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:18] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:18] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:19 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:19] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:22 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:22] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:26 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:26] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 2 items
+[2025-06-09 23:32:26] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 2 items
+Jun 09, 2025 11:32:26 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:26] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:31 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:31] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:31] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:32:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:32:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:31] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:32 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:32] EVENT: Listing removed from favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:32] EVENT: Listing removed from favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:32 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:32] EVENT: Favorite removed: L215 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:32] EVENT: Favorite removed: L215 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:32 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:32] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L215 from favorites
+[2025-06-09 23:32:32] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L215 from favorites
+Jun 09, 2025 11:32:32 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:32] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+[2025-06-09 23:32:32] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+Jun 09, 2025 11:32:32 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:32] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:35] EVENT: Listing viewed: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:35] EVENT: Listing viewed: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:35] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:32:35] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:32:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:35] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:35] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:32:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:36] EVENT: Listing removed from favorites: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:36] EVENT: Listing removed from favorites: L250 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:36] EVENT: Favorite removed: L250 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:32:36] EVENT: Favorite removed: L250 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:32:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:36] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L250 from favorites
+[2025-06-09 23:32:36] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L250 from favorites
+Jun 09, 2025 11:32:36 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:32:36] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 0 items
+[2025-06-09 23:32:36] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 0 items
+Jun 09, 2025 11:32:36 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:32:36] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:32:36] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: CategoryRepository initialized
+[2025-06-09 23:48:49] EVENT: CategoryRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: ListingRepository initialized
+[2025-06-09 23:48:49] EVENT: ListingRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: FavoriteRepository initialized
+[2025-06-09 23:48:49] EVENT: FavoriteRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: MessageRepository initialiseret
+[2025-06-09 23:48:49] EVENT: MessageRepository initialiseret
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: NotificationRepository initialized
+[2025-06-09 23:48:49] EVENT: NotificationRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: OfferRepository initialized
+[2025-06-09 23:48:49] EVENT: OfferRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: ReviewRepository initialized
+[2025-06-09 23:48:49] EVENT: ReviewRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: TransactionRepository initialized
+[2025-06-09 23:48:49] EVENT: TransactionRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: UserRepository initialized
+[2025-06-09 23:48:49] EVENT: UserRepository initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: GetCategoriesUseCase initialized
+[2025-06-09 23:48:49] EVENT: GetCategoriesUseCase initialized
+Jun 09, 2025 11:48:49 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:49] EVENT: GetCategoryUseCase initialized
+[2025-06-09 23:48:49] EVENT: GetCategoryUseCase initialized
+Jun 09, 2025 11:48:50 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:48:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:48:50] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:48:52 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:48:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:48:52] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:48:52 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:48:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:48:52] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:48:55 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:48:55] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:48:55] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:48:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:48:55] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:48:55] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:48:55 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:48:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:48:55] ERROR: Unhandled exception: No static resource home.svg.
+Jun 09, 2025 11:49:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:49:01] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:49:01] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:49:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:49:01] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+[2025-06-09 23:49:01] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+Jun 09, 2025 11:49:01 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-09 23:49:01] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-09 23:49:01] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 09, 2025 11:49:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:49:01] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-09 23:49:01] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 09, 2025 11:49:01 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-09 23:49:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-09 23:49:01] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:26 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:26] EVENT: Listing viewed: L215 by user: anonymous
+[2025-06-10 01:19:26] EVENT: Listing viewed: L215 by user: anonymous
+Jun 10, 2025 1:19:26 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:26] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 01:19:26] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 1:19:26 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:26] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: CategoryRepository initialized
+[2025-06-10 01:19:37] EVENT: CategoryRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: ListingRepository initialized
+[2025-06-10 01:19:37] EVENT: ListingRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: FavoriteRepository initialized
+[2025-06-10 01:19:37] EVENT: FavoriteRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: MessageRepository initialiseret
+[2025-06-10 01:19:37] EVENT: MessageRepository initialiseret
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: NotificationRepository initialized
+[2025-06-10 01:19:37] EVENT: NotificationRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: OfferRepository initialized
+[2025-06-10 01:19:37] EVENT: OfferRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: ReviewRepository initialized
+[2025-06-10 01:19:37] EVENT: ReviewRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: TransactionRepository initialized
+[2025-06-10 01:19:37] EVENT: TransactionRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: UserRepository initialized
+[2025-06-10 01:19:37] EVENT: UserRepository initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: GetCategoriesUseCase initialized
+[2025-06-10 01:19:37] EVENT: GetCategoriesUseCase initialized
+Jun 10, 2025 1:19:37 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:37] EVENT: GetCategoryUseCase initialized
+[2025-06-10 01:19:37] EVENT: GetCategoryUseCase initialized
+Jun 10, 2025 1:19:40 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:40] EVENT: Listing viewed: L215 by user: anonymous
+[2025-06-10 01:19:40] EVENT: Listing viewed: L215 by user: anonymous
+Jun 10, 2025 1:19:40 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:40] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:40 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:40] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 01:19:40] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 1:19:42 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:42] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:42] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:49 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:49] EVENT: Successful login for email: morten@morten.org
+[2025-06-10 01:19:49] EVENT: Successful login for email: morten@morten.org
+Jun 10, 2025 1:19:49 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:49] EVENT: User logged in: morten@morten.org
+[2025-06-10 01:19:49] EVENT: User logged in: morten@morten.org
+Jun 10, 2025 1:19:49 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:49] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:49] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:52 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:52] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:52 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:52] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:52] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:53 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:53] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:53 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:53] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:53] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:55 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:55] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:19:55] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:19:55 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:55] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 01:19:55] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 1:19:55 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:55] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:55] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:57] EVENT: Listing removed from favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:19:57] EVENT: Listing removed from favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:19:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:57] EVENT: Favorite removed: L215 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:19:57] EVENT: Favorite removed: L215 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:19:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:57] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L215 from favorites
+[2025-06-10 01:19:57] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L215 from favorites
+Jun 10, 2025 1:19:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:19:57] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 0 items
+[2025-06-10 01:19:57] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 0 items
+Jun 10, 2025 1:19:57 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:57] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:57] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:19:59 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:19:59] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:19:59] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:00 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:00] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:00 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:00] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:00] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:03 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:03] EVENT: Listing viewed: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:20:03] EVENT: Listing viewed: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:20:03 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:03] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 01:20:03] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 1:20:03 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:03] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:04 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:04] EVENT: Listing added to favorites: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:20:04] EVENT: Listing added to favorites: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:20:04 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:04] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L211 to favorites
+[2025-06-10 01:20:04] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L211 to favorites
+Jun 10, 2025 1:20:04 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:04] EVENT: Listing viewed: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:20:04] EVENT: Listing viewed: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:20:04 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:04] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 01:20:04] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 1:20:04 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:04] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:04] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:06 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:06] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:06] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:06 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:06] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:06] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:07 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:07] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+[2025-06-10 01:20:07] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+Jun 10, 2025 1:20:07 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:07] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:07] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:07 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:07] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:07] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:10 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:10] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:10 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:10] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:13 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:13] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:13 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:13] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:14 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:14 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:17 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:17] EVENT: Listing viewed: L199 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:20:17] EVENT: Listing viewed: L199 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:20:17 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:17] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 1:20:17 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:17] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:17] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 01:20:17] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:22 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:22] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 accessed purchase confirmation page for listing L199
+[2025-06-10 01:20:22] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 accessed purchase confirmation page for listing L199
+Jun 10, 2025 1:20:22 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:22] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 01:20:22] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 1:20:22 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:22] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:27 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:27] EVENT: Transaction created: 022c535a-1f38-4a20-b42f-745e0ebe8dbf
+[2025-06-10 01:20:27] EVENT: Transaction created: 022c535a-1f38-4a20-b42f-745e0ebe8dbf
+Jun 10, 2025 1:20:27 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:27] EVENT: Listing status updated: L199 - New status: SOLD
+[2025-06-10 01:20:27] EVENT: Listing status updated: L199 - New status: SOLD
+Jun 10, 2025 1:20:27 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:27] EVENT: Transaction created: 022c535a-1f38-4a20-b42f-745e0ebe8dbf for listing: L199 by buyer: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 01:20:27] EVENT: Transaction created: 022c535a-1f38-4a20-b42f-745e0ebe8dbf for listing: L199 by buyer: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 1:20:27 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:27] EVENT: Notification created: a72aee25-ccd7-434d-8b7f-5942cca1d12e for user: U038
+[2025-06-10 01:20:27] EVENT: Notification created: a72aee25-ccd7-434d-8b7f-5942cca1d12e for user: U038
+Jun 10, 2025 1:20:27 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:27] EVENT: Sale notification created for seller: U038
+[2025-06-10 01:20:27] EVENT: Sale notification created for seller: U038
+Jun 10, 2025 1:20:27 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 01:20:27] EVENT: Purchase completed: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 bought listing L199
+[2025-06-10 01:20:27] EVENT: Purchase completed: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 bought listing L199
+Jun 10, 2025 1:20:27 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:27] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:27] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:32 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:32] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:32 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:32] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:32] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:33 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:33] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:33 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:33] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:38 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:38] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:38 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:38] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:40 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:40] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 1:20:40 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 01:20:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 01:20:40] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: CategoryRepository initialized
+[2025-06-10 11:15:57] EVENT: CategoryRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: ListingRepository initialized
+[2025-06-10 11:15:57] EVENT: ListingRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: FavoriteRepository initialized
+[2025-06-10 11:15:57] EVENT: FavoriteRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: MessageRepository initialiseret
+[2025-06-10 11:15:57] EVENT: MessageRepository initialiseret
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: NotificationRepository initialized
+[2025-06-10 11:15:57] EVENT: NotificationRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: OfferRepository initialized
+[2025-06-10 11:15:57] EVENT: OfferRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: ReviewRepository initialized
+[2025-06-10 11:15:57] EVENT: ReviewRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: TransactionRepository initialized
+[2025-06-10 11:15:57] EVENT: TransactionRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: UserRepository initialized
+[2025-06-10 11:15:57] EVENT: UserRepository initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: GetCategoriesUseCase initialized
+[2025-06-10 11:15:57] EVENT: GetCategoriesUseCase initialized
+Jun 10, 2025 11:15:57 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:15:57] EVENT: GetCategoryUseCase initialized
+[2025-06-10 11:15:57] EVENT: GetCategoryUseCase initialized
+Jun 10, 2025 11:16:01 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:01] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:01] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:02 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:02] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:06 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:06] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:06] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:07 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:07] EVENT: Listing viewed: L215 by user: anonymous
+[2025-06-10 11:16:07] EVENT: Listing viewed: L215 by user: anonymous
+Jun 10, 2025 11:16:07 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:07] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:07] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:07 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:07] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 11:16:07] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 11:16:10 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:10] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:13 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:13] EVENT: Successful login for email: morten@morten.org
+[2025-06-10 11:16:13] EVENT: Successful login for email: morten@morten.org
+Jun 10, 2025 11:16:13 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:13] EVENT: User logged in: morten@morten.org
+[2025-06-10 11:16:13] EVENT: User logged in: morten@morten.org
+Jun 10, 2025 11:16:13 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:13] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:13] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:14 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:14 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:15 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:15] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:15] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:15 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:15] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:15] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:16 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:16] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 11:16:16] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 11:16:16 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:16 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 11:16:16 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 11:16:16 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:16] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:19 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:19] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 11:16:19] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 11:16:19 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:19] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+[2025-06-10 11:16:19] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+Jun 10, 2025 11:16:19 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:19] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 11:16:19] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 11:16:19 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:19] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 11:16:19] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 11:16:19 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:19] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:23 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:23] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 2 items
+[2025-06-10 11:16:23] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 2 items
+Jun 10, 2025 11:16:23 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:23] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:23] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:23 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:23] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:23] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:25 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:25] EVENT: Listing viewed: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 11:16:25] EVENT: Listing viewed: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 11:16:25 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:25] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 11:16:25] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 11:16:25 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:25] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:25] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 11:16:26 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:26] EVENT: Listing removed from favorites: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 11:16:26] EVENT: Listing removed from favorites: L211 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 11:16:26 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:26] EVENT: Favorite removed: L211 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 11:16:26] EVENT: Favorite removed: L211 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 11:16:26 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:26] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L211 from favorites
+[2025-06-10 11:16:26] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L211 from favorites
+Jun 10, 2025 11:16:26 AM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 11:16:26] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+[2025-06-10 11:16:26] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+Jun 10, 2025 11:16:26 AM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 11:16:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 11:16:26] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:37:25 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:37:25] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:37:25] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:37:51 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:37:51] EVENT: Successful login for email: morten@morten.org
+[2025-06-10 21:37:51] EVENT: Successful login for email: morten@morten.org
+Jun 10, 2025 9:37:51 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:37:51] EVENT: User logged in: morten@morten.org
+[2025-06-10 21:37:51] EVENT: User logged in: morten@morten.org
+Jun 10, 2025 9:37:51 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:37:51] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:37:51] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:37:58 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:37:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:37:58] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:37:58 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:37:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:37:58] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:15] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:15] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:15 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:15] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:15] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:26 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:26] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:38:26] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:38:26 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:26] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:38:26] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:38:26 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:26] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:26] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:35] EVENT: Listing removed from favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:38:35] EVENT: Listing removed from favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:38:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:35] EVENT: Favorite removed: L215 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:38:35] EVENT: Favorite removed: L215 for user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:38:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:35] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L215 from favorites
+[2025-06-10 21:38:35] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 removed listing L215 from favorites
+Jun 10, 2025 9:38:35 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:35] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 0 items
+[2025-06-10 21:38:35] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 0 items
+Jun 10, 2025 9:38:35 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:35] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:35] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:37 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:37] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:37] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:38 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:38] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:38 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:38] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:38] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:39 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:39] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:38:39] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:38:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:38:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:38:39 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:39] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:40 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:40] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:38:40] EVENT: Listing added to favorites: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:38:40 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:40] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+[2025-06-10 21:38:40] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 added listing L215 to favorites
+Jun 10, 2025 9:38:40 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:40] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:38:40] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:38:40 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:40] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:38:40] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:38:40 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:40] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:40] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:58 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:38:58] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+[2025-06-10 21:38:58] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+Jun 10, 2025 9:38:58 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:58] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:38:58 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:38:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:38:58] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:03 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:39:03] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed notifications page
+[2025-06-10 21:39:03] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed notifications page
+Jun 10, 2025 9:39:03 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:03] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:03] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:14 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:14 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:16 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:16] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:16] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:19 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:39:19] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 accessed account deletion confirmation page
+[2025-06-10 21:39:19] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 accessed account deletion confirmation page
+Jun 10, 2025 9:39:19 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:19] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:19] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:28 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:28] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:28] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:28 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:28] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:28] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:31] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:31 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:31] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:31] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:39:33 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:39:33] EVENT: Retrieving all categories
+[2025-06-10 21:39:33] EVENT: Retrieving all categories
+Jun 10, 2025 9:39:33 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:39:33] EVENT: Retrieving all categories
+[2025-06-10 21:39:33] EVENT: Retrieving all categories
+Jun 10, 2025 9:39:33 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:39:33] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:39:33] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: CategoryRepository initialized
+[2025-06-10 21:50:17] EVENT: CategoryRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: ListingRepository initialized
+[2025-06-10 21:50:17] EVENT: ListingRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: FavoriteRepository initialized
+[2025-06-10 21:50:17] EVENT: FavoriteRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: MessageRepository initialiseret
+[2025-06-10 21:50:17] EVENT: MessageRepository initialiseret
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: NotificationRepository initialized
+[2025-06-10 21:50:17] EVENT: NotificationRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: OfferRepository initialized
+[2025-06-10 21:50:17] EVENT: OfferRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: ReviewRepository initialized
+[2025-06-10 21:50:17] EVENT: ReviewRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: TransactionRepository initialized
+[2025-06-10 21:50:17] EVENT: TransactionRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: UserRepository initialized
+[2025-06-10 21:50:17] EVENT: UserRepository initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: GetCategoriesUseCase initialized
+[2025-06-10 21:50:17] EVENT: GetCategoriesUseCase initialized
+Jun 10, 2025 9:50:17 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:50:17] EVENT: GetCategoryUseCase initialized
+[2025-06-10 21:50:17] EVENT: GetCategoryUseCase initialized
+Jun 10, 2025 9:50:22 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:50:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:50:22] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:50:22 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:50:22] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:50:22] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:50:54 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:50:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:50:54] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:50:54 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:50:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:50:54] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:02] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:02] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:08] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:08] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:14 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:14 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:14] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:14] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:45 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:45] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:45] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:45 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:45] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:45] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:50 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:50] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:50 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:50] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:51:58 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:51:58] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:51:58] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:52:02 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:52:02] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed notifications page
+[2025-06-10 21:52:02] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed notifications page
+Jun 10, 2025 9:52:02 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:52:02] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:52:02] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:52:08 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:52:08] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+[2025-06-10 21:52:08] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 viewed favorites page with 1 items
+Jun 10, 2025 9:52:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:52:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:52:08] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:52:08 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:52:08] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:52:08] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:52:10 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:52:10] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:52:10] EVENT: Listing viewed: L215 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:52:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:52:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:52:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:52:10 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:52:10] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:53:20 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:53:20] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:53:20] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:53:20 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:53:20] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:53:20] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:54:21 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:54:21] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:54:21] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:54:21 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:54:21] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:54:21] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:54:41 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:54:41] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:54:41] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:54:50 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:54:50] EVENT: Listing viewed: L182 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+[2025-06-10 21:54:50] EVENT: Listing viewed: L182 by user: 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2
+Jun 10, 2025 9:54:50 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:54:50] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:54:50] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:54:50 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:54:50] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:54:50] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:54:54 PM com.gilbert.demo.data.util.LoggerUtility logEvent
+INFO: [2025-06-10 21:54:54] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 accessed make offer page for listing L182
+[2025-06-10 21:54:54] EVENT: User 7b2ad38d-95dc-4ebc-b78a-bd0fcdb30ad2 accessed make offer page for listing L182
+Jun 10, 2025 9:54:54 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:54:54] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+[2025-06-10 21:54:54] ERROR: Unhandled exception: No static resource user-placeholder.svg.
+Jun 10, 2025 9:54:54 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:54:54] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:54:54] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:55:30 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:55:30] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:55:30] ERROR: Unhandled exception: No static resource home.svg.
+Jun 10, 2025 9:55:30 PM com.gilbert.demo.data.util.LoggerUtility logError
+SEVERE: [2025-06-10 21:55:30] ERROR: Unhandled exception: No static resource home.svg.
+[2025-06-10 21:55:30] ERROR: Unhandled exception: No static resource home.svg.

@@ -30,7 +30,9 @@ public class ListingController {
     @Autowired
     public ListingController(GetListingUseCase getListingUseCase,
                              CategoryRepository categoryRepository,
-                             UserRepository userRepository, GetFavoritesUseCase getFavoritesUseCase, GetNotificationsUseCase getNotificationsUseCase) {
+                             UserRepository userRepository,
+                             GetFavoritesUseCase getFavoritesUseCase,
+                             GetNotificationsUseCase getNotificationsUseCase) {
         this.getListingUseCase = getListingUseCase;
         this.categoryRepository = categoryRepository;
         this.userRepository = userRepository;
@@ -76,7 +78,7 @@ public class ListingController {
             model.addAttribute("isLoggedIn", currentUserId != null);
 
             boolean isFavorite = false;
-            if (currentUserId != null) {
+            if (currentUserId != null && !isOwner) {
                 isFavorite = getFavoritesUseCase.isListingFavorite(currentUserId, listingId);
             }
             model.addAttribute("isFavorite", isFavorite);

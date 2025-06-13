@@ -161,6 +161,27 @@
         </div>
       </div>
 
+      <!-- Favorite Section for logged in users -->
+      <div th:if="${isLoggedIn and !isOwner}" class="favorite-section">
+        <!-- Add to favorites -->
+        <form th:if="${!isFavorite}" th:action="@{/favorites/add}" method="post" style="display: inline;">
+          <input type="hidden" name="listingId" th:value="${listing.adID}">
+          <button type="submit" class="btn-favorite">
+            <span>♡</span>
+            Add to Favorites
+          </button>
+        </form>
+
+        <!-- Remove from favorites -->
+        <form th:if="${isFavorite}" th:action="@{/favorites/remove}" method="post" style="display: inline;">
+          <input type="hidden" name="listingId" th:value="${listing.adID}">
+          <button type="submit" class="btn-favorite is-favorite">
+            <span>♥</span>
+            Remove from Favorites
+          </button>
+        </form>
+      </div>
+
       <!-- Product Info -->
       <div class="product-info">
         <div class="info-row">
